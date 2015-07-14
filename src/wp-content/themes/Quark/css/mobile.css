@@ -1,0 +1,432 @@
+/* CSS for the mobile devices */
+/* Basic CSS rules */
+button,
+.button,
+.readon,
+.button-border,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  padding: 15px 30px;
+}
+
+/* CSS Widget Rules */
+.only-desktop {
+  display: none;
+}
+
+.only-tablets {
+  display: none;
+}
+
+.only-smartphones {
+  display: block;
+}
+
+.only-tablets-and-smartphones {
+  display: block;
+}
+
+.only-desktop-and-tablets {
+  display: none;
+}
+
+/* Top */
+#gk-header-nav .gk-logo {
+  height: 40px;
+  top: 0!important;
+}
+
+#gk-header-nav .gk-logo img {
+  height: 40px;
+}
+
+#gk-header-nav.static,
+#gk-header-nav.active {
+  height: 45px;
+}
+
+#aside-menu-toggler {
+  top: 0;
+}
+
+.admin-bar #gk-header-nav.static,
+.admin-bar #gk-header-nav.active {
+  top: 0px;
+}
+
+#gk-header-nav.active .gk-logo,
+#gk-header-nav.active .gk-logo-css,
+#gk-header-nav.active .gk-logo-css-big {
+  top: 0;
+}
+
+#gk-header.menu-visible {
+  padding-top: 32px;
+}
+
+/* Containers */
+#gk-top1 .widget,
+#gk-top2 .widget,
+#sidebar .widget,
+#gk-bottom1 .widget,
+#gk-bottom2 .widget,
+#gk-bottom3 .widget,
+#gk-bottom5 .widget,
+#gk-bottom5 .widget,
+.gk-cols .widget,
+.gk-3-cols[data-cols="2"] .widget-wrap,
+.gk-3-cols[data-cols="3"] .widget-wrap,
+.gk-3-cols[data-cols="4"] .widget-wrap,
+.gk-3-cols[data-cols="5"] .widget-wrap,
+.gk-3-cols[data-cols="6"] .widget-wrap,
+.gk-3-cols[data-cols="7"] .widget-wrap,
+.gk-3-cols[data-cols="8"] .widget-wrap,
+.gk-3-cols[data-cols="9"] .widget-wrap,
+.gk-menu .gk-cols > div {
+  clear: both !important;
+  float: none !important;
+  margin: 0 auto 20px auto !important;
+  width: 100%;
+}
+
+#sidebar .widget {
+  clear: both;
+  width: 100%;
+}
+
+.gk-cols[data-cols="2"] > div,
+.gk-cols[data-cols="3"] > div,
+.gk-cols[data-cols="4"] > div,
+.gk-cols[data-cols="5"] > div {
+  padding-bottom: 20px !important;
+  width: 100%;
+}
+
+.gk-cols {
+  display: block !important;
+  margin: 0 !important;
+}
+
+.gk-cols > div {
+  display: block !important;
+  margin-bottom: 20px !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+
+/* Items */
+.gallery br {
+  display: none;
+}
+
+.gallery-columns-3 .gallery-item,
+.gallery-columns-4 .gallery-item,
+.gallery-columns-5 .gallery-item,
+.gallery-columns-6 .gallery-item,
+.gallery-columns-7 .gallery-item,
+.gallery-columns-8 .gallery-item {
+  width: 50%;
+}
+
+.gk-3-cols[data-cols="2"] .widget,
+.gk-3-cols[data-cols="3"] .widget {
+  padding: 0;
+  width: 100%;
+}
+
+.entry-title {
+  font-size: 2.8rem;
+}
+
+.item-author {
+  width: 100%;
+}
+
+.item-info {
+  margin: 0 0 20px;
+}
+
+.comments-title,
+.comment-reply-title {
+  font-size: 2.4rem;
+}
+
+.comment-form .comment-form-author,
+.comment-form .comment-form-email,
+.comment-form .comment-form-url {
+  width: 100%;
+}
+
+#comments {
+  margin: 0;
+  width: 100%;
+}
+
+.comment-content-wrapper {
+  margin: 0;
+}
+
+.comment-body {
+  font-size: 1.3rem;
+  margin: 8px 0 30px;
+}
+
+.comment-author {
+  position: static;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.comment-author .avatar {
+  display: inline-block;
+  float: none;
+}
+
+.comment-metadata {
+  overflow: hidden;
+  text-align: center;
+}
+
+.comment-metadata > * {
+  display: inline-block;
+  text-align: center;
+}
+
+.comment-metadata > a {
+  float: none;
+  display: block;
+}
+
+.comment-metadata > strong {
+  float: none;
+}
+
+.comment-reply-link {
+  float: none;
+  display: block;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.search-form .search-submit {
+  margin: 10px 0;
+}
+
+/* Subpage fixes */
+#gk-header-mod h1,
+#gk-header-mod h2,
+.one-page .gk-page h1,
+.one-page .gk-page h2,
+.contact .entry-title-wrap h1,
+.contact .entry-title-wrap h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+#gk-header-mod h2,
+.one-page .gk-page h2,
+.contact .entry-title-wrap h2,
+.archive .entry-title-wrap > p,
+.author-info .entry-title + p,
+.entry-header time {
+  font-size: 1.4rem;
+}
+#gk-header-mod .btn-border {
+  margin: 20px 0 0 0;
+}
+.frontpage .gk-desc,
+.page-template-template-one-page .gk-desc {
+  padding: 60px 0 70px 0;
+}
+
+.transparent-tabs .gk-tabs-nav {
+  top: 80px;
+}
+
+.transparent-tabs .gk-tabs-nav li {
+  line-height: 48px;
+}
+.transparent-tabs .gk-tabs-item .box {
+  padding-top: 250px !important;
+}
+.box.newsletter input,
+.widget.newsletter input {
+  margin: 2px 0;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.box.testimonials {
+  padding: 30px 0 !important;
+}
+.gk-testimonials p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.box.very-big-spaces {
+  padding: 150px 0 !important;
+}
+
+.gk-features img {
+  width: 100%;
+}
+.gk-price-table {
+  margin: 20px;
+}
+.gk-price-table > dl {
+  margin: 1.5% 0 !important;
+  width: 100% !important;
+}
+.gk-desc dl > dt,
+.gk-desc dl > dd {
+  width: 100% !important;
+}
+.gk-desc dl > dd {
+  padding: 10px 0 20px 10px;
+}
+.gk-counters > .gk-counter {
+  margin: 10px 0;
+}
+.gk-counters > .gk-counter > span {
+  font-size: 4rem;
+}
+.gk-big-text {
+  padding: 60px 0;
+}
+.contact .site > div {
+  padding: 0 0 20px 0 !important;
+  width: 100% !important;
+}
+.gk-social-icons-block {
+  font-size: 2rem;
+  padding: 24px 0 0;
+}
+
+/* Other */
+.gk-nsp-art {
+  width: 99% !important;
+}
+
+.readon {
+	line-height: 1;
+}
+
+#gk-footer-nav li {
+  padding: 0 10px !important;
+}
+
+#gk-login {
+  padding: 12px;
+}
+
+#login-forgot {
+  margin: 0 0 50px;
+  width: 99%;
+}
+
+.single-page .item-info {
+  margin-top: 70px;
+}
+
+.item-info li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.item-info li:before {
+  display: none;
+}
+
+.archive-page {
+  margin: 0 0 60px 0;
+}
+
+.entry-thumbnail-wrap,
+.entry-content, .entry-summary {
+  margin: 32px auto 24px auto
+}
+
+.author-page .author-info img {
+  max-width: 60px;
+  height: 60px;
+}
+.author-page .author-info {
+  top: 60%;
+}
+
+.author-info .entry-title + p, 
+.author-info p > a {
+  font-size: 1.1rem;
+}
+
+.archive-page.tag-page,
+.archive-page.archive-article,
+.archive-page.search-article {
+  padding: 40px 0;
+}
+
+.archive .entry-header + .site {
+  padding: 0;
+}
+
+.archive.category .entry-header + .site {
+  padding-top: 40px;
+}
+
+#gk-login-popup input {
+  height: 32px;
+  line-height: 32px;
+  margin: 0 0 5px 0;
+  width: 100%;
+}
+#gk-login-popup p {
+  margin: 0;
+}
+#gk-login-popup ul {
+  margin: 5px 0;
+}
+#gk-login-popup li {
+  margin: 3px 0;
+}
+#gk-login-popup button {
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  width: 100%;
+}
+#gk-login-popup .btn-border {
+  padding: 6px;
+}
+#gk-login-popup .login li.last {
+  padding: 0;
+}
+#gk-login-popup h3 {
+  margin-bottom: 10px;
+}
+#gk-login-popup-close {
+  font-size: 24px;
+  right: 20px;
+  top: 0px;
+}
+#gk-login input[type="submit"] {
+  padding: 0;
+}
+.search .entry-title-wrap {
+  -webkit-transform: translateX(-50%) translateY(-25%);
+  -moz-transform: translateX(-50%) translateY(-25%);
+  -ms-transform: translateX(-50%) translateY(-25%);
+  -o-transform: translateX(-50%) translateY(-25%);
+  transform: translateX(-50%) translateY(-25%);
+}
+.search-form .btn-border {
+  margin-top: 5px !important;
+}
+
+.search-form .search-field,
+.search-form .btn-border {
+  width: 100%!important;
+}
+
+.search .entry-title-wrap .site > p {
+  margin: 5px 0;
+}
