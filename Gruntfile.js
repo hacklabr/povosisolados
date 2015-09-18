@@ -7,12 +7,12 @@ module.exports = function(grunt) {
                 files: ['src/wp-content/themes/cti/**/*.less'],
                 tasks: ['less'],
                 options: {
-                    spawn: false
+                    spawn: false,
                 }
             },
             bower_components: {
                 files: [
-                    'bower_components/**/*'
+                    'src/wp-content/themes/cti/bower_components/**/*',
                 ],
                 tasks: ['default'],
             },
@@ -24,15 +24,16 @@ module.exports = function(grunt) {
                     compress          : true,
                     optimization      : 2,
                     sourceMap         : true,
-                    sourceMapFilename: 'src/wp-content/themes/cti/style.css.map',
-                    sourceMapURL: 'src/wp-content/themes/cti/style.css.map',
-                    sourceMapRootpath: 'src/wp-content/themes/cti/'
+                    sourceMapFilename: 'style.css.map',
+                    sourceMapURL:      'style.css.map',
+                    sourceMapRootpath: 'src/wp-content/themes/cti/',
+                    sourceMapBasepath: 'src/wp-content/themes/cti/less/',
                 },
  
                 files: {
-                    'src/wp-content/themes/cti/style.css': 'src/wp-content/themes/cti/less/main.less'
-                }
-            }
+                    'src/wp-content/themes/cti/style.css': 'src/wp-content/themes/cti/less/main.less',
+                },
+            },
         },
 
         uglify: {
@@ -51,5 +52,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['uglify','watch']);
+    grunt.registerTask('default', ['uglify','less','watch']);
 };
