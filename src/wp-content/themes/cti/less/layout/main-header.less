@@ -1,0 +1,93 @@
+.main-header {
+    .navbar-fixed-top;
+    background-color: rgba(255,255,255,0.8);
+
+    .navbar {
+        .navbar-default;
+    }
+
+    &-logo {
+        margin-left: 15px;
+        
+        h1 {
+            margin: 0;
+        }
+        a {
+            display: block;
+        }
+        margin-top: 20px;
+    }
+ 
+    .main-menu {
+
+        &-nav {
+            .nav;
+            .navbar-nav;
+            text-transform: uppercase;
+
+            @media screen and (min-width: @grid-float-breakpoint) {
+                .pull-right; 
+            }
+
+            > li {
+                > a {
+                    color: #000;
+                    font-size: @font-size-large;
+                    font-weight: bold;
+                    &:hover {
+                        color: @brand-primary;
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                box-shadow: none;
+                left: initial;
+                right: 10px;
+                text-transform: lowercase;
+                top: 80px;
+
+                > li {
+                    text-align: right;
+                    > a {
+                        font-size: @font-size-large;
+                        font-weight: bold;
+                        padding: 6px 20px;
+                    }
+                }
+            }
+        }
+  
+        &-social {
+            .list-inline;
+
+            @media screen and (min-width: @grid-float-breakpoint) {
+                .pull-right; 
+                margin: 41px 0 0 25px;
+            }
+            > li {
+                a {
+                    color: #000;
+                    font-size: @font-size-large;
+                    font-weight: bold;
+                    &:hover {
+                        color: @brand-primary;
+                        text-decoration: none;
+                    }
+                    &:before {
+                        font-family: @icon-font-name;
+                    }
+                }
+                &.facebook a:before {
+                    content: '\f09a';
+                }
+                &.twitter a:before {
+                    content: '\f099';
+                }
+                &.youtube a:before {
+                    content: '\f16a';
+                }
+            }
+        }
+    }
+}
