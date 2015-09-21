@@ -1,0 +1,14 @@
+.breakpoint(@point, @content) {
+    & when(@point = xs) {
+        @media (min-width: @screen-xs-min) { @content(); }
+    }
+    & when(@point = sm) {
+        @media (min-width: @screen-sm-min) { @content(); }
+    }
+    & when(@point = md) {
+        @media (min-width: @screen-md-min) { @content(); }
+    }
+    & when(@point = lg) {
+        @media (min-width: @screen-lg-min) { @content(); }
+    }
+}

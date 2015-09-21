@@ -5,6 +5,23 @@
 
 .home {
     .main-banner {
-        height: 930px;
+        border-bottom: solid 40px @brand-primary-darker;
+        height: 400px;
+
+        .breakpoint(xs; {
+            height: 500px; 
+        });
+        
+        .breakpoint(sm; {
+            height: 600px; 
+        });
+
+        .breakpoint(md; {
+            height: 800px; 
+        });
+
+        .breakpoint(lg; {
+            height: 930px; 
+        });
     }
 }
