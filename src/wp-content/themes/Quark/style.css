@@ -1301,14 +1301,14 @@ label {
   margin: 11px 0 0 0 !important;
 }
 #gk-header-nav.gk-fixed-nav .gk-logo {
-  margin: 12px 22px;
+  margin: 22px;
 }
 #gk-header-nav.gk-fixed-nav .gk-logo img {
-  max-width: 150px;
+  height: 40px;
 }
 #gk-header-nav.inactive #gk-mobile-menu-text {
   width: 0 !important;
-  
+
 }
 #gk-header-nav.inactive .gk-logo {
   opacity: 0;
@@ -1320,7 +1320,7 @@ label {
 
 .dark-bg #gk-mobile-menu,
 .dark-bg .gk-logo.text {
-  color: #fff;
+  color: #000;
 }
 
 .page-template-template-login.dark-bg #gk-mobile-menu,
@@ -1332,7 +1332,7 @@ label {
 .dark-bg #gk-mobile-menu i,
 .dark-bg #gk-mobile-menu i:before, 
 .dark-bg #gk-mobile-menu i:after {
-  background: #fff;
+  background: #000;
 }
 
 .page-template-template-login.dark-bg #gk-mobile-menu i,
