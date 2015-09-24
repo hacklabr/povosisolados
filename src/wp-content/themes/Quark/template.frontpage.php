@@ -38,6 +38,33 @@ get_header('frontpage'); ?>
 
 	<?php do_action('quark_before_content'); ?>
 		<div id="frontpage-wrap" role="main">
+
+            <div class="frontpage-block box news">
+                <h2 class="section-title">Notícias</h2>
+                <div class="news-container gk-cols" data-cols="2">
+                    <div class="news-box">
+                        <div class="news-thumb"><img src="http://placehold.it/500x200"></div>
+                        <h3 class="news-title">Nota pública da Comissão de Direitos Humanos e Minorias sobre morte de Indígena Guarani e Kaiowá</h3>
+                        <p class="news-excerpt">"À margem do Estado de Direito, de acordo com relatos
+                        diretos do local, teriam ocorrido ataques armados que
+                        redundaram na morte de um indígena. Lamentamos
+                        profundamente essa vida que se perdeu na luta pela
+                        garantia de um território ancestral" ...</p>
+                        <a class="btn">Leia mais</a>
+                    </div>
+                    <div class="news-box">
+                        <div class="news-thumb"><img src="http://placehold.it/500x200"></div>
+                        <h3 class="news-title">Nota pública da Comissão de Direitos Humanos e Minorias sobre morte de Indígena Guarani e Kaiowá</h3>
+                        <p class="news-excerpt">"À margem do Estado de Direito, de acordo com relatos
+                        diretos do local, teriam ocorrido ataques armados que
+                        redundaram na morte de um indígena. Lamentamos
+                        profundamente essa vida que se perdeu na luta pela
+                        garantia de um território ancestral" ...</p>
+                        <a class="btn">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+
             <?php if ( $loop_global->have_posts() ) : ?>
                 <?php while ( $loop_global->have_posts() ) : $loop_global->the_post(); ?>
                     <?php 

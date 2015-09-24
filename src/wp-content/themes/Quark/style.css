@@ -533,12 +533,12 @@ input[type="reset"],
   color: #fff !important;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: bold;
   height: auto;
   line-height: 25px;
   margin: 0 5px 2px 2px;
-  padding: 15px 25px;
+  padding: 10px 20px;
   text-align: center;
   text-transform: uppercase;
   -webkit-transition: all .3s ease-out;
@@ -3545,6 +3545,41 @@ article.one-page {
 }
 .frontpage-block .box {
   text-align: center;
+}
+
+/** NEWS FRONTPAGE SECTION **/
+.frontpage-block.box.news .section-title {
+  background-color: rgba(51, 33, 33, 0.8);
+  clear: both;
+  color: #fff;
+  display: inline-block;
+  float: left;
+  font-size: 4.8rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 60px;
+  margin: 35px 0;
+  min-width: 500px;
+  padding: 15px 25px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.frontpage-block.box.news .news-container {
+  clear: both;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.frontpage-block.box.news .news-box {
+  max-width: 1170px;
+}
+.frontpage-block.box.news .news-title {
+  color: rgba(159, 32, 50, 1);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.frontpage-block.box.news .news-excerpt {
+  color: rgba(51, 33, 33, 1);
 }
 
 .box.color-bg {
