@@ -3549,14 +3549,13 @@ article.one-page {
 
 /** NEWS FRONTPAGE SECTION **/
 .frontpage-block.box.news .section-title {
-  background-color: rgba(51, 33, 33, 0.8);
+  background-color: #000;
   clear: both;
   color: #fff;
   display: inline-block;
   float: left;
   font-size: 4.8rem;
   font-weight: bold;
-  letter-spacing: 3px;
   line-height: 60px;
   margin: 35px 0;
   min-width: 500px;
@@ -3566,11 +3565,6 @@ article.one-page {
 }
 .frontpage-block.box.news .news-container {
   clear: both;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-.frontpage-block.box.news .news-box {
-  max-width: 1170px;
 }
 .frontpage-block.box.news .news-title {
   color: rgba(159, 32, 50, 1);
@@ -3585,8 +3579,7 @@ article.one-page {
   border-top: 1px solid rgba(159, 32, 50, 0.8);
   clear: both;
   color: rgba(159, 32, 50, 1);
-  margin: 200px auto 0;
-  max-width: 1130px;
+  margin: 200px auto 70px;
   padding-bottom: 30px;
   position: relative;
 }
@@ -3611,6 +3604,32 @@ article.one-page {
   display: block;
   font-size: 1.8rem;
 }
+/** LINKS FRONTPAGE SECTION **/
+.frontpage-block.box .links {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+} 
+.frontpage-block.box .links div {
+  border-right: 1px solid #eee;
+  padding-bottom: 20px;
+  padding-top: 20px;
+} 
+.frontpage-block.box .links div:last-child {
+  border-right: 0px;
+} 
+.frontpage-block.box .links a {
+  color: #000;
+  display: block;
+  padding: 30px;
+}
+.frontpage-block.box .links a:hover {
+  color: rgba(159, 32, 50, 1);
+}
+.frontpage-block.box .links img {
+  margin-top: -10px;
+}  
 .box.color-bg {
   background: #f079a3;
   color: #fff;
