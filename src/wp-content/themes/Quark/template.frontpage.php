@@ -41,7 +41,7 @@ get_header('frontpage'); ?>
 
             <div class="frontpage-block box news">
                 <h2 class="section-title">Notícias</h2>
-                <div class="news-container gk-cols" data-cols="2">
+                <div class="news-container site gk-cols" data-cols="2">
                     <div class="news-box">
                         <div class="news-thumb"><img src="http://placehold.it/500x200"></div>
                         <h3 class="news-title">Nota pública da Comissão de Direitos Humanos e Minorias sobre morte de Indígena Guarani e Kaiowá</h3>
@@ -63,7 +63,7 @@ get_header('frontpage'); ?>
                         <a class="btn">Leia mais</a>
                     </div>
                 </div>
-                <div class="more-news"><a href="#"><b>Mais notícias</b>clique aqui</a></div>
+                <div class="more-news site"><a href="#"><b>Mais notícias</b>clique aqui</a></div>
             </div>
 
             <?php if ( $loop_global->have_posts() ) : ?>
