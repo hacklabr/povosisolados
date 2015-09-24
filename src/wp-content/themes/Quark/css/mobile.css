@@ -32,13 +32,13 @@ input[type="reset"] {
 }
 
 /* Top */
-#gk-header-nav {
-  height: 80px;
-}
-
-#gk-header-nav .gk-logo {
+#gk-header .gk-logo img {
   height: 40px;
   top: 0!important;
+}
+
+#gk-header-nav {
+  height: 80px;
 }
 
 #gk-header-nav.static,
@@ -242,6 +242,13 @@ input[type="reset"] {
 .frontpage .gk-desc,
 .page-template-template-one-page .gk-desc {
   padding: 60px 0 70px 0;
+}
+
+/** NEWS **/
+.frontpage-block.box.news .section-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  min-width: 300px;
 }
 
 .transparent-tabs .gk-tabs-nav {
