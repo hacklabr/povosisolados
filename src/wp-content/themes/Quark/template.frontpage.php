@@ -63,6 +63,7 @@ get_header('frontpage'); ?>
                         <a class="btn">Leia mais</a>
                     </div>
                 </div>
+                <div class="more-news"><a href="#"><b>Mais notícias</b>clique aqui</a></div>
             </div>
 
             <?php if ( $loop_global->have_posts() ) : ?>

@@ -3581,7 +3581,36 @@ article.one-page {
 .frontpage-block.box.news .news-excerpt {
   color: rgba(51, 33, 33, 1);
 }
-
+.frontpage-block.box.news .more-news {
+  border-top: 1px solid rgba(159, 32, 50, 0.8);
+  clear: both;
+  color: rgba(159, 32, 50, 1);
+  margin: 200px auto 0;
+  max-width: 1130px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.frontpage-block.box.news .more-news a {
+  background-color: #fff;
+  color: rgba(159, 32, 50, 1);
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin-left: -100px;
+  padding: 0 40px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: -18px;
+  left: 50%;
+}
+.frontpage-block.box.news .more-news a:hover {
+  color: rgba(159, 32, 50, 0.8);
+}
+.frontpage-block.box.news .more-news a b {
+  display: block;
+  font-size: 1.8rem;
+}
 .box.color-bg {
   background: #f079a3;
   color: #fff;
