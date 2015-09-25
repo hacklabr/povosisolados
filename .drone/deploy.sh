@@ -2,4 +2,5 @@
 hostname
 ls -l 
 pwd
-ssh povosisolados.hacklab.com.br hostname
+whoami
+ssh core@povosisolados.hacklab.com.br hostname
