@@ -4,4 +4,4 @@ script:
 deploy:  
   bash:
     script:
-      - ./drone/deploy.sh
+      - ./.drone/deploy.sh
