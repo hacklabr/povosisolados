@@ -1,6 +1,2 @@
 #!/bin/bash
-hostname
-ls -l 
-pwd
-whoami
-ssh core@povosisolados.hacklab.com.br hostname
+rsync -avp src/* core@povosisolados.hacklab.com.br:/srv/www
