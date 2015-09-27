@@ -50,6 +50,19 @@ input[type="reset"] {
   margin: 0;
 }
 
+.frontpage-block.box.news .more-news {
+  margin: 100px auto 20px;
+}
+.frontpage-block.box .links .box-links {
+  border: 0; 
+  text-align: left;
+}
+.frontpage-block.box .links .box-links .img {
+  display: inline;
+  float: right;
+  margin: 0 0 0 10px;
+}
+
 #aside-menu-toggler {
   top: 0;
 }
@@ -320,10 +333,6 @@ input[type="reset"] {
 
 .readon {
 	line-height: 1;
-}
-
-#gk-footer-nav li {
-  padding: 0 10px !important;
 }
 
 #gk-login {

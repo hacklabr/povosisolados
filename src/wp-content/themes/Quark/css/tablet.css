@@ -112,6 +112,14 @@
 .item-info {
   margin-top: 100px;
 }
+.frontpage-block.box .links .box-links {
+  text-align: center;
+}
+.frontpage-block.box .links .box-links .img {
+  display: block;
+  float: none;
+  margin-bottom: 20px;
+}
 .single-page .content-wrapper {
   margin-top: 0;
 }
