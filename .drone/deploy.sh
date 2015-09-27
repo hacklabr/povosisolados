@@ -1,3 +1,3 @@
 #!/bin/bash
 rsync -azp src/* core@povosisolados.hacklab.com.br:/srv/www
-chmod -R -v og+w src/wp-content/uploads
+ssh core@povosisolados.hacklab.com.br chmod -R og+w /srv/www/wp-content/uploads
