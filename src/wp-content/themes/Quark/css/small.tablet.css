@@ -27,6 +27,11 @@ h1,
   padding-top: 10px;
 }
 
+#gk-mobile-menu {
+  margin-top: 46px;
+  padding: 0;
+}
+
 #gk-header-mod h2,
 .one-page .gk-page h2 {
   font-size: 2rem;

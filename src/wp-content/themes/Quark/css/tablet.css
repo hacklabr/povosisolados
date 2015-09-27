@@ -63,7 +63,7 @@
 }
 
 #gk-header-nav.gk-fixed-nav #gk-mobile-menu {
-  margin-top: 75px!important;
+  margin-top: 34px!important;
 }
 
 #aside-menu-toggler {
@@ -201,4 +201,9 @@ article.one-page {
 
 .search-form .search-field {
   width: 400px;
+}
+
+#gk-mobile-menu {
+  margin-top: 32px;
+  padding: 0;
 }

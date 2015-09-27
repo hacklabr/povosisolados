@@ -608,8 +608,8 @@
                     !$(page_nav).hasClass('gk-fixed-nav')
                 ) {
                     $(page_nav).addClass('gk-fixed-nav');
-                    $(page_nav).css('top', '-150px');
-                    current = -150;
+                    $(page_nav).css('top', '0px');
+                    current = 0;
 
                     // Logo switching
                     if(image_logo_exists && dark_logo_img) {
@@ -618,13 +618,7 @@
                 }
             
                 if(new_scroll_value >= prev_scroll_value) {
-                    $(page_nav).css('top', (current - local_diff >= -150 ? current - local_diff : -150) + "px");
-                } else {
-                    if($('body').hasClass('admin-bar')) {
-                         $(page_nav).css('top', (current - local_diff <= -20 ? current - local_diff : -20) + "px");
-                    } else {
-                        $(page_nav).css('top', (current - local_diff <= -45 ? current - local_diff : -45) + "px");
-                    }
+                    $(page_nav).css('top', (current - local_diff >= 0 ? current - local_diff : 0) + "px");
                 }
             } else {
                 if($(page_nav).hasClass('gk-fixed-nav')) {
@@ -1078,17 +1072,17 @@ function gk_quark_classic_menu_init() {
 
                     if (el.children('.sub-menu').length > 0) {
                         var content = $(el.children('.sub-menu').first());
-                        var prevh = content.outerHeight();
+                        //var prevh = content.outerHeight();
                         var prevw = content.outerWidth();
                         var duration = 250;
 
                         var fxStart = {
-                            'height': 0,
+                            //'height': 0,
                             'width': prevw,
                             'opacity': 0
                         };
                         var fxEnd = {
-                            'height': prevh,
+                            //'height': prevh,
                             'width': prevw,
                             'opacity': 1
                         };
