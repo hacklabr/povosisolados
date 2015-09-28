@@ -1641,7 +1641,6 @@ article.one-page {
   position: relative;
   width: auto;
 }
-
 .entry-header:after {
   background: rgba(51,61,67,0.5);
   content: "";
@@ -1666,7 +1665,13 @@ article.one-page {
 }
 
 .entry-title {
-  color: #fff
+  background-color: rgba(51, 33, 33, 1);
+  color: #fff;
+  margin: 0 20px;
+  letter-spacing: 0;
+  padding: 5px 10px;
+  text-align: left;
+  text-transform: initial;
 }
 .entry-title.sticky {
   position: relative;
