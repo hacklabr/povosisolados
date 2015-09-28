@@ -40,9 +40,9 @@ get_header('frontpage'); ?>
 		<div id="frontpage-wrap" role="main">
 
             <div class="frontpage-block box news">
-                <h2 class="section-title">Notícias</h2>
+                <h2 class="section-title" data-sr="enter bottom and move 50px wait .1s">Notícias</h2>
                 <div class="news-container site gk-cols" data-cols="2">
-                    <div class="news-box">
+                    <div class="news-box" data-sr="enter bottom and move 50px wait .2s">
                         <div class="news-thumb"><img src="http://placehold.it/500x200"></div>
                         <h3 class="news-title">Nota pública da Comissão de Direitos Humanos e Minorias sobre morte de Indígena Guarani e Kaiowá</h3>
                         <p class="news-excerpt">"À margem do Estado de Direito, de acordo com relatos
@@ -52,7 +52,7 @@ get_header('frontpage'); ?>
                         garantia de um território ancestral" ...</p>
                         <a class="btn">Leia mais</a>
                     </div>
-                    <div class="news-box">
+                    <div class="news-box" data-sr="enter bottom and move 50px wait .3s">
                         <div class="news-thumb"><img src="http://placehold.it/500x200"></div>
                         <h3 class="news-title">Nota pública da Comissão de Direitos Humanos e Minorias sobre morte de Indígena Guarani e Kaiowá</h3>
                         <p class="news-excerpt">"À margem do Estado de Direito, de acordo com relatos
@@ -63,7 +63,7 @@ get_header('frontpage'); ?>
                         <a class="btn">Leia mais</a>
                     </div>
                 </div>
-                <div class="more-news site"><a href="#"><b>Mais notícias</b>clique aqui</a></div>
+                <div class="more-news site" data-sr="enter bottom and move 50px wait .4s"><a href="#"><b>Mais notícias</b>clique aqui</a></div>
             </div>
 
             <?php if ( $loop_global->have_posts() ) : ?>
