@@ -1661,14 +1661,16 @@ article.one-page {
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 2.4;
-  margin: 0;
+  margin: 0 0 0 20px;
 }
 
 .entry-title {
   background-color: rgba(51, 33, 33, 1);
   color: #fff;
-  margin: 0 20px;
+  font-size: 3.5rem;
   letter-spacing: 0;
+  line-height: 1.5;
+  margin: 0 240px 0 20px;
   padding: 5px 10px;
   text-align: left;
   text-transform: initial;
@@ -1743,7 +1745,7 @@ article.one-page {
 
 .entry-title-wrap {
   position: absolute;
-  text-align: center;
+  text-align: left;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
