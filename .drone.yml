@@ -1,0 +1,7 @@
+image: needcaffeine/git
+script:
+- echo hello world
+deploy:  
+  bash:
+    script:
+      - ./.drone/deploy.sh
