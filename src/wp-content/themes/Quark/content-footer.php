@@ -139,7 +139,7 @@
 					'posts_per_page' => 5,
 					'ignore_sticky_posts' => 1
 				);
-				$my_query = new WP_Query($args);
+				/*$my_query = new WP_Query($args);
 				if( $my_query->have_posts() ) {
 					echo '<div class="entry-related">';
 					echo '<h3>' . __('Related Posts', 'quark') . '</h3>';
@@ -157,7 +157,7 @@
 					echo '</div>';
 				}
 				wp_reset_query();
-				do_action('quark_after_related_posts');
+				do_action('quark_after_related_posts');*/
 			}
 		}
 	?>

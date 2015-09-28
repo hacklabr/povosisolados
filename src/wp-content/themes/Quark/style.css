@@ -689,9 +689,6 @@ label {
   margin: 0 -30px;
 }
 
-.single-page #sidebar {
-  padding-top: 132px;
-}
 .page #sidebar {
   padding-top: 170px;
 }
@@ -1582,18 +1579,18 @@ article.one-page {
   width: 90%;
 }
 .entry-tags a {
-  color: #ccc;
+  color: rgb(169, 55, 71);
   display: inline-block;
   font-weight: 400;
   margin: 0 10px 0 0;
 }
 .entry-tags a:hover {
-  color: #f079a3;
+  color: #000 !important;
 }
 
 .entry-tags a:before {
   content: "#";
-  color: #ccc;
+  color: rgb(169, 55, 71);
 }
 
 
@@ -1657,11 +1654,13 @@ article.one-page {
 }
 .entry-header time,
 .entry-header .gk-subtitle {
+  background-color: rgb(169, 55, 71);
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 2.4;
   margin: 0 0 0 20px;
+  padding: 5px 10px; 
 }
 
 .entry-title {
@@ -1698,40 +1697,29 @@ article.one-page {
 
 .item-info {
   color: #111;
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin: 140px 0 0;
-  text-align: center;
+  font-size: 1.2rem;
+  margin: 60px auto 0;
+  max-width: 1040px;
 }
 .archive-page .item-info {
   margin: 0;
 }
 .item-info li {
   display: inline-block;
-  padding: 0 20px;
+  padding-right: 20px;
   position: relative;
 }
-
+.item-info li a {
+  color: rgb(169, 55, 71);
+}
+.item-info li a:hover {
+  color: #000;
+}
+.item-info li:last-child {
+  padding-right: 0px;
+}
 .item-info li + .quark-date {
   padding-left: 0;
-}
-
-.item-info li + .quark-date:before {
-  display: none;
-}
-
-.item-info li:before {
-  background: #ccc;
-  border-radius: 50%;
-  content: "";
-  height: 4px;
-  left: -4px;
-  position: absolute;
-  top: 9px;
-  width: 4px;
-}
-.item-info li:first-child:before {
-  display: none;
 }
 
 /**
@@ -1740,7 +1728,14 @@ article.one-page {
  */
 .entry-content,
 .entry-summary {
-  margin: 72px auto 10px auto;
+  margin: 30px auto 10px auto;
+}
+
+.entry-content p {
+  color: #000;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0.5em 0 1em;
 }
 
 .entry-title-wrap {
@@ -4434,11 +4429,14 @@ p.numblocks span.highlight {
   line-height: 1.6;
 }
 .widget .widget-title {
-  color: #111;
-  font-size: 3.6rem;
+  background-color: rgb(169, 55, 71);
+  color: #fff;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1;
-  padding: 0 0 20px 0;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  text-transform: uppercase;
 }
 .widget ul,
 .widget ol {
