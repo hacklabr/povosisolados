@@ -92,7 +92,7 @@ global $post;
 			</div>
 
 			<div id="gk-header-mod">
-				<img src="<?php header_image(); ?>" class="parallax-img" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+				<img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 				<div class="frontpage-block-wrap">
 					<?php do_action('quark_before_header'); ?>
 
