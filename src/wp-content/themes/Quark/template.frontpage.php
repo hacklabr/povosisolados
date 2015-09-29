@@ -51,17 +51,19 @@ get_header('frontpage'); ?>
 		<div id="frontpage-wrap" role="main">
 
             <div class="frontpage-block box news">
-                <h2 class="section-title" data-sr="enter bottom and move 50px wait .1s"><?php _e("Notícias","SLUG");?></h2>
+                <h2 class="section-title" data-sr="enter bottom and move 50px wait .1s">
+                <?php _e("Notícias","SLUG");?></h2>
 
-								<div class="news-container site gk-cols" data-cols="2">
-										<?php while ( $loop_news->have_posts()): $loop_news->the_post(); ?>
+				<div class="news-container site gk-cols" data-cols="2">
+					<?php while ( $loop_news->have_posts()): $loop_news->the_post(); ?>
                     <div class="news-box" data-sr="enter bottom and move 50px wait .2s">
                         <div class="news-thumb"><img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), array(500,200), true )[0];  ?>"></div>
-                        <h3 class="news-title"><?php the_title(); ?></h3>
+                        <h3 class="news-title"><a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?></a></h3>
                         <p class="news-excerpt"><?php the_excerpt(); ?></p>
                         <a class="btn" href="<?php the_permalink(); ?>">Leia mais</a>
                     </div>
-				            <?php endwhile; wp_reset_query();?>
+				    <?php endwhile; wp_reset_query();?>
                 </div>
                 <div class="more-news site" data-sr="enter bottom and move 50px wait .4s"><a href="#"><b>Mais notícias</b>clique aqui</a></div>
             </div>
