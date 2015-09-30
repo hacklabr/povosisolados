@@ -1559,6 +1559,10 @@ article.one-page {
   margin: -164px auto 0 auto!important;
 }
 
+.archive .entry-header {
+  height: 300px !important;
+}
+
 .archive .entry-header + .site {
   padding: 100px 0 0 0;
 }
