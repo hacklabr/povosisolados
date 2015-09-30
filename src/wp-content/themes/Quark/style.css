@@ -118,9 +118,8 @@ h6 {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 3.6rem;
   font-weight: bold;
-  letter-spacing: 3px;
   line-height: 60px;
   text-transform: uppercase;
 }
@@ -808,7 +807,7 @@ label {
   color: #fff;
   display: inline-block;
   margin-bottom: 15px;
-  padding: 15px 25px;
+  padding: 10px 20px;
 }
 .one-page .gk-page h1 {
   color: #fff;
@@ -818,10 +817,10 @@ label {
   clear: both;
   color: #fff;
   display: inline-block;
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 15px;
-  padding: 15px 25px;
+  padding: 10px 20px;
   text-transform: uppercase;
 }
 .one-page .gk-page h2 {
@@ -3563,11 +3562,11 @@ article.one-page {
   color: #fff;
   display: inline-block;
   float: left;
-  font-size: 4.8rem;
+  font-size: 3.6rem;
   font-weight: bold;
   line-height: 60px;
   min-width: 500px;
-  padding: 15px 25px;
+  padding: 10px 20px;
   text-align: right;
   text-transform: uppercase;
   position: absolute;
@@ -5647,7 +5646,7 @@ h2 + .gk-subtitle {
 }
 
 .frontpage-block-wrap .btn {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
