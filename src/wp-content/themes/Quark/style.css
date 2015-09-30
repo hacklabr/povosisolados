@@ -1674,6 +1674,9 @@ article.one-page {
   text-align: left;
   text-transform: initial;
 }
+.entry-title a {
+  color: #fff;
+}
 .entry-title.sticky {
   position: relative;
 }
@@ -1731,11 +1734,13 @@ article.one-page {
   margin: 30px auto 10px auto;
 }
 
+.entry-summary p,
 .entry-content p {
   color: #000;
   font-size: 1.4rem;
   line-height: 1.5;
   margin: 0.5em 0 1em;
+  text-align: left;
 }
 
 .entry-title-wrap {
@@ -1753,7 +1758,7 @@ article.one-page {
 
 .entry-thumbnail-wrap {
   display: block;
-  margin: 72px auto 64px auto;
+  margin: 30px auto;
   text-align: center;
 }
 
@@ -1762,7 +1767,9 @@ article.one-page {
   font-family: FontAwesome;
   margin-right: 5px;
 }
-
+.archive-page .entry-thumbnail-wrap {
+  max-width: 600px;
+}
 .archive-page .entry-thumbnail-wrap > img {
   width: 100%;
 }
@@ -4126,7 +4133,6 @@ img.wp-smiley,
 .archive-page .entry-title {
   font-weight: bold;
   margin: 15px 0;
-  text-align: center;
 }
 
 .progress {
