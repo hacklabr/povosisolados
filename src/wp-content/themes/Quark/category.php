@@ -53,10 +53,12 @@ get_header(); ?>
                         <?php do_action('quark_after_content_top'); ?>
                         <?php endif; ?>
 
+                        <div class="site gk-cols" data-cols="2">
                         <?php while ( have_posts() ) : the_post(); ?>
-                            <?php get_template_part( 'content', get_post_format() ); ?>
+                            <div><?php get_template_part( 'content', get_post_format() ); ?></div>
                         <?php endwhile; ?>
-
+                        </div>
+                        
                         <?php quark_paging_nav(); ?>
 
                         <?php if (is_active_sidebar('content_bottom')) : ?>
