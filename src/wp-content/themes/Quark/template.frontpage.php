@@ -65,7 +65,8 @@ get_header('frontpage'); ?>
                     </div>
 				    <?php endwhile; wp_reset_query();?>
                 </div>
-                <div class="more-news site" data-sr="enter bottom and move 50px wait .4s"><a href="#"><b>Mais notícias</b>clique aqui</a></div>
+                <div class="more-news site" data-sr="enter bottom and move 50px wait .4s">
+                <a href="<?php echo site_url(); ?>/category/noticias/"><b>Mais notícias</b>clique aqui</a></div>
             </div>
 
             <?php if ( $loop_global->have_posts() ) : ?>
