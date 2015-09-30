@@ -19,9 +19,6 @@
             <?php endif; ?>
             <h1 data-sr="enter bottom and move 50px" class="entry-title">
                 <?php the_title(); ?>
-                <?php if(is_sticky()) : ?>
-                    <sup><i class="gkicon-star"></i></sup>
-                <?php endif; ?>
             </h1>
 
             <?php
@@ -58,10 +55,6 @@
             <a href="<?php the_permalink(); ?>" rel="bookmark" class="inverse">
                 <?php the_title(); ?>
             </a>
-
-            <?php if(is_sticky()) : ?>
-                <sup><i class="gkicon-star"></i></sup>
-            <?php endif; ?>
         </h2>
 
         <ul class="item-info">
