@@ -1,6 +1,6 @@
 <?php
 /**
- * The Header template for our theme
+ * The Header template for Boletim page
  *
  */
 
@@ -27,7 +27,7 @@ global $post;
 </head>
 
 <?php 
-	$front_class = 'frontpage';
+	$front_class = 'boletim';
 	if (get_theme_mod('quark_dark_image_frontpage', 0) == 1) { 
 		$front_class .= ' dark-bg'; 
 	} 
