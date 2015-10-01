@@ -3590,6 +3590,12 @@ article.one-page {
   font-weight: bold;
   margin: 15px 0;
 }
+.frontpage-block.box.news .news-thumb {
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
 .frontpage-block.box.news .news-excerpt {
   color: rgba(51, 33, 33, 1);
 }
