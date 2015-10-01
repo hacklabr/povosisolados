@@ -55,36 +55,10 @@ global $post;
         <header id="gk-header" role="banner">
 			<div id="gk-header-nav" <?php if((get_theme_mod('quark_menu_fixed', 1) == 1 && get_theme_mod('quark_menu_classic', 0) == 1)) { echo 'class="gk-fixed"'; } ?>>
 				<div>
-					<?php if(get_theme_mod('quark_logo', '') == '') : ?>
-						<a class="gk-logo text" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							<span><?php bloginfo( 'name' ); ?>
-								<?php if(get_theme_mod('quark_slogan_switch', 0) == 1) : ?>
-									<small class="gk-logo-slogan"><?php bloginfo( 'description' ); ?></small>
-								<?php endif; ?>
-							</span>
-						</a>
-					<?php else : ?>
-						<a class="gk-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							<img src="<?php echo $logo_image; ?>"
-							<?php if($dark_logo_image != '') : ?>data-dark="<?php echo $dark_logo_image; ?>"<?php endif; ?> 
-        					<?php if($dark_logo_image != '') : ?>data-light="<?php echo $logo_image; ?>"<?php endif; ?>
-        	 				alt="<?php bloginfo( 'name' ); ?>" />
-
-						</a>
-					<?php endif; ?>
-
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php _e( 'Skip to content', 'quark' ); ?></a>
-					
-					<?php if(get_theme_mod('quark_menu_classic', 0) == 1) : ?>
-						<?php do_action('steakhouse_before_mainmenu'); ?>
-	                    <nav class="main-navigation" role="navigation">
-	                        <?php wp_nav_menu( array( 'theme_location' => 'mainmenu', 'menu_class' => 'nav-menu', 'fallback_cb' => false ) ); ?>
-	                    </nav><!-- #site-navigation -->
-	                    <?php do_action('steakhouse_after_mainmenu'); ?>
-					<?php endif; ?>
  
-	                <div id="gk-mobile-menu" class="site">
-                     	<span id="gk-mobile-menu-text"><?php _e('Menu','quark'); ?></span>
+	                <div id="gk-mobile-menu">
+                     	<span id="gk-mobile-menu-text"><?php _e('Boletins','quark'); ?></span>
                     	<i id="static-aside-menu-toggler"></i>
 	                </div>
                  	

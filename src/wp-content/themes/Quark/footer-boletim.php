@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the footer
+ * The template for displaying the footer from Boletim Page
  *
  */
 
@@ -20,7 +20,6 @@
     	<?php do_action('quark_after_footer'); ?>
     </div><!-- #gk-bg -->
     
-    <?php if(get_theme_mod('quark_menu_classic', 0) == 0) : ?>
 	<?php do_action('quark_before_asidemenu'); ?>
 	<i id="close-menu">&times;</i>
 	<aside id="aside-menu">
@@ -52,7 +51,6 @@
         </div>
     </aside><!-- #aside-menu -->
 	<?php do_action('quark_after_asidemenu'); ?>
-    <?php endif; ?>
 
     <?php if(get_theme_mod('quark_login_popup', 1) == 1) : ?>
     <div id="gk-login-popup">

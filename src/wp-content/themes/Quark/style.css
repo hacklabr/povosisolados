@@ -1368,7 +1368,7 @@ label {
   background: #26292b;
 }
 #aside-menu {
-  background: #26292b;
+  background-color: rgba(51, 33, 33, 1) !important;
   display: none;
   float: right;
   height: 100%;
@@ -4439,6 +4439,22 @@ p.numblocks span.highlight {
  * 3.16 Boletim Page
  * ----------------------------------------------------------------------------
  */
+.boletim #gk-header-nav.gk-fixed > div {
+  max-width: initial;
+}
+.boletim #gk-mobile-menu {
+  background-color: rgba(159, 32, 50, 1);
+  color: #fff;
+  height: 55px;
+  padding: 20px;
+}
+.boletim #gk-mobile-menu i, .boletim #gk-mobile-menu i:before, .boletim #gk-mobile-menu i:after {
+  background: rgba(255,255,255,0.2);
+}
+.boletim #gk-mobile-menu-text {
+  font-size: 2rem;
+  padding-right: 5px;
+}
 .boletim .site {
   max-width: 1680px;
 }
