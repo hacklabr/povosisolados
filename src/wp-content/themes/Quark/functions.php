@@ -543,7 +543,7 @@ if (!function_exists( 'quark_post_thumbnail_caption' )) :
  * Function to generate the featured image caption
  *
  * @param raw - if you need to get raw text without HTML tags
- * 
+ *
  * @return HTML output or raw text (depending from params)
  *
  **/
@@ -602,7 +602,7 @@ function quark_register_required_plugins() {
               'required'           => true,
               'version'            => ''
           ),
-          
+
           array(
               'name'               => 'GK Taxonomy Images',
               'slug'               => 'gk-taxonomy-images',
@@ -656,5 +656,50 @@ function quark_register_required_plugins() {
 
 add_action('tgmpa_register', 'quark_register_required_plugins');
 endif;
+
+// Register Custom Post Type
+function boletim_post_type() {
+
+	$labels = array(
+		'name'                => _x( 'Boletins', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Boletim', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Boletins', 'text_domain' ),
+		'name_admin_bar'      => __( 'Boletins', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
+		'all_items'           => __( 'Todos Boletins', 'text_domain' ),
+		'add_new_item'        => __( 'Novo Boletim', 'text_domain' ),
+		'add_new'             => __( 'Novo Boletim', 'text_domain' ),
+		'new_item'            => __( 'Novo Boletim', 'text_domain' ),
+		'edit_item'           => __( 'Editar Boletim', 'text_domain' ),
+		'update_item'         => __( 'Atualizar Boletim', 'text_domain' ),
+		'view_item'           => __( 'Ver Boletim', 'text_domain' ),
+		'search_items'        => __( 'Procurar Boletim', 'text_domain' ),
+		'not_found'           => __( 'Não encontrado', 'text_domain' ),
+		'not_found_in_trash'  => __( 'Não encontrado na lixeira', 'text_domain' ),
+	);
+	$args = array(
+		'label'               => __( 'Boletim', 'text_domain' ),
+		'description'         => __( 'Post Type dos Boletins', 'text_domain' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail' ),
+		'taxonomies'          => array( 'category', 'post_tag' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 5,
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+	);
+	register_post_type( 'boletim', $args );
+
+}
+add_action( 'init', 'boletim_post_type', 0 );
+
 
 // EOF

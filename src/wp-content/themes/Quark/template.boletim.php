@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Frontpage
+Template Name: Boletim
 */
 
 //create arguments for custom main loop
@@ -26,7 +26,6 @@ $tab_interval = get_theme_mod('quark_tab_interval','5000');
 $args_global = array(
 	'post_type' => 'post',
 	'order' => 'DESC',
-	'post__in' => get_option( 'sticky_posts' ),
 	'category_name' => 'noticias',
 	'orderby' => 'menu_order',
 	'posts_per_page' => 2
@@ -34,7 +33,7 @@ $args_global = array(
 $loop_news = new WP_Query( $args_global );
 //var_dump($loop_news);
 
-get_header('frontpage'); ?>
+get_header('boletim'); ?>
 
 	<?php do_action('quark_before_content'); ?>
 		<div id="frontpage-wrap" role="main">
@@ -44,7 +43,7 @@ get_header('frontpage'); ?>
                 <?php _e("Notícias","SLUG");?></h2>
 
 				<div class="boletim-container site gk-cols" data-cols="3">
-					<?php while ( $loop_boletim->have_posts()): $loop_boletim->the_post(); ?>
+					<?php while ( $loop_news->have_posts()): $loop_news->the_post(); ?>
                     <div class="boletim-box" data-sr="enter bottom and move 50px wait .2s">
                         <?php
                         $thumb_id = get_post_thumbnail_id();
@@ -78,7 +77,7 @@ get_header('frontpage'); ?>
 
                     $children = get_children($args); ?>
 
-                    <?php elseif(!empty($children) && $page_function == 'tabs') : ?>
+                    <?php if(!empty($children) && $page_function == 'tabs'): ?>
                     <?php
 
                         $args_tabs = array(
@@ -188,4 +187,4 @@ get_header('frontpage'); ?>
             <?php endif; ?>
         </div><!-- frontpage-wrap -->
 	<?php do_action('quark_after_content'); ?>
-<?php get_footer('frontpage'); ?>
+<?php get_footer('boletim'); ?>
