@@ -28,7 +28,7 @@ $args_global = array(
 	'order' => 'DESC',
 	'category_name' => 'noticias',
 	'orderby' => 'menu_order',
-	'posts_per_page' => 2
+	'posts_per_page' => 6
 );
 $loop_news = new WP_Query( $args_global );
 //var_dump($loop_news);
