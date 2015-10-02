@@ -34,6 +34,10 @@
             <?php do_action('quark_after_menu_top'); ?>
             <?php endif; ?>
 
+            <?php get_search_form(); ?>
+
+            <h2 class="aside-title">Nesta edição</h2>
+
             <nav id="aside-navigation" class="main-navigation" role="navigation">
                 <?php wp_nav_menu( array( 'theme_location' => 'mainmenu', 'menu_class' => 'nav-aside-menu', 'fallback_cb' => false ) ); ?>
             </nav><!-- #aside-navigation -->
