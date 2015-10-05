@@ -45,23 +45,6 @@
   .gk-logo.text {
     left: 10px;
   }
-  #gk-mobile-menu {
-    position: fixed;
-    right: 10px;
-    top: 0 !important;
-    -webkit-transition: right .3s ease-out;
-    -moz-transition: right .3s ease-out;
-    -ms-transition: right .3s ease-out;
-    -o-transition: right .3s ease-out;
-    transition: right .3s ease-out;
-    z-index: 2;
-  }
-  .admin-bar #gk-mobile-menu {
-    top: 30px!important;
-  }
-  .menu-open #gk-mobile-menu {
-    right: 290px;
-  }
   .gk-is-wrapper-gk_quark .gk-is-quark-pagination {
     right: -150px;
   }
@@ -120,10 +103,6 @@
   }
 }
 @media (max-width: 1160px) {
-  #gk-mobile-menu {
-    margin-top: 46px !important;
-    padding: 0;
-  }
   #aside-navigation > div > ul {
     padding-top: 14px;
   }

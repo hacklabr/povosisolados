@@ -62,10 +62,6 @@
   position: absolute;
 }
 
-#gk-header-nav.gk-fixed-nav #gk-mobile-menu {
-  margin-top: 34px!important;
-}
-
 #aside-menu-toggler {
   display: block;
 }
