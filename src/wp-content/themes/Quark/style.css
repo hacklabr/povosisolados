@@ -4463,6 +4463,10 @@ p.numblocks span.highlight {
  * 3.16 Boletim Page
  * ----------------------------------------------------------------------------
  */
+
+.boletim #gk-header-nav {
+  background-color: none;
+}
 .boletim #gk-header-nav.gk-fixed > div {
   max-width: initial;
 }
