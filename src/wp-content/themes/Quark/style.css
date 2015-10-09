@@ -4441,6 +4441,7 @@ p.numblocks span.highlight {
   border: 1px solid #e5e5e5;
   border-right: none;
   border-top: none;
+
   font-size: 13px;
   font-weight: 400;
   float: left;
@@ -4476,6 +4477,10 @@ p.numblocks span.highlight {
  * 3.16 Boletim Page
  * ----------------------------------------------------------------------------
  */
+
+.boletim #gk-bg {
+  background-color: #DDC89A;
+ }
 
 .boletim .gk-cols > div {
   padding: 0 10px;
