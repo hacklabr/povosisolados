@@ -4493,7 +4493,6 @@ p.numblocks span.highlight {
   color: #fff;
   height: 55px;
   padding: 20px;
-  top: 20px !important;
 }
 .boletim #gk-mobile-menu i, .boletim #gk-mobile-menu i:before, .boletim #gk-mobile-menu i:after {
   background: rgba(255,255,255,0.2);
@@ -4502,7 +4501,7 @@ p.numblocks span.highlight {
   font-size: 1.6rem;
   padding-right: 5px;
 }
-.boletim .gk-fixed.inactive #gk-mobile-menu {
+.boletim #gk-header-nav.inactive #gk-mobile-menu-text {
   padding-right: 0px;
 }
 .boletim .site {
