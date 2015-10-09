@@ -4478,7 +4478,7 @@ p.numblocks span.highlight {
  */
 
 .boletim #gk-header-nav {
-  background-color: none;
+  background-color: transparent;
 }
 .boletim #gk-header-nav.gk-fixed > div {
   max-width: initial;
