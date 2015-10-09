@@ -456,11 +456,6 @@ input[type="reset"] {
   #gk-bg.menu-open {
     margin-left: -280px;
   }
-  #gk-bg.menu-open #gk-mobile-menu #gk-mobile-menu-text {
-    margin-right: 0 !important; 
-    padding-right: 0 !important;
-    width: 0 !important;
-  }
   #aside-navigation, #aside-menu.menu-open {
     max-width: 280px;
   }

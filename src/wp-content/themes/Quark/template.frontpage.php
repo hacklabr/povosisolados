@@ -64,7 +64,7 @@ get_header('frontpage'); ?>
                         <div class="news-thumb" style="background-image:url('<?php echo $thumb_url[0]; ?>');" ></div>
                         <h3 class="news-title"><a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?></a></h3>
-                        <p class="news-excerpt"><?php the_excerpt(); ?></p>
+                        <div class="news-excerpt"><?php the_excerpt(); ?></div>
                         <a class="btn" href="<?php the_permalink(); ?>">Leia mais</a>
                     </div>
 				    <?php endwhile; wp_reset_query();?>

@@ -532,12 +532,12 @@ input[type="reset"],
   color: #fff !important;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   height: auto;
   line-height: 25px;
   margin: 0 5px 2px 2px;
-  padding: 10px 20px;
+  padding: 6px 16px;
   text-align: center;
   text-transform: uppercase;
   -webkit-transition: all .3s ease-out;
@@ -986,10 +986,10 @@ label {
 .nav-menu > li > a,
 .nav-menu > ul > li > a {
   color: #000;
-  font-size: 20px;
+  font-size: 1.7rem;
   font-weight: bold;
   display: block;
-  padding: 12px 15px;
+  padding: 18px 15px;
   position: relative;
 }
 
@@ -1031,9 +1031,9 @@ label {
 .nav-menu > li .sub-menu li,
 .nav-menu ul > li .children li {
   color: #26292b;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1;
   margin: 0;
   padding: 0;
   text-align: right;
@@ -1048,7 +1048,7 @@ label {
 .nav-menu ul > li .children li a  {
   color: #e1c5c0 !important;
   display: block;
-  line-height: 20px;
+  line-height: 1;
   padding: 10px;
   text-transform: lowercase;
 }
@@ -1438,7 +1438,7 @@ label {
   float: none;
 }
 #aside-menu .search-form .search-field {
-  height: 44px !important;
+  height: 37px !important;
   line-height: 1;
   vertical-align: top;
   width: 200px;
@@ -1456,6 +1456,12 @@ label {
 #aside-navigation,
 #aside-menu.menu-open {
   width: 400px;
+}
+
+#gk-bg.menu-open #gk-mobile-menu #gk-mobile-menu-text {
+  margin-right: 0 !important; 
+  padding-right: 0 !important;
+  width: 0 !important;
 }
 
 .admin-bar #aside-menu.menu-open {
@@ -1611,7 +1617,8 @@ article.one-page {
 .entry-tags a {
   color: rgb(169, 55, 71);
   display: inline-block;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: normal;
   margin: 0 10px 0 0;
 }
 .entry-tags a:hover {
@@ -1686,8 +1693,8 @@ article.one-page {
 .entry-header .gk-subtitle {
   background-color: rgb(169, 55, 71);
   color: #fff;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: normal;
   line-height: 2.4;
   margin: 0 0 0 20px;
   padding: 5px 10px; 
@@ -1696,9 +1703,9 @@ article.one-page {
 .entry-title {
   background-color: rgba(51, 33, 33, 1);
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 3rem;
   letter-spacing: 0;
-  line-height: 1.5;
+  line-height: 1.7;
   margin: 0 240px 0 20px;
   padding: 5px 10px;
   text-align: left;
@@ -1767,7 +1774,7 @@ article.one-page {
 .entry-summary p,
 .entry-content p {
   color: #000;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   margin: 0.5em 0 1em;
   text-align: left;
@@ -3613,7 +3620,7 @@ article.one-page {
 }
 .frontpage-block.box.news .news-title {
   color: rgba(159, 32, 50, 1);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin: 15px 0;
 }
@@ -3625,6 +3632,9 @@ article.one-page {
 }
 .frontpage-block.box.news .news-excerpt {
   color: rgba(51, 33, 33, 1);
+}
+.frontpage-block.box.news .news-excerpt p {
+  font-size: 1.4rem;
 }
 .frontpage-block.box.news .more-news {
   border-top: 1px solid rgba(159, 32, 50, 0.8);
@@ -3638,9 +3648,9 @@ article.one-page {
   background-color: #fff;
   color: rgba(159, 32, 50, 1);
   display: block;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  margin-left: -100px;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  margin-left: -90px;
   padding: 0 40px;
   position: absolute;
   text-align: center;
@@ -3653,14 +3663,14 @@ article.one-page {
 }
 .frontpage-block.box.news .more-news a b {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 /** LINKS FRONTPAGE SECTION **/
 .frontpage-block.box .links {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: uppercase;
 } 
 .frontpage-block.box .links .box-links {
@@ -3675,7 +3685,7 @@ article.one-page {
 .frontpage-block.box .links .box-links a {
   color: #000;
   display: block;
-  padding: 30px;
+  padding: 40px 50px;
 }
 .frontpage-block.box .links .box-links .img {
   float: right;
@@ -4483,7 +4493,7 @@ p.numblocks span.highlight {
   background: rgba(255,255,255,0.2);
 }
 .boletim #gk-mobile-menu-text {
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding-right: 5px;
 }
 .boletim .site {
@@ -4517,7 +4527,7 @@ p.numblocks span.highlight {
 .frontpage-block.box.boletim .boletim-title {
   background-color: rgba(51, 33, 33, 0.8);
   color: rgba(255,255,255,1);
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin: 0;
   padding: 10px 15px;
@@ -4532,6 +4542,7 @@ p.numblocks span.highlight {
  * ----------------------------------------------------------------------------
  */
 .widget {
+  font-size: 1.5rem;
   line-height: 1.6;
   margin: 0 0 30px 0;
   word-wrap: break-word;
@@ -4542,7 +4553,7 @@ p.numblocks span.highlight {
 .widget .widget-title {
   background-color: rgb(169, 55, 71);
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 20px;
