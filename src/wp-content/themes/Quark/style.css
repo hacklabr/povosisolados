@@ -3668,34 +3668,38 @@ article.one-page {
 
 /** LINKS FRONTPAGE SECTION **/
 .frontpage-block.box .links {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.1;
   text-transform: uppercase;
 } 
 .frontpage-block.box .links .box-links {
   border-right: 1px solid #eee;
+  display: table;
   margin-bottom: 90px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding: 30px 60px;
 } 
 .frontpage-block.box .links .box-links:last-child {
   border-right: 0px;
 } 
 .frontpage-block.box .links .box-links a {
   color: #000;
-  display: block;
-  padding: 40px 50px;
+  display: table-row;
 }
+.frontpage-block.box .links .box-links .txt,
 .frontpage-block.box .links .box-links .img {
+  display: table-cell;
+  vertical-align: middle;  
+} 
+.frontpage-block.box .links .box-links .txt {
+  width: 60%;
+}
+.frontpage-block.box .links .box-links .img img {
   float: right;
 }
 .frontpage-block.box .links .box-links a:hover {
   color: rgba(159, 32, 50, 1);
 }
-.frontpage-block.box .links .box-links img {
-  margin-top: -10px;
-} 
 .frontpage-block.box .links .box-img a {
   display: block;
 } 
