@@ -64,16 +64,26 @@ global $post;
 
                  </div>
 			</div>
-
-			<div id="gk-header-mod">
-				<?php the_post_thumbnail('full'); ?>
+			<?php
+						//the_post_thumbnail('full');
+						$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+			?>
+			<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');background-repeat: no-repeat;background-size: 100%;">
 				<div class="frontpage-block-wrap">
 					<?php do_action('quark_before_header'); ?>
 
 					<?php if ( have_posts() ) : ?>
 					<div class="gk-header-mod-wrap">
-                        <?php while ( have_posts() ) : the_post(); ?>
-							<?php the_content(); ?>
+
+								        <?php while ( have_posts() ) : the_post(); ?>
+						<h3>	
+							<?php
+								the_title();
+							?>
+						</h3>
+							<?php
+								the_content();
+							?>
 						<?php endwhile; ?>
 
 						<?php wp_reset_query(); ?>
