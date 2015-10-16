@@ -23,10 +23,14 @@ if(get_theme_mod('quark_tab_autoanim', 0) == 1) {
 }
 $tab_interval = get_theme_mod('quark_tab_interval','5000');
 
+the_post();
+$category = get_post_meta($post->ID, 'boletim' );
+
 $args_global = array(
 	'post_type' => 'post',
 	'order' => 'DESC',
-	'category_name' => 'noticias',
+	'post__in' => get_option('sticky_posts'),
+	'category_name' => $category[0],
 	'orderby' => 'menu_order',
 	'posts_per_page' => 6
 );
