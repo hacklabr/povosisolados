@@ -23,7 +23,7 @@ if(get_theme_mod('quark_tab_autoanim', 0) == 1) {
 }
 $tab_interval = get_theme_mod('quark_tab_interval','5000');
 
-the_post();
+//the_post();
 $category = get_post_meta($post->ID, 'boletim' );
 
 $args_global = array(
