@@ -98,9 +98,9 @@ if (isset($theme_options['theme_posts'])) {
       </tr>
       <tr>
         <td align="center" bgcolor="#9F2032" colspan="3" style="padding: 10px;" valign="top">
-          <a href="#" style="color: #fff;"><img src="<?php echo $theme_url ?>/facebook.png" height="25"></a>
-          <a href="#" style="color: #fff; margin: 0 10px 0 5px"><img src="<?php echo $theme_url ?>/twitter.png"></a>
-          <a href="#" style="color: #fff;"><img src="<?php echo $theme_url ?>/youtube.png"></a>
+          <a href="#" style="color: #fff;"><img src="<?php echo $theme_url ?>/images/facebook.png" height="25"></a>
+          <a href="#" style="color: #fff; margin: 0 10px 0 5px"><img src="<?php echo $theme_url ?>/images/twitter.png"></a>
+          <a href="#" style="color: #fff;"><img src="<?php echo $theme_url ?>/images/youtube.png"></a>
         </td>
       </tr>
       <tr bgcolor="#CCAE6D">
