@@ -2385,11 +2385,11 @@ article.one-page {
 }
 
 .error404 #primary {
-  background-size: cover;
+  background-color: rgba(159, 32, 50, 1);
 }
 
 .error404 #content {
-  padding: 247px 0 50px;
+  padding: 130px 0 50px;
   text-align: center;
 }
 
@@ -2402,7 +2402,8 @@ article.one-page {
 }
 
 .error404 .content-wrapper {
-  color: #fff;
+  float: none;
+  width: 100%;
 }
 
 .error404 .content-wrapper h1 {
@@ -2436,6 +2437,14 @@ article.one-page {
   border: none;
   float: none;
   display: inline-block;
+}
+.error404 .search-goog input[type="text"] {
+  margin-right: 20px;
+}
+.error404 .search-goog input[type="submit"] {
+  background-color: rgba(74, 25, 27, 0.9);
+  color: #fff !important;
+  height: 50px;
 }
 .error404 .error-links {
   bottom: -170px;

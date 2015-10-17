@@ -11,7 +11,7 @@ if(get_theme_mod('quark_error_bg', '') !== '') {
 }
 get_header(); ?>
 
-	<div id="primary" class="content-area" style="background-image: url('<?php echo $error_bg; ?>');">
+	<div id="primary" class="content-area">
 		<div id="content" class="site site-content" role="main">
 			<?php do_action('quark_before_content'); ?>
 			<article id="post" <?php post_class(); ?>>
