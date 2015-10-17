@@ -74,6 +74,7 @@ if (isset($theme_options['theme_posts'])) {
       </tr>
       <tr>
         <!-- posts section -->
+        <?php if (!empty($posts)) { ?>
         <td bgcolor="#CCAE6D" colspan="3">
             <table>
                 <tr>
@@ -91,6 +92,7 @@ if (isset($theme_options['theme_posts'])) {
                 </tr>
             <</table>            
         </td>
+        <?php } ?>
       </tr>
       <tr>
         <!-- blank space -->
