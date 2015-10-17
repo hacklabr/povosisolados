@@ -651,7 +651,7 @@ label {
 }
 
 #gk-bg.menu-open {
-  margin-left: -400px;
+  margin-left: -350px;
 }
 
 #gk-bg.menu-visible {
@@ -1441,7 +1441,7 @@ label {
   height: 37px !important;
   line-height: 1;
   vertical-align: top;
-  width: 200px;
+  width: 190px;
 }
 
 #aside-menu .aside-title {
@@ -1455,7 +1455,7 @@ label {
 
 #aside-navigation,
 #aside-menu.menu-open {
-  width: 400px;
+  width: 350px;
 }
 
 #gk-bg.menu-open #gk-mobile-menu #gk-mobile-menu-text {
@@ -4508,11 +4508,17 @@ p.numblocks span.highlight {
 .boletim #gk-header-nav.gk-fixed > div {
   max-width: initial;
 }
+.boletim #aside-menu #searchform {
+  margin: 30px 0;
+}
 .boletim #gk-mobile-menu {
   background-color: rgba(159, 32, 50, 1);
   color: #fff;
   height: 55px;
   padding: 20px;
+}
+.boletim #aside-menu li {
+  font-size: 1.4rem;
 }
 .boletim #gk-mobile-menu i, .boletim #gk-mobile-menu i:before, .boletim #gk-mobile-menu i:after {
   background: rgba(255,255,255,0.2);
