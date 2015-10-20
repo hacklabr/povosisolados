@@ -4506,14 +4506,20 @@ p.numblocks span.highlight {
 }
 
 .boletim .frontpage-block-wrap {
-  margin-top: 10%!important;
+  margin-top: 14%!important;
   margin-left: 10%!important;
 }
 
 .boletim #gk-header-nav {
-  background-color: transparent;
-  box-shadow: none;
+  height: 55px;
 }
+
+.boletim #gk-header-nav h1 {
+  float: left;
+  line-height: 1;
+  margin: 5px 0 0 10px;
+}
+
 .boletim #gk-header-nav.gk-fixed > div {
   max-width: initial;
 }
@@ -4524,6 +4530,7 @@ p.numblocks span.highlight {
   background-color: rgba(159, 32, 50, 1);
   color: #fff;
   height: 55px;
+  margin: 0 !important;
   padding: 20px;
 }
 .boletim #aside-menu li {

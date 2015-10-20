@@ -28,16 +28,6 @@ global $post;
 
 <?php
 	$front_class = 'boletim';
-	if (get_theme_mod('quark_dark_image_frontpage', 0) == 1) {
-		$front_class .= ' dark-bg';
-	}
-
-	if (get_theme_mod('quark_js_parallax', 1) == 1) {
-		$front_class .= ' js-parallax';
-	}
-
-	$logo_image = get_theme_mod('quark_logo', '');
-	$dark_logo_image = get_theme_mod('quark_logo_dark', '');
 ?>
 
 <body <?php body_class($front_class); ?> data-mobile-width="<?php echo get_theme_mod('quark_mobile_width', 640); ?>" data-tablet-width="<?php echo get_theme_mod('quark_tablet_width', 1040); ?>">
@@ -54,6 +44,9 @@ global $post;
 
         <header id="gk-header" role="banner">
 			<div id="gk-header-nav" <?php if((get_theme_mod('quark_menu_fixed', 1) == 1 && get_theme_mod('quark_menu_classic', 0) == 1)) { echo 'class="gk-fixed"'; } ?>>
+
+				<h1><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/marca-boletim.png" alt="Boletim Povoso Isolados da Amazônia"></h1>
+				
 				<div>
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php _e( 'Skip to content', 'quark' ); ?></a>
 
