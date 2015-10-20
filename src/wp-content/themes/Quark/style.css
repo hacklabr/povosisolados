@@ -4500,7 +4500,7 @@ p.numblocks span.highlight {
 }
 
 .boletim #gk-header-mod {
-  background-color: #fff;
+  background-color: #ccc;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4510,18 +4510,22 @@ p.numblocks span.highlight {
 }
 
 .boletim .frontpage-block-wrap {
-  margin-top: 14%!important;
+  margin-top: 275px!important;
   margin-left: 10%!important;
 }
 
 .boletim #gk-header-nav {
+  background-color: transparent;
+  border-bottom: 1px solid #fff; 
   height: 55px;
 }
 
 .boletim #gk-header-nav h1 {
   float: left;
   line-height: 1;
-  margin: 5px 0 0 10px;
+  top: 5px;
+  left: 10px;
+  position: absolute;
 }
 
 .boletim #gk-header-nav.gk-fixed > div {

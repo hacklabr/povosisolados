@@ -452,6 +452,15 @@ input[type="reset"] {
   margin: 5px 0;
 }
 
+.boletim #gk-header-mod {
+  top: -55px;
+}
+
+.boletim .frontpage-block-wrap {
+  margin-top: 100px!important;
+  margin-left: 10%!important;
+}
+
 @media screen and (max-width: 640px) {
   #gk-bg.menu-open {
     margin-left: -280px;
