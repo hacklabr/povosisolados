@@ -61,7 +61,7 @@ global $post;
 						//the_post_thumbnail('full');
 						$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			?>
-			<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');>
+			<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');">
 				<div class="frontpage-block-wrap">
 					<?php do_action('quark_before_header'); ?>
 
