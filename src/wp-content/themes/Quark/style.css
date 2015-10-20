@@ -4501,6 +4501,8 @@ p.numblocks span.highlight {
 
 .boletim #gk-header-mod {
   background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-bottom: none;
   max-height: 500px !important; 
 }

@@ -46,7 +46,7 @@ global $post;
 			<div id="gk-header-nav" <?php if((get_theme_mod('quark_menu_fixed', 1) == 1 && get_theme_mod('quark_menu_classic', 0) == 1)) { echo 'class="gk-fixed"'; } ?>>
 
 				<h1><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/marca-boletim.png" alt="Boletim Povoso Isolados da Amazônia"></h1>
-				
+
 				<div>
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php _e( 'Skip to content', 'quark' ); ?></a>
 
@@ -61,7 +61,7 @@ global $post;
 						//the_post_thumbnail('full');
 						$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			?>
-			<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');background-repeat: no-repeat;background-size: 100%;">
+			<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');>
 				<div class="frontpage-block-wrap">
 					<?php do_action('quark_before_header'); ?>
 
