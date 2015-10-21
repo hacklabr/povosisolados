@@ -41,11 +41,11 @@
 
             <?php
             the_post();
-            $category = get_post_meta($post->ID, 'boletim' );
+            $category = $post->post_name;
             $args_global = array(
               'post_type' => 'post',
               'order' => 'DESC',
-              'category_name' => $category[0],
+              'category_name' => $category,
               'posts_per_page' => -1
             );
             $loop_news = new WP_Query( $args_global ); ?>

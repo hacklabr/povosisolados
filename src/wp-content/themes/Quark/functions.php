@@ -658,4 +658,114 @@ function quark_register_required_plugins() {
 add_action('tgmpa_register', 'quark_register_required_plugins');
 endif;
 
+// Register Custom Taxonomy
+/*function custom_taxonomy() {
+
+	$labels = array(
+		'name'                       => _x( 'Boletins', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Boletim', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Boletim', 'text_domain' ),
+		'all_items'                  => __( 'All Items', 'text_domain' ),
+		'parent_item'                => __( 'Parent Item', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
+		'new_item_name'              => __( 'New Item Name', 'text_domain' ),
+		'add_new_item'               => __( 'Add New Item', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Item', 'text_domain' ),
+		'update_item'                => __( 'Update Item', 'text_domain' ),
+		'view_item'                  => __( 'View Item', 'text_domain' ),
+		'separate_items_with_commas' => __( 'Separate items with commas', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Add or remove items', 'text_domain' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
+		'popular_items'              => __( 'Popular Items', 'text_domain' ),
+		'search_items'               => __( 'Search Items', 'text_domain' ),
+		'not_found'                  => __( 'Not Found', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'taxonomia_boletim', array( 'post' ), $args );
+
+}
+add_action( 'init', 'custom_taxonomy', 0 );
+
+// Register Custom Post Type
+function custom_post_type() {
+
+	$labels = array(
+		'name'                => _x( 'Boletins', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Boletim', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Boletim', 'text_domain' ),
+		'name_admin_bar'      => __( 'Boletim', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
+		'all_items'           => __( 'All Items', 'text_domain' ),
+		'add_new_item'        => __( 'Add New Item', 'text_domain' ),
+		'add_new'             => __( 'Add New', 'text_domain' ),
+		'new_item'            => __( 'New Item', 'text_domain' ),
+		'edit_item'           => __( 'Edit Item', 'text_domain' ),
+		'update_item'         => __( 'Update Item', 'text_domain' ),
+		'view_item'           => __( 'View Item', 'text_domain' ),
+		'search_items'        => __( 'Search Item', 'text_domain' ),
+		'not_found'           => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+	);
+	$args = array(
+		'label'               => __( 'Boletim', 'text_domain' ),
+		'description'         => __( 'Boletim', 'text_domain' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'excerpt', 'author', 'thumbnail', ),
+		'taxonomies'          => array('post_tag', ),
+		'hierarchical'        => true,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 5,
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+	);
+	register_post_type( 'boletim', $args );
+
+}
+add_action( 'init', 'custom_post_type', 0 );
+
+*/
+function create_boletim_categories($post_id) {
+	// If this is a revision, get real post ID
+  /*
+	if ( $parent_id = wp_is_post_revision( $post_id ) )
+		$post_id = $parent_id;
+
+	// Get default category ID from options
+	$defaultcat = get_option( 'default_category' );
+
+	// Check if this post is in default category
+	if ( in_category( $defaultcat, $post_id ) ) {
+		// unhook this function so it doesn't loop infinitely
+		remove_action( 'save_post', 'set_private_categories' );
+
+		// update the post, which calls save_post again
+		wp_update_post( array( 'ID' => $post_id, 'post_status' => 'private' ) );
+
+		// re-hook this function
+		add_action( 'save_post', 'set_private_categories' );
+	}*/
+
+  $post_ = get_post($post_id);
+  //var_dump($post_->post_name);
+  wp_create_category($post_->post_name);
+  //wp_insert_term($post_->post_name, "taxonomia_boletim");
+
+}
+add_action( 'save_post', 'create_boletim_categories' );
+
 // EOF

@@ -24,13 +24,13 @@ if(get_theme_mod('quark_tab_autoanim', 0) == 1) {
 $tab_interval = get_theme_mod('quark_tab_interval','5000');
 
 //the_post();
-$category = get_post_meta($post->ID, 'boletim' );
+$category = $post->post_name;
 
 $args_global = array(
 	'post_type' => 'post',
 	'order' => 'DESC',
 	'post__in' => get_option('sticky_posts'),
-	'category_name' => $category[0],
+	'category_name' => $category,
 	'orderby' => 'menu_order',
 	'posts_per_page' => 6
 );
@@ -38,7 +38,7 @@ $loop_news = new WP_Query( $args_global );
 //var_dump($loop_news);
 
 get_header('boletim'); ?>
-    
+
 	<?php do_action('quark_before_content'); ?>
 		<div id="frontpage-wrap" role="main">
 
