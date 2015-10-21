@@ -453,10 +453,9 @@ input[type="reset"] {
 }
 
 .boletim .frontpage-block-wrap {
-  margin-top: 100px!important;
+  margin-top: 115px!important;
   margin-left: 10%!important;
 }
-
 @media screen and (max-width: 640px) {
   #gk-bg.menu-open {
     margin-left: -280px;

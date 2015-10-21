@@ -4505,11 +4505,12 @@ p.numblocks span.highlight {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: none;
+  margin-top: -55px;
   max-height: 500px !important; 
 }
 
 .boletim .frontpage-block-wrap {
-  margin-top: 275px!important;
+  margin-top: 250px!important;
   margin-left: 10%!important;
 }
 
@@ -4521,13 +4522,20 @@ p.numblocks span.highlight {
 }
 
 .boletim #gk-header-nav h1 {
+  background: url('images/marca-boletim.png') no-repeat;
   float: left;
   line-height: 1;
   top: 5px;
   left: 10px;
   position: absolute;
+  height: 40px;
+  width: 502px;
 }
-
+@media screen and (max-width: 680px) {
+  .boletim #gk-header-nav h1 {
+    background: url('images/marca-boletim-mobile.png') no-repeat;
+  }
+}
 .boletim #gk-header-nav.gk-fixed > div {
   max-width: initial;
 }
