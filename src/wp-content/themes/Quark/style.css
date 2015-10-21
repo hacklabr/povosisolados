@@ -760,7 +760,6 @@ label {
   padding: 0;
   position: relative;
 }
-
 #gk-header-mod {
   border-bottom: solid 40px #230e0f;
   margin-top: -110px;
@@ -3412,7 +3411,20 @@ article.one-page {
   padding: 60px 0 80px 0;
   text-align: center;
 }
-
+.frontpage #gk-header-mod .gk-page {
+  width: 100%;
+  max-width: 100%;
+}
+.frontpage #gk-header-mod {
+  text-align: left;
+}
+.frontpage #gk-header-mod h1 {
+  min-width: 450px;
+  text-align: right;
+}
+.frontpage #gk-header-mod .textcenter {
+  text-align: center;
+}
 #frontpage-wrap > .box:first-child {
   padding: 0;
 }
@@ -4510,6 +4522,14 @@ p.numblocks span.highlight {
 }
 
 .boletim .frontpage-block-wrap {
+  margin-top: 20%!important;
+  position: absolute;
+  background: #332324;
+  color: #fff;
+  width: auto!important;
+  margin-left: 20%!important;
+  padding: 10px!important;
+  text-align:left;
   margin-top: 250px!important;
   margin-left: 10%!important;
 }
@@ -6501,24 +6521,14 @@ a.pswp__share--download:before {
 }
 
 .frontpage-block-wrap{
-  margin-top: 20%!important;
-  position: absolute;
-  background: #332324;
   color: #fff;
-  width: auto!important;
-  margin-left: 20%!important;
-  padding: 10px!important;
-  text-align:left;
+  width: 100%;
 }
 
 .frontpage-block-wrap h3 {
   font-weight: bold;
   text-align:left;
   color:#fff;
-}
-
-#gk-header-mod .gk-page{
-  width:500px!important;
 }
 
 /*
