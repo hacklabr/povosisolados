@@ -43,7 +43,7 @@ global $post;
 		<?php do_action('quark_plugin_messages'); ?>
 
         <header id="gk-header" role="banner">
-			<div id="gk-header-nav" <?php if((get_theme_mod('quark_menu_fixed', 1) == 1 && get_theme_mod('quark_menu_classic', 0) == 1)) { echo 'class="gk-fixed"'; } ?>>
+			<div id="gk-header-nav">
 
 				<h1><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/marca-boletim.png" alt="Boletim Povoso Isolados da Amazônia"></h1>
 
