@@ -761,10 +761,10 @@ function create_boletim_categories($post_id) {
 	}*/
 
   $post_ = get_post($post_id);
-  //var_dump($post_->post_name);
-  wp_create_category($post_->post_name);
-  //wp_insert_term($post_->post_name, "taxonomia_boletim");
-
+  $template_slug = get_page_template_slug();
+  if ( $post_->post_type == 'page' && $template_slug === 'template.boletim.php' ){
+    wp_create_category($post_->post_name);
+  }
 }
 add_action( 'save_post', 'create_boletim_categories' );
 
