@@ -4518,6 +4518,7 @@ p.numblocks span.highlight {
   background-color: transparent;
   border-bottom: 1px solid #fff; 
   height: 55px;
+  width: 100%;
 }
 
 .boletim #gk-header-nav h1 {
