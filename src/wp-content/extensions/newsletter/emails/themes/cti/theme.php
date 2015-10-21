@@ -12,23 +12,22 @@
 
 global $newsletter, $post;
 
-if (isset($theme_options['theme_posts'])) {
-    $filters = array();
-    
-    if (empty($theme_options['theme_max_posts'])) $filters['showposts'] = 10;
-    else $filters['showposts'] = (int)$theme_options['theme_max_posts'];
-    
-    if (!empty($theme_options['theme_categories'])) {
-        $filters['category__in'] = $theme_options['theme_categories'];
-    }    
-    if (!empty($theme_options['theme_post_types'])) {
-        $filters['post_type'] = $theme_options['theme_post_types'];
-    }    
-    
-    $posts = get_posts($filters);
+$filters = array();
+
+if (empty($theme_options['theme_max_posts'])) $filters['showposts'] = 10;
+else $filters['showposts'] = (int)$theme_options['theme_max_posts'];
+
+if (!empty($theme_options['theme_categories'])) {
+    $filters['category__in'] = $theme_options['theme_categories'];
+}
+if (!empty($theme_options['theme_post_types'])) {
+    $filters['post_type'] = $theme_options['theme_post_types'];
 }
 
-?><!DOCTYPE html>
+$posts = get_posts($filters);
+
+?>
+<!DOCTYPE html>
 <html>
     <head>
         <!-- Not all email client take care of styles inserted here -->
@@ -44,14 +43,14 @@ if (isset($theme_options['theme_posts'])) {
     <table bgcolor="#CCAE6D" cellspacing="0" cellpadding="0" width="600" style="margin: 0 auto;">
       <!-- top header -->
       <tr bgcolor="#9F2032">
-        <td align="left" bgcolor="#9F2032" colspan="2" style="color: #fff; font-size: 20px; font-weight: bold; padding: 15px 10px;">Boletim trimestral</td>
-        <td align="right" bgcolor="#9F2032" style="color: #fff; font-size: 20px; font-weight: bold; text-transform: uppercase; padding: 15px 10px;">Boletim 71</td>
+        <td align="left" bgcolor="#9F2032" colspan="2" style="color: #fff; font-size: 20px; font-weight: bold; padding: 15px 10px;">Boletim Povos Isolados na Amazônia</td>
+        <td align="right" bgcolor="#9F2032" style="color: #fff; font-size: 20px; font-weight: bold; text-transform: uppercase; padding: 15px 10px;">Boletim ##</td>
       </tr>
       <tr>
 
         <!-- newsletter banner -->
         <td background="<?php echo $theme_url ?>/images/banner.jpg" colspan="3" height="400">
-          
+
           <table style="margin-left: 15px;">
             <tr>
               <!-- newsletter title and subtitle -->
@@ -86,11 +85,11 @@ if (isset($theme_options['theme_posts'])) {
                           <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #fff;">
                               <?php the_title(); ?>
                           </a>
-                        </div> 
+                        </div>
                     </td>
                 <?php } ?>
                 </tr>
-            <</table>            
+            <</table>
         </td>
         <?php } ?>
       </tr>
