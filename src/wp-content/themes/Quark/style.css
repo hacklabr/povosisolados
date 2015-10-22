@@ -760,7 +760,6 @@ label {
   padding: 0;
   position: relative;
 }
-
 #gk-header-mod {
   border-bottom: solid 40px #230e0f;
   margin-top: -110px;
@@ -3412,7 +3411,20 @@ article.one-page {
   padding: 60px 0 80px 0;
   text-align: center;
 }
-
+.frontpage #gk-header-mod .gk-page {
+  width: 100%;
+  max-width: 100%;
+}
+.frontpage #gk-header-mod {
+  text-align: left;
+}
+.frontpage #gk-header-mod h1 {
+  min-width: 450px;
+  text-align: right;
+}
+.frontpage #gk-header-mod .textcenter {
+  text-align: center;
+}
 #frontpage-wrap > .box:first-child {
   padding: 0;
 }
@@ -4505,12 +4517,20 @@ p.numblocks span.highlight {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: none;
+  margin-top: -55px;
   max-height: 500px !important; 
-  top: -50px;
 }
 
 .boletim .frontpage-block-wrap {
-  margin-top: 275px!important;
+  margin-top: 20%!important;
+  position: absolute;
+  background: #332324;
+  color: #fff;
+  width: auto!important;
+  margin-left: 20%!important;
+  padding: 10px!important;
+  text-align:left;
+  margin-top: 250px!important;
   margin-left: 10%!important;
 }
 
@@ -4518,16 +4538,24 @@ p.numblocks span.highlight {
   background-color: transparent;
   border-bottom: 1px solid #fff; 
   height: 55px;
+  width: 100%;
 }
 
 .boletim #gk-header-nav h1 {
+  background: url('images/marca-boletim.png') no-repeat;
   float: left;
   line-height: 1;
   top: 5px;
   left: 10px;
   position: absolute;
+  height: 40px;
+  width: 502px;
 }
-
+@media screen and (max-width: 680px) {
+  .boletim #gk-header-nav h1 {
+    background: url('images/marca-boletim-mobile.png') no-repeat;
+  }
+}
 .boletim #gk-header-nav.gk-fixed > div {
   max-width: initial;
 }
@@ -4542,7 +4570,10 @@ p.numblocks span.highlight {
   padding: 20px;
 }
 .boletim #aside-menu li {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 8px 0;
+  text-transform: initial;
 }
 .boletim #gk-mobile-menu i, .boletim #gk-mobile-menu i:before, .boletim #gk-mobile-menu i:after {
   background: rgba(255,255,255,0.2);
@@ -6490,24 +6521,14 @@ a.pswp__share--download:before {
 }
 
 .frontpage-block-wrap{
-  margin-top: 20%!important;
-  position: absolute;
-  background: #332324;
   color: #fff;
-  width: auto!important;
-  margin-left: 20%!important;
-  padding: 10px!important;
-  text-align:left;
+  width: 100%;
 }
 
 .frontpage-block-wrap h3 {
   font-weight: bold;
   text-align:left;
   color:#fff;
-}
-
-#gk-header-mod .gk-page{
-  width:500px!important;
 }
 
 /*
