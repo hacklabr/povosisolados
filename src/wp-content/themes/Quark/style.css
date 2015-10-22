@@ -4622,6 +4622,10 @@ p.numblocks span.highlight {
   left: 0;
   right: 0;
 }
+.boletim #gk-footer .site {
+  background-color: #fff;
+  padding: 0 16px;
+}
 
 /**
  * 4. Widgets
