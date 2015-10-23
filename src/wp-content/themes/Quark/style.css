@@ -4588,6 +4588,9 @@ p.numblocks span.highlight {
 .boletim .site {
   max-width: 1680px;
 }
+.frontpage-block.box.boletim {
+  margin-top: 30px;
+}
 .frontpage-block.box.boletim .boletim-container {
   clear: both;
 }
