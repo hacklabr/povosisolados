@@ -45,7 +45,7 @@ global $post;
         <header id="gk-header" role="banner">
 			<div id="gk-header-nav">
 
-				<h1><span class="screen-reader-text">Boletim Povos Isolados da Amazônia</span></h1>
+				<h1><span class="screen-reader-text">Boletim Povos Isolados da Amazônia</span></h1>asdfasdf
 
 				<div>
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php _e( 'Skip to content', 'quark' ); ?></a>

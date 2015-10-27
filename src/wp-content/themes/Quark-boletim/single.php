@@ -3,7 +3,7 @@
  * The template for displaying all single posts
  */
 
-get_header(); ?>
+get_header("boletim"); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
