@@ -1452,6 +1452,16 @@ label {
   text-transform: uppercase;
 }
 
+#aside-menu .aside-title-boletim {
+  color: rgba(255, 255, 255, 1);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 30px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
 #aside-navigation,
 #aside-menu.menu-open {
   width: 350px;
@@ -4518,7 +4528,7 @@ p.numblocks span.highlight {
   background-size: cover;
   border-bottom: none;
   margin-top: -55px;
-  max-height: 500px !important; 
+  max-height: 500px !important;
 }
 
 .boletim .frontpage-block-wrap {
@@ -4536,7 +4546,7 @@ p.numblocks span.highlight {
 
 .boletim #gk-header-nav {
   background-color: transparent;
-  border-bottom: 1px solid #fff; 
+  border-bottom: 1px solid #fff;
   height: 55px;
   width: 100%;
 }

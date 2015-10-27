@@ -36,7 +36,7 @@
             <?php endif; ?>
 
             <?php get_search_form(); ?>
-
+            <h2 class="aside-title-boletim"><?php the_title(); ?></h2>
             <h2 class="aside-title">Nesta edição</h2>
 
             <?php
@@ -72,7 +72,6 @@
               'posts_per_page' => -1
             );
             $loop_boletim = new WP_Query( $args_global ); ?>
-
 
             <nav id="aside-navigation" class="main-navigation" role="navigation">
               <div class="menu-menu-boletim-container">
