@@ -100,7 +100,7 @@ global $post;
 						</h3>
 
 							<?php
-								the_content();
+								the_excerpt();
 							?>
 
 						<?php endwhile; wp_reset_query(); ?>
