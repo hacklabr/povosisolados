@@ -1792,7 +1792,7 @@ article.one-page {
 .entry-title-wrap {
   position: absolute;
   text-align: left;
-  top: 50%;
+  top: 350px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -5731,7 +5731,7 @@ img.gk-responsive {
  * ----------------------------------------------------------------------------
  */
 #gk-footer {
-  background-color: #cbad6c;
+  background-color: #fff;
   color: #70442f;
   font-size: 1.4rem;
   font-weight: 300;
