@@ -562,15 +562,18 @@
 
             function gkOpenAsideMenu() {
                 jQuery('#gk-bg').toggleClass('menu-open');
+                jQuery('.boletim #primary').toggleClass('menu-open');
                 
                 if(jQuery('#aside-menu').hasClass('menu-open')) {
                     setTimeout(function() {
                         jQuery('#aside-menu').removeClass('menu-open');
                         jQuery('#gk-bg').removeClass('menu-visible');
+                        jQuery('.boletim #primary').removeClass('menu-visible');
                     }, 350);
                 } else {
                     jQuery('#aside-menu').addClass('menu-open');
                     jQuery('#gk-bg').addClass('menu-visible');
+                    jQuery('.boletim #primary').addClass('menu-visible');
                 }
                 
                 if(!jQuery('#close-menu').hasClass('menu-open')) {

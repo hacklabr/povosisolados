@@ -426,7 +426,7 @@ label {
   transition: all .3s ease-out;
 }
 
-#gk-bg.menu-open {
+#gk-bg.menu-open, .boletim #primary.menu-open {
   left: -280px;
 }
 
