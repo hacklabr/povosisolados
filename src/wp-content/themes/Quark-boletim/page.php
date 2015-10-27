@@ -29,7 +29,7 @@ get_header(); ?>
 								<?php the_content(); ?>
 
 								<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'quark' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
-							
+
 
 	                        <?php get_template_part( 'content', 'footer' ); ?>
 
@@ -59,8 +59,8 @@ get_header(); ?>
 			<?php endwhile; ?>
 			<?php do_action('quark_after_content'); ?>
 
-			
-		</div><!-- #content -->		
+
+		</div><!-- #content -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

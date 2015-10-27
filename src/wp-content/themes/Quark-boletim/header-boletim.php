@@ -58,35 +58,57 @@ global $post;
                  </div>
 			</div>
 			<?php
-						//the_post_thumbnail('full');
+						$category = $post->post_name;
+						$args_editorial = array(
+							'post_type' => 'post',
+							'order' => 'ASC',
+							'orderby' => 'menu_order',
+							'category_name' => 'editorial+' . $category ,
+							'posts_per_page' => 1
+						);
+
+						$loop_editorial = new WP_Query( $args_editorial );
+
+						while ( $loop_editorial->have_posts()): $loop_editorial->the_post();
 						$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+
 			?>
 			<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');">
+				<?php endwhile; wp_reset_query(); ?>
 				<div class="frontpage-block-wrap">
 					<?php do_action('quark_before_header'); ?>
 
 					<?php if ( have_posts() ) : ?>
 					<div class="gk-header-mod-wrap">
+						<?php
+						$category = $post->post_name;
+						$args_editorial = array(
+							'post_type' => 'post',
+							'order' => 'ASC',
+							'orderby' => 'menu_order',
+							'category_name' => 'editorial+' . $category,
+							'posts_per_page' => 1
+						);
 
-								        <?php while ( have_posts() ) : the_post(); ?>
-						<h3>	
+						$loop_editorial = new WP_Query( $args_editorial );
+						///var_dump($loop_editorial);
+						while ( $loop_editorial->have_posts()): $loop_editorial->the_post(); ?>
+						<h3>
 							<?php
 								the_title();
 							?>
 						</h3>
+
 							<?php
 								the_content();
 							?>
-						<?php endwhile; ?>
 
-						<?php wp_reset_query(); ?>
-
-						<?php if(get_theme_mod('quark_header_mouse_icon',1) == 1) : ?>
-		                    <span class="mouse-icon"><span><span></span></span></span>
-		                <?php endif; ?>
+						<?php endwhile; wp_reset_query(); ?>
                     </div>
+
 					<?php endif; ?>
 					<?php do_action('quark_after_header'); ?>
 				</div>
+
 			</div>
 		</header><!-- #masthead -->

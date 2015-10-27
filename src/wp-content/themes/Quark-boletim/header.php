@@ -14,27 +14,27 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
-	
+
 	<?php if(get_theme_mod('quark_cookie_enable', 1) == 1) : ?>
 		<?php get_template_part('cookielaw'); ?>
 	<?php endif; ?>
-	
+
 	<?php do_action('quark_head'); ?>
 	<?php wp_head(); ?>
 </head>
 
-<?php 
+<?php
 	$dark_img = '';
-	if (get_theme_mod('quark_dark_image', 1) == 1) { 
+	if (get_theme_mod('quark_dark_image', 1) == 1) {
 		if (is_category() || is_author() || is_search() || is_404() || (is_singular() && !is_attachment())) {
 			$dark_img = 'dark-bg';
 		} else {
 			$dark_img = '';
 		}
-	} 
+	}
 
-	if (get_theme_mod('quark_js_parallax', 1) == 1) { 
-		$dark_img .= ' js-parallax'; 
+	if (get_theme_mod('quark_js_parallax', 1) == 1) {
+		$dark_img .= ' js-parallax';
 	}
 
 	$logo_image = get_theme_mod('quark_logo', '');
@@ -45,7 +45,7 @@
 	<?php if (get_theme_mod('quark_page_loader', 1) == 1) : ?>
 		<div id="gk-page-preloader"></div>
 	<?php endif; ?>
-	
+
 	<!--[if lte IE 8]>
 	<div id="ie-toolbar"><div><?php _e('You\'re using an unsupported version of Internet Explorer. Please <a href="http://windows.microsoft.com/en-us/internet-explorer/products/ie/home">upgrade your browser</a> for the best user experience on our site. Thank you.', 'quark') ?></div></div>
 	<![endif]-->
@@ -55,7 +55,7 @@
 				<div>
 					<?php if(get_theme_mod('quark_logo', '') == '') : ?>
 						<a class="gk-logo text" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							<span><?php bloginfo( 'name' ); ?>
+							<!-- <span><?php bloginfo( 'name' ); ?> -->
 								<?php if(get_theme_mod('quark_slogan_switch', 0) == 1) : ?>
 									<small class="gk-logo-slogan"><?php bloginfo( 'description' ); ?></small>
 								<?php endif; ?>
@@ -64,7 +64,7 @@
 					<?php else : ?>
 						<a class="gk-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 							<img src="<?php echo $logo_image; ?>"
-							<?php if($dark_logo_image != '') : ?>data-dark="<?php echo $dark_logo_image; ?>"<?php endif; ?> 
+							<?php if($dark_logo_image != '') : ?>data-dark="<?php echo $dark_logo_image; ?>"<?php endif; ?>
         					<?php if($dark_logo_image != '') : ?>data-light="<?php echo $logo_image; ?>"<?php endif; ?>
         	 				alt="<?php bloginfo( 'name' ); ?>" />
 						</a>
