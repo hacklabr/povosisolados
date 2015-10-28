@@ -4604,7 +4604,7 @@ p.numblocks span.highlight {
 .boletim .site {
   max-width: 1680px;
 }
-.boletim .frontpage-wrap {
+.boletim #frontpage-wrap {
   background-color: #DDC89A;
 }
 .frontpage-block.box.boletim {
