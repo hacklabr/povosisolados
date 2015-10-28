@@ -4523,10 +4523,6 @@ p.numblocks span.highlight {
  * ----------------------------------------------------------------------------
  */
 
-.boletim {
-  background-color: #DDC89A;
- }
-
 .boletim .gk-cols > div {
   padding: 0 10px;
 }
@@ -4608,8 +4604,11 @@ p.numblocks span.highlight {
 .boletim .site {
   max-width: 1680px;
 }
+.boletim .frontpage-wrap {
+  background-color: #DDC89A;
+}
 .frontpage-block.box.boletim {
-  margin-top: 30px;
+  padding-top: 30px !important;
 }
 .frontpage-block.box.boletim .boletim-container {
   clear: both;
