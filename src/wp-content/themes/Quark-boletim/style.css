@@ -640,7 +640,6 @@ label {
  * ----------------------------------------------------------------------------
  */
 #gk-bg, .boletim #primary {
-  background: transparent;
   -webkit-transition: margin-left .3s ease-out;
   -moz-transition: margin-left .3s ease-out;
   -ms-transition: margin-left .3s ease-out;
@@ -649,13 +648,20 @@ label {
   z-index: 1;
   width: 100%;
 }
-
+.boletim #primary {
+  background-color: #fff;
+}
 #gk-bg.menu-open, .boletim #primary.menu-open {
   margin-left: -350px;
 }
 
 #gk-bg.menu-visible, .boletim #primary.menu-visible  {
   position: relative;
+}
+
+#gk-bg.menu-visible {
+  background: transparent !important;
+  z-index: 2;
 }
 
 #content-top {
