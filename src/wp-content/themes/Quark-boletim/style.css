@@ -4536,7 +4536,19 @@ p.numblocks span.highlight {
   margin-top: -55px;
   max-height: 500px !important;
 }
-
+.boletim #gk-header-mod h2 {
+  font-size: 1.2rem;  
+  margin-bottom: 0;
+  padding: 5px;
+}
+.boletim #gk-header-mod .box-title {
+  background-color: rgba(0,0,0,0.4);
+  margin-top: -3px;
+  padding: 10px;
+}
+.boletim #gk-header-mod h3 {
+  text-transform: uppercase;
+}
 .boletim .frontpage-block-wrap {
   margin-top: 20%!important;
   position: absolute;
@@ -4579,7 +4591,6 @@ p.numblocks span.highlight {
   margin: 30px 0;
 }
 .boletim #gk-mobile-menu {
-  background-color: rgba(159, 32, 50, 1);
   color: #fff;
   height: 55px;
   margin: 0 !important;
@@ -4592,7 +4603,7 @@ p.numblocks span.highlight {
   text-transform: initial;
 }
 .boletim #gk-mobile-menu i, .boletim #gk-mobile-menu i:before, .boletim #gk-mobile-menu i:after {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.5);
 }
 .boletim #gk-mobile-menu-text {
   font-size: 1.6rem;
@@ -4603,9 +4614,6 @@ p.numblocks span.highlight {
 }
 .boletim .site {
   max-width: 1680px;
-}
-.boletim #frontpage-wrap {
-  background-color: #DDC89A;
 }
 .frontpage-block.box.boletim {
   padding-top: 30px !important;
