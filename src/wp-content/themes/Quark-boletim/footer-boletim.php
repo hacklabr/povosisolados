@@ -40,7 +40,7 @@
                             <a href="https://twitter.com/cti_indigenismo"><span class="screen-reader-text">Twitter</span></a>
                             </li>
                             <li class="youtube">
-                            <a href=""><span class="screen-reader-text">Youtube</span></a>
+                            <a href="https://www.youtube.com/user/TrabalhoIndigenista"><span class="screen-reader-text">Youtube</span></a>
                             </li>
                         </ul>
                     </div>
