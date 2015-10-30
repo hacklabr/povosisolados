@@ -8,14 +8,50 @@
     	<?php do_action('quark_before_footer'); ?>
     	<footer id="gk-footer" role="contentinfo">
     		<div class="site">
-                <div id="gk-footer-nav">
-                    <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'footer-menu', 'fallback_cb' => false ) ); ?>
-                </div>
-
-        		<div id="gk-copyrights">
-                    <p class="copyright"><?php echo get_theme_mod('quark_copyright_text', 'WordPress Theme by <a href="https://www.gavick.com">GavickPro.com</a>'); ?></p>
+                <div class="gk-cols" data-cols="5">
+                    <div class="logo cti">
+                        <h4>Realização</h4>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-cti.png" alt="Centro de Trabalho Indigenista">
+                    </div>
+                    <div class="logo funai">
+                        <h4>Parceria</h4>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-funai.png" alt="FUNAI">
+                    </div>
+                    <div class="logo amazonia">
+                        <h4>Apoio</h4>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-fundo-amazonia.png" alt="Fundo Amazônia">
+                    </div>
+                    <div class="subscribe">
+                        <h4>Receba o boletim</h4>
+                        <form>
+                            <input type="text" placeholder="E-mail">
+                            <button>
+                                <span class="screen-reader-text">Enviar</span>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="social">
+                        <h4>Siga o CTI</h4>
+                        <ul>
+                            <li class="facebook">
+                            <a href="https://www.facebook.com/trabalhoindigenista"><span class="screen-reader-text">Facebook</span></a>
+                            </li>
+                            <li class="twitter">
+                            <a href="https://twitter.com/cti_indigenismo"><span class="screen-reader-text">Twitter</span></a>
+                            </li>
+                            <li class="youtube">
+                            <a href=""><span class="screen-reader-text">Youtube</span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div class="site">
+        		<div id="gk-copyrights">
+                    <p class="copyright"><?php echo get_theme_mod('quark_copyright_text', 'Developed  by <a href="http://hacklab.com.br/" class="hacklab"><span class="screen-reader-text">hacklab</a></a> with <a href="https://wordpress.org/">Wordpress</a>'); ?></p>
+                </div>
+            </div>
+
     	</footer><!-- end of #gk-footer -->
     	<?php do_action('quark_after_footer'); ?>
     </div><!-- #gk-bg -->
