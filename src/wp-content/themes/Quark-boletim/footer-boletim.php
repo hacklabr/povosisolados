@@ -48,7 +48,7 @@
             </div>
             <div class="site">
         		<div id="gk-copyrights">
-                    <p class="copyright"><?php echo get_theme_mod('quark_copyright_text', 'Developed  by <a href="http://hacklab.com.br/" class="hacklab"><span class="screen-reader-text">hacklab</a></a> with <a href="https://wordpress.org/">Wordpress</a>'); ?></p>
+                    <p class="copyright">Developed by <a href="http://hacklab.com.br/" class="hacklab"><span class="screen-reader-text">hacklab</a></a> with <a href="https://wordpress.org/">Wordpress</a></p>
                 </div>
             </div>
 
