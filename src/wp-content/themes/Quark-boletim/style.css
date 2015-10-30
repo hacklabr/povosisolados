@@ -4572,11 +4572,11 @@ p.numblocks span.highlight {
   background: url('images/marca-boletim.png') no-repeat;
   float: left;
   line-height: 1;
-  top: 5px;
+  top: 10px;
   left: 10px;
   position: absolute;
   height: 40px;
-  width: 502px;
+  width: 510px;
 }
 @media screen and (max-width: 680px) {
   .boletim #gk-header-nav h1 {
