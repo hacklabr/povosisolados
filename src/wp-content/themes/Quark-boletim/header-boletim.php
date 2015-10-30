@@ -93,12 +93,14 @@ global $post;
 						$loop_editorial = new WP_Query( $args_editorial );
 						///var_dump($loop_editorial);
 						while ( $loop_editorial->have_posts()): $loop_editorial->the_post(); ?>
-						
+
 						<h2>Editorial</h2>
-						
+
 						<div class="box-title">
+							<a href="#">
 							<h3><?php the_title(); ?></h3>
 							<?php the_excerpt(); ?>
+							</a>
 						</div>
 
 						<?php endwhile; wp_reset_query(); ?>

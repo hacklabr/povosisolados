@@ -4537,7 +4537,7 @@ p.numblocks span.highlight {
   max-height: 500px !important;
 }
 .boletim #gk-header-mod h2 {
-  font-size: 1.2rem;  
+  font-size: 1.2rem;
   margin-bottom: 0;
   padding: 5px;
 }
@@ -4548,6 +4548,9 @@ p.numblocks span.highlight {
 }
 .boletim #gk-header-mod h3 {
   text-transform: uppercase;
+}
+.boletim #gk-header-mod a {
+  color: #fff;  
 }
 .boletim .frontpage-block-wrap {
   margin-top: 20%!important;
@@ -5822,14 +5825,14 @@ img.gk-responsive {
 }
 #gk-footer .site .subscribe button:before {
   color: #fff;
-  content: '\f105';  
+  content: '\f105';
   font-family: 'FontAwesome';
   font-size: 1.8rem;
   line-height: 1;
   vertical-align: middle;
 }
 #gk-footer .site .subscribe input[type='text'] {
-  border: 0; 
+  border: 0;
   padding: 10px;
   max-width: 75% !important;
 }
@@ -5849,13 +5852,13 @@ img.gk-responsive {
   font-size: 3.5rem;
 }
 #gk-footer .site .social .facebook a:before {
-  content: '\f09a';  
+  content: '\f09a';
 }
 #gk-footer .site .social .twitter a:before {
-  content: '\f099';  
+  content: '\f099';
 }
 #gk-footer .site .social .youtube a:before {
-  content: '\f16a';  
+  content: '\f16a';
 }
 #gk-copyrights {
   color: rgba(159, 32, 50, 1);
