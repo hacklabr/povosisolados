@@ -648,7 +648,7 @@ label {
   z-index: 1;
   width: 100%;
 }
-.boletim #primary, .boletim .frontpage-wrap {
+.boletim #primary, .boletim #frontpage-wrap {
   background-color: #fff;
 }
 #gk-bg.menu-open, .boletim #primary.menu-open {
