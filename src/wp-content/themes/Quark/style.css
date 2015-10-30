@@ -5722,11 +5722,11 @@ img.gk-responsive {
  */
 #gk-footer {
   background-color: #cbad6c;
-  color: #70442f;
+  color: #000;
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 2;
-  padding: 0;
+  padding: 30px 0 0;
 }
 #gk-footer strong {
   color: #000;
@@ -5741,14 +5741,21 @@ img.gk-responsive {
 #gk-footer a:hover {
   color: #000;
 }
+#gk-footer .site {
+  padding: 0 20px;
+  max-width: 1680px;
+}
 
 #gk-footer-nav {
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 0;
+  text-align: right;
 }
 #gk-footer-nav a {
-  color: #a83c3e !important;
-  padding: 0 !important;
+  color: rgba(159, 32, 50, 1);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 #gk-footer-nav a:active, #gk-footer-nav a:focus, #gk-footer-nav a:hover {
   color: #000 !important;
@@ -5757,16 +5764,46 @@ img.gk-responsive {
   border: none;
   display: inline-block;
   float: none;
-  font-size: 1.2rem;
-  line-height: 40px;
-  margin: 0 !important;
-  padding: 0 20px 0 0 !important;
+  margin-left: 20px;
+}
+#gk-footer .site h4 {
+  color: rgba(159, 32, 50, 1);
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
   text-transform: uppercase;
 }
-
+#gk-footer .site .contact p {
+  line-height: 1.5;
+  margin: 0;
+}
+#gk-footer .site .social h4 {
+  text-align: center;
+}
+#gk-footer .site .social ul {
+  text-align: center;
+}
+#gk-footer .site .social ul li {
+  display: inline;
+  margin: 0 5px;
+}
+#gk-footer .site .social ul li a:before {
+  color: #000;
+  font-family: 'FontAwesome';
+  font-size: 3.5rem;
+}
+#gk-footer .site .social .facebook a:before {
+  content: '\f09a';  
+}
+#gk-footer .site .social .twitter a:before {
+  content: '\f099';  
+}
+#gk-footer .site .social .youtube a:before {
+  content: '\f16a';  
+}
 #gk-copyrights {
-  color: #70442f;
-  font-size: 1.1rem;
+  color: rgba(159, 32, 50, 1);
+  font-size: 1.3rem;
   line-height: 1;
   padding: 0 0 10px;
   position: relative;
@@ -5782,6 +5819,30 @@ img.gk-responsive {
 #gk-copyrights p {
   margin: 0;
 }
+#gk-copyrights a {
+  color: #000 !important;
+}
+#gk-copyrights a:hover {
+  text-decoration: underline;
+}
+#gk-copyrights .copyright {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: right;
+}
+#gk-copyrights .copyright .hacklab {
+  background: url('images/logo-hacklab.png') no-repeat;
+  display: inline-block;
+  height: 15px;
+  width: 76px;
+  vertical-align: bottom;
+}
+@media screen and (max-width: 1680px) {
+  #gk-footer .site .gk-cols {
+    margin: 0 20px;
+  }
+}
+
 
 /**
  * 6. Multi-site improvements
