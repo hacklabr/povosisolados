@@ -14,7 +14,7 @@ global $newsletter, $post;
 
 $filters = array();
 
-if (empty($theme_options['theme_max_posts'])) $filters['showposts'] = 10;
+if (empty($theme_options['theme_max_posts'])) $filters['showposts'] = 6;
 else $filters['showposts'] = (int)$theme_options['theme_max_posts'];
 
 if (!empty($theme_options['theme_categories'])) {
@@ -71,28 +71,43 @@ $posts = get_posts($filters);
 
         </td>
       </tr>
+      <?php if (!empty($posts)) { ?>
       <tr>
         <!-- posts section -->
-        <?php if (!empty($posts)) { ?>
         <td bgcolor="#CCAE6D" colspan="3">
-            <table>
-                <tr>
-                <?php foreach ($posts as $post) { setup_postdata($post); ?>
-                    <td width="270" valign="top" style="padding: 18px 0px 0px 18px;">
-                    <a target="_blank" href="#" href="<?php echo get_permalink($post); ?>">
-                        <img height="150" width="270" src="<?php echo newsletter_get_post_image($post->ID); ?>"></a>
-                        <div style="background-color: #230e0f; color: #fff; font-size: 14px; font-weight: bold; margin-top: -3px; padding: 10px 15px;">
-                          <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #fff;">
-                              <?php the_title(); ?>
-                          </a>
-                        </div>
-                    </td>
-                <?php } ?>
-                </tr>
-            </table>
+          <table>
+
+            <tr>
+            <?php foreach ($posts as $key=>$post) : ?>
+            <?php setup_postdata($post); ?>
+              <td width="270" valign="top" style="padding: 18px 0px 0px 18px;">
+                <a target="_blank" href="#" href="<?php echo get_permalink($post); ?>">
+                  <img height="150" width="270" src="<?php echo newsletter_get_post_image($post->ID); ?>">
+                </a>
+                <div style="background-color: #230e0f; color: #fff; font-size: 14px; font-weight: bold; margin-top: -3px; padding: 10px 15px;">
+                  <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #fff;">
+                  <?php the_title(); ?>
+                  </a>
+                </div>
+              </td>
+
+            <?php
+                /*
+                 * Fecha TR dinâmicamente
+                 */
+                if ( $key % 2 AND ($key + 1) !== sizeof($posts) ):
+                    echo '</tr>';
+                    echo '<tr>';
+                elseif( ($key + 1) === sizeof($posts) ):
+                    echo '</tr>';
+                endif;
+            ?>
+            <?php endforeach; ?>
+
+          </table>
         </td>
-        <?php } ?>
       </tr>
+      <?php } ?>
       <tr>
         <!-- blank space -->
         <td bgcolor="#CCAE6D" colspan="3" height="18"></td>
