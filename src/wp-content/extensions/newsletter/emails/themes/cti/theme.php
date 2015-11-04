@@ -89,7 +89,7 @@ $posts = get_posts($filters);
                     </td>
                 <?php } ?>
                 </tr>
-            <</table>
+            </table>
         </td>
         <?php } ?>
       </tr>
