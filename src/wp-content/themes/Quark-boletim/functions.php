@@ -658,6 +658,12 @@ function quark_register_required_plugins() {
 add_action('tgmpa_register', 'quark_register_required_plugins');
 endif;
 
+//Remove navbar
+remove_action('wp_footer','wp_admin_bar_render',1000);
+add_filter( 'show_admin_bar' , function() {
+    return false;
+});
+
 // Register Custom Taxonomy
 /*function custom_taxonomy() {
 
