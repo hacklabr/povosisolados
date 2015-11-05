@@ -525,7 +525,8 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"],
-.paging-navigation a {
+.paging-navigation a,
+.single-post .navgation-post a {
   -webkit-appearance: none;
   background: rgba(159, 32, 50, 0.8);
   border: none;
@@ -569,7 +570,9 @@ input[type="button"]:active,
 input[type="reset"]:active,
 .paging-navigation a:active,
 .paging-navigation a:focus,
-.paging-navigation a:hover {
+.paging-navigation a:hover,
+.single-post .navgation-post a:hover,
+.single-post .navgation-post a:focus {
   background: rgba(159, 32, 50, 1);
 }
 .btn > i {
