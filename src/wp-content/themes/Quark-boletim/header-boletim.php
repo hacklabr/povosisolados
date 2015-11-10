@@ -58,6 +58,8 @@ global $post;
                  </div>
 			</div>
 			<?php
+						if ( get_post_type() == "page" ) {
+
 						$category = $post->post_name;
 						$args_editorial = array(
 							'post_type' => 'post',
@@ -73,8 +75,10 @@ global $post;
 						$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 
 			?>
-			<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');">
-				<?php endwhile; wp_reset_query(); ?>
+
+		<?php endwhile; wp_reset_query(); ?>
+					<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');">
+		<?php } ?>
 				<div class="frontpage-block-wrap">
 					<?php do_action('quark_before_header'); ?>
 
