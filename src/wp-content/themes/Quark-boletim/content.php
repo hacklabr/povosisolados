@@ -54,6 +54,10 @@
 			</aside>
 			<?php do_action('quark_after_sidebar'); ?>
 			<?php endif; ?>
+			<?php
+					previous_post_link('<span class="navgation-post left">%link</span>', '&#8592; %title');
+					next_post_link('<span class="navgation-post right">%link<span>', '%title  &#8594;');
+			?>
 		</div><!-- .site -->
 	<?php endif; ?>
 </article><!-- #post -->
