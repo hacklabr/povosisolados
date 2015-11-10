@@ -29,6 +29,25 @@
             <?php $controls->text('theme_max_posts', 4); ?>
         </td>
     </tr>
+    <tr>
+        <th>Redes sociais</th>
+        <td>
+            <table>
+                <tr>
+                    <td>Facebook</td>
+                    <td><?php $controls->text('theme_facebook'); ?></td>
+                </tr>
+                <tr>
+                    <td>Twitter</td>
+                    <td><?php $controls->text('theme_twitter'); ?><br><span class="description">Exemplo: <strong>https://twitter.com/CTI_Indigenismo</strong></span></td>
+                </tr>
+                <tr>
+                    <td>YouTube</td>
+                    <td><?php $controls->text('theme_youtube'); ?></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 </table>
 <!--</div>-->
 <!--<div id="tab-posts">-->

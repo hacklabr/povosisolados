@@ -14,15 +14,27 @@ global $newsletter, $post;
 
 $filters = array();
 
-if (empty($theme_options['theme_max_posts'])) $filters['showposts'] = 6;
-else $filters['showposts'] = (int)$theme_options['theme_max_posts'];
+if (empty($theme_options['theme_max_posts'])) {
+    $filters['showposts'] = 6;
+} else {
+    $filters['showposts'] = (int)$theme_options['theme_max_posts'];
+}
 
 if (!empty($theme_options['theme_categories'])) {
     $filters['category__in'] = $theme_options['theme_categories'];
 }
+
 if (!empty($theme_options['theme_post_types'])) {
     $filters['post_type'] = $theme_options['theme_post_types'];
 }
+
+/*
+ * Links for Social Links (icons) footer
+ */
+
+$link_facebook = (!empty($theme_options['theme_facebook'])) ? $theme_options['theme_facebook'] : '#';
+$link_twitter  = (!empty($theme_options['theme_twitter']) )? $theme_options['theme_twitter'] : '#';
+$link_youtube  = (!empty($theme_options['theme_youtube']) )? $theme_options['theme_youtube'] : '#';
 
 $posts = get_posts($filters);
 
@@ -114,9 +126,9 @@ $posts = get_posts($filters);
       </tr>
       <tr>
         <td align="center" bgcolor="#9F2032" colspan="3" style="padding: 10px;" valign="top">
-          <a href="#" style="color: #fff;"><img src="<?php echo $theme_url ?>/images/facebook.png" height="25"></a>
-          <a href="#" style="color: #fff; margin: 0 10px 0 5px"><img src="<?php echo $theme_url ?>/images/twitter.png"></a>
-          <a href="#" style="color: #fff;"><img src="<?php echo $theme_url ?>/images/youtube.png"></a>
+          <a href="<?php echo $link_facebook;?>" style="color: #fff;"><img src="<?php echo $theme_url ?>/images/facebook.png" height="25"></a>
+          <a href="<?php echo $link_twitter;?>" style="color: #fff; margin: 0 10px 0 5px"><img src="<?php echo $theme_url ?>/images/twitter.png"></a>
+          <a href="<?php echo $link_youtube;?>" style="color: #fff;"><img src="<?php echo $theme_url ?>/images/youtube.png"></a>
         </td>
       </tr>
       <tr bgcolor="#CCAE6D">
