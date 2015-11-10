@@ -97,7 +97,7 @@ global $post;
 						<h2>Editorial</h2>
 
 						<div class="box-title">
-							<a href="#">
+							<a href="<?php the_permalink(); ?>">
 							<h3><?php the_title(); ?></h3>
 							<?php the_excerpt(); ?>
 							</a>
