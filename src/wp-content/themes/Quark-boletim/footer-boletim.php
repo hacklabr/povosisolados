@@ -5,7 +5,7 @@
  */
 
 ?>
-    	<?php do_action('quark_before_footer'); ?>
+        <?php do_action('quark_before_footer'); ?>
       <!-- Begin #pre-footer -->
       <footer id="pre-footer" role="contentinfo">
         <div class="site">
@@ -73,8 +73,8 @@
         </div>
       </footer>
       <!-- End of #pre-footer -->
-    	<footer id="gk-footer" role="contentinfo">
-    		<div class="site">
+        <footer id="gk-footer" role="contentinfo">
+            <div class="site">
                 <div class="gk-cols" data-cols="3">
 
                     <div class="logo cti">
@@ -94,18 +94,18 @@
                 </div>
             </div>
             <div class="site">
-        		<div id="gk-copyrights">
+                <div id="gk-copyrights">
                     <p class="copyright">Developed by <a href="http://hacklab.com.br/" class="hacklab"><span class="screen-reader-text">hacklab</a></a> with <a href="https://wordpress.org/">Wordpress</a></p>
                 </div>
             </div>
 
-    	</footer><!-- end of #gk-footer -->
-    	<?php do_action('quark_after_footer'); ?>
+        </footer><!-- end of #gk-footer -->
+        <?php do_action('quark_after_footer'); ?>
     </div><!-- #gk-bg -->
 
-	<?php do_action('quark_before_asidemenu'); ?>
-	<i id="close-menu">&times;</i>
-	<aside id="aside-menu">
+    <?php do_action('quark_before_asidemenu'); ?>
+    <i id="close-menu">&times;</i>
+    <aside id="aside-menu">
         <div>
             <?php if (is_active_sidebar('menu_top')) : ?>
             <?php do_action('quark_before_menu_top'); ?>
@@ -183,7 +183,7 @@
 
         </div>
     </aside><!-- #aside-menu -->
-	<?php do_action('quark_after_asidemenu'); ?>
+    <?php do_action('quark_after_asidemenu'); ?>
 
     <?php if(get_theme_mod('quark_login_popup', 1) == 1) : ?>
     <div id="gk-login-popup">
@@ -193,7 +193,7 @@
     <div id="gk-login-popup-overlay"></div>
     <?php endif; ?>
 
-	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="pswp__bg"></div>
         <div class="pswp__scroll-wrap">
