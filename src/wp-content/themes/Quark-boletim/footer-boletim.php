@@ -152,7 +152,7 @@
               'post_type' => 'page',
               'order' => 'DESC',
               'category_name' => 'boletim',
-              'posts_per_page' => -1
+              'posts_per_page' => 10
             );
             $loop_boletim = new WP_Query( $args_global ); ?>
 
@@ -170,6 +170,15 @@
 
             </nav><!-- #aside-navigation -->
 
+            <?php
+                $archive_link = get_page_by_path('archive-boletins');
+                $archive_link = ($archive_link) ? get_the_permalink($archive_link->ID) : false;
+            ?>
+            <?php if ( $archive_link ) : ?>
+                <div class="entry-thumbnail-wrap">
+                    <a href="<?php echo $archive_link; ?>" class="btn">Veja mais boletins</a>
+                </div>
+            <?php endif;?>
 
             <?php if (is_active_sidebar('menu_bottom')) : ?>
             <?php do_action('quark_before_menu_bottom'); ?>
