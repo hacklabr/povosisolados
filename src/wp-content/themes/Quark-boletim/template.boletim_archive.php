@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Boletim Front Page
+Template Name: Arquivo de Boletins
 */
 
 //create arguments for custom main loop
