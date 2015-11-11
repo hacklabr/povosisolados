@@ -33,14 +33,13 @@
                         <h4>Contato</h4>
                       <p>Email: contato(a)trabalhoindigenista.org.br</p>
 
-                      São Paulo - SP<br/>
+                      <h5>São Paulo - SP</h5>
                       Rua Euclides de Andrade, 91<br/>
                       Jardim Vera Cruz - São Paulo - SP CEP 05.030-030<br/>
                       SEDE Fone: +55 (11) 2935.7769<br/>
                       Celulares: +55 (11) 8745.0927, 8745.1137<br/><br/>
-                      <br/>
 
-                      Brasília - DF<br/>
+                      <h5>Brasília - DF</h5>
                       SCLN 210 Bloco C Sala 217<br/>
                       Brasília-DF Cep: 70.862-530<br/>
                       Fone: +55 (61) 3349-7769<br/>
