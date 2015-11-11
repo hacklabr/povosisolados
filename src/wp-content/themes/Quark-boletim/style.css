@@ -448,8 +448,8 @@ input[type="email"] {
   border: 1px solid #e5e5e5;
   color: #aaa;
   font-size: 1.4rem;
-  line-height: 50px;
-  height: 50px;
+  /* line-height: 50px;
+  height: 50px; */
   padding: 0 20px;
   max-width: 100% !important;
 }
@@ -5797,6 +5797,7 @@ img.gk-responsive {
   margin-bottom: 10px;
   text-align: left;
   text-transform: uppercase;
+  font-size: 12px;
 }
 #gk-footer .site .logo {
   text-align: center;
@@ -5816,14 +5817,14 @@ img.gk-responsive {
 }
 #gk-footer .site .subscribe form {
   background-color: #fff;
-  border: 2px solid rgba(159, 32, 50, 1);
+  border: 1px solid rgba(159, 32, 50, 1);
   max-width: 280px;
 }
 #gk-footer .site .subscribe button {
   float: right;
   line-height: 1;
   margin: 4px 4px 0 0;
-  padding: 12px 18px;
+  padding: 7px 14px;
   vertical-align: top;
 }
 #gk-footer .site .subscribe button:before {
@@ -5888,7 +5889,7 @@ img.gk-responsive {
   text-decoration: underline;
 }
 #gk-copyrights .copyright {
-  font-size: 1.3rem;
+  font-size: 12px;
   font-weight: bold;
   text-align: right;
 }
@@ -5901,6 +5902,194 @@ img.gk-responsive {
 }
 @media screen and (max-width: 1680px) {
   #gk-footer .site .gk-cols {
+    margin: 0 20px;
+  }
+}
+
+
+/**
+ * 5.5 Pre-Footer
+ * ----------------------------------------------------------------------------
+ */
+#pre-footer {
+  background-color: #FFF1D1;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2;
+  padding: 30px 0 0;
+}
+#pre-footer strong {
+  color: #000;
+}
+
+#pre-footer a {
+  color: #a83c3e !important;
+  padding: 0;
+}
+#pre-footer a:active,
+#pre-footer a:focus,
+#pre-footer a:hover {
+  color: #000;
+}
+
+#pre-footer-nav {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+#pre-footer-nav a {
+  color: #a83c3e !important;
+  padding: 0 !important;
+}
+#pre-footer-nav a:active, #pre-footer-nav a:focus, #pre-footer-nav a:hover {
+  color: #000 !important;
+}
+#pre-footer-nav li {
+  border: none;
+  display: inline-block;
+  float: none;
+  font-size: 1.2rem;
+  line-height: 40px;
+  margin: 0 !important;
+  padding: 0 20px 0 0 !important;
+  text-transform: uppercase;
+}
+#pre-footer .site h4 {
+  color: rgba(159, 32, 50, 1);
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#pre-footer .site .logo {
+  text-align: center;
+}
+#pre-footer .site .logo img {
+  width: 100%;
+}
+#pre-footer .site .logo.cti img {
+  margin: 10px;
+  max-width: 185px;
+}
+#pre-footer .site .logo.funai img {
+  max-width: 84px;
+}
+#pre-footer .site .logo.amazonia img {
+  max-width: 264px;
+}
+#pre-footer .site .subscribe form {
+  background-color: #fff;
+  border: 1px solid rgba(159, 32, 50, 1);
+  max-width: 280px;
+}
+#pre-footer .site .subscribe button {
+  float: right;
+  line-height: 1;
+  margin: 4px 4px 0 0;
+  padding: 7px 14px;
+  vertical-align: top;
+}
+#pre-footer .site .subscribe button:before {
+  color: #fff;
+  content: '\f105';
+  font-family: 'FontAwesome';
+  font-size: 1.8rem;
+  line-height: 1;
+  vertical-align: middle;
+}
+#pre-footer .site .subscribe input[type='text'] {
+  border: 0;
+  padding: 10px;
+  max-width: 75% !important;
+
+}
+#pre-footer .site .social .expediente {
+  padding-left: 80px;
+}
+
+#pre-footer .site .social h4 {
+  text-align: left;
+}
+#pre-footer .site .social ul {
+  text-align: center;
+}
+#pre-footer .site .social ul li {
+  display: inline;
+  margin: 0 5px;
+}
+#pre-footer .site .social ul li a:before {
+  color: #000;
+  font-family: 'FontAwesome';
+  font-size: 2.5rem;
+}
+#pre-footer .site .social .facebook a:before {
+  content: '\f09a';
+}
+#pre-footer .site .social .twitter a:before {
+  content: '\f099';
+}
+#pre-footer .site .social .youtube a:before {
+  content: '\f16a';
+}
+#pre-footer .site .subscribe ul {
+  text-align: left;
+}
+#pre-footer .site .subscribe ul li {
+  display: inline;
+  margin: 0 5px;
+}
+#pre-footer .site .subscribe ul li a:before {
+  color: #83631F;
+  font-family: 'FontAwesome';
+  font-size: 3.5rem;
+}
+#pre-footer .site .subscribe .facebook a:before {
+  content: '\f09a';
+}
+#pre-footer .site .subscribe .twitter a:before {
+  content: '\f099';
+}
+#pre-footer .site .subscribe .youtube a:before {
+  content: '\f16a';
+}
+#gk-copyrights {
+  color: rgba(159, 32, 50, 1);
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 0 0 10px;
+  position: relative;
+}
+#gk-copyrights:before {
+  content: "";
+  left: 50%;
+  margin: 0 0 0 -45px;
+  position: absolute;
+  top: 0;
+  width: 90px;
+}
+#gk-copyrights p {
+  margin: 0;
+}
+#gk-copyrights a {
+  color: #000 !important;
+}
+#gk-copyrights a:hover {
+  text-decoration: underline;
+}
+#gk-copyrights .copyright {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: right;
+}
+#gk-copyrights .copyright .hacklab {
+  background: url('images/logo-hacklab.png') no-repeat;
+  display: inline-block;
+  height: 15px;
+  width: 76px;
+  vertical-align: bottom;
+}
+@media screen and (max-width: 1680px) {
+  #pre-footer .site .gk-cols {
     margin: 0 20px;
   }
 }

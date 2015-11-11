@@ -6,32 +6,57 @@
 
 ?>
     	<?php do_action('quark_before_footer'); ?>
-    	<footer id="gk-footer" role="contentinfo">
-    		<div class="site">
-                <div class="gk-cols" data-cols="5">
-                    <div class="logo cti">
-                        <h4>Realização</h4>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-cti.png" alt="Centro de Trabalho Indigenista">
+      <!-- Begin #pre-footer -->
+      <footer id="pre-footer" role="contentinfo">
+        <div class="site">
+                <div class="gk-cols" data-cols="3">
+                  <div class="social">
+                    <div class="expediente">
+                      <h4>Expediente</h4>
+                      <h5>Edição</h5>
+
+                      ABNER MATHEUS JOAOc<br/>
+                      <br/>
+                      <h5>Redação</h5>
+                      ALEXANDRE AUGUSTO MILANI REIS<br/>
+                      ARICIA CHRISTOFARO FERNANDES<br/>
+                      <br/>
+
+                      <h5>Correspondentes</h5>
+                      ARTUR SILVA BOARETTO<br/>
+                      BIANCA PORTELA COSTA<br/>
+                      CAROLINA BERTI DE SOUZA CORREA<br/>
                     </div>
-                    <div class="logo funai">
-                        <h4>Parceria</h4>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-funai.png" alt="FUNAI">
-                    </div>
-                    <div class="logo amazonia">
-                        <h4>Apoio</h4>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-fundo-amazonia.png" alt="Fundo Amazônia">
+                  </div>
+                    <div class="subscribe">
+
+                        <h4>Contato</h4>
+                      <p>Email: contato(a)trabalhoindigenista.org.br</p>
+
+                      São Paulo - SP<br/>
+                      Rua Euclides de Andrade, 91<br/>
+                      Jardim Vera Cruz - São Paulo - SP CEP 05.030-030<br/>
+                      SEDE Fone: +55 (11) 2935.7769<br/>
+                      Celulares: +55 (11) 8745.0927, 8745.1137<br/><br/>
+                      <br/>
+
+                      Brasília - DF<br/>
+                      SCLN 210 Bloco C Sala 217<br/>
+                      Brasília-DF Cep: 70.862-530<br/>
+                      Fone: +55 (61) 3349-7769<br/>
+                      Fax: +55 (61) 3347-5559<br/>
+                      <br/>
                     </div>
                     <div class="subscribe">
                         <h4>Receba o boletim</h4>
+                        Mantenha-se informado sobre a situação dos povos isolados.
                         <form>
-                            <input type="text" placeholder="E-mail">
-                            <button>
-                                <span class="screen-reader-text">Enviar</span>
-                            </button>
-                        </form>
-                    </div>
-                    <div class="social">
-                        <h4>Siga o CTI</h4>
+                          <input type="text" placeholder="E-mail">
+                          <button>
+                            <span class="screen-reader-text">Enviar</span>
+                          </button>
+                        </form><p>
+                        <h4>Redes Sociais</h4>
                         <ul>
                             <li class="facebook">
                             <a href="https://www.facebook.com/trabalhoindigenista"><span class="screen-reader-text">Facebook</span></a>
@@ -44,6 +69,28 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+        </div>
+      </footer>
+      <!-- End of #pre-footer -->
+    	<footer id="gk-footer" role="contentinfo">
+    		<div class="site">
+                <div class="gk-cols" data-cols="3">
+
+                    <div class="logo cti">
+                        <h4>Realização</h4>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-cti.png" alt="Centro de Trabalho Indigenista">
+                    </div>
+                    <div class="logo funai">
+                        <h4>Parceria</h4>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-funai.png" alt="FUNAI">
+                    </div>
+                    <div class="logo amazonia">
+                        <h4>Apoio</h4>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-fundo-amazonia-alpha.png" alt="Fundo Amazônia">
+                    </div>
+
+
                 </div>
             </div>
             <div class="site">
