@@ -5818,6 +5818,7 @@ img.gk-responsive {
 #gk-footer .site .subscribe form {
   background-color: #fff;
   border: 1px solid rgba(159, 32, 50, 1);
+  height: 42px;
   max-width: 280px;
 }
 #gk-footer .site .subscribe button {
@@ -5837,7 +5838,7 @@ img.gk-responsive {
 }
 #gk-footer .site .subscribe input[type='text'] {
   border: 0;
-  padding: 10px;
+  padding: 12px 10px;
   max-width: 75% !important;
 }
 #gk-footer .site .social h4 {
@@ -5980,6 +5981,7 @@ img.gk-responsive {
 #pre-footer .site .subscribe form {
   background-color: #fff;
   border: 1px solid rgba(159, 32, 50, 1);
+  height: 42px;
   max-width: 280px;
 }
 #pre-footer .site .subscribe button {
@@ -5999,9 +6001,8 @@ img.gk-responsive {
 }
 #pre-footer .site .subscribe input[type='text'] {
   border: 0;
-  padding: 10px;
+  padding: 12px 10px;
   max-width: 75% !important;
-
 }
 #pre-footer .site .social .expediente {
   padding-left: 80px;
