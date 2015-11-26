@@ -408,6 +408,70 @@ function quark_widgets_init() {
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
 	));
+
+
+  register_sidebar( array(
+		'name'          => __( 'Pre-footer Esquerda', 'quark' ),
+		'id'            => 'prefooter_esquerda',
+		'description'   => __( 'Aparece na esquerda do pre-footer', 'quark' ),
+		'before_widget' => '<div class="expediente">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	));
+
+  register_sidebar( array(
+		'name'          => __( 'Pre-footer Centro' , 'quark' ),
+		'id'            => 'prefooter_centro',
+		'description'   => __( 'Aparece na esquerda do pre-footer', 'quark' ),
+    'before_widget' => '<div class="expediente">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	));
+
+  register_sidebar( array(
+		'name'          => __( 'Pre-footer Direita', 'quark' ),
+		'id'            => 'prefooter_direita',
+		'description'   => __( 'Aparece na esquerda do pre-footer', 'quark' ),
+    'before_widget' => '<div class="expediente">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	));
+
+  register_sidebar( array(
+		'name'          => __( 'Footer Esquerda', 'quark' ),
+		'id'            => 'footer_esquerda',
+		'description'   => __( 'Aparece na esquerda do footer', 'quark' ),
+		'before_widget' => '<div class="logo cti">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	));
+
+  register_sidebar( array(
+		'name'          => __( 'Footer Centro' , 'quark' ),
+		'id'            => 'footer_centro',
+		'description'   => __( 'Aparece na esquerda do footer', 'quark' ),
+    'before_widget' => '<div class="logo funai">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	));
+
+  register_sidebar( array(
+		'name'          => __( 'Footer Direita', 'quark' ),
+		'id'            => 'footer_direita',
+		'description'   => __( 'Aparece na esquerda do footer', 'quark' ),
+    'before_widget' => '<div class="logo amazonia">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	));
+
+
+
 }
 add_action( 'widgets_init', 'quark_widgets_init' );
 endif;
