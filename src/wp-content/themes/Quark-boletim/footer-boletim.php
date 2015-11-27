@@ -99,7 +99,13 @@
             $args_global = array(
               'post_type' => 'page',
               'order' => 'DESC',
-              'category_name' => 'boletim',
+              'meta_query' => array(
+                                array(
+                                  'key' => 'is_boletim',
+                                  'value' => 'boletim',
+                                  'compare' => 'IN',
+                                )
+                              ),
               'posts_per_page' => 10
             );
             $loop_boletim = new WP_Query( $args_global ); ?>
