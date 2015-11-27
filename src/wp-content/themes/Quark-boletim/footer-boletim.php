@@ -67,12 +67,23 @@
             <?php endif; ?>
 
             <?php get_search_form(); ?>
-            <h2 class="aside-title-boletim"><?php the_title(); ?></h2>
+            <?php  if ( $post->post_type == "page"): ?>
+              <h2 class="aside-title-boletim"><?php the_title(); ?></h2>
+            <?php endif; ?>
+            <?php  if ( $post->post_type == "post"): ?>
+
+              <h2 class="aside-title-boletim"><?php   ?></h2>
+            <?php endif; ?>
             <h2 class="aside-title">Nesta edição</h2>
 
             <?php
             the_post();
-            $category = $post->post_name;
+            if ( $post->post_type == "page") {
+                $category = $post->post_name;
+            }
+            if ( $post->post_type == "post") {
+                $category = get_post_meta($post->ID, 'boletim', true);
+            }
             $args_global = array(
               'post_type' => 'post',
               'order' => 'DESC',
@@ -80,6 +91,7 @@
               'meta_value' => $category,
               'posts_per_page' => -1
             );
+
             $loop_news = get_posts($args_global);
 
             wp_reset_query(); ?>
