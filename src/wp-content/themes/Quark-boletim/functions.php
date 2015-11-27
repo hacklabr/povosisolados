@@ -831,7 +831,11 @@ function create_boletim_categories($post_id) {
 	}*/
 
   $post_ = get_post($post_id);
+  $is_boletim = get_post_meta($post_->ID, 'is_boletim', true);
   $template_slug = get_page_template_slug();
+  if ($is_boletim === 'boletim'){
+    update_post_meta($post_->ID, '_wp_page_template', 'template.boletim.php');
+  }
   if ( $post_->post_type == 'page' && $template_slug === 'template.boletim.php' ){
     wp_create_category($post_->post_name);
   }

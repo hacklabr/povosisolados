@@ -76,18 +76,23 @@
             $args_global = array(
               'post_type' => 'post',
               'order' => 'DESC',
-              'category_name' => $category,
+              'meta_key' => 'boletim',
+              'meta_value' => $category,
               'posts_per_page' => -1
             );
-            $loop_news = new WP_Query( $args_global ); ?>
+            $loop_news = get_posts($args_global);
+
+            wp_reset_query(); ?>
+
 
             <nav id="aside-navigation" class="main-navigation" role="navigation">
               <div class="menu-menu-boletim-container">
               <!-- <?php wp_nav_menu( array( 'theme_location' => 'boletimmenu', 'menu_class' => 'nav-aside-menu', 'fallback_cb' => false ) ); ?> -->
               <ul>
-                <?php while ( $loop_news->have_posts()): $loop_news->the_post(); ?>
-                <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                <?php endwhile; wp_reset_query();?>
+                <?php foreach ( $loop_news as $_post ){    ?>
+
+                <li><a href="<?php echo get_permalink($_post->ID); ?>"><?php echo $_post->post_title; ?></a></li>
+                <?php }; wp_reset_query();?>
               </ul>
               </div>
 
@@ -108,7 +113,9 @@
                               ),
               'posts_per_page' => 10
             );
-            $loop_boletim = new WP_Query( $args_global ); ?>
+            $loop_boletim = new WP_Query( $args_global );
+            wp_reset_query();?>
+
 
             <nav id="aside-navigation" class="main-navigation" role="navigation">
               <div class="menu-menu-boletim-container">

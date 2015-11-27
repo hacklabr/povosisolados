@@ -12,7 +12,7 @@ $args_global = array(
 	'posts_per_page' => 100
 );
 $loop_global = new WP_Query( $args_global );
-
+wp_reset_query();
 // set counters
 $counter = 0;
 
@@ -30,11 +30,13 @@ $args_global = array(
 	'post_type' => 'post',
 	'order' => 'DESC',
 	'post__in' => get_option('sticky_posts'),
-	'category_name' => $category,
+	'meta_key' => 'boletim',
+  'meta_value' => $category,
 	'orderby' => 'menu_order',
 	'posts_per_page' => 6
 );
-$loop_news = new WP_Query( $args_global );
+$loop_news = get_posts($args_global);
+wp_reset_query();
 //var_dump($loop_news);
 
 get_header('boletim'); ?>
@@ -44,19 +46,19 @@ get_header('boletim'); ?>
 
             <div class="frontpage-block box boletim">
 				<div class="boletim-container site gk-cols" data-cols="3">
-					<?php while ( $loop_news->have_posts()): $loop_news->the_post(); ?>
+						<?php foreach ( $loop_news as $_post ){    ?>
                     <div class="boletim-box" data-sr="enter bottom and move 50px wait .2s">
                         <?php
-                        $thumb_id = get_post_thumbnail_id();
+                        $thumb_id = get_post_thumbnail_id($_post->ID);
                         $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
                         ?>
                         <div class="boletim-thumb" style="background-image:url('<?php echo $thumb_url[0]; ?>');" >
-                        <a href="<?php the_permalink(); ?>">
-                        <h3 class="boletim-title"><?php the_title(); ?></h3>
+                        <a href="<?php echo get_permalink($_post->ID); ?>">
+                        <h3 class="boletim-title"><?php echo $_post->post_title; ?></h3>
                         </a>
                         </div>
                     </div>
-				    <?php endwhile; wp_reset_query();?>
+				    <?php }; wp_reset_query();?>
                 </div>
             </div>
 
