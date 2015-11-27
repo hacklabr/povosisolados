@@ -77,9 +77,11 @@
             <h2 class="aside-title">Nesta edição</h2>
 
             <?php
+
             the_post();
             if ( $post->post_type == "page") {
                 $category = $post->post_name;
+                var_dump($category);
             }
             if ( $post->post_type == "post") {
                 $category = get_post_meta($post->ID, 'boletim', true);
