@@ -65,18 +65,17 @@ global $post;
 							'post_type' => 'post',
 							'order' => 'ASC',
 							'orderby' => 'menu_order',
-							'category_name' => 'editorial+' . $category ,
+							'category_name' => $category ,
+							'meta_key' => 'is_editorial',
+							'meta_value' => 'editorial',
 							'posts_per_page' => 1
 						);
 
-						$loop_editorial = new WP_Query( $args_editorial );
+						$loop_editorial = get_posts($args_editorial);
+						foreach ( $loop_editorial as $_post ){
+						$url = wp_get_attachment_url( get_post_thumbnail_id($_post->ID) );
+					  }; wp_reset_query(); ?>
 
-						while ( $loop_editorial->have_posts()): $loop_editorial->the_post();
-						$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-
-			?>
-
-		<?php endwhile; wp_reset_query(); ?>
 					<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');">
 		<?php } ?>
 				<div class="frontpage-block-wrap">
@@ -90,24 +89,24 @@ global $post;
 							'post_type' => 'post',
 							'order' => 'ASC',
 							'orderby' => 'menu_order',
-							'category_name' => 'editorial+' . $category,
+							'category_name' => $category ,
+							'meta_key' => 'is_editorial',
 							'posts_per_page' => 1
 						);
 
-						$loop_editorial = new WP_Query( $args_editorial );
-						///var_dump($loop_editorial);
-						while ( $loop_editorial->have_posts()): $loop_editorial->the_post(); ?>
-
+						$loop_editorial = get_posts($args_editorial);
+						foreach ( $loop_editorial as $_post ){
+					  ?>
 						<h2>Editorial</h2>
 
 						<div class="box-title">
-							<a href="<?php the_permalink(); ?>">
-							<h3><?php the_title(); ?></h3>
-							<?php the_excerpt(); ?>
+							<a href="<?php echo get_permalink($_post->ID); ?>">
+							<h3><?php echo $_post->post_title; ?></h3>
+							<?php echo $_post->post_excerpt; ?>
 							</a>
 						</div>
 
-						<?php endwhile; wp_reset_query(); ?>
+						<?php }; wp_reset_query(); ?>
                     </div>
 
 					<?php endif; ?>

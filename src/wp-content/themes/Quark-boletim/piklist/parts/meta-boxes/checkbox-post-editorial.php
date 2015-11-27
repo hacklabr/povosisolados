@@ -12,7 +12,7 @@ piklist('field', array(
   'class' => 'text'
 )
 ,'choices' => array(
-  'boletim' => 'É um editorial'
+  'editorial' => 'É um editorial'
 )
 ));
 ?>
