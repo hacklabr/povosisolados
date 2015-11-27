@@ -5,6 +5,8 @@
  */
 
 global $post;
+global $post_original;
+$post_original = $post;
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>

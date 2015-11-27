@@ -105,10 +105,10 @@ get_header('boletim'); ?>
                                             $tabs_content = array();
                                             $tabs_bg = array();
                                             $posts = get_posts($args_tabs);
-                                            foreach ($posts as $post) {
+                                            foreach ($posts as $_post) {
                                                 array_push($tabs, get_the_title());
-                                                array_push($tabs_content, $post->post_content);
-                                                if (has_post_thumbnail($post->ID)) {
+                                                array_push($tabs_content, $_post->post_content);
+                                                if (has_post_thumbnail($_post->ID)) {
                                                     array_push($tabs_bg, wp_get_attachment_url(get_post_thumbnail_id($post_ID)));
                                                 }
                                             }

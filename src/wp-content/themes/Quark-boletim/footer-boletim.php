@@ -3,8 +3,10 @@
  * The template for displaying the footer from Boletim Page
  *
  */
+ global $post_original;
 
 ?>
+
         <?php do_action('quark_before_footer'); ?>
       <!-- Begin #pre-footer -->
       <footer id="pre-footer" role="contentinfo">
@@ -56,7 +58,7 @@
     <aside id="aside-menu">
         <div>
 
-            <?php var_dump($category);if (is_active_sidebar('menu_top')) : ?>
+            <?php if (is_active_sidebar('menu_top')) : ?>
             <?php do_action('quark_before_menu_top'); ?>
             <div id="gk-menu-top">
                 <div class="widget-area">
@@ -78,11 +80,9 @@
             <h2 class="aside-title">Nesta edição</h2>
 
             <?php
-
             the_post();
             if ( $post->post_type == "page") {
-                $category = $post->post_name;
-                var_dump($category);
+                $category = $post_original->post_name;
             }
             if ( $post->post_type == "post") {
                 $category = get_post_meta($post->ID, 'boletim', true);
