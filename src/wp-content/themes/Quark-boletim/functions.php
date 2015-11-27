@@ -832,12 +832,17 @@ function create_boletim_categories($post_id) {
 
   $post_ = get_post($post_id);
   $is_boletim = get_post_meta($post_->ID, 'is_boletim', true);
+  $parent_boletim = get_post_meta($post_->ID, 'boletim', true);
   $template_slug = get_page_template_slug();
   if ($is_boletim === 'boletim'){
     update_post_meta($post_->ID, '_wp_page_template', 'template.boletim.php');
   }
   if ( $post_->post_type == 'page' && $template_slug === 'template.boletim.php' ){
     wp_create_category($post_->post_name);
+  }
+  if ( $post_->post_type == 'post' && $parent_boletim) {
+    $term = get_category_by_slug($parent_boletim);
+    wp_set_post_categories($post_->ID, array($term->term_id), true);
   }
 }
 add_action( 'save_post', 'create_boletim_categories' );
