@@ -55,8 +55,8 @@
     <i id="close-menu">&times;</i>
     <aside id="aside-menu">
         <div>
-          var_dump($category);
-            <?php if (is_active_sidebar('menu_top')) : ?>
+
+            <?php var_dump($category);if (is_active_sidebar('menu_top')) : ?>
             <?php do_action('quark_before_menu_top'); ?>
             <div id="gk-menu-top">
                 <div class="widget-area">
