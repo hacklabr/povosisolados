@@ -25,7 +25,7 @@ $params_copy = true;
 $validated = true;
 // flag to detect if e-mail was sent
 $messageSent = false;
-// variable to store the errors, empty string means no error 
+// variable to store the errors, empty string means no error
 $errors = array(
     "name" => '',
     "email" => '',
@@ -79,7 +79,7 @@ if(isset($_POST['message-send'])) {
                     );
         } else {
                     $validated = false;
-                    $errors['recaptcha'] = __("The reCAPTCHA wasn't entered correctly. Go back and try it again.", 'quark');        
+                    $errors['recaptcha'] = __("The reCAPTCHA wasn't entered correctly. Go back and try it again.", 'quark');
         }
     }
     // if the all fields was correct
@@ -98,32 +98,32 @@ if(isset($_POST['message-send'])) {
         } else {
             $subject = __('From ', 'quark') . get_bloginfo('name');
         }
-        
+
         $body = "<html>";
         $body .= "<body>";
         $body .= "<h1 style=\"font-size: 24px; border-bottom: 4px solid #EEE; margin: 10px 0; padding: 10px 0; font-weight: normal; font-style: italic;\">".__('Message from', 'quark')." <strong>".get_bloginfo('name')."</strong></h1>";
-        
+
         if($params_name) {
             $body .= "<div>";
             $body .= "<h2 style=\"font-size: 16px; font-weight: normal; border-bottom: 1px solid #EEE; padding: 5px 0; margin: 10px 0;\">".__('Name:', 'quark')."</h2>";
             $body .= "<p>".$output['name']."</p>";
             $body .= "</div>";
         }
-        
+
         if($params_email) {
             $body .= "<div>";
             $body .= "<h2 style=\"font-size: 16px; font-weight: normal; border-bottom: 1px solid #EEE; padding: 5px 0; margin: 10px 0;\">".__('E-mail:', 'quark')."</h2>";
             $body .= "<p>".$output['email']."</p>";
             $body .= "</div>";
         }
-        
+
         $body .= "<div>";
         $body .= "<h2 style=\"font-size: 16px; font-weight: normal; border-bottom: 1px solid #EEE; padding: 5px 0; margin: 10px 0;\">".__('Message:', 'quark')."</h2>";
         $body .= $output['message'];
         $body .= "</div>";
         $body .= "</body>";
         $body .= "</html>";
-        
+
         if($params_name && $params_email) {
             $headers[] = 'From: '.$output['name'].' <'.$output['email'].'>';
             $headers[] = 'Reply-To: ' . $output['email'];
@@ -140,15 +140,15 @@ if(isset($_POST['message-send'])) {
         }
 
         wp_mail($email, $subject, $body, $headers);
-        
+
         if($params_copy && $params_email && isset($_POST['send_copy'])) {
             wp_mail($output['email'], $subject, $body, $headers);
         }
-        
+
         $messageSent = true;
     }
 
-} 
+}
 
 get_header(); ?>
 
@@ -163,7 +163,7 @@ get_header(); ?>
                         <?php the_post_thumbnail(); ?>
                         <?php do_action('quark_after_post_image'); ?>
                     <?php endif; ?>
-           
+
                     <div class="entry-title-wrap">
                         <h1 data-sr="enter bottom and move 50px"><?php the_title(); ?></h1>
 
@@ -172,16 +172,16 @@ get_header(); ?>
                             <?php echo get_theme_mod('quark_contact_email_header','blank@gavick.com'); ?>
                         </h2>
                         <?php endif; ?>
-                        
+
                         <?php if(get_theme_mod('quark_contact_fb','#') != '' || get_theme_mod('quark_contact_twitter','#') != '' || get_theme_mod('quark_contact_gplus','#') != '') : ?>
-                        <div class="gk-social-icons-block" data-sr="enter bottom and move 50px and wait .3s"> 
+                        <div class="gk-social-icons-block" data-sr="enter bottom and move 50px and wait .3s">
                             <?php if(get_theme_mod('quark_contact_fb','#') != '') : ?><a href="<?php echo get_theme_mod('quark_contact_fb','#');?>"><i class="gkicon-fb"></i></a><?php endif ;?>
                             <?php if(get_theme_mod('quark_contact_twitter','#') != '') : ?><a href="<?php echo get_theme_mod('quark_contact_twitter','#');?>"><i class="gkicon-twitter"></i></a><?php endif ;?>
                             <?php if(get_theme_mod('quark_contact_gplus','#') != '') : ?><a href="<?php echo get_theme_mod('quark_contact_gplus','#');?>"><i class="gkicon-gplus"></i></a><?php endif ;?>
                         </div>
                         <?php endif; ?>
                     </div>
-                    
+
                     <?php if(get_theme_mod('quark_contact_map_url','#') != '') : ?>
                         <p><a href="<?php echo get_theme_mod('quark_contact_map_url','#');?>" class="gk-map-icon"><i class="gkicon-marker"></i><?php _e('View on Google Maps','quark'); ?></a></p>
                     <?php endif; ?>
@@ -194,11 +194,11 @@ get_header(); ?>
                     <p class="gk-success"><?php _e('Your message was sent to us successfully.', 'quark'); ?></p>
                     <p><a href="<?php echo home_url(); ?>"><?php _e('Back to the homepage', 'quark'); ?></a></p>
                     <?php else : ?>
-                    
+
                         <?php if(!$validated) : ?>
                         <p class="gk-error"><?php _e('Sorry, an error occured.', 'quark'); ?></p>
                         <?php endif; ?>
-                        
+
                         <form action="<?php the_permalink(); ?>" id="gk-contact" method="post">
                             <dl>
                                 <?php if($params_name) : ?>
@@ -208,11 +208,11 @@ get_header(); ?>
                                     <span class="error"><?php echo $errors['name'];?></span>
                                     <?php endif; ?>
                                 </dt>
-                                <dd>    
+                                <dd>
                                     <input type="text" name="contact-name" id="contact-name" value="<?php echo $output['name'];?>" />
                                 </dd>
                                 <?php endif; ?>
-                    
+
                                 <?php if($params_email) : ?>
                                 <dt>
                                     <label for="email"><?php _e('Email:', 'quark'); ?></label>
@@ -220,11 +220,11 @@ get_header(); ?>
                                     <span class="error"><?php echo $errors['email'];?></span>
                                     <?php endif; ?>
                                 </dt>
-                                <dd>    
+                                <dd>
                                     <input type="text" name="email" id="email" value="<?php echo $output['email'];?>" />
                                 </dd>
                                 <?php endif; ?>
-                    
+
                                 <dt class="gk-message">
                                     <label for="comment-text"><?php _e('Message:', 'quark'); ?></label>
                                     <?php if($errors['message'] != '') : ?>
@@ -235,33 +235,33 @@ get_header(); ?>
                                     <textarea name="comment-text" id="comment-text" rows="6" cols="30"><?php echo $output['message']; ?></textarea>
                                 </dd>
                             </dl>
-                            
+
                             <?php if($params_copy && $params_email) : ?>
                             <p>
                                 <label>
-                                    <input type="checkbox" name="send_copy" /> 
+                                    <input type="checkbox" name="send_copy" />
                                     <?php _e('Send copy of the message to yourself', 'quark'); ?>
                                 </label>
                             </p>
                             <?php endif; ?>
-                            
-                            
+
+
                             <?php if(
                                     get_theme_mod('quark_contact_enable_captcha', 0) == 1 &&
                                     $publickey != '' &&
                                     $privatekey != ''
-                                ) : 
+                                ) :
                                 wp_enqueue_script( 'gk-captcha-script', 'https://www.google.com/recaptcha/api.js', array( 'jquery' ), false, false);
                                 ?>
                                 <p>
                                     <?php if($errors['recaptcha'] != '') : ?>
                                     <span class="error"><?php echo $errors['recaptcha'];?></span>
-                                    <?php endif; ?>         
+                                    <?php endif; ?>
                                 </p>
 
                                 <div class="g-recaptcha" data-sitekey="<?php echo $publickey; ?>"></div>
                             <?php endif; ?>
-                            
+
                             <p>
                                 <input type="submit" value="<?php _e('Send message', 'quark'); ?>" />
                             </p>
@@ -277,7 +277,7 @@ get_header(); ?>
             </article>
             <?php do_action('quark_after_content'); ?>
 
-        </div><!-- #content -->     
+        </div><!-- #content -->
     </div><!-- #primary -->
 
 <?php get_footer(); ?>

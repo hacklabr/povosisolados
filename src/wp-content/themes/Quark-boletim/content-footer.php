@@ -25,20 +25,20 @@
         <?php if(get_theme_mod('quark_popup_social_icons',1) == 1) : ?>
 			 <span class="gk-social-icons">
 	  		  	<i class="fa fa-share-alt"></i>
-	  		  	
+
 	  		  	<span>
 	  		  		<?php if(get_theme_mod('quark_popup_social_fb', 1) == 1) : ?>
 	  		  			<a href="https://www.facebook.com/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
 	  		  		<?php endif; ?>
-	  		  		
+
 	  		  		<?php if(get_theme_mod('quark_popup_social_twitter', 1) == 1) : ?>
 	  		  			<a href="http://twitter.com/intent/tweet?source=sharethiscom&amp;url=<?php echo get_permalink(); ?>" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
 	  		  		<?php endif; ?>
-	  		  		
+
 	  		  		<?php if(get_theme_mod('quark_popup_social_gplus', 1) == 1) : ?>
 	  		  			<a href="https://plus.google.com/share?url=<?php echo get_permalink(); ?>" target="_blank"><i class="fa fa-google-plus"></i> Google+</a>
 	  		  		<?php endif; ?>
-	  		  		
+
 	  		  		<?php if(get_theme_mod('quark_popup_social_pinterest', 1) == 1) : ?>
 	  		  			<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest-p"></i> Pinterest</a>
 	  		  		<?php endif; ?>
@@ -46,7 +46,7 @@
 	  		  		<?php if(get_theme_mod('quark_popup_social_linked', 0) == 1) : ?>
 		          		<a href="https://www.linkedin.com/cws/share?url=<?php echo get_permalink(); ?>"><i class="fa fa-linkedin"></i> LinkedIn</a>
 		          	<?php endif; ?>
-		          		
+
 		          	<?php if(get_theme_mod('quark_popup_social_vk', 0) == 1) : ?>
 		          		<a href="http://vkontakte.ru/share.php?url=<?php echo get_permalink(); ?>"><i class="fa fa-vk"></i> VK</a>
 		          	<?php endif; ?>
@@ -56,7 +56,7 @@
     	<?php else : ?>
 
 	        <div class="entry-social-sharing">
-	            
+
 				<?php if(get_theme_mod('quark_social_twitter', 1) == 1) : ?>
 		            <?php do_action('quark_before_twitter_icon'); ?>
 		            <div class="entry-twitter-button">
@@ -119,6 +119,10 @@
 		            <?php do_action('quark_after_gplus_icon'); ?>
 	        	<?php endif; ?>
 
+
+                    <!--<div class="entry-gplus-button">
+											<img src="/wp-content/themes/Quark-boletim/images/email.png">
+										</div> -->
 
 	        </div>
 	        <?php do_action('quark_after_social_icons'); ?>

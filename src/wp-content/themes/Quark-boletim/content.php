@@ -53,10 +53,10 @@
 				<?php dynamic_sidebar('sidebar'); ?>
 			</aside>
 			<?php do_action('quark_after_sidebar'); ?>
-			<?php endif; ?>
+		<?php endif; ?>
 			<?php
-					previous_post_link('<span class="navgation-post left">%link</span>', '&#8592; %title');
-					next_post_link('<span class="navgation-post right">%link<span>', '%title  &#8594;');
+					previous_post_link('<span class="navgation-post left">%link</span>', '&#8592; %title', TRUE);
+					next_post_link('<span class="navgation-post right">%link<span>', '%title &#8594;', TRUE);
 			?>
 		</div><!-- .site -->
 	<?php endif; ?>
