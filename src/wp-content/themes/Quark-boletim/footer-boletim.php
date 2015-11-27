@@ -73,6 +73,8 @@
             <?php  if ( $post->post_type == "page"): ?>
               <h2 class="aside-title-boletim"><?php the_title(); ?></h2>
             <?php endif; ?>
+            	  <h2 class="aside-title-boletim">			<?php pll_the_languages(array('dropdown' => 1, 'show_flags'=>0,'show_names'=>1));?></h2>
+
             <?php  if ( $post->post_type == "post"): ?>
 
               <h2 class="aside-title-boletim"><?php   ?></h2>
