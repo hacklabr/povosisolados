@@ -4626,10 +4626,20 @@ p.numblocks span.highlight {
 .boletim #aside-menu ul {
   list-style: none;
   margin: 0;
-  display:inline-flex;
+  display:inline-box;
 }
 
 .boletim #aside-menu ul li {
+  line-height: 1.7;
+}
+
+.boletim #aside-menu #language ul {
+  list-style: none;
+  margin: 0;
+  display:inline-flex;
+}
+
+.boletim #aside-menu #language ul li {
   line-height: 1.7;
 }
 
