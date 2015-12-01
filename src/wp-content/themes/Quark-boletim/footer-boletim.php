@@ -72,8 +72,12 @@
             <?php get_search_form(); ?>
             <?php  if ( $post->post_type == "page"): ?>
               <h2 class="aside-title-boletim"><?php the_title(); ?></h2>
+            <?php else: ?>
+            	  <h2 class="aside-title-boletim"></h2>
             <?php endif; ?>
-            	  <h2 class="aside-title-boletim">			<?php pll_the_languages(array('dropdown' => 1, 'show_flags'=>0,'show_names'=>1));?></h2>
+                <ul id="language-flags">
+                  <?php pll_the_languages(array('dropdown' => 0, 'show_flags'=>1,'show_names'=>0));?>
+                </ul>
 
             <?php  if ( $post->post_type == "post"): ?>
 

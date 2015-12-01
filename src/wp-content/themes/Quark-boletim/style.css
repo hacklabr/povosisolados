@@ -153,10 +153,19 @@ strong {
 ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  display:inline-flex;
 }
 
 ul li {
+  line-height: 0;
+}
+
+#language-flags ul {
+  list-style: none;
+  margin: 0;
+}
+
+#language-flags ul li {
   line-height: 1.7;
 }
 
@@ -242,9 +251,16 @@ pre {
   content: "a";
 }
 .gkicon-bottle-glass:before {
-  content: "F";
+  content: "F";ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.gkicon-burger:before {
+
+ul li {
+  line-height: 1.7;
+}
+
   content: "G";
 }
 .gkicon-calendar:before {
@@ -4604,7 +4620,7 @@ p.numblocks span.highlight {
 .boletim #aside-menu li {
   font-size: 1.2rem;
   line-height: 1.5;
-  padding: 8px 0;
+  padding: 0px 6px;
   text-transform: initial;
 }
 .boletim #gk-mobile-menu i, .boletim #gk-mobile-menu i:before, .boletim #gk-mobile-menu i:after {
