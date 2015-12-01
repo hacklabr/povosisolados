@@ -75,7 +75,7 @@
             <?php else: ?>
             	  <h2 class="aside-title-boletim"></h2>
             <?php endif; ?>
-                <ul id="language-flags">
+                <ul class="language">
                   <?php pll_the_languages(array('dropdown' => 0, 'show_flags'=>1,'show_names'=>0));?>
                 </ul>
 

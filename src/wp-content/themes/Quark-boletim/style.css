@@ -153,20 +153,11 @@ strong {
 ul {
   list-style: none;
   margin: 0;
-  display:inline-flex;
+  display:inline-block;
 }
 
 ul li {
   line-height: 0;
-}
-
-#language-flags ul {
-  list-style: none;
-  margin: 0;
-}
-
-#language-flags ul li {
-  line-height: 1.7;
 }
 
 p {
@@ -4623,6 +4614,25 @@ p.numblocks span.highlight {
   padding: 0px 6px;
   text-transform: initial;
 }
+
+/*.boletim #aside-menu ul {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0px 6px;
+  text-transform: initial;
+}*/
+
+
+.boletim #aside-menu ul {
+  list-style: none;
+  margin: 0;
+  display:inline-flex;
+}
+
+.boletim #aside-menu ul li {
+  line-height: 1.7;
+}
+
 .boletim #gk-mobile-menu i, .boletim #gk-mobile-menu i:before, .boletim #gk-mobile-menu i:after {
   background: rgba(255,255,255,0.5);
 }
