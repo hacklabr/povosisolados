@@ -12,7 +12,7 @@
             <?php the_post_thumbnail(); ?>
             <?php do_action('photo_after_post_image'); ?>
         <?php endif; ?>
-            
+
         <div class="entry-title-wrap">
              <?php if(get_post_format() != '') : ?>
                 <span class="format gk-format-<?php echo get_post_format(); ?>"></span>
@@ -39,10 +39,6 @@
                 }
             ?>
         </div>
-
-        <?php if(is_single() || is_page() && (has_post_thumbnail())) : ?>
-            <?php echo quark_post_thumbnail_caption(); ?>
-        <?php endif; ?>
 
         <?php if(get_theme_mod('quark_header_mouse_icon',1) == 1) : ?>
             <span class="mouse-icon"><span><span></span></span></span>
@@ -109,7 +105,7 @@
 
 <?php if(is_single()) : ?>
 <ul class="item-info">
-   
+
     <?php
         // Translators: used between list items, there is a space after the comma.
         $categories_list = get_the_category_list( __( ', ', 'quark' ) );
