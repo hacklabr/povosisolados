@@ -8,14 +8,17 @@
  * @subpackage Administration
  */
 
-// Declare these as global in case schema.php is included from a function.
+/**
+ * Declare these as global in case schema.php is included from a function.
+ *
+ * @global wpdb   $wpdb
+ * @global array  $wp_queries
+ * @global string $charset_collate
+ */
 global $wpdb, $wp_queries, $charset_collate;
 
 /**
  * The database character collate.
- * @var string
- * @global string
- * @name $charset_collate
  */
 $charset_collate = $wpdb->get_charset_collate();
 
@@ -23,6 +26,8 @@ $charset_collate = $wpdb->get_charset_collate();
  * Retrieve the SQL for creating database tables.
  *
  * @since 3.3.0
+ *
+ * @global wpdb $wpdb
  *
  * @param string $scope Optional. The tables for which to retrieve SQL. Can be all, global, ms_global, or blog tables. Defaults to all.
  * @param int $blog_id Optional. The blog ID for which to retrieve SQL. Default is the current blog ID.
@@ -212,7 +217,7 @@ CREATE TABLE $wpdb->posts (
   KEY user_nicename (user_nicename)
 ) $charset_collate;\n";
 
-	// usermeta
+	// Usermeta.
 	$usermeta_table = "CREATE TABLE $wpdb->usermeta (
   umeta_id bigint(20) unsigned NOT NULL auto_increment,
   user_id bigint(20) unsigned NOT NULL default '0',
@@ -331,8 +336,10 @@ $wp_queries = wp_get_db_schema( 'all' );
  * Create WordPress options and set the default values.
  *
  * @since 1.5.0
- * @uses $wpdb
- * @uses $wp_db_version
+ *
+ * @global wpdb $wpdb WordPress database abstraction object.
+ * @global int  $wp_db_version
+ * @global int  $wp_current_db_version
  */
 function populate_options() {
 	global $wpdb, $wp_db_version, $wp_current_db_version;
@@ -343,7 +350,7 @@ function populate_options() {
 	 *
 	 * @since 2.6.0
 	 */
-	do_action('populate_options');
+	do_action( 'populate_options' );
 
 	if ( ini_get('safe_mode') ) {
 		// Safe mode can break mkdir() so use a flat structure by default.
@@ -372,6 +379,7 @@ function populate_options() {
 
 	$options = array(
 	'siteurl' => $guessurl,
+	'home' => $guessurl,
 	'blogname' => __('My Site'),
 	/* translators: blog tagline */
 	'blogdescription' => __('Just another WordPress site'),
@@ -393,7 +401,7 @@ function populate_options() {
 	'default_comment_status' => 'open',
 	'default_ping_status' => 'open',
 	'default_pingback_flag' => 1,
-	//'posts_per_page' => 10,
+	'posts_per_page' => 10,
 	/* translators: default date format, see http://php.net/date */
 	'date_format' => __('F j, Y'),
 	/* translators: default time format, see http://php.net/date */
@@ -407,8 +415,7 @@ function populate_options() {
 	'hack_file' => 0,
 	'blog_charset' => 'UTF-8',
 	'moderation_keys' => '',
-	//'active_plugins' => array(),
-	'home' => $guessurl,
+	'active_plugins' => array(),
 	'category_base' => '',
 	'ping_sites' => 'http://rpc.pingomatic.com/',
 	'advanced_edit' => 0,
@@ -439,7 +446,7 @@ function populate_options() {
 	// 2.1
 	'blog_public' => '1',
 	'default_link_category' => 2,
-	//'show_on_front' => 'posts',
+	'show_on_front' => 'posts',
 
 	// 2.2
 	'tag_base' => '',
@@ -471,10 +478,10 @@ function populate_options() {
 	'comments_per_page' => 50,
 	'default_comments_page' => 'newest',
 	'comment_order' => 'asc',
-	//'sticky_posts' => array(),
-	//'widget_categories' => array(),
-	//'widget_text' => array(),
-	//'widget_rss' => array(),
+	'sticky_posts' => array(),
+	'widget_categories' => array(),
+	'widget_text' => array(),
+	'widget_rss' => array(),
 	'uninstall_plugins' => array(),
 
 	// 2.8
@@ -482,13 +489,16 @@ function populate_options() {
 
 	// 3.0
 	'page_for_posts' => 0,
-	//'page_on_front' => 0,
+	'page_on_front' => 0,
 
 	// 3.1
 	'default_post_format' => 0,
 
 	// 3.5
 	'link_manager_enabled' => 0,
+
+	// 4.3.0
+	'finished_splitting_shared_terms' => 1,
 	);
 
 	// 3.3
@@ -529,10 +539,10 @@ function populate_options() {
 	if ( !empty($insert) )
 		$wpdb->query("INSERT INTO $wpdb->options (option_name, option_value, autoload) VALUES " . $insert);
 
-	// in case it is set, but blank, update "home"
+	// In case it is set, but blank, update "home".
 	if ( !__get_option('home') ) update_option('home', $guessurl);
 
-	// Delete unused options
+	// Delete unused options.
 	$unusedoptions = array(
 		'blodotgsping_url', 'bodyterminator', 'emailtestonly', 'phoneemail_separator', 'smilies_directory',
 		'subjectprefix', 'use_bbcode', 'use_blodotgsping', 'use_phoneemail', 'use_quicktags', 'use_weblogsping',
@@ -828,8 +838,10 @@ function populate_roles_300() {
 		$role->add_cap( 'list_users' );
 		$role->add_cap( 'remove_users' );
 
-		// Never used, will be removed. create_users or
-		// promote_users is the capability you're looking for.
+		/*
+		 * Never used, will be removed. create_users or promote_users
+		 * is the capability you're looking for.
+		 */
 		$role->add_cap( 'add_users' );
 
 		$role->add_cap( 'promote_users' );
@@ -855,13 +867,18 @@ function install_network() {
 endif;
 
 /**
- * populate network settings
+ * Populate network settings.
  *
  * @since 3.0.0
  *
- * @param int $network_id id of network to populate
+ * @global wpdb       $wpdb
+ * @global object     $current_site
+ * @global int        $wp_db_version
+ * @global WP_Rewrite $wp_rewrite
+ *
+ * @param int $network_id ID of network to populate.
  * @return bool|WP_Error True on success, or WP_Error on warning (with the install otherwise successful,
- * 	so the error code must be checked) or failure.
+ *                       so the error code must be checked) or failure.
  */
 function populate_network( $network_id = 1, $domain = '', $email = '', $site_name = '', $path = '/', $subdomain_install = false ) {
 	global $wpdb, $current_site, $wp_db_version, $wp_rewrite;
@@ -872,7 +889,7 @@ function populate_network( $network_id = 1, $domain = '', $email = '', $site_nam
 	if ( '' == $site_name )
 		$errors->add( 'empty_sitename', __( 'You must provide a name for your network of sites.' ) );
 
-	// check for network collision
+	// Check for network collision.
 	if ( $network_id == $wpdb->get_var( $wpdb->prepare( "SELECT id FROM $wpdb->site WHERE id = %d", $network_id ) ) )
 		$errors->add( 'siteid_exists', __( 'The network already exists.' ) );
 
@@ -883,7 +900,7 @@ function populate_network( $network_id = 1, $domain = '', $email = '', $site_nam
 	if ( $errors->get_error_code() )
 		return $errors;
 
-	// set up site tables
+	// Set up site tables.
 	$template = get_option( 'template' );
 	$stylesheet = get_option( 'stylesheet' );
 	$allowed_themes = array( $stylesheet => true );
@@ -898,7 +915,7 @@ function populate_network( $network_id = 1, $domain = '', $email = '', $site_nam
 	} else {
 		$wpdb->insert( $wpdb->site, array( 'domain' => $domain, 'path' => $path, 'id' => $network_id ) );
 	}
-	
+
 	wp_cache_delete( 'networks_have_paths', 'site-options' );
 
 	if ( !is_multisite() ) {
@@ -914,12 +931,14 @@ function populate_network( $network_id = 1, $domain = '', $email = '', $site_nam
 		$site_admins = get_site_option( 'site_admins' );
 	}
 
+	/* translators: Do not translate USERNAME, SITE_NAME, BLOG_URL, PASSWORD: those are placeholders. */
 	$welcome_email = __( 'Howdy USERNAME,
 
 Your new SITE_NAME site has been successfully set up at:
 BLOG_URL
 
 You can log in to the administrator account with the following information:
+
 Username: USERNAME
 Password: PASSWORD
 Log in here: BLOG_URLwp-login.php
@@ -975,8 +994,8 @@ We hope you enjoy your new site. Thanks!
 	 *
 	 * @since 3.7.0
 	 *
-	 * @param array $sitemeta Associative of meta keys and values to be inserted.
-	 * @param int $network_id Network ID being created.
+	 * @param array $sitemeta   Associative array of network meta keys and values to be inserted.
+	 * @param int   $network_id ID of network to populate.
 	 */
 	$sitemeta = apply_filters( 'populate_network_meta', $sitemeta, $network_id );
 
@@ -990,9 +1009,13 @@ We hope you enjoy your new site. Thanks!
 	}
 	$wpdb->query( "INSERT INTO $wpdb->sitemeta ( site_id, meta_key, meta_value ) VALUES " . $insert );
 
-	// When upgrading from single to multisite, assume the current site will become the main site of the network.
-	// When using populate_network() to create another network in an existing multisite environment,
-	// skip these steps since the main site of the new network has not yet been created.
+	/*
+	 * When upgrading from single to multisite, assume the current site will
+	 * become the main site of the network. When using populate_network()
+	 * to create another network in an existing multisite environment, skip
+	 * these steps since the main site of the new network has not yet been
+	 * created.
+	 */
 	if ( ! is_multisite() ) {
 		$current_site = new stdClass;
 		$current_site->domain = $domain;
