@@ -75,9 +75,11 @@
             <?php else: ?>
             	  <h2 class="aside-title-boletim"></h2>
             <?php endif; ?>
-                <ul class="language">
+            <div class="language">
+                <ul>
                   <?php pll_the_languages(array('dropdown' => 0, 'show_flags'=>1,'show_names'=>0));?>
                 </ul>
+            </div>
 
             <?php  if ( $post->post_type == "post"): ?>
 

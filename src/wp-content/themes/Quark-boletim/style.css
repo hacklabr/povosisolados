@@ -4624,24 +4624,29 @@ p.numblocks span.highlight {
 
 
 .boletim #aside-menu ul {
-  list-style: none;
-  margin: 0;
-  display:inline-box;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  /*padding: 0px 6px;*/
+  text-transform: initial;
 }
 
 .boletim #aside-menu ul li {
   line-height: 1.7;
 }
 
-.boletim #aside-menu #language ul {
-  list-style: none;
-  margin: 0;
-  display:inline-flex;
+.language ul{
+  padding: 0 0 0 25px;
 }
 
-.boletim #aside-menu #language ul li {
+
+.language ul li {
+  list-style: none;
+  margin: 0;
+  display:inline-block;
   line-height: 1.7;
 }
+
+
 
 .boletim #gk-mobile-menu i, .boletim #gk-mobile-menu i:before, .boletim #gk-mobile-menu i:after {
   background: rgba(255,255,255,0.5);
