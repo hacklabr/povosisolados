@@ -1406,7 +1406,7 @@ label {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
-  padding-right: 30px;
+  padding-right: 10px;
   min-width: 280px;
   max-width: 100%;
 }
@@ -1720,7 +1720,7 @@ article.one-page {
 }
 .entry-header time,
 .entry-header .gk-subtitle {
-  background-color: rgb(169, 55, 71);
+  background-color: rgba(169, 55, 71, 0.4);
   color: #fff;
   font-size: 1.5rem;
   font-weight: normal;
@@ -1730,7 +1730,7 @@ article.one-page {
 }
 
 .entry-title {
-  background-color: rgba(51, 33, 33, 1);
+  background-color: rgba(51, 33, 33, 0);
   color: #fff;
   font-size: 3rem;
   letter-spacing: 0;
@@ -1803,10 +1803,11 @@ article.one-page {
 .entry-summary p,
 .entry-content p {
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   margin: 0.5em 0 1em;
   text-align: left;
+  letter-spacing: -.003em;
 }
 
 .entry-title-wrap {
@@ -4687,7 +4688,7 @@ p.numblocks span.highlight {
   background-color: rgba(51, 33, 33, 1);
 }
 .frontpage-block.box.boletim .boletim-title {
-  background-color: rgba(51, 33, 33, 0.8);
+  background-color: rgba(51, 33, 33, 0.4);
   color: rgba(255,255,255,1);
   font-size: 1.7rem;
   font-weight: bold;
@@ -6091,9 +6092,34 @@ img.gk-responsive {
 #pre-footer .site .subscribe .twitter a:before {
   content: '\f099';
 }
-#pre-footer .site .subscribe .youtube a:before {
+
+#pre-footer .site .expediente ul {
+  text-align: left;
+}
+#pre-footer .site .expediente ul li {
+  display: inline;
+  margin: 0 5px;
+}
+#pre-footer .site .expediente ul li a:before {
+  color: #83631F;
+  font-family: 'FontAwesome';
+  font-size: 3.5rem;
+}
+
+#pre-footer .site .expediente .youtube a:before {
   content: '\f16a';
 }
+
+#pre-footer .site .expediente .facebook a:before {
+  content: '\f09a';
+}
+#pre-footer .site .expediente .twitter a:before {
+  content: '\f099';
+}
+#pre-footer .site .expediente .youtube a:before {
+  content: '\f16a';
+}
+
 #gk-copyrights {
   color: rgba(159, 32, 50, 1);
   font-size: 1.3rem;
@@ -6119,7 +6145,7 @@ img.gk-responsive {
   text-decoration: underline;
 }
 #gk-copyrights .copyright {
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   font-weight: bold;
   text-align: right;
 }
@@ -6889,6 +6915,11 @@ a.pswp__share--download:before {
   font-weight: bold;
   text-align:left;
   color:#fff;
+}
+
+.navigation-buttons {
+  width: 20%;
+  margin: auto;
 }
 
 /*

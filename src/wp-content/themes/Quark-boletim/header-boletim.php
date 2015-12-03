@@ -46,8 +46,22 @@ $post_original = $post;
 
         <header id="gk-header" role="banner">
 			<div id="gk-header-nav">
-
-				<h1><span class="screen-reader-text">Boletim Povos Isolados da Amazônia</span></h1>
+				<?php
+					$the_slug = get_post_meta($post_original->ID, 'boletim', true);
+					$args = array(
+					  'name'        => $the_slug,
+					  'post_type'   => 'page',
+					  'post_status' => 'publish',
+					  'numberposts' => 1
+					);
+					$posts = get_posts($args);
+					if( $posts ) :
+					  $boletim_url = get_permalink($posts[0]->ID);
+					else:
+						$boletim_url = get_home_url();
+					endif;
+				?>
+				<a href="<?php echo $boletim_url ?>"><h1> <span class="screen-reader-text">Boletim Povos Isolados da Amazônia</span></h1></a>
 
 				<div>
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php _e( 'Skip to content', 'quark' ); ?></a>
