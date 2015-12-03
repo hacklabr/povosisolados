@@ -1730,7 +1730,7 @@ article.one-page {
 }
 
 .entry-title {
-  background-color: rgba(51, 33, 33, 0);
+  background-color: rgba(51, 33, 33, 0.4);
   color: #fff;
   font-size: 3rem;
   letter-spacing: 0;
