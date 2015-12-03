@@ -54,9 +54,9 @@ $post_original = $post;
 					  'post_status' => 'publish',
 					  'numberposts' => 1
 					);
-					$posts = get_posts($args);
-					if( $posts ) :
-					  $boletim_url = get_permalink($posts[0]->ID);
+					$linkposts = get_posts($args);
+					if( $linkposts ) :
+					  $boletim_url = get_permalink($linkposts[0]->ID);
 					else:
 						$boletim_url = get_home_url();
 					endif;
