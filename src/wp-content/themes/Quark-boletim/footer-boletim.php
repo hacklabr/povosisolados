@@ -37,10 +37,12 @@
       <!-- End of #pre-footer -->
         <footer id="gk-footer" role="contentinfo">
             <div class="site">
-                <div class="gk-cols" data-cols="3">
-                    <?php dynamic_sidebar('footer_esquerda'); ?>
-                    <?php dynamic_sidebar('footer_centro'); ?>
-                    <?php dynamic_sidebar('footer_direita'); ?>
+                <div class="gk-cols" data-cols="5">
+                    <?php dynamic_sidebar('footer_1'); ?>
+                    <?php dynamic_sidebar('footer_2'); ?>
+                    <?php dynamic_sidebar('footer_3'); ?>
+                    <?php dynamic_sidebar('footer_4'); ?>
+                    <?php dynamic_sidebar('footer_5'); ?>
                 </div>
             </div>
             <div class="site">

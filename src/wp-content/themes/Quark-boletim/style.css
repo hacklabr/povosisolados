@@ -5838,8 +5838,11 @@ img.gk-responsive {
   text-transform: uppercase;
   font-size: 12px;
 }
+#gk-footer .site .widget-wrap {
+  min-height: 40px;
+}
 #gk-footer .site .logo {
-  text-align: left;
+  text-align: center;
 }
 #gk-footer .site .logo img {
   width: 100%;

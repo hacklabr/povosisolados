@@ -445,36 +445,54 @@ function quark_widgets_init() {
 	));
 
   register_sidebar( array(
-		'name'          => __( 'Footer Esquerda', 'quark' ),
-		'id'            => 'footer_esquerda',
-		'description'   => __( 'Aparece na esquerda do footer', 'quark' ),
-		'before_widget' => '<div class="logo cti">',
+		'name'          => __( 'Footer 1', 'quark' ),
+		'id'            => 'footer_1',
+		'description'   => __( 'Primeira área do footer', 'quark' ),
+		'before_widget' => '<div class="widget-wrap %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
 	));
 
   register_sidebar( array(
-		'name'          => __( 'Footer Centro' , 'quark' ),
-		'id'            => 'footer_centro',
-		'description'   => __( 'Aparece na esquerda do footer', 'quark' ),
-    'before_widget' => '<div class="logo funai">',
+		'name'          => __( 'Footer 2', 'quark' ),
+		'id'            => 'footer_2',
+		'description'   => __( 'Segunda área do footer', 'quark' ),
+		'before_widget' => '<div class="widget-wrap %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
 	));
 
   register_sidebar( array(
-		'name'          => __( 'Footer Direita', 'quark' ),
-		'id'            => 'footer_direita',
-		'description'   => __( 'Aparece na esquerda do footer', 'quark' ),
-    'before_widget' => '<div class="logo amazonia">',
+		'name'          => __( 'Footer 3', 'quark' ),
+		'id'            => 'footer_3',
+		'description'   => __( 'Terceira área do footer', 'quark' ),
+		'before_widget' => '<div class="widget-wrap %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
 	));
 
+  register_sidebar( array(
+		'name'          => __( 'Footer 4', 'quark' ),
+		'id'            => 'footer_4',
+		'description'   => __( 'Quarta área do footer', 'quark' ),
+		'before_widget' => '<div class="widget-wrap %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	));
 
+  register_sidebar( array(
+		'name'          => __( 'Footer 5', 'quark' ),
+		'id'            => 'footer_5',
+		'description'   => __( 'Quinta área do footer', 'quark' ),
+		'before_widget' => '<div class="widget-wrap %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	));
 
 }
 add_action( 'widgets_init', 'quark_widgets_init' );
