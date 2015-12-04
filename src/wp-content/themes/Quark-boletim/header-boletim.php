@@ -87,7 +87,6 @@ $post_original = $post;
 						);
 
 						$loop_editorial = get_posts($args_editorial);
-						print_r($loop_editorial);
 						foreach ( $loop_editorial as $_post ){
 						$url = wp_get_attachment_url( get_post_thumbnail_id($_post->ID) );
 					  }; wp_reset_query(); ?>
@@ -111,6 +110,7 @@ $post_original = $post;
 						);
 
 						$loop_editorial = get_posts($args_editorial);
+						print_r($loop_editorial);
 						foreach ( $loop_editorial as $_post ){
 					  ?>
 						<h2>Editorial</h2>
