@@ -80,7 +80,6 @@ $post_original = $post;
 						$args_editorial = array(
 							'post_type' => 'post',
 							'order' => 'ASC',
-							'orderby' => 'menu_order',
 							'category_name' => $category ,
 							'meta_key' => 'is_editorial',
 							'meta_value' => 'editorial',
