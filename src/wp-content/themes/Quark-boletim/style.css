@@ -5841,6 +5841,11 @@ img.gk-responsive {
 #gk-footer .site .widget-wrap {
   min-height: 40px;
 }
+@media screen and (max-width: 1040px) {
+  #gk-footer .site .widget-wrap {
+    min-height: 0px;
+  }
+}
 #gk-footer .site .logo {
   text-align: center;
 }
@@ -6046,7 +6051,7 @@ img.gk-responsive {
   padding: 12px 10px;
   max-width: 75% !important;
 }
-#pre-footer .site .social .expediente {
+#pre-footer .site .expediente .social {
   padding-left: 0px;
 }
 
