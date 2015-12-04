@@ -163,3 +163,8 @@ top: 230px !important;
   margin: 0 auto 0 -150px;
   max-width: 300px;
 }
+
+.boletim .frontpage-block-wrap {
+  margin-top: 120px!important;
+  margin-left: 0%!important;
+}
