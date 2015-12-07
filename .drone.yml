@@ -11,4 +11,4 @@ deploy:
     delete: false
     recursive: true
     commands:
-      - chmod -Rv og+w /srv/www/wp-content/uploads
+      - sudo chmod -Rv og+w /srv/www/wp-content/uploads
