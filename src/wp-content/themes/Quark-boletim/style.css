@@ -1400,6 +1400,7 @@ label {
 #aside-menu.menu-open {
   display: block;
   position: fixed;
+  width: 350px;
 }
 #aside-menu > div {
   height: 100%;
@@ -1476,11 +1477,6 @@ label {
   padding-left: 30px;
   text-transform: uppercase;
   padding-bottom: 30px;
-}
-
-#aside-navigation,
-#aside-menu.menu-open {
-  width: 350px;
 }
 
 #gk-bg.menu-open #gk-mobile-menu #gk-mobile-menu-text {
