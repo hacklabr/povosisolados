@@ -1374,6 +1374,10 @@ jQuery(document).ready(function(){
     if(jQuery('.gk-gallery').length) {
         initPhotoSwipeFromDOM(jQuery('.gk-gallery'));
     }
+
+    // get the document height and put on aside menu
+    var documentHeight = jQuery(document).height(); 
+    jQuery('#aside-menu').css('height',documentHeight);
 }); 
 
 // Page preloader
