@@ -1399,7 +1399,6 @@ label {
 }
 #aside-menu.menu-open {
   display: block;
-  position: fixed;
   width: 350px;
 }
 #aside-menu > div {
@@ -1503,7 +1502,7 @@ label {
   font-style: normal;
   line-height: 17px;
   opacity: 0;
-  position: fixed;
+  position: absolute;
   right: 40px;
   top: 40px;
   -webkit-transition: all .3s ease-out;
