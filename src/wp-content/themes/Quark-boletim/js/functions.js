@@ -1376,7 +1376,7 @@ jQuery(document).ready(function(){
     }
 
     // get the document height and put on aside menu
-    var documentHeight = jQuery(document).height(); 
+    var documentHeight = jQuery(document).outerHeight(); 
     jQuery('#aside-menu').css('height',documentHeight);
 }); 
 
