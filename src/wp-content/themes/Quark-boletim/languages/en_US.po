@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-12-07 06:03-0200\n"
+"PO-Revision-Date: 2015-12-07 06:43-0200\n"
 "X-Generator: Poedit 1.8.2\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -580,7 +580,7 @@ msgid "Mantenha-se informado sobre a situação dos povos isolados"
 msgstr ""
 
 msgid "Receba o boletim"
-msgstr ""
+msgstr "Subscribe"
 
 msgid "Enviar"
 msgstr ""
@@ -589,7 +589,7 @@ msgid "Desenvolvido por"
 msgstr ""
 
 msgid "Nesta edição"
-msgstr ""
+msgstr "On this Issue"
 
 #: footer-boletim.php:207 footer-frontpage.php:81 footer.php:133
 msgid "Toggle fullscreen"
@@ -802,13 +802,13 @@ msgstr ""
 
 #: header-boletim.php:70
 msgid "Boletins"
-msgstr ""
+msgstr "Bulletins"
 
 msgid "Boletim Povos Isolados da Amazôni"
 msgstr ""
 
 msgid "Editorial"
-msgstr ""
+msgstr "Editorial"
 
 #: header-frontpage.php:87 header.php:84
 msgid "Menu"
@@ -1484,11 +1484,14 @@ msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Boletim"
-msgstr ""
+msgstr "Bulletin"
 
 #. Template Name of the plugin/theme
 msgid "Arquivo de Boletins"
-msgstr ""
+msgstr "Bulletin Archive"
+
+msgid "Boletins Anteriores"
+msgstr "Previous Bulletins"
 
 #. Template Name of the plugin/theme
 msgid "One Page"

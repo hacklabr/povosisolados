@@ -1491,6 +1491,9 @@ msgstr ""
 msgid "Arquivo de Boletins"
 msgstr ""
 
+msgid "Boletins Anteriores"
+msgstr ""
+
 #. Template Name of the plugin/theme
 msgid "One Page"
 msgstr ""

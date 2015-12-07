@@ -123,7 +123,7 @@
 
             </nav><!-- #aside-navigation -->
 
-            <h2 class="aside-title">Boletins Anteriores</h2>
+            <h2 class="aside-title"><?php _e('Boletins Anteriores', 'quark'); ?></h2>
 
             <?php
             $args_global = array(
