@@ -23,7 +23,7 @@ get_header(); ?>
 					<header class="bigtitle<?php if(!tag_description()) : ?> no-desc<?php endif; ?>">
 						<h1 class="header">
 	                        <span>
-	                            <?php printf( __( 'Tag Archives: %s', 'quark' ), single_tag_title( '', false ) ); ?>
+	                            <?php printf( __( 'Arquivo de Tags: %s', 'quark' ), single_tag_title( '', false ) ); ?>
 	                        </span>
 
 	                        <?php if (tag_description()) : // Show an optional tag description ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 	                        <?php endif; ?>
 	                    </h1>
 					</header><!-- .archive-header -->
-					
+
 					<?php while ( have_posts() ) : the_post(); ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class('tag-page archive-page'); ?>>
 							<?php get_template_part( 'content', 'header'); ?>

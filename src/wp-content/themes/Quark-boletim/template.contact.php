@@ -44,7 +44,7 @@ if(isset($_POST['message-send'])) {
     if($params_name) {
         if(trim($_POST['contact-name']) === '') {
             $validated = false;
-            $errors['name'] = __('please enter your name', 'quark');
+            $errors['name'] = __('Por favor entre com seu nome', 'quark');
         } else {
             $output['name'] = trim($_POST['contact-name']);
         }
@@ -53,7 +53,7 @@ if(isset($_POST['message-send'])) {
     if($params_email) {
         if(trim($_POST['email']) === '' || !eregi("^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$", trim($_POST['email']))) {
             $validated = false;
-            $errors['email'] = __('please enter correct email address.', 'quark');
+            $errors['email'] = __('Por favor entre com seu email.', 'quark');
         } else {
             $output['email'] = trim($_POST['email']);
         }
@@ -61,7 +61,7 @@ if(isset($_POST['message-send'])) {
     // check the message content
     if(trim($_POST['comment-text']) === '') {
         $validated = false;
-        $errors['message'] = __('please enter a text of the message.', 'quark');
+        $errors['message'] = __('Por favor entre com o texto.', 'quark');
     } else {
         $output['message'] = stripslashes(trim(htmlspecialchars($_POST['comment-text'])));
     }
@@ -79,7 +79,7 @@ if(isset($_POST['message-send'])) {
                     );
         } else {
                     $validated = false;
-                    $errors['recaptcha'] = __("The reCAPTCHA wasn't entered correctly. Go back and try it again.", 'quark');
+                    $errors['recaptcha'] = __("O reCAPTCHA não foi preenchido corretamente. Volte e tente de novo.", 'quark');
         }
     }
     // if the all fields was correct
@@ -92,20 +92,20 @@ if(isset($_POST['message-send'])) {
         }
         // e-mail structure
         if($params_name) {
-            $subject = __('From ', 'quark') . $output['name'];
+            $subject = __('De ', 'quark') . $output['name'];
         } else if(!$params_name && $params_email) {
-            $subject = __('From ', 'quark') . $output['email'];
+            $subject = __('De ', 'quark') . $output['email'];
         } else {
-            $subject = __('From ', 'quark') . get_bloginfo('name');
+            $subject = __('De ', 'quark') . get_bloginfo('name');
         }
 
         $body = "<html>";
         $body .= "<body>";
-        $body .= "<h1 style=\"font-size: 24px; border-bottom: 4px solid #EEE; margin: 10px 0; padding: 10px 0; font-weight: normal; font-style: italic;\">".__('Message from', 'quark')." <strong>".get_bloginfo('name')."</strong></h1>";
+        $body .= "<h1 style=\"font-size: 24px; border-bottom: 4px solid #EEE; margin: 10px 0; padding: 10px 0; font-weight: normal; font-style: italic;\">".__('Mensagem de', 'quark')." <strong>".get_bloginfo('name')."</strong></h1>";
 
         if($params_name) {
             $body .= "<div>";
-            $body .= "<h2 style=\"font-size: 16px; font-weight: normal; border-bottom: 1px solid #EEE; padding: 5px 0; margin: 10px 0;\">".__('Name:', 'quark')."</h2>";
+            $body .= "<h2 style=\"font-size: 16px; font-weight: normal; border-bottom: 1px solid #EEE; padding: 5px 0; margin: 10px 0;\">".__('Nome:', 'quark')."</h2>";
             $body .= "<p>".$output['name']."</p>";
             $body .= "</div>";
         }
@@ -118,7 +118,7 @@ if(isset($_POST['message-send'])) {
         }
 
         $body .= "<div>";
-        $body .= "<h2 style=\"font-size: 16px; font-weight: normal; border-bottom: 1px solid #EEE; padding: 5px 0; margin: 10px 0;\">".__('Message:', 'quark')."</h2>";
+        $body .= "<h2 style=\"font-size: 16px; font-weight: normal; border-bottom: 1px solid #EEE; padding: 5px 0; margin: 10px 0;\">".__('Mensagem:', 'quark')."</h2>";
         $body .= $output['message'];
         $body .= "</div>";
         $body .= "</body>";
@@ -183,7 +183,7 @@ get_header(); ?>
                     </div>
 
                     <?php if(get_theme_mod('quark_contact_map_url','#') != '') : ?>
-                        <p><a href="<?php echo get_theme_mod('quark_contact_map_url','#');?>" class="gk-map-icon"><i class="gkicon-marker"></i><?php _e('View on Google Maps','quark'); ?></a></p>
+                        <p><a href="<?php echo get_theme_mod('quark_contact_map_url','#');?>" class="gk-map-icon"><i class="gkicon-marker"></i><?php _e('Ver no Google Maps','quark'); ?></a></p>
                     <?php endif; ?>
 
                 </header>
@@ -191,12 +191,12 @@ get_header(); ?>
                 <div class="site">
                     <div class="contact-form">
                     <?php if($messageSent == true) : ?>
-                    <p class="gk-success"><?php _e('Your message was sent to us successfully.', 'quark'); ?></p>
-                    <p><a href="<?php echo home_url(); ?>"><?php _e('Back to the homepage', 'quark'); ?></a></p>
+                    <p class="gk-success"><?php _e('Sua mensagem foi enviada com sucesso.', 'quark'); ?></p>
+                    <p><a href="<?php echo home_url(); ?>"><?php _e('Voltar para a página', 'quark'); ?></a></p>
                     <?php else : ?>
 
                         <?php if(!$validated) : ?>
-                        <p class="gk-error"><?php _e('Sorry, an error occured.', 'quark'); ?></p>
+                        <p class="gk-error"><?php _e('Desculpe, ocorreu um erro.', 'quark'); ?></p>
                         <?php endif; ?>
 
                         <form action="<?php the_permalink(); ?>" id="gk-contact" method="post">
@@ -240,7 +240,7 @@ get_header(); ?>
                             <p>
                                 <label>
                                     <input type="checkbox" name="send_copy" />
-                                    <?php _e('Send copy of the message to yourself', 'quark'); ?>
+                                    <?php _e('Enviar cópia para si mesmo', 'quark'); ?>
                                 </label>
                             </p>
                             <?php endif; ?>
@@ -263,7 +263,7 @@ get_header(); ?>
                             <?php endif; ?>
 
                             <p>
-                                <input type="submit" value="<?php _e('Send message', 'quark'); ?>" />
+                                <input type="submit" value="<?php _e('Enviar mensagem', 'quark'); ?>" />
                             </p>
                             <input type="hidden" name="message-send" id="message-send" value="true" />
                         </form>

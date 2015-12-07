@@ -7,7 +7,7 @@
 
 ?>
 
-        <?php do_action('quark_before_footer'); ?>
+      <?php do_action('quark_before_footer'); ?>
       <!-- Begin #pre-footer -->
       <footer id="pre-footer" role="contentinfo">
         <div class="site">
@@ -21,12 +21,12 @@
                       <?php dynamic_sidebar('prefooter_centro'); ?>
                     </div>
                     <div class="subscribe">
-                        <h4>Receba o boletim</h4>
-                        <?php _e("Mantenha-se informado sobre a situação dos povos isolados" , "SLUG"); ?>
+                        <h4><?php _e('Receba o boletim' , 'quark'); ?></h4>
+                        <?php _e('Mantenha-se informado sobre a situação dos povos isolados', 'SLUG'); ?>
                         <form>
                           <input type="text" placeholder="E-mail">
                           <button>
-                            <span class="screen-reader-text">Enviar</span>
+                            <span class="screen-reader-text"><?php _e('Enviar', 'quark'); ?></span>
                           </button>
                         </form><p>
                         <?php dynamic_sidebar('prefooter_direita'); ?>
@@ -47,7 +47,7 @@
             </div>
             <div class="site">
                 <div id="gk-copyrights">
-                    <p class="copyright">Developed by <a href="http://hacklab.com.br/" class="hacklab"><span class="screen-reader-text">hacklab</a></a> with <a href="https://wordpress.org/">Wordpress</a></p>
+                    <p class="copyright"><?php _e('Desenvolvido por', 'slug'); ?><a href="http://hacklab.com.br/" class="hacklab"><span class="screen-reader-text">hacklab</a></a> with <a href="https://wordpress.org/">Wordpress</a></p>
                 </div>
             </div>
 
@@ -87,7 +87,7 @@
 
               <h2 class="aside-title-boletim"><?php   ?></h2>
             <?php endif; ?>
-            <h2 class="aside-title">Nesta edição</h2>
+            <h2 class="aside-title"><?php _e('Nesta edição', 'slug'); ?></h2>
 
             <?php
             the_post();

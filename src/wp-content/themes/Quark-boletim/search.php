@@ -17,10 +17,10 @@ get_header(); ?>
 						<img src="<?php echo get_theme_mod('quark_search_bg',''); ?>" class="author-image-bg" alt="<?php echo get_the_author(); ?>">
 					<?php endif; ?>
 					<div class="entry-title-wrap site">
-	                    
+
 	                    <h1 class="entry-title">
 							<span>
-		                    	<?php printf( __( 'Search Results for: %s', 'quark' ), get_search_query() ); ?>
+		                    	<?php printf( __( 'Resultado da busca para: %s', 'quark' ), get_search_query() ); ?>
 		                    </span>
 	                    </h1>
 

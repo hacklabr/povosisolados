@@ -61,7 +61,7 @@ $post_original = $post;
 						$boletim_url = get_home_url();
 					endif;
 				?>
-				<a href="<?php echo $boletim_url ?>"><h1> <span class="screen-reader-text">Boletim Povos Isolados da Amazônia</span></h1></a>
+				<a href="<?php echo $boletim_url ?>"><h1> <span class="screen-reader-text"><?php _e('Boletim Povos Isolados da Amazônia', 'quark'); ?></span></h1></a>
 
 				<div>
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php _e( 'Skip to content', 'quark' ); ?></a>
@@ -112,7 +112,7 @@ $post_original = $post;
 						$loop_editorial = get_posts($args_editorial);
 						foreach ( $loop_editorial as $_post ){
 					  ?>
-						<h2>Editorial</h2>
+						<h2><?php _e('Editorial','quark'); ?></h2>
 
 						<div class="box-title">
 							<a href="<?php echo get_permalink($_post->ID); ?>">

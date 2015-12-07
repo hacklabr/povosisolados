@@ -26,13 +26,13 @@ get_header(); ?>
 						<h1 class="header">
 	                        <span>
 	        					<?php if ( is_day() ) : ?>
-	        						<?php printf( __( 'Daily Archives: %s', 'quark' ), '<span>' . get_the_date() . '</span>' ); ?>
+	        						<?php printf( __( 'Arquivo diário: %s', 'quark' ), '<span>' . get_the_date() . '</span>' ); ?>
 	        					<?php elseif ( is_month() ) : ?>
-	        						<?php printf( __( 'Monthly Archives: %s', 'quark' ), '<span>' . get_the_date( 'F Y' ) . '</span>' ); ?>
+	        						<?php printf( __( 'Arquivo mensal: %s', 'quark' ), '<span>' . get_the_date( 'F Y' ) . '</span>' ); ?>
 	        					<?php elseif ( is_year() ) : ?>
-	        						<?php printf( __( 'Yearly Archives: %s', 'quark' ), '<span>' . get_the_date( 'Y' ) . '</span>' ); ?>
+	        						<?php printf( __( 'Arquivo anual: %s', 'quark' ), '<span>' . get_the_date( 'Y' ) . '</span>' ); ?>
 	        					<?php else : ?>
-	        						<?php _e( 'Blog Archives', 'quark' ); ?>
+	        						<?php _e( 'Arquivo do blog', 'quark' ); ?>
 	        					<?php endif; ?>
 	                        </span>
 						</h1>

@@ -1,0 +1,1495 @@
+# Copyright (C) 2015 GavickPro
+# This file is distributed under the GNU GPL v.2.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Quark-Boletim 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/Quark-boletim\n"
+"POT-Creation-Date: 2015-12-07 06:03-0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-12-07 06:03-0200\n"
+"X-Generator: Poedit 1.8.2\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_ES\n"
+
+#: 404.php:22
+msgid "404"
+msgstr ""
+
+#: 404.php:56
+msgid "Volte para a homepage"
+msgstr ""
+
+#: addons/class.gkutils.php:9
+msgid "Invalid sidebar ID"
+msgstr ""
+
+#: addons/class.tgm.php:161 functions.php:721
+msgid "Install Required Plugins"
+msgstr ""
+
+#: addons/class.tgm.php:162 functions.php:720
+msgid "Install Plugins"
+msgstr ""
+
+#: addons/class.tgm.php:163 functions.php:722
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: addons/class.tgm.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: addons/class.tgm.php:165 functions.php:724
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/class.tgm.php:166 functions.php:725
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/class.tgm.php:167 functions.php:726
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/class.tgm.php:168 functions.php:727
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/class.tgm.php:169 functions.php:728
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/class.tgm.php:170 functions.php:729
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/class.tgm.php:171 functions.php:730
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/class.tgm.php:172 functions.php:731
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/class.tgm.php:173 functions.php:732
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/class.tgm.php:174 functions.php:733
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/class.tgm.php:175 functions.php:734
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: addons/class.tgm.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: addons/class.tgm.php:177 addons/class.tgm.php:1956 functions.php:735
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: addons/class.tgm.php:178 addons/class.tgm.php:1644
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: addons/class.tgm.php:179
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: addons/class.tgm.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: addons/class.tgm.php:532 addons/class.tgm.php:2173
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: addons/class.tgm.php:1167 addons/class.tgm.php:1348
+msgid "Private Repository"
+msgstr ""
+
+#: addons/class.tgm.php:1170 addons/class.tgm.php:1351
+msgid "Pre-Packaged"
+msgstr ""
+
+#: addons/class.tgm.php:1175
+msgid "WordPress Repository"
+msgstr ""
+
+#: addons/class.tgm.php:1178
+msgid "Required"
+msgstr ""
+
+#: addons/class.tgm.php:1178
+msgid "Recommended"
+msgstr ""
+
+#: addons/class.tgm.php:1181
+msgid "Not Installed"
+msgstr ""
+
+#: addons/class.tgm.php:1183
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: addons/class.tgm.php:1288 addons/class.tgm.php:1409
+msgid "Install"
+msgstr ""
+
+#: addons/class.tgm.php:1312 addons/class.tgm.php:1410
+msgid "Activate"
+msgstr ""
+
+#: addons/class.tgm.php:1372
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: addons/class.tgm.php:1388
+msgid "Plugin"
+msgstr ""
+
+#: addons/class.tgm.php:1389
+msgid "Source"
+msgstr ""
+
+#: addons/class.tgm.php:1390
+msgid "Type"
+msgstr ""
+
+#: addons/class.tgm.php:1391
+msgid "Status"
+msgstr ""
+
+#: addons/class.tgm.php:1939
+msgid "Install package not available."
+msgstr ""
+
+#: addons/class.tgm.php:1940
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: addons/class.tgm.php:1941
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: addons/class.tgm.php:1942
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: addons/class.tgm.php:1943
+msgid "Plugin install failed."
+msgstr ""
+
+#: addons/class.tgm.php:1944
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: addons/class.tgm.php:1955
+msgid "Plugin activation failed."
+msgstr ""
+
+#: addons/class.tgm.php:2069
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: addons/class.tgm.php:2070
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: addons/class.tgm.php:2070 addons/class.tgm.php:2079
+msgid "Show Details"
+msgstr ""
+
+#: addons/class.tgm.php:2070 addons/class.tgm.php:2079
+msgid "Hide Details"
+msgstr ""
+
+#: addons/class.tgm.php:2071
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: addons/class.tgm.php:2072
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: addons/class.tgm.php:2076
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: addons/class.tgm.php:2077
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: addons/class.tgm.php:2078
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: addons/class.tgm.php:2079
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: addons/class.tgm.php:2080
+msgid "All installations have been completed."
+msgstr ""
+
+#: addons/class.tgm.php:2081
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: archive.php:29
+msgid "Arquivo diário: %s"
+msgstr ""
+
+#: archive.php:31
+msgid "Arquivo mensal: %s"
+msgstr ""
+
+#: archive.php:33
+msgid "Arquivo anual: %s"
+msgstr ""
+
+#: archive.php:35
+msgid "Arquivo do blog"
+msgstr ""
+
+#: author.php:25
+msgid "%s"
+msgstr ""
+
+#: author.php:35
+msgid "Website URL:"
+msgstr ""
+
+#: comments-template.php:28
+msgid "Pingback:"
+msgstr ""
+
+#: comments-template.php:30 comments-template.php:67 content-header.php:141
+msgid "Editar"
+msgstr ""
+
+#: comments-template.php:36
+msgid "Autor do post"
+msgstr ""
+
+#: comments-template.php:52
+msgctxt "1: date, 2: time"
+msgid "%1$s às %2$s"
+msgstr ""
+
+#: comments-template.php:58
+msgid "Seu comentário aguarda moderação."
+msgstr ""
+
+#: comments.php:13
+msgid ""
+"Esse post é protegido por senha. Entre com a senha para visualizar quaisquer "
+"comentários."
+msgstr ""
+
+#: comments.php:25 content-header.php:135
+msgid "1 Comentário"
+msgstr ""
+
+#: comments.php:27
+msgid "2 Comentários"
+msgstr ""
+
+#: comments.php:29
+msgid "%1$s Comentários"
+msgstr ""
+
+#: comments.php:48
+msgid "Navegação de comentários"
+msgstr ""
+
+#: comments.php:49
+msgid "&larr; Comentários Antigos"
+msgstr ""
+
+#: comments.php:50
+msgid "Novos Comentários &rarr;"
+msgstr ""
+
+#: comments.php:55
+msgid "Comentários estão fechados."
+msgstr ""
+
+msgid "Leave a Reply"
+msgstr ""
+
+#: content-gallery.php:24 content-image.php:24 content-link.php:24
+#: content-quote.php:24 content-video.php:26 content.php:35 image.php:43
+#: page.php:31
+msgid "Pages:"
+msgstr ""
+
+#: content-header.php:78 content-header.php:124
+msgid "Postado por: "
+msgstr ""
+
+#: content-header.php:81 content-header.php:127
+msgid "Ver todos os posts por %s"
+msgstr ""
+
+#. Translators: used between list items, there is a space after the comma.
+#: content-header.php:90 content-header.php:111
+msgid ", "
+msgstr ""
+
+#: content-header.php:95
+msgid "Publicado em "
+msgstr ""
+
+#: content-header.php:135
+msgid "Deixe um comentário"
+msgstr ""
+
+#: content-header.php:135
+msgid "% Comentários"
+msgstr ""
+
+#: content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:21
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:26
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content.php:17
+msgid "Read more"
+msgstr ""
+
+#: cookielaw.php:21
+msgid "Social Media"
+msgstr ""
+
+#: cookielaw.php:22
+msgid ""
+"Facebook, Twitter and other social websites need to know who you are to work "
+"properly."
+msgstr ""
+
+#: cookielaw.php:23
+msgid "Analytics"
+msgstr ""
+
+#: cookielaw.php:24
+msgid ""
+"We anonymously measure your use of this website to improve your experience."
+msgstr ""
+
+#: cookielaw.php:25
+msgid "Advertising"
+msgstr ""
+
+#: cookielaw.php:26
+msgid ""
+"Adverts will be chosen for you automatically based on your past behaviour "
+"and interests."
+msgstr ""
+
+#: cookielaw.php:27
+msgid "Default cookie title"
+msgstr ""
+
+#: cookielaw.php:28
+msgid "Default cookie description"
+msgstr ""
+
+#: cookielaw.php:29
+msgid "Learn More"
+msgstr ""
+
+#: cookielaw.php:30
+msgid "Close window"
+msgstr ""
+
+#: cookielaw.php:31
+msgid "Your experience on this site will be improved by allowing cookies"
+msgstr ""
+
+#: cookielaw.php:32
+msgid "We use cookies to ensure you get the best experience on our website"
+msgstr ""
+
+#: cookielaw.php:33
+msgid "This website uses a custom type of cookie which needs specific approval"
+msgstr ""
+
+#: cookielaw.php:34
+msgid "see details"
+msgstr ""
+
+#: cookielaw.php:35
+msgid "change your settings"
+msgstr ""
+
+#: cookielaw.php:36
+msgid "hide details"
+msgstr ""
+
+#: cookielaw.php:37
+msgid "Allow cookies"
+msgstr ""
+
+#: cookielaw.php:38
+msgid "Close"
+msgstr ""
+
+#: cookielaw.php:39
+msgid "Allow for all sites"
+msgstr ""
+
+#: cookielaw.php:40
+msgid "Save preference"
+msgstr ""
+
+#: cookielaw.php:41
+msgid "Save for all sites"
+msgstr ""
+
+#: cookielaw.php:42 cookielaw.php:43 cookielaw.php:51
+msgid "Privacy settings"
+msgstr ""
+
+#: cookielaw.php:44
+msgid "for this website"
+msgstr ""
+
+#: cookielaw.php:45
+msgid ""
+"Some features of this website need your consent to remember who you are."
+msgstr ""
+
+#: cookielaw.php:46
+msgid "Change settings for all websites"
+msgstr ""
+
+#: cookielaw.php:47
+msgid "Use global setting"
+msgstr ""
+
+#: cookielaw.php:48
+msgid "I consent"
+msgstr ""
+
+#: cookielaw.php:49
+msgid "I decline"
+msgstr ""
+
+#: cookielaw.php:50
+msgid "This website does not use any cookies."
+msgstr ""
+
+#: cookielaw.php:52
+msgid "for all websites"
+msgstr ""
+
+#: cookielaw.php:53
+msgid "You may consent to these cookies for all websites that use this plugin."
+msgstr ""
+
+#: cookielaw.php:54
+msgid "Back to website settings"
+msgstr ""
+
+#: cookielaw.php:55
+msgid "Ask me each time"
+msgstr ""
+
+#: cookielaw.php:56
+msgid "Always allow"
+msgstr ""
+
+#: cookielaw.php:57
+msgid "Never allow"
+msgstr ""
+
+#: footer-boletim.php:25
+msgid "Mantenha-se informado sobre a situação dos povos isolados"
+msgstr ""
+
+msgid "Receba o boletim"
+msgstr ""
+
+msgid "Enviar"
+msgstr ""
+
+msgid "Desenvolvido por"
+msgstr ""
+
+msgid "Nesta edição"
+msgstr ""
+
+#: footer-boletim.php:207 footer-frontpage.php:81 footer.php:133
+msgid "Toggle fullscreen"
+msgstr ""
+
+#: footer-boletim.php:208 footer-frontpage.php:82 footer.php:134
+msgid "Zoom in/out"
+msgstr ""
+
+#: footer-boletim.php:209 footer-frontpage.php:83 footer.php:135
+msgid "Share"
+msgstr ""
+
+#: footer-boletim.php:210 footer-frontpage.php:84 footer.php:136
+msgid "Close(Esc)"
+msgstr ""
+
+#: footer-boletim.php:217 footer-frontpage.php:91 footer.php:143
+msgid "Previous (arrow left)"
+msgstr ""
+
+#: footer-boletim.php:218 footer-frontpage.php:92 footer.php:144
+msgid "Next (arrow right)"
+msgstr ""
+
+#: functions.php:84
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:85
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:86
+msgid "Boletim Menu"
+msgstr ""
+
+#: functions.php:272
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:287
+msgid "Sidebar widget area"
+msgstr ""
+
+#: functions.php:289
+msgid "Appears at the left/right side of the website."
+msgstr ""
+
+#: functions.php:297
+msgid "Menu Top"
+msgstr ""
+
+#: functions.php:299
+msgid "Appears before the aside menu."
+msgstr ""
+
+#: functions.php:307
+msgid "Menu Bottom"
+msgstr ""
+
+#: functions.php:309
+msgid "Appears after the aside menu."
+msgstr ""
+
+#: functions.php:317
+msgid "Header widget area"
+msgstr ""
+
+#: functions.php:319 functions.php:329 functions.php:339
+msgid "Appears at the top of the website."
+msgstr ""
+
+#: functions.php:327
+msgid "Top I widget area"
+msgstr ""
+
+#: functions.php:337
+msgid "Top II widget area"
+msgstr ""
+
+#: functions.php:347
+msgid "Content Top"
+msgstr ""
+
+#: functions.php:349
+msgid "Appears at the top of the website content."
+msgstr ""
+
+#: functions.php:357
+msgid "Content Bottom"
+msgstr ""
+
+#: functions.php:359
+msgid "Appears at the bottom of the website content."
+msgstr ""
+
+#: functions.php:367
+msgid "Bottom I widget area"
+msgstr ""
+
+#: functions.php:369 functions.php:379 functions.php:389 functions.php:399
+#: functions.php:409
+msgid "Appears at the bottom of the website."
+msgstr ""
+
+#: functions.php:377
+msgid "Bottom II widget area"
+msgstr ""
+
+#: functions.php:387
+msgid "Bottom III widget area"
+msgstr ""
+
+#: functions.php:397
+msgid "Bottom IV widget area"
+msgstr ""
+
+#: functions.php:407
+msgid "Bottom V widget area"
+msgstr ""
+
+#: functions.php:418
+msgid "Pre-footer Esquerda"
+msgstr ""
+
+#: functions.php:420 functions.php:430 functions.php:440
+msgid "Aparece na esquerda do pre-footer"
+msgstr ""
+
+#: functions.php:428
+msgid "Pre-footer Centro"
+msgstr ""
+
+#: functions.php:438
+msgid "Pre-footer Direita"
+msgstr ""
+
+#: functions.php:448
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:450
+msgid "Primeira área do footer"
+msgstr ""
+
+#: functions.php:458
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:460
+msgid "Segunda área do footer"
+msgstr ""
+
+#: functions.php:468
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:470
+msgid "Terceira área do footer"
+msgstr ""
+
+#: functions.php:478
+msgid "Footer 4"
+msgstr ""
+
+#: functions.php:480
+msgid "Quarta área do footer"
+msgstr ""
+
+#: functions.php:488
+msgid "Footer 5"
+msgstr ""
+
+#: functions.php:490
+msgid "Quinta área do footer"
+msgstr ""
+
+#: functions.php:516
+msgid "Posts navigation"
+msgstr ""
+
+#: functions.php:520
+msgid "<span class=\"meta-nav\">&larr;</span> Posts antigos"
+msgstr ""
+
+#: functions.php:524
+msgid "Posts novos <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:723
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:736
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: header-boletim.php:41 header-frontpage.php:49 header.php:50
+msgid ""
+"You're using an unsupported version of Internet Explorer. Please <a href="
+"\"http://windows.microsoft.com/en-us/internet-explorer/products/ie/home"
+"\">upgrade your browser</a> for the best user experience on our site. Thank "
+"you."
+msgstr ""
+
+#: header-boletim.php:67 header-frontpage.php:76 header.php:73
+msgid "Skip to content"
+msgstr ""
+
+#: header-boletim.php:70
+msgid "Boletins"
+msgstr ""
+
+msgid "Boletim Povos Isolados da Amazôni"
+msgstr ""
+
+msgid "Editorial"
+msgstr ""
+
+#: header-frontpage.php:87 header.php:84
+msgid "Menu"
+msgstr ""
+
+#: image.php:48
+msgid "<span class=\"meta-nav\">&larr;</span> Anterior"
+msgstr ""
+
+#: image.php:49
+msgid "Próximo <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: login-popup.php:12 template.login.php:9
+msgid "Username"
+msgstr ""
+
+#: login-popup.php:13 template.login.php:10
+msgid "Password"
+msgstr ""
+
+#: login-popup.php:14 template.login.php:11
+msgid "Remember Me"
+msgstr ""
+
+#: login-popup.php:15 template.login.php:12
+msgid "Log in"
+msgstr ""
+
+#: login-popup.php:29
+msgid "Your Account"
+msgstr ""
+
+#: login-popup.php:37 template.login.php:37
+msgid "Hi, "
+msgstr ""
+
+#: login-popup.php:40 login-popup.php:41 template.login.php:40
+#: template.login.php:41
+msgid "Logout"
+msgstr ""
+
+#: login-popup.php:46
+msgid "Log In"
+msgstr ""
+
+#: login-popup.php:51 template.login.php:50
+msgid "Password Lost and Found"
+msgstr ""
+
+#: login-popup.php:51 template.login.php:50
+msgid "Lost your password?"
+msgstr ""
+
+#: login-popup.php:55 template.login.php:54
+msgid "Not a member? Register"
+msgstr ""
+
+#: login-popup.php:55 template.login.php:54
+msgid " Don't have an account?"
+msgstr ""
+
+#: search.php:23
+msgid "Resultado da busca para: %s"
+msgstr ""
+
+#: search.php:35
+msgid "Total: %s results found."
+msgstr ""
+
+#: searchform.php:10
+msgid "Buscar por:"
+msgstr ""
+
+#: searchform.php:11
+msgid "Buscar..."
+msgstr ""
+
+#: searchform.php:12
+msgid "Buscar"
+msgstr ""
+
+#: tag.php:26
+msgid "Arquivo de Tags: %s"
+msgstr ""
+
+#: template.contact.php:47
+msgid "Por favor entre com seu nome"
+msgstr ""
+
+#: template.contact.php:56
+msgid "Por favor entre com seu email."
+msgstr ""
+
+#: template.contact.php:64
+msgid "Por favor entre com o texto."
+msgstr ""
+
+#: template.contact.php:82
+msgid "O reCAPTCHA não foi preenchido corretamente. Volte e tente de novo."
+msgstr ""
+
+#: template.contact.php:95 template.contact.php:97 template.contact.php:99
+msgid "De "
+msgstr ""
+
+#: template.contact.php:104
+msgid "Mensagem de"
+msgstr ""
+
+#: template.contact.php:108 template.contact.php:206
+msgid "Nome:"
+msgstr ""
+
+#: template.contact.php:115
+msgid "E-mail:"
+msgstr ""
+
+#: template.contact.php:121 template.contact.php:229
+msgid "Mensagem:"
+msgstr ""
+
+#: template.contact.php:186
+msgid "Ver no Google Maps"
+msgstr ""
+
+#: template.contact.php:194
+msgid "Sua mensagem foi enviada com sucesso."
+msgstr ""
+
+#: template.contact.php:195
+msgid "Voltar para a página"
+msgstr ""
+
+#: template.contact.php:199
+msgid "Desculpe, ocorreu um erro."
+msgstr ""
+
+#: template.contact.php:218
+msgid "Email:"
+msgstr ""
+
+#: template.contact.php:243
+msgid "Enviar cópia para si mesmo"
+msgstr ""
+
+#: template.contact.php:266
+msgid "Enviar mensagem"
+msgstr ""
+
+#: template.frontpage.php:55
+msgid "Notícias"
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: template.login.php:29
+msgid "Login Page"
+msgstr ""
+
+#: theme-customizer.php:39
+msgid "Font options"
+msgstr ""
+
+#: theme-customizer.php:48
+msgid "Layout"
+msgstr ""
+
+#: theme-customizer.php:57
+msgid "Features"
+msgstr ""
+
+#: theme-customizer.php:66
+msgid "Images"
+msgstr ""
+
+#: theme-customizer.php:68
+msgid "Image settings connected with images of the header."
+msgstr ""
+
+#: theme-customizer.php:76
+msgid "Social API"
+msgstr ""
+
+#: theme-customizer.php:78
+msgid "Settings connected with Social API."
+msgstr ""
+
+#: theme-customizer.php:86
+msgid "Cookie Law"
+msgstr ""
+
+#: theme-customizer.php:88
+msgid "Settings connected with Cookie consent plugin."
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: theme-customizer.php:96
+msgid "Frontpage"
+msgstr ""
+
+#: theme-customizer.php:98
+msgid "Frontpage settings are visible only on your frontpage."
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: theme-customizer.php:107
+msgid "Contact Page"
+msgstr ""
+
+#: theme-customizer.php:109
+msgid "These options are visible only on the contact template page."
+msgstr ""
+
+#: theme-customizer.php:920
+msgid "Primary Color"
+msgstr ""
+
+#: theme-customizer.php:932
+msgid "Secondary Color"
+msgstr ""
+
+#: theme-customizer.php:943
+msgid "Define size of the fonts"
+msgstr ""
+
+#: theme-customizer.php:944
+msgid ""
+"Base value is 62.5, you can change this value to increase/decrease all font "
+"sizes used in this theme."
+msgstr ""
+
+#: theme-customizer.php:954
+msgid "Body Font"
+msgstr ""
+
+#: theme-customizer.php:976
+msgid "Google Font URL for the Body"
+msgstr ""
+
+#: theme-customizer.php:986
+msgid "Selectors for the body font"
+msgstr ""
+
+#: theme-customizer.php:998
+msgid "Header Font"
+msgstr ""
+
+#: theme-customizer.php:1020
+msgid "Google Font URL for Header"
+msgstr ""
+
+#: theme-customizer.php:1030
+msgid "Selectors for the header font"
+msgstr ""
+
+#: theme-customizer.php:1042
+msgid "Other Elements Font"
+msgstr ""
+
+#: theme-customizer.php:1064
+msgid "Google Font URL for the other elements"
+msgstr ""
+
+#: theme-customizer.php:1074
+msgid "Selectors for the other elements font"
+msgstr ""
+
+#: theme-customizer.php:1086
+msgid "Theme width (px)"
+msgstr ""
+
+#: theme-customizer.php:1096
+msgid "Tablet width (px)"
+msgstr ""
+
+#: theme-customizer.php:1106
+msgid "Small tablet width (px)"
+msgstr ""
+
+#: theme-customizer.php:1116
+msgid "Mobile width (px)"
+msgstr ""
+
+#: theme-customizer.php:1126
+msgid "Sidebar width (%)"
+msgstr ""
+
+#: theme-customizer.php:1136
+msgid "Sidebar position"
+msgstr ""
+
+#: theme-customizer.php:1139
+msgid "Left"
+msgstr ""
+
+#: theme-customizer.php:1140
+msgid "Right"
+msgstr ""
+
+#: theme-customizer.php:1151
+msgid "Upload an image logo"
+msgstr ""
+
+#: theme-customizer.php:1152
+msgid "Leave blank if  you want to use Text logo"
+msgstr ""
+
+#: theme-customizer.php:1165
+msgid "Upload a dark image logo"
+msgstr ""
+
+#: theme-customizer.php:1166
+msgid "This logo will be used on the bright headers and in the menu bar."
+msgstr ""
+
+#: theme-customizer.php:1178
+msgid "Show tagline"
+msgstr ""
+
+#: theme-customizer.php:1188
+msgid "Enable word-break"
+msgstr ""
+
+#: theme-customizer.php:1198
+msgid "Use Scroll Reveal"
+msgstr ""
+
+#: theme-customizer.php:1208
+msgid "Use Photo Swipe"
+msgstr ""
+
+#: theme-customizer.php:1217
+msgid "Use JS Parallax engine"
+msgstr ""
+
+#: theme-customizer.php:1228
+msgid "Display related posts"
+msgstr ""
+
+#: theme-customizer.php:1238
+msgid "Post Social Icons"
+msgstr ""
+
+#: theme-customizer.php:1248
+msgid "Page Social Icons"
+msgstr ""
+
+#: theme-customizer.php:1258 theme-customizer.php:1268
+msgid "Enable Popup for social icons"
+msgstr ""
+
+#: theme-customizer.php:1278 theme-customizer.php:1344
+msgid "Enable FB icon"
+msgstr ""
+
+#: theme-customizer.php:1289 theme-customizer.php:1355
+msgid "Enable Twitter icon"
+msgstr ""
+
+#: theme-customizer.php:1300 theme-customizer.php:1366
+msgid "Enable Google icon"
+msgstr ""
+
+#: theme-customizer.php:1311
+msgid "Enable Pinterest icon"
+msgstr ""
+
+#: theme-customizer.php:1322
+msgid "Enable LinkedIn icon"
+msgstr ""
+
+#: theme-customizer.php:1333
+msgid "Enable VK icon"
+msgstr ""
+
+#: theme-customizer.php:1376
+msgid "Dark image background"
+msgstr ""
+
+#: theme-customizer.php:1386
+msgid "Dark image background on frontpage"
+msgstr ""
+
+#: theme-customizer.php:1396
+msgid "Read More button on categories"
+msgstr ""
+
+#: theme-customizer.php:1406
+msgid "Use Page preloader"
+msgstr ""
+
+#: theme-customizer.php:1416
+msgid "Enable popup login"
+msgstr ""
+
+#: theme-customizer.php:1427
+msgid "Date format"
+msgstr ""
+
+#: theme-customizer.php:1430
+msgid "Default theme format"
+msgstr ""
+
+#: theme-customizer.php:1431
+msgid "WordPress Date Format"
+msgstr ""
+
+#: theme-customizer.php:1441
+msgid "Copyright text"
+msgstr ""
+
+#: theme-customizer.php:1451
+msgid "Display mouse icon in header"
+msgstr ""
+
+#: theme-customizer.php:1462
+msgid "Upload author page background"
+msgstr ""
+
+#: theme-customizer.php:1463
+msgid "Select image for author pages background"
+msgstr ""
+
+#: theme-customizer.php:1476
+msgid "Upload error page background"
+msgstr ""
+
+#: theme-customizer.php:1477
+msgid "Select image for error pages background"
+msgstr ""
+
+#: theme-customizer.php:1490
+msgid "Upload search page background"
+msgstr ""
+
+#: theme-customizer.php:1491
+msgid "Select image for search page background"
+msgstr ""
+
+#: theme-customizer.php:1503
+msgid "Enable reCaptcha"
+msgstr ""
+
+#: theme-customizer.php:1514
+msgid "Captcha public key"
+msgstr ""
+
+#: theme-customizer.php:1525
+msgid "Captcha private key"
+msgstr ""
+
+#: theme-customizer.php:1536
+msgid "Email source"
+msgstr ""
+
+#: theme-customizer.php:1537
+msgid "Leave this field empty to use WordPress administrator email adress"
+msgstr ""
+
+#: theme-customizer.php:1548
+msgid "Email header text"
+msgstr ""
+
+#: theme-customizer.php:1549
+msgid "Leave this field empty to disable this text"
+msgstr ""
+
+#: theme-customizer.php:1560
+msgid "Facebook url (leave empty to hide)"
+msgstr ""
+
+#: theme-customizer.php:1571
+msgid "Twitter url (leave empty to hide)"
+msgstr ""
+
+#: theme-customizer.php:1582
+msgid "Google+ url (leave empty to hide)"
+msgstr ""
+
+#: theme-customizer.php:1593
+msgid "URL of map button"
+msgstr ""
+
+#: theme-customizer.php:1605
+msgid "Enable classic menu"
+msgstr ""
+
+#: theme-customizer.php:1606
+msgid "Leave this option disabled to use Off-Canvas Menu"
+msgstr ""
+
+#: theme-customizer.php:1616
+msgid "Enable fixed classic menu"
+msgstr ""
+
+#: theme-customizer.php:1628
+msgid "Enable autoanimation of slider"
+msgstr ""
+
+#: theme-customizer.php:1638
+msgid "Slider animation interval"
+msgstr ""
+
+#: theme-customizer.php:1648
+msgid "Show slider pagination"
+msgstr ""
+
+#: theme-customizer.php:1658
+msgid "Show slider bar"
+msgstr ""
+
+#: theme-customizer.php:1668
+msgid "Show slides preview"
+msgstr ""
+
+#: theme-customizer.php:1678
+msgid "Slider height - desktop"
+msgstr ""
+
+#: theme-customizer.php:1688
+msgid "Slider height - tablet"
+msgstr ""
+
+#: theme-customizer.php:1698
+msgid "Slider height - mobile"
+msgstr ""
+
+#: theme-customizer.php:1708
+msgid "Enable autoanimation of tabs"
+msgstr ""
+
+#: theme-customizer.php:1718
+msgid "Tabs animation interval"
+msgstr ""
+
+#: theme-customizer.php:1729
+msgid "Image height (px) - full hd desktop"
+msgstr ""
+
+#: theme-customizer.php:1739
+msgid "Image height (px) - desktop"
+msgstr ""
+
+#: theme-customizer.php:1749
+msgid "Image height (px) - small desktop"
+msgstr ""
+
+#: theme-customizer.php:1759
+msgid "Image height (px) - tablet"
+msgstr ""
+
+#: theme-customizer.php:1769
+msgid "Image height (px) - small tablet"
+msgstr ""
+
+#: theme-customizer.php:1779
+msgid "Image height (px) - mobile"
+msgstr ""
+
+#: theme-customizer.php:1790
+msgid "Frontpage image height (px) - full hd desktop"
+msgstr ""
+
+#: theme-customizer.php:1800
+msgid "Frontpage image height (px) - desktop"
+msgstr ""
+
+#: theme-customizer.php:1810
+msgid "Frontpage image height (px) - small desktop"
+msgstr ""
+
+#: theme-customizer.php:1820
+msgid "Frontpage image height (px) - tablet"
+msgstr ""
+
+#: theme-customizer.php:1830
+msgid "Frontpage image height (px) - small tablet"
+msgstr ""
+
+#: theme-customizer.php:1840
+msgid "Frontpage image height (px) - mobile"
+msgstr ""
+
+#: theme-customizer.php:1851
+msgid "Use cookie Consent plugin"
+msgstr ""
+
+#: theme-customizer.php:1861
+msgid "Consent mode"
+msgstr ""
+
+#: theme-customizer.php:1864
+msgid ""
+"Explicit - no cookies will be set until a visitor consents, Implied - set "
+"cookies and allow visitors to opt out"
+msgstr ""
+
+#: theme-customizer.php:1866
+msgid "Explicit"
+msgstr ""
+
+#: theme-customizer.php:1867
+msgid "Implied"
+msgstr ""
+
+#: theme-customizer.php:1877
+msgid "Use SSL"
+msgstr ""
+
+#: theme-customizer.php:1888
+msgid "Banner placement"
+msgstr ""
+
+#: theme-customizer.php:1892
+msgid "Top"
+msgstr ""
+
+#: theme-customizer.php:1893
+msgid "Bottom"
+msgstr ""
+
+#: theme-customizer.php:1894
+msgid "Push from the top (experimental)"
+msgstr ""
+
+#: theme-customizer.php:1904
+msgid "Tag placement"
+msgstr ""
+
+#: theme-customizer.php:1908
+msgid "Bottom right"
+msgstr ""
+
+#: theme-customizer.php:1909
+msgid "Bottom left"
+msgstr ""
+
+#: theme-customizer.php:1910
+msgid "Left side"
+msgstr ""
+
+#: theme-customizer.php:1911
+msgid "Right side"
+msgstr ""
+
+#: theme-customizer.php:1921
+msgid "Refresh after gaining consent"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Quark-Boletim"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://www.gavick.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Quark is a exclusive, multipurpose theme that heralds a new age of "
+"innovation for entrepeneurs and focused businesses. Modern elegant design "
+"combines with sublime visual effects and multiple ways to showcase your "
+"products and services to help you establish an effective brand while "
+"building a strong consumer base. What's more, Quark will be evolving with "
+"new styles, features and additional pages over the coming months to help you "
+"start a one-of-a-kind website, whether restaurant, online store and more.."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "GavickPro"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Boletim"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Arquivo de Boletins"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "One Page"
+msgstr ""

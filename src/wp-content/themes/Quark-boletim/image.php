@@ -10,7 +10,7 @@ get_header(); ?>
 		<div id="content" class="site-content site" role="main">
 			<?php do_action('quark_before_content'); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'image-attachment' ); ?>>
-				
+
 				<div class="content-wrapper">
 					<?php if (is_active_sidebar('content_top')) : ?>
 					<?php do_action('quark_before_content_top'); ?>
@@ -21,7 +21,7 @@ get_header(); ?>
 					<?php endif; ?>
 
 					<header>
-				        <h1> 
+				        <h1>
 				            <?php the_title(); ?>
 				        </h1>
 				    </header>
@@ -45,8 +45,8 @@ get_header(); ?>
 						<?php endif; ?>
 
 						<nav id="image-navigation" class="paging-navigation" role="navigation">
-							<span class="nav-previous"><?php previous_image_link( false, __( '<span class="meta-nav">&larr;</span> Previous', 'quark' ) ); ?></span>
-							<span class="nav-next"><?php next_image_link( false, __( 'Next <span class="meta-nav">&rarr;</span>', 'quark' ) ); ?></span>
+							<span class="nav-previous"><?php previous_image_link( false, __( '<span class="meta-nav">&larr;</span> Anterior', 'quark' ) ); ?></span>
+							<span class="nav-next"><?php next_image_link( false, __( 'Próximo <span class="meta-nav">&rarr;</span>', 'quark' ) ); ?></span>
 						</nav><!-- #image-navigation -->
 					</div>
 

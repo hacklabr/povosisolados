@@ -24,7 +24,7 @@ get_header(); ?>
 						</header>
 
 
-						<h2><?php _e( 'The page you were looking for could not be found.', 'quark' ); ?></h2>
+						<h2><?php _e( 'A página que você procura não foi encontrada.', 'quark' ); ?></h2>
 
 						<?php
 		                	$lang = explode('-', get_bloginfo('language'));
@@ -34,7 +34,7 @@ get_header(); ?>
 						<script type="text/javascript">
 						var GOOG_FIXURL_LANG = '<?php echo $lang;?>';
 						var GOOG_FIXURL_SITE = '<?php echo site_url(); ?>';
-						</script> 
+						</script>
 
 						<script type="text/javascript" src="https://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
 
@@ -47,12 +47,12 @@ get_header(); ?>
 						<?php do_action('quark_before_content_bottom'); ?>
 						<?php endif; ?>
 
-					</div>		
+					</div>
 				</div>
 			</article><!-- #post -->
 			<?php do_action('quark_after_content'); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
-	<p class="error-links"><a href="<?php echo site_url(); ?>"><?php _e('Back to our homepage','quark'); ?></a></p>
+	<p class="error-links"><a href="<?php echo site_url(); ?>"><?php _e('Volte para a homepage','quark'); ?></a></p>
 
 <?php get_footer(); ?>

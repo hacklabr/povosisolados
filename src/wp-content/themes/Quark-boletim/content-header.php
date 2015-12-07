@@ -75,10 +75,10 @@
                 <li> <span>
                 <?php
 
-                    echo '<span>' . __( 'Posted by: ', 'quark' ) . '</span>';
+                    echo '<span>' . __( 'Postado por: ', 'quark' ) . '</span>';
                     printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
                         esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-                        esc_attr( sprintf( __( 'View all posts by %s', 'quark' ), get_the_author() ) ),
+                        esc_attr( sprintf( __( 'Ver todos os posts por %s', 'quark' ), get_the_author() ) ),
                         get_the_author()
                     );
                 ?>
@@ -92,7 +92,7 @@
                 ?>
                 <li>
                     <?php
-                        echo __('Published in ', 'quark');
+                        echo __('Publicado em ', 'quark');
                         echo '<span class="categories-links">' . $categories_list . '</span>';
                     ?>
                 </li>
@@ -124,7 +124,7 @@
         echo '<span>' . __( 'Posted by: ', 'quark' ) . '</span>';
         printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
             esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-            esc_attr( sprintf( __( 'View all posts by %s', 'quark' ), get_the_author() ) ),
+            esc_attr( sprintf( __( 'Ver todos os posts por %s', 'quark' ), get_the_author() ) ),
             get_the_author()
         );
     ?>
@@ -132,7 +132,7 @@
 
     <?php if (!post_password_required() && (comments_open() || get_comments_number())) : ?>
     <li class="comments-link">
-        <?php comments_popup_link( __( 'Leave a comment', 'quark' ), __( '1 Comment', 'quark' ), __( '% Comments', 'quark' ) ); ?>
+        <?php comments_popup_link( __( 'Deixe um comentário', 'quark' ), __( '1 Comentário', 'quark' ), __( '% Comentários', 'quark' ) ); ?>
     </li>
     <?php endif; ?>
 

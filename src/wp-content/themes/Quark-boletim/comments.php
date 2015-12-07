@@ -10,7 +10,7 @@
 
 <?php if ( post_password_required() ) : ?>
 <section id="comments">
-	<p class="no-password"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'quark' ); ?></p>
+	<p class="no-password"><?php _e( 'Esse post é protegido por senha. Entre com a senha para visualizar quaisquer comentários.', 'quark' ); ?></p>
 </section>
 <?php
 	return;/* Stop the rest of comments.php from being processed */
@@ -22,11 +22,11 @@
 	<?php if ( have_comments() ) : ?>
 		<h3 class="comments-title">
 			<?php if(get_comments_number() == 1) : ?>
-			<?php _e( '1 Comment', 'quark'); ?>
+			<?php _e( '1 Comentário', 'quark'); ?>
 			<?php elseif(get_comments_number() == 2) : ?>
-			<?php _e( '2 Comments', 'quark'); ?>
+			<?php _e( '2 Comentários', 'quark'); ?>
 			<?php elseif(get_comments_number() > 2) : ?>
-			<?php printf(__( '%1$s Comments', 'quark'), number_format_i18n(get_comments_number())); ?>
+			<?php printf(__( '%1$s Comentários', 'quark'), number_format_i18n(get_comments_number())); ?>
 			<?php endif; ?>
 		</h3>
 
@@ -45,14 +45,14 @@
 			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 		?>
 		<nav>
-			<h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'quark' ); ?></h1>
-			<div class="nav-prev"><?php previous_comments_link( __( '&larr; Older Comments', 'quark' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'quark' ) ); ?></div>
+			<h1 class="screen-reader-text section-heading"><?php _e( 'Navegação de comentários', 'quark' ); ?></h1>
+			<div class="nav-prev"><?php previous_comments_link( __( '&larr; Comentários Antigos', 'quark' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Novos Comentários &rarr;', 'quark' ) ); ?></div>
 		</nav><!-- .comment-navigation -->
 		<?php endif; ?>
 
 		<?php if (!comments_open() && get_comments_number()) : ?>
-		<p class="no-comments"><?php _e( 'Comments are closed.' , 'quark' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comentários estão fechados.' , 'quark' ); ?></p>
 		<?php endif; ?>
 
 	<?php endif; // have_comments() ?>
