@@ -2,6 +2,13 @@ image: needcaffeine/git
 script:
 - echo hello world
 deploy:  
-  bash:
-    script:
-      - ./.drone/deploy.sh
+  rsync:
+    user: core
+    host: povosisolados.hacklab.com.br
+    port: 22
+    source: src/
+    target: /srv/www/
+    delete: false
+    recursive: true
+    commands:
+      - chmod -Rv og+w /srv/www/wp-content/uploads
