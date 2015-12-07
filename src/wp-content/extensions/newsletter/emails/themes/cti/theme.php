@@ -37,6 +37,22 @@ $link_twitter  = (!empty($theme_options['theme_twitter']) )? $theme_options['the
 $link_youtube  = (!empty($theme_options['theme_youtube']) )? $theme_options['theme_youtube'] : '#';
 
 $posts = get_posts($filters);
+$boletim_name = get_post_meta($posts[0]->ID, "boletim");
+
+if (!empty($posts)) {
+  $args_editorial = array(
+    'post_type' => 'post',
+    'order' => 'ASC',
+    'category_name' => $boletim_name ,
+    'meta_key' => 'is_editorial',
+    'meta_value' => 'editorial',
+    'posts_per_page' => 1
+  );
+  $loop_editorial = get_posts($args_editorial);
+  foreach ( $loop_editorial as $_post ){
+    $editorial_post = $_post;
+  }; wp_reset_query();
+}
 
 ?>
 <!DOCTYPE html>
@@ -52,23 +68,23 @@ $posts = get_posts($filters);
     </head>
     <body style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; color: #fff; margin: 0 auto; padding: 0;">
 
-    <table bgcolor="#CCAE6D" cellspacing="0" cellpadding="0" width="600" style="margin: 0 auto;">
+    <table bgcolor="#CCAE6D" cellspacing="0" cellpadding="0" width="800" style="margin: 0 auto;">
       <!-- top header -->
       <tr bgcolor="#9F2032">
         <td align="left" bgcolor="#9F2032" colspan="2" style="color: #fff; font-size: 20px; font-weight: bold; padding: 15px 10px;">Boletim Povos Isolados na Amazônia</td>
-        <td align="right" bgcolor="#9F2032" style="color: #fff; font-size: 20px; font-weight: bold; text-transform: uppercase; padding: 15px 10px;">Boletim ##</td>
+        <td align="right" bgcolor="#9F2032" style="color: #fff; font-size: 20px; font-weight: bold; text-transform: uppercase; padding: 15px 10px;">Edição ##</td>
       </tr>
       <tr>
 
         <!-- newsletter banner -->
-        <td background="<?php echo $theme_url ?>/images/banner.jpg" colspan="3" height="400">
+        <td background="<?php echo wp_get_attachment_url( get_post_thumbnail_id($editorial_post->ID)); ?>" colspan="3" height="400">
 
           <table style="margin-left: 15px;">
             <tr>
               <!-- newsletter title and subtitle -->
               <td align="left" bgcolor="#230e0f">
-                <div style="color: #fff; font-size: 20px; font-weight: bold; padding: 10px 10px 0px 10px; text-transform: uppercase;">Guarani terras indígenas</div>
-                <div style="color: #fff; font-size: 14px; font-weight: normal; padding: 0px 10px 10px 10px; ">Lançamento: Atlas Das Terras Guaranis No Sul e Sudeste do Brasil 2015</div>
+                <div style="color: #fff; font-size: 20px; font-weight: bold; padding: 10px 10px 0px 10px; text-transform: uppercase;"><?php echo $editorial_post->post_title; ?></div>
+                <div style="color: #fff; font-size: 14px; font-weight: normal; padding: 0px 10px 10px 10px; "><?php echo $editorial_post->post_excerpt; ?></div>
               </td>
             </tr>
             <tr>
@@ -77,7 +93,7 @@ $posts = get_posts($filters);
             </tr>
             <tr>
               <!-- read more button -->
-              <td height="45"><a href="#" style="background-color:#9F2032; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; text-transform: uppercase;">Leia mais</a></td>
+              <td height="45"><a href="<?php echo get_permalink($editorial_post->ID); ?>" style="background-color:#9F2032; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; text-transform: uppercase;">Leia mais</a></td>
             </tr>
           </table>
 
@@ -92,9 +108,9 @@ $posts = get_posts($filters);
             <tr>
             <?php foreach ($posts as $key=>$post) : ?>
             <?php setup_postdata($post); ?>
-              <td width="270" valign="top" style="padding: 18px 0px 0px 18px;">
+              <td width="360" valign="top" style="padding: 24px 0px 0px 24px;">
                 <a target="_blank" href="#" href="<?php echo get_permalink($post); ?>">
-                  <img height="150" width="270" src="<?php echo newsletter_get_post_image($post->ID); ?>">
+                  <img height="200" width="360" src="<?php echo newsletter_get_post_image($post->ID); ?>">
                 </a>
                 <div style="background-color: #230e0f; color: #fff; font-size: 14px; font-weight: bold; margin-top: -3px; padding: 10px 15px;">
                   <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #fff;">
