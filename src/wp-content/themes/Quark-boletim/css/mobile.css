@@ -471,11 +471,10 @@ line-height: 1.3;
   #aside-navigation, #aside-menu.menu-open {
     max-width: 280px;
   }
-  #aside-menu .search-form {
-    text-align: center;
+  #aside-menu .search-form .search-field {    
+    width: 130px !important;
   }
-  #aside-menu .search-form .search-field {
-    height: 55px !important;
-    margin-bottom: 15px;
+  #aside-menu .search-form .btn {    
+    padding: 6px 16px;
   }
 }
