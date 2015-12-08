@@ -1385,7 +1385,6 @@ label {
   background-color: rgba(51, 33, 33, 1) !important;
   display: none;
   float: right;
-  height: 100%;
   overflow: hidden;
   position: absolute;
   right: 0;
@@ -1448,7 +1447,6 @@ label {
   margin: 0;
   padding-left: 25px;
   text-transform: uppercase;
-  padding-bottom: 10px;
 }
 
 #gk-bg.menu-open #gk-mobile-menu #gk-mobile-menu-text {
@@ -4578,7 +4576,7 @@ p.numblocks span.highlight {
   font-size: 1.2rem;
   line-height: 1.5;
   text-transform: initial;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .boletim #aside-menu .articles li:last-child {
   padding-bottom: 0px;
@@ -4586,12 +4584,15 @@ p.numblocks span.highlight {
 .boletim #aside-menu .articles a {
   color: #fff;
 }
+.language {
+  padding: 10px 0;
+}
 .language ul {
   padding: 0 0 0 25px;
 }
 .language ul li {
   list-style: none;
-  margin: 0;
+  margin-right: 5px;
   display:inline-block;
   line-height: 1.7;
 }
