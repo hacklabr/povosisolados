@@ -661,17 +661,9 @@ label {
 .boletim #primary, .boletim #frontpage-wrap {
   background-color: #fff;
 }
-#gk-bg.menu-open, .boletim #primary.menu-open {
-  margin-left: -350px;
-}
-
-#gk-bg.menu-visible, .boletim #primary.menu-visible  {
-  position: relative;
-}
 
 #gk-bg.menu-visible {
   background: transparent !important;
-  z-index: 2;
 }
 
 #content-top {
@@ -1388,18 +1380,17 @@ label {
 #aside-menu {
   background-color: rgba(51, 33, 33, 1) !important;
   display: none;
-  float: right;
-  height: 100%;
   overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
-  min-width: 280px;
+  width: 350px;
   z-index: 0;
 }
 #aside-menu.menu-open {
   display: block;
   width: 350px;
+  z-index: 999;
 }
 #aside-menu > div {
   height: 100%;
@@ -1410,32 +1401,8 @@ label {
   min-width: 280px;
   max-width: 100%;
 }
-#aside-menu li {
-  font-size: 1.6rem;
-  font-weight: 500;
-  padding: 4px 0;
-  text-transform: uppercase;
-}
-#aside-menu li a {
-  color: #fff;
-}
-#aside-menu li a:active, #aside-menu li a:focus, #aside-menu li a:hover, #aside-menu li.current_page_item > a {
-  color: rgba(159, 32, 50, 1);
-}
-#aside-menu li li {
-  font-weight: 500;
-  padding: 4px 0;
-  text-transform: none;
-}
-#aside-menu li li a {
-  color: #fff;
-}
-#aside-menu li li li {
-  padding-left: 10px;
-}
-#aside-menu li:last-child {
-  margin-bottom: 12px;
-}
+
+
 #aside-menu .sub-menu,
 #aside-menu .children {
   padding-left: 0;
@@ -1445,7 +1412,7 @@ label {
 }
 #aside-menu .search-form {
   margin-bottom: 15px;
-  padding-left: 30px;
+  padding-left: 25px;
   text-align: left;
 }
 #aside-menu .search-form .search-submit {
@@ -1464,7 +1431,7 @@ label {
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 25px;
   text-transform: uppercase;
 }
 
@@ -1473,9 +1440,8 @@ label {
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 25px;
   text-transform: uppercase;
-  padding-bottom: 30px;
 }
 
 #gk-bg.menu-open #gk-mobile-menu #gk-mobile-menu-text {
@@ -1504,7 +1470,7 @@ label {
   opacity: 0;
   position: absolute;
   right: 40px;
-  top: 40px;
+  top: 30px;
   -webkit-transition: all .3s ease-out;
   -moz-transition: all .3s ease-out;
   -ms-transition: all .3s ease-out;
@@ -1517,7 +1483,7 @@ label {
 }
 #close-menu.menu-open {
   opacity: 1.0;
-  right: 18px;
+  right: 15px;
 }
 
 /* Android fix */
@@ -4593,7 +4559,7 @@ p.numblocks span.highlight {
   max-width: initial;
 }
 .boletim #aside-menu #searchform {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 .boletim #gk-mobile-menu {
   color: #fff;
@@ -4601,40 +4567,27 @@ p.numblocks span.highlight {
   margin: 0 !important;
   padding: 20px;
 }
-.boletim #aside-menu li {
+.boletim #aside-menu .articles li {
   font-size: 1.2rem;
   line-height: 1.5;
-  padding: 0px 6px;
   text-transform: initial;
+  padding-bottom: 15px;
 }
-
-/*.boletim #aside-menu ul {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  padding: 0px 6px;
-  text-transform: initial;
-}*/
-
-
-.boletim #aside-menu ul {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  /*padding: 0px 6px;*/
-  text-transform: initial;
+.boletim #aside-menu .articles li:last-child {
+  padding-bottom: 0px;
 }
-
-.boletim #aside-menu ul li {
-  line-height: 1.7;
-  padding-bottom: 20px;
+.boletim #aside-menu .articles a {
+  color: #fff;
 }
-
-.language ul{
+.language {
+  padding: 10px 0;
+}
+.language ul {
   padding: 0 0 0 25px;
 }
-
 .language ul li {
   list-style: none;
-  margin: 0;
+  margin-right: 5px;
   display:inline-block;
   line-height: 1.7;
 }

@@ -426,10 +426,6 @@ label {
   transition: all .3s ease-out;
 }
 
-#gk-bg.menu-open, .boletim #primary.menu-open {
-  left: -280px;
-}
-
 .site-main {
   padding: 100px 0 0 0;
   position: relative;
