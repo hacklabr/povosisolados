@@ -662,10 +662,6 @@ label {
   background-color: #fff;
 }
 
-#gk-bg.menu-visible, .boletim #primary.menu-visible  {
-  position: relative;
-}
-
 #gk-bg.menu-visible {
   background: transparent !important;
 }
