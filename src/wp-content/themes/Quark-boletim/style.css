@@ -1774,7 +1774,7 @@ article.one-page {
 .entry-title-wrap {
   position: absolute;
   text-align: left;
-  top: 350px;
+  top: 500px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
