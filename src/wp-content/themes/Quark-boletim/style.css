@@ -661,9 +661,6 @@ label {
 .boletim #primary, .boletim #frontpage-wrap {
   background-color: #fff;
 }
-#gk-bg.menu-open, .boletim #primary.menu-open {
-  margin-left: -350px;
-}
 
 #gk-bg.menu-visible, .boletim #primary.menu-visible  {
   position: relative;
@@ -671,7 +668,6 @@ label {
 
 #gk-bg.menu-visible {
   background: transparent !important;
-  z-index: 2;
 }
 
 #content-top {
@@ -1475,7 +1471,7 @@ label {
   margin: 0;
   padding-left: 30px;
   text-transform: uppercase;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 #gk-bg.menu-open #gk-mobile-menu #gk-mobile-menu-text {
@@ -1504,7 +1500,7 @@ label {
   opacity: 0;
   position: absolute;
   right: 40px;
-  top: 40px;
+  top: 30px;
   -webkit-transition: all .3s ease-out;
   -moz-transition: all .3s ease-out;
   -ms-transition: all .3s ease-out;
@@ -1517,7 +1513,7 @@ label {
 }
 #close-menu.menu-open {
   opacity: 1.0;
-  right: 18px;
+  right: 15px;
 }
 
 /* Android fix */
@@ -4593,7 +4589,7 @@ p.numblocks span.highlight {
   max-width: initial;
 }
 .boletim #aside-menu #searchform {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 .boletim #gk-mobile-menu {
   color: #fff;
