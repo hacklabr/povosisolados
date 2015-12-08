@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-12-07 06:47-0200\n"
+"PO-Revision-Date: 2015-12-08 12:53-0200\n"
 "X-Generator: Poedit 1.8.2\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: 404.php:56
 msgid "Volte para a homepage"
-msgstr ""
+msgstr "Volver a la página principal"
 
 #: addons/class.gkutils.php:9
 msgid "Invalid sidebar ID"
@@ -293,19 +293,19 @@ msgstr ""
 
 #: archive.php:29
 msgid "Arquivo diário: %s"
-msgstr ""
+msgstr "Archivo diário: %s"
 
 #: archive.php:31
 msgid "Arquivo mensal: %s"
-msgstr ""
+msgstr "Archivos por mes: %s"
 
 #: archive.php:33
 msgid "Arquivo anual: %s"
-msgstr ""
+msgstr "Archivo anual: %s"
 
 #: archive.php:35
 msgid "Arquivo do blog"
-msgstr ""
+msgstr "Archivo del blog"
 
 #: author.php:25
 msgid "%s"
@@ -321,54 +321,55 @@ msgstr ""
 
 #: comments-template.php:30 comments-template.php:67 content-header.php:141
 msgid "Editar"
-msgstr ""
+msgstr "Editar"
 
 #: comments-template.php:36
 msgid "Autor do post"
-msgstr ""
+msgstr "Autor del post"
 
 #: comments-template.php:52
 msgctxt "1: date, 2: time"
 msgid "%1$s às %2$s"
-msgstr ""
+msgstr "%1$s a las %2$s"
 
 #: comments-template.php:58
 msgid "Seu comentário aguarda moderação."
-msgstr ""
+msgstr "Su comentario está a la espera de moderación."
 
 #: comments.php:13
 msgid ""
 "Esse post é protegido por senha. Entre com a senha para visualizar quaisquer "
 "comentários."
 msgstr ""
+"Este post está protegido. Introduzca la contraseña para ver los comentarios."
 
 #: comments.php:25 content-header.php:135
 msgid "1 Comentário"
-msgstr ""
+msgstr "1 Comentario"
 
 #: comments.php:27
 msgid "2 Comentários"
-msgstr ""
+msgstr "2 Comentarios"
 
 #: comments.php:29
 msgid "%1$s Comentários"
-msgstr ""
+msgstr "%1$s Comentarios"
 
 #: comments.php:48
 msgid "Navegação de comentários"
-msgstr ""
+msgstr "Navegación de comentarios"
 
 #: comments.php:49
 msgid "&larr; Comentários Antigos"
-msgstr ""
+msgstr "&larr; Comentarios más antiguos"
 
 #: comments.php:50
 msgid "Novos Comentários &rarr;"
-msgstr ""
+msgstr "Nuevos Comentarios &rarr;"
 
 #: comments.php:55
 msgid "Comentários estão fechados."
-msgstr ""
+msgstr "Los comentarios están cerrados."
 
 msgid "Leave a Reply"
 msgstr ""
@@ -381,11 +382,11 @@ msgstr ""
 
 #: content-header.php:78 content-header.php:124
 msgid "Postado por: "
-msgstr ""
+msgstr "Publicado por:"
 
 #: content-header.php:81 content-header.php:127
 msgid "Ver todos os posts por %s"
-msgstr ""
+msgstr "Ver todos los posts de %s"
 
 #. Translators: used between list items, there is a space after the comma.
 #: content-header.php:90 content-header.php:111
@@ -394,7 +395,7 @@ msgstr ""
 
 #: content-header.php:95
 msgid "Publicado em "
-msgstr ""
+msgstr "Publicado en"
 
 #: content-header.php:135
 msgid "Deixe um comentário"
@@ -402,7 +403,7 @@ msgstr "Comentar"
 
 #: content-header.php:135
 msgid "% Comentários"
-msgstr ""
+msgstr "% Comentarios"
 
 #: content-none.php:15
 msgid "Nothing Found"
@@ -578,15 +579,17 @@ msgstr ""
 #: footer-boletim.php:25
 msgid "Mantenha-se informado sobre a situação dos povos isolados"
 msgstr ""
+"Manténgase informado sobre la situación de los pueblos indígenas en "
+"aislamiento"
 
 msgid "Receba o boletim"
 msgstr "Subscríbete"
 
 msgid "Enviar"
-msgstr ""
+msgstr "Enviar"
 
 msgid "Desenvolvido por"
-msgstr ""
+msgstr "Desarrollado por"
 
 msgid "Nesta edição"
 msgstr "En esta edición"
@@ -714,19 +717,19 @@ msgstr ""
 
 #: functions.php:418
 msgid "Pre-footer Esquerda"
-msgstr ""
+msgstr "Pre-pie izquierdo"
 
 #: functions.php:420 functions.php:430 functions.php:440
 msgid "Aparece na esquerda do pre-footer"
-msgstr ""
+msgstr "Aparece en el pre-pie izquierdo"
 
 #: functions.php:428
 msgid "Pre-footer Centro"
-msgstr ""
+msgstr "Pre-pie Centro"
 
 #: functions.php:438
 msgid "Pre-footer Direita"
-msgstr ""
+msgstr "Pre-pie Derecho"
 
 #: functions.php:448
 msgid "Footer 1"
@@ -734,7 +737,7 @@ msgstr ""
 
 #: functions.php:450
 msgid "Primeira área do footer"
-msgstr ""
+msgstr "Primer área de pie de página "
 
 #: functions.php:458
 msgid "Footer 2"
@@ -742,7 +745,7 @@ msgstr ""
 
 #: functions.php:460
 msgid "Segunda área do footer"
-msgstr ""
+msgstr "Segunda área de pie de página"
 
 #: functions.php:468
 msgid "Footer 3"
@@ -750,7 +753,7 @@ msgstr ""
 
 #: functions.php:470
 msgid "Terceira área do footer"
-msgstr ""
+msgstr "Tercera área de pie de página"
 
 #: functions.php:478
 msgid "Footer 4"
@@ -758,7 +761,7 @@ msgstr ""
 
 #: functions.php:480
 msgid "Quarta área do footer"
-msgstr ""
+msgstr "Cuarta área de pie de página"
 
 #: functions.php:488
 msgid "Footer 5"
@@ -766,7 +769,7 @@ msgstr ""
 
 #: functions.php:490
 msgid "Quinta área do footer"
-msgstr ""
+msgstr "Quinto área de pie de página"
 
 #: functions.php:516
 msgid "Posts navigation"
@@ -774,11 +777,11 @@ msgstr ""
 
 #: functions.php:520
 msgid "<span class=\"meta-nav\">&larr;</span> Posts antigos"
-msgstr ""
+msgstr "<span class=\"meta-nav\">&larr;</span> Publicaciones más antiguas"
 
 #: functions.php:524
 msgid "Posts novos <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
+msgstr "Nuevas publicaciones <span class=\"meta-nav\">&rarr;</span>"
 
 #: functions.php:723
 msgid "Something went wrong with the plugin API."
@@ -816,11 +819,11 @@ msgstr ""
 
 #: image.php:48
 msgid "<span class=\"meta-nav\">&larr;</span> Anterior"
-msgstr ""
+msgstr "<span class=\"meta-nav\">&larr;</span> Anterior"
 
 #: image.php:49
 msgid "Próximo <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
+msgstr "Proximo <span class=\"meta-nav\">&rarr;</span>"
 
 #: login-popup.php:12 template.login.php:9
 msgid "Username"
@@ -873,7 +876,7 @@ msgstr ""
 
 #: search.php:23
 msgid "Resultado da busca para: %s"
-msgstr ""
+msgstr "Resultados de la búsqueda para: %s"
 
 #: search.php:35
 msgid "Total: %s results found."
@@ -881,87 +884,88 @@ msgstr ""
 
 #: searchform.php:10
 msgid "Buscar por:"
-msgstr ""
+msgstr "Buscar a:"
 
 #: searchform.php:11
 msgid "Buscar..."
-msgstr ""
+msgstr "Buscar..."
 
 #: searchform.php:12
 msgid "Buscar"
-msgstr ""
+msgstr "Buscar"
 
 #: tag.php:26
 msgid "Arquivo de Tags: %s"
-msgstr ""
+msgstr "Archivo de etiquetas: %s"
 
 #: template.contact.php:47
 msgid "Por favor entre com seu nome"
-msgstr ""
+msgstr "Por favor, introduzca su nombre"
 
 #: template.contact.php:56
 msgid "Por favor entre com seu email."
-msgstr ""
+msgstr " Por favor, introduzca su correo electrónico."
 
 #: template.contact.php:64
 msgid "Por favor entre com o texto."
-msgstr ""
+msgstr "Por favor, introduzca el texto."
 
 #: template.contact.php:82
 msgid "O reCAPTCHA não foi preenchido corretamente. Volte e tente de novo."
 msgstr ""
+"El reCAPTCHA no está llenado correctamente. Vuelve e inténtalo de nuevamente."
 
 #: template.contact.php:95 template.contact.php:97 template.contact.php:99
 msgid "De "
-msgstr ""
+msgstr "Desde"
 
 #: template.contact.php:104
 msgid "Mensagem de"
-msgstr ""
+msgstr "Mensaje de"
 
 #: template.contact.php:108 template.contact.php:206
 msgid "Nome:"
-msgstr ""
+msgstr "Nombre:"
 
 #: template.contact.php:115
 msgid "E-mail:"
-msgstr ""
+msgstr "E-mail:"
 
 #: template.contact.php:121 template.contact.php:229
 msgid "Mensagem:"
-msgstr ""
+msgstr "Mensaje:"
 
 #: template.contact.php:186
 msgid "Ver no Google Maps"
-msgstr ""
+msgstr "Ver en Google Maps"
 
 #: template.contact.php:194
 msgid "Sua mensagem foi enviada com sucesso."
-msgstr ""
+msgstr "Su mensaje ha sido enviado con éxito."
 
 #: template.contact.php:195
 msgid "Voltar para a página"
-msgstr ""
+msgstr "Volver a la página"
 
 #: template.contact.php:199
 msgid "Desculpe, ocorreu um erro."
-msgstr ""
+msgstr "Disculpe, ha ocurrido un error."
 
 #: template.contact.php:218
 msgid "Email:"
-msgstr ""
+msgstr "Email:"
 
 #: template.contact.php:243
 msgid "Enviar cópia para si mesmo"
-msgstr ""
+msgstr "Enviar una copia a sí mismo"
 
 #: template.contact.php:266
 msgid "Enviar mensagem"
-msgstr ""
+msgstr "Enviar mensaje"
 
 #: template.frontpage.php:55
 msgid "Notícias"
-msgstr ""
+msgstr "Noticias"
 
 #. Template Name of the plugin/theme
 #: template.login.php:29
@@ -1488,7 +1492,7 @@ msgstr "Boletine"
 
 #. Template Name of the plugin/theme
 msgid "Arquivo de Boletins"
-msgstr ""
+msgstr "Archivo de Boletines"
 
 msgid "Boletins Anteriores"
 msgstr "Boletines Anteriores"
