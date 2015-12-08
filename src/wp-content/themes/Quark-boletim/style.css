@@ -4001,6 +4001,11 @@ article.one-page {
   hyphens: auto;
   word-wrap: break-word;
 }
+.entry-content .omsc-box {
+  float: left;
+  margin: 0 20px 0 0;
+  width: 50%;
+}
 .entry-summary .readon {
   float: none;
 }
