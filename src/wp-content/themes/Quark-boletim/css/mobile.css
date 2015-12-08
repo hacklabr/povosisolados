@@ -466,7 +466,10 @@ line-height: 1.3;
 }
 @media screen and (max-width: 640px) {
   #aside-navigation, #aside-menu.menu-open {
-    max-width: 280px;
+    width: 280px;
+  }
+  #aside-menu {
+    width: 280px;
   }
   #aside-menu .search-form .search-field {    
     width: 130px !important;
