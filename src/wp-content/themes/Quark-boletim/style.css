@@ -1383,17 +1383,16 @@ label {
 }
 #aside-menu {
   background-color: rgba(51, 33, 33, 1) !important;
+  display: none;
   overflow: hidden;
   position: absolute;
-  right: -350px;
+  right: 0;
   top: 0;
   width: 350px;
   z-index: 0;
-  transition: right linear 0.5s;
 }
 #aside-menu.menu-open {
   display: block;
-  right: 0;
   width: 350px;
   z-index: 999;
 }
