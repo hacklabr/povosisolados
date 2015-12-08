@@ -6014,7 +6014,9 @@ img.gk-responsive {
 #pre-footer .site .subscribe .twitter a:before {
   content: '\f099';
 }
-
+#pre-footer .site .expediente h5 {
+  font-weight: bold;
+}
 #pre-footer .site .expediente .social {
   text-align: left;
   padding-left: 0px;
