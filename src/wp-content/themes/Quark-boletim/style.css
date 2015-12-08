@@ -1396,6 +1396,7 @@ label {
 #aside-menu.menu-open {
   display: block;
   width: 350px;
+  z-index: 999;
 }
 #aside-menu > div {
   height: 100%;
@@ -4597,37 +4598,22 @@ p.numblocks span.highlight {
   margin: 0 !important;
   padding: 20px;
 }
-.boletim #aside-menu li {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  padding: 0px 6px;
-  text-transform: initial;
-}
-
-/*.boletim #aside-menu ul {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  padding: 0px 6px;
-  text-transform: initial;
-}*/
-
-
-.boletim #aside-menu ul {
+.boletim #aside-menu .articles {
   font-size: 1.2rem;
   line-height: 1.5;
   /*padding: 0px 6px;*/
   text-transform: initial;
 }
-
-.boletim #aside-menu ul li {
-  line-height: 1.7;
+.boletim #aside-menu .articles li {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0px 6px;
+  text-transform: initial;
   padding-bottom: 20px;
 }
-
-.language ul{
+.language ul {
   padding: 0 0 0 25px;
 }
-
 .language ul li {
   list-style: none;
   margin: 0;

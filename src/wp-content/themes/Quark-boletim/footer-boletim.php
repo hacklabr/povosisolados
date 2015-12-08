@@ -113,7 +113,7 @@
             <nav id="aside-navigation" class="main-navigation" role="navigation">
               <div class="menu-menu-boletim-container">
               <!-- <?php wp_nav_menu( array( 'theme_location' => 'boletimmenu', 'menu_class' => 'nav-aside-menu', 'fallback_cb' => false ) ); ?> -->
-              <ul>
+              <ul class="articles">
                 <?php foreach ( $loop_news as $_post ){    ?>
 
                 <li><a href="<?php echo get_permalink($_post->ID); ?>"><?php echo $_post->post_title; ?></a></li>
@@ -145,7 +145,7 @@
             <nav id="aside-navigation" class="main-navigation" role="navigation">
               <div class="menu-menu-boletim-container">
               <!-- <?php wp_nav_menu( array( 'theme_location' => 'boletimmenu', 'menu_class' => 'nav-aside-menu', 'fallback_cb' => false ) ); ?> -->
-              <ul>
+              <ul class="articles">
                 <?php while ( $loop_boletim->have_posts()): $loop_boletim->the_post(); ?>
                 <li>
                   <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
