@@ -22,7 +22,7 @@
                     </div>
                     <div class="subscribe">
                         <h4><?php _e('Receba o boletim' , 'quark'); ?></h4>
-                        <?php _e('Mantenha-se informado sobre a situação dos povos isolados', 'SLUG'); ?>
+                        <?php _e('Mantenha-se informado sobre a situação dos povos indígenas isolados', 'SLUG'); ?>
                         <form>
                           <input type="text" placeholder="E-mail">
                           <button>
