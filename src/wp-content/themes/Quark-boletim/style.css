@@ -533,7 +533,7 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 .paging-navigation a,
-.single-post .navgation-post a {
+.single-post .navigation-post a {
   -webkit-appearance: none;
   background: rgba(159, 32, 50, 0.8);
   border: none;
@@ -6847,10 +6847,13 @@ a.pswp__share--download:before {
   color:#fff;
 }
 
-.navigation-buttons {
-  width: 20%;
+.navigation-post-links {
+  clear: both;
   margin: auto;
+  width: 100%;
 }
+
+.
 
 /*
  *
