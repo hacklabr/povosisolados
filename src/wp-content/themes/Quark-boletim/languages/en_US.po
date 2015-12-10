@@ -577,8 +577,8 @@ msgid "Never allow"
 msgstr ""
 
 #: footer-boletim.php:25
-msgid "Mantenha-se informado sobre a situação dos povos indígenas isolados"
-msgstr "Stay informed on the situation of the isolated indigenous peoples"
+msgid "Mantenha-se informado sobre a situação dos povos indígenas isolados na Amazônia"
+msgstr "Stay informed on the situation of the isolated indigenous peoples in the Amazon"
 
 msgid "Receba o boletim"
 msgstr "Subscribe"

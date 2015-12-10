@@ -22,7 +22,7 @@
                     </div>
                     <div class="subscribe">
                         <h4><?php _e('Receba o boletim' , 'quark'); ?></h4>
-                        <?php _e('Mantenha-se informado sobre a situação dos povos indígenas isolados', 'quark'); ?>
+                        <?php _e('Mantenha-se informado sobre a situação dos povos indígenas isolados na Amazônia', 'quark'); ?>
                         <form>
                           <input type="text" placeholder="E-mail">
                           <button>
@@ -47,7 +47,7 @@
             </div>
             <div class="site">
                 <div id="gk-copyrights">
-                    <p class="copyright"><?php _e('Desenvolvido por', 'quark'); ?><a href="http://hacklab.com.br/" class="hacklab"><span class="screen-reader-text">hacklab</a></a> with <a href="https://wordpress.org/">Wordpress</a></p>
+                    <p class="copyright"><?php _e('Desenvolvido por', 'quark'); ?><a href="http://hacklab.com.br/" class="hacklab"><span class="screen-reader-text">hacklab</a></a><?php _e('with','quark'); ?><a href="https://wordpress.org/">Wordpress</a></p>
                 </div>
             </div>
 
