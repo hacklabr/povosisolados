@@ -38,13 +38,15 @@ $link_youtube  = (!empty($theme_options['theme_youtube']) )? $theme_options['the
 
 $posts = get_posts($filters);
 $boletim_name = get_post_meta($posts[0]->ID, "boletim");
+$category_obj = get_category_by_slug($boletim_name);
+$category_id = $category_obj->term_id;
 
 if (!empty($posts)) {
   $args_editorial = array(
     'post_type' => 'post',
     'order' => 'ASC',
     'lang' => 'pt',
-    'category_name' => $boletim_name ,
+    'category' => $category_id ,
     'meta_key' => 'is_editorial',
     'meta_value' => 'editorial',
     'posts_per_page' => 1
