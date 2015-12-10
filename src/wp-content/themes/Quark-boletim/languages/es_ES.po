@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-12-10 08:37-0200\n"
+"PO-Revision-Date: 2015-12-10 16:49-0200\n"
 "X-Generator: Poedit 1.8.5\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,6 +26,9 @@ msgstr "Volver a la página principal"
 #: addons/class.gkutils.php:9
 msgid "Invalid sidebar ID"
 msgstr ""
+
+msgid "Os comentários enviados às matérias veiculadas no <strong>Boletim Povos Isolados na Amazônia</strong> serão publicados levando em conta a relevância para as discussões às quais elas se propõem. A responsabilidade sobre cada comentário é de exclusividade do autor e não representa posição do Centro de Trabalho Indigenista. Por esse motivo, incentivamos a identificação dos autores. São bem-vindas colaborações críticas que enriqueçam o debate. Agressões, insultos ou declarações de cunho preconceituoso não serão aceitos."
+msgstr "Los comentarios enviados a los artículos publicados en el <strong>Boletim Povos Isolados na Amazônia</strong> se publicarán teniendo en cuenta la relevancia para las discusiones a las que estos se proponen. La responsabilidad de cada comentario es exclusiva del autor y no representa la posición del Centro de Trabalho Indigenista. Por lo tanto, animamos la identificación de los autores. Son bienvenidas las colaboraciones críticas que enriquecen el debate. No se aceptarán agresiones, insultos o cualquier declaración de naturaleza discriminatoria."
 
 #: addons/class.tgm.php:161 functions.php:721
 msgid "Install Required Plugins"
@@ -56,12 +59,8 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: addons/class.tgm.php:167 functions.php:726
-msgid ""
-"Sorry, but you do not have the correct permissions to install the %s plugin. Contact the "
-"administrator of this site for help on getting the plugin installed."
-msgid_plural ""
-"Sorry, but you do not have the correct permissions to install the %s plugins. Contact the "
-"administrator of this site for help on getting the plugins installed."
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -78,32 +77,20 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: addons/class.tgm.php:170 functions.php:729
-msgid ""
-"Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the "
-"administrator of this site for help on getting the plugin activated."
-msgid_plural ""
-"Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the "
-"administrator of this site for help on getting the plugins activated."
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
 msgstr[0] ""
 msgstr[1] ""
 
 #: addons/class.tgm.php:171 functions.php:730
-msgid ""
-"The following plugin needs to be updated to its latest version to ensure maximum compatibility with "
-"this theme: %1$s."
-msgid_plural ""
-"The following plugins need to be updated to their latest version to ensure maximum compatibility "
-"with this theme: %1$s."
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
 #: addons/class.tgm.php:172 functions.php:731
-msgid ""
-"Sorry, but you do not have the correct permissions to update the %s plugin. Contact the "
-"administrator of this site for help on getting the plugin updated."
-msgid_plural ""
-"Sorry, but you do not have the correct permissions to update the %s plugins. Contact the "
-"administrator of this site for help on getting the plugins updated."
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -184,9 +171,7 @@ msgid "Activate"
 msgstr ""
 
 #: addons/class.tgm.php:1372
-msgid ""
-"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the "
-"Dashboard</a>"
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
 msgstr ""
 
 #: addons/class.tgm.php:1388
@@ -234,9 +219,7 @@ msgid "Plugin activation failed."
 msgstr ""
 
 #: addons/class.tgm.php:2069
-msgid ""
-"The installation and activation process is starting. This process may take a while on some hosts, so "
-"please be patient."
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
 #: addons/class.tgm.php:2070
@@ -260,9 +243,7 @@ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: addons/class.tgm.php:2076
-msgid ""
-"The installation process is starting. This process may take a while on some hosts, so please be "
-"patient."
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
 #: addons/class.tgm.php:2077
@@ -365,8 +346,7 @@ msgstr "Los comentarios están cerrados."
 msgid "Leave a Reply"
 msgstr ""
 
-#: content-gallery.php:24 content-image.php:24 content-link.php:24 content-quote.php:24
-#: content-video.php:26 content.php:35 image.php:43 page.php:31
+#: content-gallery.php:24 content-image.php:24 content-link.php:24 content-quote.php:24 content-video.php:26 content.php:35 image.php:43 page.php:31
 msgid "Pages:"
 msgstr ""
 
@@ -768,10 +748,7 @@ msgid "All plugins installed and activated successfully. %s"
 msgstr ""
 
 #: header-boletim.php:41 header-frontpage.php:49 header.php:50
-msgid ""
-"You're using an unsupported version of Internet Explorer. Please <a href=\"http://windows.microsoft."
-"com/en-us/internet-explorer/products/ie/home\">upgrade your browser</a> for the best user experience "
-"on our site. Thank you."
+msgid "You're using an unsupported version of Internet Explorer. Please <a href=\"http://windows.microsoft.com/en-us/internet-explorer/products/ie/home\">upgrade your browser</a> for the best user experience on our site. Thank you."
 msgstr ""
 
 #: header-boletim.php:67 header-frontpage.php:76 header.php:73
@@ -1012,8 +989,7 @@ msgid "Define size of the fonts"
 msgstr ""
 
 #: theme-customizer.php:944
-msgid ""
-"Base value is 62.5, you can change this value to increase/decrease all font sizes used in this theme."
+msgid "Base value is 62.5, you can change this value to increase/decrease all font sizes used in this theme."
 msgstr ""
 
 #: theme-customizer.php:954
@@ -1377,9 +1353,7 @@ msgid "Consent mode"
 msgstr ""
 
 #: theme-customizer.php:1864
-msgid ""
-"Explicit - no cookies will be set until a visitor consents, Implied - set cookies and allow visitors "
-"to opt out"
+msgid "Explicit - no cookies will be set until a visitor consents, Implied - set cookies and allow visitors to opt out"
 msgstr ""
 
 #: theme-customizer.php:1866
@@ -1444,13 +1418,7 @@ msgid "http://www.gavick.com"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid ""
-"Quark is a exclusive, multipurpose theme that heralds a new age of innovation for entrepeneurs and "
-"focused businesses. Modern elegant design combines with sublime visual effects and multiple ways to "
-"showcase your products and services to help you establish an effective brand while building a strong "
-"consumer base. What's more, Quark will be evolving with new styles, features and additional pages "
-"over the coming months to help you start a one-of-a-kind website, whether restaurant, online store "
-"and more.."
+msgid "Quark is a exclusive, multipurpose theme that heralds a new age of innovation for entrepeneurs and focused businesses. Modern elegant design combines with sublime visual effects and multiple ways to showcase your products and services to help you establish an effective brand while building a strong consumer base. What's more, Quark will be evolving with new styles, features and additional pages over the coming months to help you start a one-of-a-kind website, whether restaurant, online store and more.."
 msgstr ""
 
 #. Author of the plugin/theme
