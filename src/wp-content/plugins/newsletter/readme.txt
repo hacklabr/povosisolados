@@ -41,7 +41,7 @@ Need *more power*? Feel *something's missing*? The Newsletter Plugin features ca
 our **premium, professional Extensions**! Let us introduce just two of them : )
 
 * [Reports Extension](http://www.thenewsletterplugin.com/plugins/newsletter/reports-module) is a regular WordPress plugin which improves the internal statistics collection system and provides better reports of data collected for each sent email. Neat.
-* [Feed By Mail Extension](http://www.thenewsletterplugin.com/feed-by-mail-extension) generates and sends your newsletters using your blog last posts, even custom ones like events or products. Just sit and watch! 
+* [Feed By Mail Extension](http://www.thenewsletterplugin.com/feed-by-mail-extension) generates and sends your newsletters using your blog last posts, even custom ones like events or products. Just sit and watch!
 * [WooCommerce Extension](http://www.thenewsletterplugin.com/woocommerce-extension) subscribe customers to a mailing list and generate product newletters.
 * [Amazon SES Extension](http://www.thenewsletterplugin.com/amazon-ses-extension-for-the-newsletter-plugin) seamlessly integrate Amazon SES with The Newsletter Plugin. Hassle-free.
 
@@ -75,6 +75,54 @@ Thank you, The Newsletter Team
 No screenshots are available at this time.
 
 == Changelog ==
+
+= 4.0.7 =
+
+* New check to prevent not correct message template settings to block emails
+* Improved confirmation email test
+* Added welcome email test
+* Resubscription in single opt-in does not send the confirmation email anymore
+* Fixed second subscription with Facebook extension
+
+= 4.0.6 =
+
+* Fixed forced lists on subscription panel
+* Fixed few i18n tags
+* Fixed background color on theme selector
+
+= 4.0.5 =
+
+* Fixed an error on content lock
+* Fixed CSS for extensions
+* Fixed few debug notices
+* Improved the content lock user recognition
+* Subscriber search by list 
+
+= 4.0.4 =
+
+* Fixed and improved the email template for service messages
+
+= 4.0.3 =
+
+* Fixed the welcome email enable/disable setting 
+
+= 4.0.2 =
+
+* Fixed main settings saving
+* Fixed unsubscription settings saving
+
+= 4.0.0 =
+
+* Shiny new look
+* New top menu
+* Locked content feature moved into the subscription module
+* Separated SMTP configuration panel
+* Newsletter users import transfer first and last name
+* Various bug fixes and improvements
+
+= 3.9.5 =
+
+* Corrected the call to maybe_maybe_convert_table_to_utf8mb4
 
 = 3.9.4 =
 
