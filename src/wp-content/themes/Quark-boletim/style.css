@@ -1381,7 +1381,8 @@ label {
   background-color: rgba(51, 33, 33, 1) !important;
   display: none;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
+  height: 100%;
   right: 0;
   top: 0;
   width: 350px;
