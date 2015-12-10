@@ -15,7 +15,7 @@ global $newsletter, $post;
 $filters = array();
 
 if (empty($theme_options['theme_max_posts'])) {
-    $filters['showposts'] = 6;
+    $filters['showposts'] = 12;
 } else {
     $filters['showposts'] = (int)$theme_options['theme_max_posts'];
 }
@@ -43,6 +43,7 @@ if (!empty($posts)) {
   $args_editorial = array(
     'post_type' => 'post',
     'order' => 'ASC',
+    'lang' => 'pt',
     'category_name' => $boletim_name ,
     'meta_key' => 'is_editorial',
     'meta_value' => 'editorial',
