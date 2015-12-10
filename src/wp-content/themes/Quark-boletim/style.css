@@ -1381,7 +1381,8 @@ label {
   background-color: rgba(51, 33, 33, 1) !important;
   display: none;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
+  height: 100%;
   right: 0;
   top: 0;
   width: 350px;
@@ -1468,7 +1469,7 @@ label {
   font-style: normal;
   line-height: 17px;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   right: 40px;
   top: 30px;
   -webkit-transition: all .3s ease-out;
