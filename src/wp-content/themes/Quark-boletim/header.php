@@ -27,14 +27,14 @@
 	$dark_img = '';
 	if (get_theme_mod('quark_dark_image', 1) == 1) {
 		if (is_category() || is_author() || is_search() || is_404() || (is_singular() && !is_attachment())) {
-			$dark_img = 'dark-bg';
+		//	$dark_img = 'dark-bg';
 		} else {
 			$dark_img = '';
 		}
 	}
 
 	if (get_theme_mod('quark_js_parallax', 1) == 1) {
-		$dark_img .= ' js-parallax';
+	//	$dark_img .= ' js-parallax';
 	}
 
 	$logo_image = get_theme_mod('quark_logo', '');
