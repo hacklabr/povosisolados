@@ -1469,7 +1469,7 @@ label {
   font-style: normal;
   line-height: 17px;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   right: 40px;
   top: 30px;
   -webkit-transition: all .3s ease-out;
