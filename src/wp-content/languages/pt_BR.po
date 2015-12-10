@@ -7632,7 +7632,7 @@ msgstr "Deixe uma resposta para %s"
 #: wp-includes/comment-template.php:1826 wp-includes/comment-template.php:2118
 #: wp-includes/theme-compat/comments.php:75
 msgid "Leave a Reply"
-msgstr "Deixe uma resposta"
+msgstr "Deixe um comentário"
 
 #: wp-includes/admin-bar.php:418
 msgid "Sites"
