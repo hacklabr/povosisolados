@@ -7,7 +7,6 @@
  **/
 
 ?>
-
 <?php if ( post_password_required() ) : ?>
 <section id="comments">
 	<p class="no-password"><?php _e( 'Esse post é protegido por senha. Entre com a senha para visualizar quaisquer comentários.', 'quark' ); ?></p>
@@ -16,7 +15,6 @@
 	return;/* Stop the rest of comments.php from being processed */
 	endif;
 ?>
-
 <?php if(comments_open() || get_comments_number()) : ?>
 <div id="comments" class="comments-area">
 	<?php if ( have_comments() ) : ?>
@@ -57,7 +55,9 @@
 
 	<?php endif; // have_comments() ?>
 
-	<?php comment_form(); ?>
+	<?php comment_form(array(
+		'comment_notes_before' => _e("Os comentários enviados às matérias veiculadas no <strong>Boletim Povos Isolados na Amazônia</strong> serão publicados levando em conta a relevância para as discussões às quais elas se propõem. A responsabilidade sobre cada comentário é de exclusividade do autor e não representa posição do Centro de Trabalho Indigenista. Por esse motivo, incentivamos a identificação dos autores. São bem-vindas colaborações críticas que enriqueçam o debate. Agressões, insultos ou declarações de cunho preconceituoso não serão aceitos."),
+	)); ?>
 </div><!-- #comments -->
 <?php endif;
 
