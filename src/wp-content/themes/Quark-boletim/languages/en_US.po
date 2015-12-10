@@ -8,8 +8,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-12-09 11:39-0200\n"
-"X-Generator: Poedit 1.8.2\n"
+"PO-Revision-Date: 2015-12-10 08:37-0200\n"
+"X-Generator: Poedit 1.8.5\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -57,13 +57,11 @@ msgstr[1] ""
 
 #: addons/class.tgm.php:167 functions.php:726
 msgid ""
-"Sorry, but you do not have the correct permissions to install the %s plugin. "
-"Contact the administrator of this site for help on getting the plugin "
-"installed."
+"Sorry, but you do not have the correct permissions to install the %s plugin. Contact "
+"the administrator of this site for help on getting the plugin installed."
 msgid_plural ""
-"Sorry, but you do not have the correct permissions to install the %s "
-"plugins. Contact the administrator of this site for help on getting the "
-"plugins installed."
+"Sorry, but you do not have the correct permissions to install the %s plugins. Contact "
+"the administrator of this site for help on getting the plugins installed."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -81,35 +79,31 @@ msgstr[1] ""
 
 #: addons/class.tgm.php:170 functions.php:729
 msgid ""
-"Sorry, but you do not have the correct permissions to activate the %s "
-"plugin. Contact the administrator of this site for help on getting the "
-"plugin activated."
+"Sorry, but you do not have the correct permissions to activate the %s plugin. Contact "
+"the administrator of this site for help on getting the plugin activated."
 msgid_plural ""
-"Sorry, but you do not have the correct permissions to activate the %s "
-"plugins. Contact the administrator of this site for help on getting the "
-"plugins activated."
+"Sorry, but you do not have the correct permissions to activate the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins activated."
 msgstr[0] ""
 msgstr[1] ""
 
 #: addons/class.tgm.php:171 functions.php:730
 msgid ""
-"The following plugin needs to be updated to its latest version to ensure "
-"maximum compatibility with this theme: %1$s."
+"The following plugin needs to be updated to its latest version to ensure maximum "
+"compatibility with this theme: %1$s."
 msgid_plural ""
-"The following plugins need to be updated to their latest version to ensure "
-"maximum compatibility with this theme: %1$s."
+"The following plugins need to be updated to their latest version to ensure maximum "
+"compatibility with this theme: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
 #: addons/class.tgm.php:172 functions.php:731
 msgid ""
-"Sorry, but you do not have the correct permissions to update the %s plugin. "
-"Contact the administrator of this site for help on getting the plugin "
-"updated."
+"Sorry, but you do not have the correct permissions to update the %s plugin. Contact "
+"the administrator of this site for help on getting the plugin updated."
 msgid_plural ""
-"Sorry, but you do not have the correct permissions to update the %s plugins. "
-"Contact the administrator of this site for help on getting the plugins "
-"updated."
+"Sorry, but you do not have the correct permissions to update the %s plugins. Contact "
+"the administrator of this site for help on getting the plugins updated."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -191,8 +185,8 @@ msgstr ""
 
 #: addons/class.tgm.php:1372
 msgid ""
-"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
-"Dashboard\">Return to the Dashboard</a>"
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard"
+"\">Return to the Dashboard</a>"
 msgstr ""
 
 #: addons/class.tgm.php:1388
@@ -241,8 +235,8 @@ msgstr ""
 
 #: addons/class.tgm.php:2069
 msgid ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
+"The installation and activation process is starting. This process may take a while on "
+"some hosts, so please be patient."
 msgstr ""
 
 #: addons/class.tgm.php:2070
@@ -267,8 +261,8 @@ msgstr ""
 
 #: addons/class.tgm.php:2076
 msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
+"The installation process is starting. This process may take a while on some hosts, so "
+"please be patient."
 msgstr ""
 
 #: addons/class.tgm.php:2077
@@ -340,8 +334,7 @@ msgstr "Your comment is awaiting moderation"
 msgid ""
 "Esse post é protegido por senha. Entre com a senha para visualizar quaisquer "
 "comentários."
-msgstr ""
-"This post is protected by password. Enter the password to view any comments."
+msgstr "This post is protected by password. Enter the password to view any comments."
 
 #: comments.php:25 content-header.php:135
 msgid "1 Comentário"
@@ -374,9 +367,8 @@ msgstr "Comments are closed"
 msgid "Leave a Reply"
 msgstr "Deixe um comentário"
 
-#: content-gallery.php:24 content-image.php:24 content-link.php:24
-#: content-quote.php:24 content-video.php:26 content.php:35 image.php:43
-#: page.php:31
+#: content-gallery.php:24 content-image.php:24 content-link.php:24 content-quote.php:24
+#: content-video.php:26 content.php:35 image.php:43 page.php:31
 msgid "Pages:"
 msgstr ""
 
@@ -410,20 +402,19 @@ msgid "Nothing Found"
 msgstr ""
 
 #: content-none.php:21
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: content-none.php:23
 msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
+"Sorry, but nothing matched your search terms. Please try again with some different "
+"keywords."
 msgstr ""
 
 #: content-none.php:26
 msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can "
+"help."
 msgstr ""
 
 #: content.php:17
@@ -436,8 +427,7 @@ msgstr ""
 
 #: cookielaw.php:22
 msgid ""
-"Facebook, Twitter and other social websites need to know who you are to work "
-"properly."
+"Facebook, Twitter and other social websites need to know who you are to work properly."
 msgstr ""
 
 #: cookielaw.php:23
@@ -445,8 +435,7 @@ msgid "Analytics"
 msgstr ""
 
 #: cookielaw.php:24
-msgid ""
-"We anonymously measure your use of this website to improve your experience."
+msgid "We anonymously measure your use of this website to improve your experience."
 msgstr ""
 
 #: cookielaw.php:25
@@ -455,8 +444,8 @@ msgstr ""
 
 #: cookielaw.php:26
 msgid ""
-"Adverts will be chosen for you automatically based on your past behaviour "
-"and interests."
+"Adverts will be chosen for you automatically based on your past behaviour and "
+"interests."
 msgstr ""
 
 #: cookielaw.php:27
@@ -528,8 +517,7 @@ msgid "for this website"
 msgstr ""
 
 #: cookielaw.php:45
-msgid ""
-"Some features of this website need your consent to remember who you are."
+msgid "Some features of this website need your consent to remember who you are."
 msgstr ""
 
 #: cookielaw.php:46
@@ -791,10 +779,9 @@ msgstr ""
 
 #: header-boletim.php:41 header-frontpage.php:49 header.php:50
 msgid ""
-"You're using an unsupported version of Internet Explorer. Please <a href="
-"\"http://windows.microsoft.com/en-us/internet-explorer/products/ie/home"
-"\">upgrade your browser</a> for the best user experience on our site. Thank "
-"you."
+"You're using an unsupported version of Internet Explorer. Please <a href=\"http://"
+"windows.microsoft.com/en-us/internet-explorer/products/ie/home\">upgrade your "
+"browser</a> for the best user experience on our site. Thank you."
 msgstr ""
 
 #: header-boletim.php:67 header-frontpage.php:76 header.php:73
@@ -847,8 +834,7 @@ msgstr ""
 msgid "Hi, "
 msgstr ""
 
-#: login-popup.php:40 login-popup.php:41 template.login.php:40
-#: template.login.php:41
+#: login-popup.php:40 login-popup.php:41 template.login.php:40 template.login.php:41
 msgid "Logout"
 msgstr ""
 
@@ -1037,8 +1023,8 @@ msgstr ""
 
 #: theme-customizer.php:944
 msgid ""
-"Base value is 62.5, you can change this value to increase/decrease all font "
-"sizes used in this theme."
+"Base value is 62.5, you can change this value to increase/decrease all font sizes "
+"used in this theme."
 msgstr ""
 
 #: theme-customizer.php:954
@@ -1403,8 +1389,8 @@ msgstr ""
 
 #: theme-customizer.php:1864
 msgid ""
-"Explicit - no cookies will be set until a visitor consents, Implied - set "
-"cookies and allow visitors to opt out"
+"Explicit - no cookies will be set until a visitor consents, Implied - set cookies and "
+"allow visitors to opt out"
 msgstr ""
 
 #: theme-customizer.php:1866
@@ -1470,13 +1456,13 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Quark is a exclusive, multipurpose theme that heralds a new age of "
-"innovation for entrepeneurs and focused businesses. Modern elegant design "
-"combines with sublime visual effects and multiple ways to showcase your "
-"products and services to help you establish an effective brand while "
-"building a strong consumer base. What's more, Quark will be evolving with "
-"new styles, features and additional pages over the coming months to help you "
-"start a one-of-a-kind website, whether restaurant, online store and more.."
+"Quark is a exclusive, multipurpose theme that heralds a new age of innovation for "
+"entrepeneurs and focused businesses. Modern elegant design combines with sublime "
+"visual effects and multiple ways to showcase your products and services to help you "
+"establish an effective brand while building a strong consumer base. What's more, "
+"Quark will be evolving with new styles, features and additional pages over the coming "
+"months to help you start a one-of-a-kind website, whether restaurant, online store "
+"and more.."
 msgstr ""
 
 #. Author of the plugin/theme
