@@ -56,7 +56,7 @@
 	<?php endif; // have_comments() ?>
 
 	<?php comment_form(array(
-		'comment_notes_before' => _e("Os comentários enviados às matérias veiculadas no <strong>Boletim Povos Isolados na Amazônia</strong> serão publicados levando em conta a relevância para as discussões às quais elas se propõem. A responsabilidade sobre cada comentário é de exclusividade do autor e não representa posição do Centro de Trabalho Indigenista. Por esse motivo, incentivamos a identificação dos autores. São bem-vindas colaborações críticas que enriqueçam o debate. Agressões, insultos ou declarações de cunho preconceituoso não serão aceitos."),
+		'comment_notes_before' => _e("Os comentários enviados às matérias veiculadas no <strong>Boletim Povos Isolados na Amazônia</strong> serão publicados levando em conta a relevância para as discussões às quais elas se propõem. A responsabilidade sobre cada comentário é de exclusividade do autor e não representa posição do Centro de Trabalho Indigenista. Por esse motivo, incentivamos a identificação dos autores. São bem-vindas colaborações críticas que enriqueçam o debate. Agressões, insultos ou declarações de cunho preconceituoso não serão aceitos.", "quark"),
 	)); ?>
 </div><!-- #comments -->
 <?php endif;
