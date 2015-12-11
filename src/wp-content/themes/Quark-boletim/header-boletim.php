@@ -121,7 +121,6 @@ $post_original = $post;
 						<div class="box-title">
 							<a href="<?php echo get_permalink($_post->ID); ?>">
 							<h3><?php echo $_post->post_title; ?></h3>
-							<?php echo $_post->post_excerpt; ?>
 							</a>
 						</div>
 
