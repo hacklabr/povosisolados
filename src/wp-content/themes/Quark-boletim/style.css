@@ -786,6 +786,22 @@ label {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+@media screen and (max-width: 1280px) {
+  #gk-header-mod img,
+  .entry-header > img {
+    height: auto;
+    left: 50%;
+    max-width: none !important;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+  }
+}
 #gk-header-mod img,
 .entry-header > img {
   height: auto;
@@ -800,6 +816,7 @@ label {
   transform: translateY(-35%) translateX(-50%);
   width: 100%;
 }
+
 #gk-header-mod > .parallax-img.gk-vertical {
   height: 100%;
   width: auto;
