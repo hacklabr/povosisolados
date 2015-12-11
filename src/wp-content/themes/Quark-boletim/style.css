@@ -793,11 +793,11 @@ label {
   max-width: none !important;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-30%) translateX(-50%);
-  -moz-transform: translateY(-30%) translateX(-50%);
-  -ms-transform: translateY(-30%) translateX(-50%);
-  -o-transform: translateY(-30%) translateX(-50%);
-  transform: translateY(-30%) translateX(-50%);
+  -webkit-transform: translateY(-25%) translateX(-50%);
+  -moz-transform: translateY(-25%) translateX(-50%);
+  -ms-transform: translateY(-25%) translateX(-50%);
+  -o-transform: translateY(-25%) translateX(-50%);
+  transform: translateY(-25%) translateX(-50%);
   width: 100%;
 }
 #gk-header-mod > .parallax-img.gk-vertical {
