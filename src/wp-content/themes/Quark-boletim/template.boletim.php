@@ -58,7 +58,7 @@ get_header('boletim'); ?>
                         <h3 class="boletim-title"><?php echo $_post->post_title; ?></h3>
                         </a>
                         </div>
-                        <span class="caption"><?php echo $caption; ?></span>
+                        <div class="caption"><?php echo $caption; ?></div>
                     </div>
 				    <?php }; wp_reset_query();?>
                 </div>

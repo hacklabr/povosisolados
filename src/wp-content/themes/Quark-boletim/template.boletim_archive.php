@@ -36,7 +36,7 @@ do_action('quark_before_content');
                         <h3 class="boletim-title"><?php the_title(); ?></h3>
                     </a>
                 </div>
-                <span class="caption"><?php echo $caption; ?></span>
+                <div class="caption"><?php echo $caption; ?></div>
             </div>
         <?php
             endif;
