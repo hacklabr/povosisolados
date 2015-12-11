@@ -4034,6 +4034,7 @@ article.one-page {
   float: left;
   margin: 0 20px 0 0;
   width: 50%;
+  font: normal .92em/32px 'Droid', !important;
 }
 .entry-summary .readon {
   float: none;
