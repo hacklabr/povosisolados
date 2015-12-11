@@ -4661,7 +4661,10 @@ p.numblocks span.highlight {
   left: 0;
   right: 0;
 }
-
+.frontpage-block.box.boletim .boletim-box .caption {
+  font-size: 12px;
+  text-align: right;
+}
 /**
  * 4. Widgets
  * ----------------------------------------------------------------------------

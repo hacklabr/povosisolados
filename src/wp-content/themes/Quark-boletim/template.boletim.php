@@ -51,12 +51,14 @@ get_header('boletim'); ?>
                         <?php
                         $thumb_id = get_post_thumbnail_id($_post->ID);
                         $thumb_url = wp_get_attachment_image_src($thumb_id,'destaque-boletim', true);
+                        $caption = get_post($thumb_id)->post_excerpt;
                         ?>
                         <div class="boletim-thumb" style="background-image:url('<?php echo $thumb_url[0]; ?>');" >
                         <a href="<?php echo get_permalink($_post->ID); ?>">
                         <h3 class="boletim-title"><?php echo $_post->post_title; ?></h3>
                         </a>
                         </div>
+                        <span class="caption"><?php echo $caption; ?></span>
                     </div>
 				    <?php }; wp_reset_query();?>
                 </div>
