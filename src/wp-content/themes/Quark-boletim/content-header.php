@@ -9,7 +9,7 @@
     <header class="entry-header<?php if ( '' == get_the_post_thumbnail()) : ?> no-image<?php endif; ?>">
         <?php if ( has_post_thumbnail() && !post_password_required() ) : ?>
             <?php do_action('photo_before_post_image'); ?>
-            <?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail('header-boletim'); ?>
             <?php do_action('photo_after_post_image'); ?>
         <?php endif; ?>
 
