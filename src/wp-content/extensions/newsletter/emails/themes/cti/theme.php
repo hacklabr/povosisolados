@@ -117,7 +117,7 @@ if (!empty($posts)) {
             <?php setup_postdata($post); ?>
               <td width="360" valign="top" style="padding: 22px 0px 0px 15px;">
                 <a target="_blank" href="#" href="<?php echo get_permalink($post); ?>">
-                  <img height="250" width="380" src="<?php echo newsletter_get_post_image($post->ID); ?>">
+                  <img height="250" width="380" src="<?php echo newsletter_get_post_image($post->ID, "newsletter-boletim"); ?>">
                 </a>
                 <div style="color: #000; font-size: 16px; font-weight: bold; margin-top: -3px; padding: 10px 0px;">
                   <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #000;">
