@@ -153,8 +153,8 @@ if (!empty($posts)) {
         </td>
       </tr>
       <tr>
-        <td align="center" colspan="3" style="padding-bottom: 15px;" valign="top" style="text-align: center;">
-          <a href=""/?lang=es"">Espanol</a> | <a href=""/?lang=en"">English</a>
+        <td align="center" colspan="3" style="padding-bottom: 15px; color: #000;" valign="top" style="text-align: center;">
+          <a href="/?lang=es">Español</a> | <a href="/?lang=en">English</a>
         </td>
       </tr>
       <tr>
