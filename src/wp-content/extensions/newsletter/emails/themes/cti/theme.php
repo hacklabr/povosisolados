@@ -96,7 +96,6 @@ if (!empty($posts)) {
               <!-- newsletter title and subtitle -->
               <td align="left" bgcolor="#230e0f">
                 <div style="color: #fff; font-size: 20px; font-weight: bold; padding: 10px 10px 0px 10px; text-transform: uppercase;"><?php echo $editorial_post->post_title; ?></div>
-                <div style="color: #fff; font-size: 14px; font-weight: normal; padding: 0px 10px 10px 10px; "><?php echo $editorial_post->post_excerpt; ?></div>
               </td>
             </tr>
             <tr>
