@@ -1,7 +1,7 @@
 (function(){
     // Load plugin specific language pack
     tinymce.PluginManager.requireLangPack('spq');
-
+    
     tinymce.create('tinymce.plugins.SPQPlugin', {
         /**
          * Initializes the plugin, this will be executed after the plugin has been created.
@@ -14,21 +14,21 @@
         init: function(ed, url){
             // Register the command so that it can be invoked by using tinyMCE.activeEditor.execCommand('mceExample');
             ed.addCommand('mceSPQ', function(){
-
-                ed.execCommand('mceInsertContent', false, '[pullquote-left]'+ ed.selection.getContent() +'[/pullquote-left]');
+            
+                ed.execCommand('mceInsertContent', false, '[pullquote]'+ ed.selection.getContent() +'[/pullquote]');
 		ed.execCommand('mceRepaint');
-
+                
             });
-
+            
             // Register button
             ed.addButton('spq', {
                 title: 'Insert Simple Pull Quote',
                 cmd: 'mceSPQ',
                 image: url + '/img/simplepullquote.jpg'
             });
-
+            
         },
-
+        
         /**
          * Creates control instances based in the incomming name. This method is normally not
          * needed since the addButton method of the tinymce.Editor class is a more easy way of adding buttons
@@ -42,7 +42,7 @@
         createControl: function(n, cm){
             return null;
         },
-
+        
         /**
          * Returns information about the plugin as a name/value array.
          * The current keys are longname, author, authorurl, infourl and version.
@@ -59,7 +59,7 @@
             };
         }
     });
-
+    
     // Register plugin
     tinymce.PluginManager.add('spq', tinymce.plugins.SPQPlugin);
 })();
