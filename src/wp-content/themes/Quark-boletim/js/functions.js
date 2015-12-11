@@ -323,6 +323,7 @@
             }
         }
 
+        /*
         // Category header scroll effect    
         if(jQuery('.archive .entry-header > img').length) {
             var header = jQuery('.archive .entry-header');
@@ -353,6 +354,7 @@
             
             win.scroll(header_scroll);
         }
+        */
         
         function header_scroll() {  
             var h = header.outerHeight();
