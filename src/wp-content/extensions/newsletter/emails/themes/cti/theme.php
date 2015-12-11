@@ -71,7 +71,7 @@ if (!empty($posts)) {
     </head>
     <body style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; color: #fff; margin: 0 auto; padding: 0;">
 
-    <table bgcolor="#CCAE6D" cellspacing="0" cellpadding="0" width="800" style="margin: 0 auto;">
+    <table bgcolor="#FFF4DE" cellspacing="0" cellpadding="0" width="810" style="margin: 0 auto;">
       <!-- top header -->
       <tr bgcolor="#9F2032">
         <td align="left" bgcolor="#9F2032" colspan="2" style="color: #fff; font-size: 20px; font-weight: bold; padding: 15px 10px;">Boletim Povos Isolados na Amazônia</td>
@@ -109,18 +109,18 @@ if (!empty($posts)) {
       <?php if (!empty($posts)) { ?>
       <tr>
         <!-- posts section -->
-        <td bgcolor="#CCAE6D" colspan="3">
+        <td bgcolor="#FFF4DE" colspan="3">
           <table>
 
             <tr>
             <?php foreach ($posts as $key=>$post) : ?>
             <?php setup_postdata($post); ?>
-              <td width="360" valign="top" style="padding: 24px 0px 0px 24px;">
+              <td width="360" valign="top" style="padding: 22px 0px 0px 15px;">
                 <a target="_blank" href="#" href="<?php echo get_permalink($post); ?>">
-                  <img height="270" width="360" src="<?php echo newsletter_get_post_image($post->ID); ?>">
+                  <img height="250" width="380" src="<?php echo newsletter_get_post_image($post->ID); ?>">
                 </a>
-                <div style="background-color: #230e0f; color: #fff; font-size: 14px; font-weight: bold; margin-top: -3px; padding: 10px 15px;">
-                  <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #fff;">
+                <div style="color: #000; font-size: 16px; font-weight: bold; margin-top: -3px; padding: 10px 0px;">
+                  <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #000;">
                   <?php the_title(); ?>
                   </a>
                 </div>
@@ -145,7 +145,7 @@ if (!empty($posts)) {
       <?php } ?>
       <tr>
         <!-- blank space -->
-        <td bgcolor="#CCAE6D" colspan="3" height="18"></td>
+        <td bgcolor="#FFF4DE" colspan="3" height="18"></td>
       </tr>
       <tr>
         <td align="center" colspan="3" style="padding-bottom: 15px;" valign="top" style="text-align: center;">
@@ -164,15 +164,15 @@ if (!empty($posts)) {
           <a href="<?php echo $link_youtube;?>" style="color: #fff;"><img src="<?php echo $theme_url ?>/images/youtube.png"></a>
         </td>
       </tr>
-      <tr bgcolor="#CCAE6D">
-        <td align="center" bgcolor="#CCAE6D" style="padding: 15px 5px;">
+      <tr bgcolor="#FFF4DE">
+        <td align="center" bgcolor="#FFF4DE" style="padding: 15px 5px;">
             <img src="<?php echo $theme_url ?>/images/logo-cti.png" alt="Centro de Trabalho Indigenista">
         </td>
-        <td align="center" bgcolor="#CCAE6D" style="color: #9F2032; font-size: 12px; padding: 15px 5px;">
+        <td align="center" bgcolor="#FFF4DE" style="color: #9F2032; font-size: 12px; padding: 15px 5px;">
             <b>Centro de Trabalho Indigenista</b><br>
             Fone BSB: +55 (61) 3349-7769<br>
             Fone SP: +55  (11) 2935-7768</td>
-        <td align="center" bgcolor="#CCAE6D">
+        <td align="center" bgcolor="#FFF4DE">
             <a target="_blank" href="{profile_url}" style="color: #9F2032; font-size: 12px; padding: 15px 5px;">
             <b>Não deseja mais receber?</b><br>
             Clique aqui para<br>se descadastrar</a>
