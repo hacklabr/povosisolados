@@ -1691,7 +1691,7 @@ article.one-page {
   padding: 5px 10px;
 }
 
-.entry-header .caption {
+.entry-header .caption, #gk-header-mod .caption {
   color: #fff;
   font-size: 12px;
   font-weight: bold;
