@@ -9,7 +9,6 @@
  * - $theme_subject Will be the email subject if set by this theme
  *
  */
-
 global $newsletter, $post;
 
 $filters = array();
@@ -71,7 +70,7 @@ if (!empty($posts)) {
         <style type="text/css" media="all">
             a {
                 text-decoration: none;
-                color: #9F2032;
+                color: #4a191b;
             }
         </style>
     </head>
@@ -79,12 +78,12 @@ if (!empty($posts)) {
 
     <table bgcolor="#FFF4DE" cellspacing="0" cellpadding="0" width="810" style="margin: 0 auto;">
       <!-- top header -->
-      <tr bgcolor="#9F2032">
-        <td align="left" bgcolor="#9F2032" colspan="2" style="color: #fff; font-size: 20px; font-weight: bold; padding: 15px 10px;">Boletim Povos Isolados na Amazônia</td>
-        <td align="right" bgcolor="#9F2032" style="color: #fff; font-size: 20px; font-weight: bold; text-transform: uppercase; padding: 15px 10px;">
+      <tr bgcolor="#4a191b">
+        <td align="left" bgcolor="#4a191b" colspan="2" style="color: #fff; font-size: 20px; font-weight: bold; padding: 15px 10px;">Boletim Povos Isolados na Amazônia</td>
+        <td align="right" bgcolor="#4a191b" style="color: #fff; font-size: 20px; font-weight: bold; text-transform: uppercase; padding: 15px 10px;">
           Edição ##
-          <a href="<?php echo get_permalink(pll_get_post($boletim_obj->ID, 'es')); ?>"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFnSURBVHjaYvzPgAD/UNlYEUAAmuTYAAAQhAEYqF/zFbe50RZ1cMmS9TLi0pJLRjZohAMTGFUN9HdnHgEE1sDw//+Tp0ClINW/f0NIKPoFJH/9//ULyGaUlQXaABBALAx/Gf4zAt31F4i+ffj3/cN/XrFfzOx//v///f//LzACM/79ZmD8/e8TA0AAMYHdDVT958vXP38nMDB0s3x94/Tj5y+YahhiAKLfQKUAAcQEdtJfoDHMF2L+vPzDmFXLelf551tGFOOhev4A/QgQQExgHwAd8IdFT/Wz6j+GhlpmXSOW/2z///8Eq/sJ18Dw/zdQA0AAMQExxJjjdy9x2/76EfLz4MXdP/i+wsyGkkA3Aw3984cBIIAYfzIwMKel/bt3jwEaLNAwgZIQxp/fDH/+MqqovL14ESCAWICeZvr9h0FSEhSgwBgAygFDEMT+wwAhgQgc4kAEVAwQQIxfUSMSTxxDAECAAQAJWke8v4u1tAAAAABJRU5ErkJggg=="></a>
-          <a href="<?php echo get_permalink(pll_get_post($boletim_obj->ID, 'en')); ?>"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC"><a/>
+          <a href="<?php echo get_permalink(pll_get_post($boletim_obj->ID, 'es')); ?>"><img src="/wp-content/themes/Quark-boletim/images/es.png"></a>
+          <a href="<?php echo get_permalink(pll_get_post($boletim_obj->ID, 'en')); ?>"><img src="/wp-content/themes/Quark-boletim/images/us.png"><a/>
         </td>
       </tr>
       <tr>
@@ -106,7 +105,7 @@ if (!empty($posts)) {
             </tr>
             <tr>
               <!-- read more button -->
-              <td height="45"><a href="<?php echo get_permalink($editorial_post->ID); ?>" style="background-color:#9F2032; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; text-transform: uppercase;">Leia mais</a></td>
+              <td height="45"><a href="<?php echo get_permalink($editorial_post->ID); ?>" style="background-color:#4a191b; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; text-transform: uppercase;">Leia mais</a></td>
             </tr>
           </table>
 
@@ -125,9 +124,15 @@ if (!empty($posts)) {
                 <a target="_blank" href="#" href="<?php echo get_permalink($post); ?>">
                   <img height="250" width="380" src="<?php echo newsletter_get_post_image($post->ID, "newsletter-boletim"); ?>">
                 </a>
-                <div style="color: #000; font-size: 16px; font-weight: bold; margin-top: -3px; padding: 10px 0px;">
+                <div style="color: #000; font-size: 14px; font-weight: bold; margin-top: -3px; padding: 10px 0px;">
                   <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #000;">
                   <?php the_title(); ?>
+                  </a>
+
+                </div>
+                <div style="color: #000; font-size: 12px; margin-top: -3px;">
+                  <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #000;">
+                  <?php the_excerpt(); ?>
                   </a>
                 </div>
               </td>
@@ -160,11 +165,10 @@ if (!empty($posts)) {
       </tr>
       <tr>
         <td align="center" colspan="3" style="padding-bottom: 15px; color: #000;" valign="top" style="text-align: center;">
-          <a href="<?php echo get_permalink(pll_get_post($boletim_obj->ID, 'es')); ?>">Español</a> | <a href="<?php echo get_permalink(pll_get_post($boletim_obj->ID, 'en')); ?>">English</a>
         </td>
       </tr>
       <tr>
-        <td align="center" bgcolor="#9F2032" colspan="3" style="" valign="top">
+        <td align="center" bgcolor="#4a191b" colspan="3" style="" valign="top">
           <a href="<?php echo $link_facebook;?>" style="color: #fff;"><img src="<?php echo $theme_url ?>/images/facebook.png" height="25"></a>
           <a href="<?php echo $link_twitter;?>" style="color: #fff; margin: 0 10px 0 5px"><img src="<?php echo $theme_url ?>/images/twitter.png"></a>
           <a href="<?php echo $link_youtube;?>" style="color: #fff;"><img src="<?php echo $theme_url ?>/images/youtube.png"></a>
@@ -174,12 +178,12 @@ if (!empty($posts)) {
         <td align="center" bgcolor="#FFF4DE" style="padding: 15px 5px;">
             <img src="<?php echo $theme_url ?>/images/logo-cti.png" alt="Centro de Trabalho Indigenista">
         </td>
-        <td align="center" bgcolor="#FFF4DE" style="color: #9F2032; font-size: 12px; padding: 15px 5px;">
+        <td align="center" bgcolor="#FFF4DE" style="color: #4a191b; font-size: 12px; padding: 15px 5px;">
             <b>Centro de Trabalho Indigenista</b><br>
             Fone BSB: +55 (61) 3349-7769<br>
             Fone SP: +55  (11) 2935-7768</td>
         <td align="center" bgcolor="#FFF4DE">
-            <a target="_blank" href="{profile_url}" style="color: #9F2032; font-size: 12px; padding: 15px 5px;">
+            <a target="_blank" href="{profile_url}" style="color: #4a191b; font-size: 12px; padding: 15px 5px;">
             <b>Não deseja mais receber?</b><br>
             Clique aqui para<br>se descadastrar</a>
         </td>
