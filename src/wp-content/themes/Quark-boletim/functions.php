@@ -871,8 +871,8 @@ add_action( 'save_post', 'create_boletim_categories' );
 add_image_size( 'medium_large', '768', '0', false );
 add_image_size( 'medium_large', '768', '0', false );
 add_image_size( 'destaque-boletim', '540', '250', array( "center", "center") );
-add_image_size( 'header-boletim', '1920', '640', array( "center", "center") );
+add_image_size( 'header-boletim', '1920', '960', array( "center", "center") );
 add_image_size( 'newsletter-boletim', '380', '250', array( "center", "center") );
-add_image_size( 'newsletter-header', '810', '400', array( "center", "center") ); 
+add_image_size( 'newsletter-header', '810', '400', array( "center", "center") );
 
 // EOF
