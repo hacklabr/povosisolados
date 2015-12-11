@@ -11,7 +11,14 @@
             <?php do_action('photo_before_post_image'); ?>
             <?php the_post_thumbnail('header-boletim'); ?>
             <?php do_action('photo_after_post_image'); ?>
+
+            <?php
+            $thumb_id = get_post_thumbnail_id();
+            $caption = get_post($thumb_id)->post_excerpt;
+            ?>
         <?php endif; ?>
+
+        <span class="caption"><?php echo $caption; ?></span>
 
         <div class="entry-title-wrap">
              <?php if(get_post_format() != '') : ?>

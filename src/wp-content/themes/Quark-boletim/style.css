@@ -1691,6 +1691,16 @@ article.one-page {
   padding: 5px 10px;
 }
 
+.entry-header .caption {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: -70px;
+  bottom: 80px;
+  transform: rotate(-90deg);
+}
+
 .entry-title {
   background-color: rgba(51, 33, 33, 0.4);
   color: #fff;
