@@ -84,7 +84,7 @@ if (!empty($posts)) {
       <tr>
 
         <!-- newsletter banner -->
-        <td style="background:url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($editorial_post->ID, "newsletter-header")); ?>');" colspan="3" height="400">
+        <td style="background:url('<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($editorial_post->ID), 'newsletter-header'); ?>');" colspan="3" height="400">
 
           <table style="margin-left: 15px;">
             <tr>
