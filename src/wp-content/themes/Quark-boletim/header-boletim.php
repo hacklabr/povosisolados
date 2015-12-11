@@ -88,7 +88,7 @@ $post_original = $post;
 
 						$loop_editorial = get_posts($args_editorial);
 						foreach ( $loop_editorial as $_post ){
-						$url = wp_get_attachment_url( get_post_thumbnail_id($_post->ID) );
+						$url = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID), "header-boletim" );
 					  }; wp_reset_query(); ?>
 
 					<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');">
