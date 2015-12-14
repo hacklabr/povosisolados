@@ -1760,9 +1760,11 @@ article.one-page {
 
 .item-info {
   color: #111;
+  display: block;
   font-size: 1.2rem;
   margin: 60px auto 0;
   max-width: 1040px;
+  padding: 0;
 }
 .archive-page .item-info {
   margin: 0;
