@@ -1678,6 +1678,8 @@ article.one-page {
  * ----------------------------------------------------------------------------
  */
 .entry-header {
+  background-position: center;
+  background-size: cover;
   margin: -80px 0 0 0;
   overflow: hidden;
   position: relative;
@@ -1715,6 +1717,9 @@ article.one-page {
   position: absolute;
   right: 18px;
   bottom: 10px;
+  left: 10px;
+  line-height: 130%;
+  text-align: right;
   z-index: 100;
 }
 
