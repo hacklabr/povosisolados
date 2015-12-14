@@ -6,18 +6,15 @@
 
 ?>
 <?php if(is_singular()) : ?>
-    <header class="entry-header<?php if ( '' == get_the_post_thumbnail()) : ?> no-image<?php endif; ?>">
-        <?php if ( has_post_thumbnail() && !post_password_required() ) : ?>
-            <?php do_action('photo_before_post_image'); ?>
-            <?php the_post_thumbnail('header-boletim'); ?>
-            <?php do_action('photo_after_post_image'); ?>
-
-            <?php
-            $thumb_id = get_post_thumbnail_id();
-            $caption = get_post($thumb_id)->post_excerpt;
-            ?>
-        <?php endif; ?>
-
+    <?php if ( has_post_thumbnail() && !post_password_required() ) : ?>
+        <?php
+        $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID), "header-boletim" );
+        $url = $thumb[0];
+        $caption = get_post(get_post_thumbnail_id($_post->ID))->post_excerpt;
+        $caption = get_post($thumb_id)->post_excerpt;
+        ?>
+    <?php endif; ?>
+    <header class="entry-header" style="background-image:url('<?php echo $url; ?>');">
         <span class="caption"><?php echo $caption; ?></span>
 
         <div class="entry-title-wrap">
