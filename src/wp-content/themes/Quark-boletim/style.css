@@ -2711,16 +2711,22 @@ article.one-page {
 .comment-form input[type="email"],
 .comment-form input[type="url"] {
   width: 100%;
+  padding: 5px 20px;
+  line-height: 150%;
 }
 .comment-form textarea {
   height: 200px!important;
   width: 100%;
 }
-
+.comment-form input[type="submit"] {
+  margin: 10px 0 0;
+}
 .comment-form-comment {
   clear: both;
 }
-
+.form-submit {
+  margin: 0;
+}
 .form-allowed-tags,
 .form-allowed-tags code {
   color: #686758;
