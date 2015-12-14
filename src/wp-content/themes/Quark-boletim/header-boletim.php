@@ -90,12 +90,9 @@ $post_original = $post;
 						foreach ( $loop_editorial as $_post ){
 						$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID), "header-boletim" );
 						$url = $thumb[0];
-						$caption = get_post(get_post_thumbnail_id($_post->ID))->post_excerpt;
 					  }; wp_reset_query(); ?>
 
 					<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');">
-
-					<span class="caption"><?php echo $caption; ?></span>
 		<?php } ?>
 				<div class="frontpage-block-wrap">
 					<?php do_action('quark_before_header'); ?>
