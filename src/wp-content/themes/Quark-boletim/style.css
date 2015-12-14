@@ -6058,27 +6058,18 @@ img.gk-responsive {
 #pre-footer .site .subscribe .newsletter-widget form p {
   margin: 0;
   float: left;
-  width: 80%;
+  width: 60%;
 }
 #pre-footer .site .subscribe .newsletter-widget form p:last-child {
   float: right;
-  width: 28%;
+  width: 38%;
 }
 #pre-footer .site .subscribe .newsletter-widget input[type='submit'] {
   float: right;
   line-height: 1;
   margin: 4px 4px 0 0;
-  padding: 7px 14px;
+  padding: 10px 14px;
   vertical-align: top;
-  text-indent: -9999px;
-}
-#pre-footer .site .subscribe .newsletter-widget input[type='submit']:after {
-  color: #fff;
-  content: '\f105';
-  font-family: 'FontAwesome';
-  font-size: 1.8rem;
-  line-height: 1;
-  vertical-align: middle;
 }
 #pre-footer .site .subscribe .newsletter-widget input[type='email'] {
   border: 0;
