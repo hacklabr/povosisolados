@@ -10,7 +10,7 @@
         <?php
         $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID), "header-boletim" );
         $url = $thumb[0];
-        $caption = get_post(get_post_thumbnail_id($_post->ID))->post_excerpt;
+        $thumb_id = get_post_thumbnail_id();
         $caption = get_post($thumb_id)->post_excerpt;
         ?>
     <?php endif; ?>
