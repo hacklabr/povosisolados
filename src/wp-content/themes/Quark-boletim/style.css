@@ -6057,10 +6057,8 @@ img.gk-responsive {
 }
 #pre-footer .site .subscribe .newsletter-widget form p {
   margin: 0;
-}
-#pre-footer .site .subscribe .newsletter-widget form p:first-child {
   float: left;
-  width: 70%;
+  width: 80%;
 }
 #pre-footer .site .subscribe .newsletter-widget form p:first-child {
   float: right;
