@@ -6060,7 +6060,7 @@ img.gk-responsive {
   float: left;
   width: 80%;
 }
-#pre-footer .site .subscribe .newsletter-widget form p:first-child {
+#pre-footer .site .subscribe .newsletter-widget form p:last-child {
   float: right;
   width: 28%;
 }
@@ -6072,7 +6072,7 @@ img.gk-responsive {
   vertical-align: top;
   text-indent: -9999px;
 }
-#pre-footer .site .subscribe .newsletter-widget input[type='submit']:before {
+#pre-footer .site .subscribe .newsletter-widget input[type='submit']:after {
   color: #fff;
   content: '\f105';
   font-family: 'FontAwesome';
