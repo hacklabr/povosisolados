@@ -21,14 +21,6 @@
                       <?php dynamic_sidebar('prefooter_centro'); ?>
                     </div>
                     <div class="subscribe">
-                        <h4><?php _e('Receba o boletim' , 'quark'); ?></h4>
-                        <?php _e('Mantenha-se informado sobre a situação dos povos indígenas isolados na Amazônia', 'quark'); ?>
-                        <form>
-                          <input type="text" placeholder="E-mail">
-                          <button>
-                            <span class="screen-reader-text"><?php _e('Enviar', 'quark'); ?></span>
-                          </button>
-                        </form><p>
                         <?php dynamic_sidebar('prefooter_direita'); ?>
                     </div>
                 </div>
