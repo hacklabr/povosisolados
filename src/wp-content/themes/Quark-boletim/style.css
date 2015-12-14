@@ -6055,6 +6055,9 @@ img.gk-responsive {
   height: 42px;
   max-width: 280px;
 }
+#pre-footer .site .subscribe .newsletter-widget form p {
+  margin: 0;
+}
 #pre-footer .site .subscribe .newsletter-widget form p:first-child {
   float: left;
   width: 70%;
@@ -6079,7 +6082,7 @@ img.gk-responsive {
   line-height: 1;
   vertical-align: middle;
 }
-#pre-footer .site .subscribe .newsletter-widget input[type='text'] {
+#pre-footer .site .subscribe .newsletter-widget input[type='email'] {
   border: 0;
   padding: 12px 10px;
 }
