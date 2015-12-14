@@ -875,4 +875,46 @@ add_image_size( 'header-boletim', '1920', '960', array( "center", "center") );
 add_image_size( 'newsletter-boletim', '380', '250', array( "center", "center") );
 add_image_size( 'newsletter-header', '810', '400', array( "center", "center") );
 
+function box_esquerda( $atts , $content = null ) {
+
+	// Attributes
+	extract( shortcode_atts(
+		array(
+			'largura' => '50%',
+		), $atts )
+	);
+
+	// Code
+  return '<div class="box-esquerda">' . $content . '</div>';
+}
+add_shortcode( 'box-esquerda', 'box_esquerda' );
+
+function box_direita( $atts , $content = null ) {
+
+	// Attributes
+	extract( shortcode_atts(
+		array(
+			'largura' => '50%',
+		), $atts )
+	);
+
+	// Code
+  return '<div class="box-direita">' . $content . '</div>';
+}
+add_shortcode( 'box-direita', 'box_direita' );
+
+function box_centro( $atts , $content = null ) {
+
+	// Attributes
+	extract( shortcode_atts(
+		array(
+			'largura' => '50%',
+		), $atts )
+	);
+
+	// Code
+  return '<div class="box-centro">' . $content . '</div>';
+}
+add_shortcode( 'box-centro', 'box_centro' );
+
 // EOF
