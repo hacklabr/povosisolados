@@ -8,7 +8,10 @@
 
  /* Here you can put your CSS modifications using the Child Theme */
 
- @media (min-width: 768px) {
-     .navigation-post.left { float: left; }
-     .navigation-post.right { float: right; }
- }
+ .navigation-post.left { 
+    float: left; 
+}
+.navigation-post.right {
+    float: right;
+}
+
