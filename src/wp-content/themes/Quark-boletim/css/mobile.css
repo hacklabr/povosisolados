@@ -433,6 +433,10 @@ input[type="reset"] {
   margin-top: 95px!important;
   margin-left: 0%!important;
 }
+
+.navigation-post-links {
+  width: 90%;
+}
 @media screen and (max-width: 640px) {
   /* Subpage fixes */
   #gk-header-mod h1,
