@@ -6049,20 +6049,29 @@ img.gk-responsive {
 #pre-footer .site .logo.amazonia img {
   max-width: 264px;
 }
-#pre-footer .site .subscribe form {
+#pre-footer .site .subscribe .newsletter-widget form {
   background-color: #fff;
   border: 1px solid rgba(159, 32, 50, 1);
   height: 42px;
   max-width: 280px;
 }
-#pre-footer .site .subscribe button {
+#pre-footer .site .subscribe .newsletter-widget form p:first-child {
+  float: left;
+  width: 70%;
+}
+#pre-footer .site .subscribe .newsletter-widget form p:first-child {
+  float: right;
+  width: 28%;
+}
+#pre-footer .site .subscribe .newsletter-widget input[type='submit'] {
   float: right;
   line-height: 1;
   margin: 4px 4px 0 0;
   padding: 7px 14px;
   vertical-align: top;
+  text-indent: -9999px;
 }
-#pre-footer .site .subscribe button:before {
+#pre-footer .site .subscribe .newsletter-widget input[type='submit']:before {
   color: #fff;
   content: '\f105';
   font-family: 'FontAwesome';
@@ -6070,10 +6079,9 @@ img.gk-responsive {
   line-height: 1;
   vertical-align: middle;
 }
-#pre-footer .site .subscribe input[type='text'] {
+#pre-footer .site .subscribe .newsletter-widget input[type='text'] {
   border: 0;
   padding: 12px 10px;
-  max-width: 75% !important;
 }
 #pre-footer .site .subscribe ul {
   text-align: left;
