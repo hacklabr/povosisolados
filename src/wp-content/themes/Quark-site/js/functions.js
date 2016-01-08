@@ -1191,7 +1191,7 @@ function gk_quark_classic_menu_init() {
 jQuery(document).ready(function(){
     jQuery(".owl-carousel").owlCarousel(
       {
-        navigation : true, // Show next and prev buttons
+        //navigation : true, // Show next and prev buttons
         slideSpeed : 300,
         paginationSpeed : 400,
         singleItem:true

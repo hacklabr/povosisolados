@@ -93,19 +93,26 @@ global $post;
 			<?php do_action('quark_before_header'); ?>
 
 			<div class="owl-carousel">
-				<div class="item">
-					<img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-					<h1 data-sr="enter bottom and move 50px">Programas</h1>
-					<div class="clear"></div>
-					<h2 data-sr="enter bottom and move 50px and wait .2s">Timbira</h2>
-					<a class="btn" href="#" data-sr="enter bottom and move 50px and wait .3s">Saiba mais</a>
-				</div>
-				<div class="item">Your Content 1</div>
-				<div class="item">Your Content 2</div>
-				<div class="item">Your Content 3</div>
-				<div class="item">Your Content 4</div>
-				<div class="item">Your Content 5</div>
-				<div class="item">Your Content 6</div>
+				<?php
+				$args_global = array(
+					'post_type' => 'programa',
+					'order' => 'DESC',
+					'orderby' => 'menu_order',
+					'posts_per_page' => -1
+				);
+				$loop_news = new WP_Query( $args_global );
+
+				?>
+				<?php while ( $loop_news->have_posts()): $loop_news->the_post(); ?>
+
+					<div class="item">
+						<img src="<?php the_post_thumbnail( 'full' ); ?>" alt="<?php echo get_the_title(); ?>" />
+						<h1 data-sr="enter bottom and move 50px">Programas</h1>
+						<div class="clear"></div>
+						<h2 data-sr="enter bottom and move 50px and wait .2s"><?php echo get_the_title(); ?></h2>
+						<a class="btn" href="<?php echo get_the_permalink(); ?>" data-sr="enter bottom and move 50px and wait .3s">Saiba mais</a>
+					</div>
+				<?php endwhile; wp_reset_query();?>
 			</div>
 
 			<?php do_action('quark_after_header'); ?>
