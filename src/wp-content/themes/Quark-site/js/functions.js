@@ -354,7 +354,7 @@
 
             win.scroll(header_scroll);
         }
-      
+
 
         function header_scroll() {
             var h = header.outerHeight();
@@ -1189,6 +1189,7 @@ function gk_quark_classic_menu_init() {
 })(jQuery);
 
 jQuery(document).ready(function(){
+    jQuery(".owl-carousel").owlCarousel();jQuery(".owl-carousel").owlCarousel();
 // PhotoSwipe script
     var initPhotoSwipeFromDOM = function(gallerySelector) {
         // parse slide data (url, title, size ...) from DOM elements
