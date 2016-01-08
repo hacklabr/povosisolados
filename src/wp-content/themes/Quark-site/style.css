@@ -947,8 +947,23 @@ label {
 }
 
 /* owl carousel */
+
+.programas-title {
+    background-color: rgba(74, 25, 27, 0.9);
+    clear: both;
+    color: #fff;
+    font-size: 3rem;
+    line-height: 1;
+    padding: 20px;
+    margin-bottom: 15px;
+    min-width: 450px;
+    text-align: right;
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+}
+
 .owl-carousel {
-    border-bottom: solid 40px #230e0f;
     margin-top: -110px;
     overflow: hidden;
     position: relative;
@@ -961,18 +976,12 @@ label {
     display: block;
     width: 100%;
     height: auto;
+    position: relative;
 }
-.owl-carousel h1 {
-    background-color: rgba(74, 25, 27, 0.9);
-    clear: both;
-    color: #fff;
-    display: inline-block;
-    font-size: 3rem;
-    line-height: 1;
-    padding: 20px;
-    margin-bottom: 15px;
-    min-width: 450px;
-    text-align: right;
+.owl-carousel .info {
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
 .owl-carousel h2 {
     background-color: rgba(74, 25, 27, 0.9);
@@ -985,6 +994,17 @@ label {
     margin-bottom: 15px;
     padding: 15px;
     text-transform: uppercase;
+}
+.owl-theme .owl-controls {
+    background-color: #230e0f;
+    height: 40px;
+    margin-top: 0;
+}
+.owl-theme .owl-controls .owl-page span {
+    margin: 14px 7px;
+}
+.owl-buttons {
+  display: none;
 }
 
 /*---------------------------------

@@ -92,6 +92,8 @@ global $post;
 
 			<?php do_action('quark_before_header'); ?>
 
+			<h1 class="programas-title">Programas</h1>
+
 			<div class="owl-carousel">
 				<?php
 				$args_global = array(
