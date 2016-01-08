@@ -1189,7 +1189,14 @@ function gk_quark_classic_menu_init() {
 })(jQuery);
 
 jQuery(document).ready(function(){
-    jQuery(".owl-carousel").owlCarousel();jQuery(".owl-carousel").owlCarousel();
+    jQuery(".owl-carousel").owlCarousel(
+      {
+        navigation : true, // Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true
+      }
+    );
 // PhotoSwipe script
     var initPhotoSwipeFromDOM = function(gallerySelector) {
         // parse slide data (url, title, size ...) from DOM elements
