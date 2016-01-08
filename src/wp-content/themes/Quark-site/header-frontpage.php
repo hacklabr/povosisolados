@@ -91,12 +91,32 @@ global $post;
 			</div>
 
 			<div id="gk-header-mod">
-				<img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+
 				<div class="frontpage-block-wrap">
 					<?php do_action('quark_before_header'); ?>
-
-					<?php if ( have_posts() ) : ?>
 					<div class="gk-header-mod-wrap">
+					<div class="owl-carousel">
+					<div>
+						<div class="gk-page">
+							<img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+							<h1 data-sr="enter bottom and move 50px">Programas</h1>
+							<div class="clear"></div>
+							<h2 data-sr="enter bottom and move 50px and wait .2s">Timbira</h2>
+							<a class="btn" href="#" data-sr="enter bottom and move 50px and wait .3s">Saiba mais</a>
+					</div>
+					</div>
+					<div> Your Content 1</div>
+					<div> Your Content 2</div>
+					<div> Your Content 3</div>
+					<div> Your Content 4</div>
+					<div> Your Content 5</div>
+					<div> Your Content 6</div>
+
+				</div>
+				<!--	<?php if ( have_posts() ) : ?>
+					<div class="gk-header-mod-wrap">
+
+
                         <?php while ( have_posts() ) : the_post(); ?>
 							<?php the_content(); ?>
 						<?php endwhile; ?>
@@ -107,8 +127,12 @@ global $post;
 		                    <span class="mouse-icon"><span><span></span></span></span>
 		                <?php endif; ?>
                     </div>
-					<?php endif; ?>
+					<?php endif; ?> -->
 					<?php do_action('quark_after_header'); ?>
+
 				</div>
-			</div>
+
+
+	</div>
+
 		</header><!-- #masthead -->
