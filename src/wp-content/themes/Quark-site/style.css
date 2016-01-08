@@ -817,7 +817,6 @@ label {
   transform: translateY(-35%) translateX(-50%);
   width: 100%;
 }
-
 #gk-header-mod > .parallax-img.gk-vertical {
   height: 100%;
   width: auto;
@@ -947,6 +946,46 @@ label {
   text-transform: none;
 }
 
+/* owl carousel */
+.owl-carousel {
+    border-bottom: solid 40px #230e0f;
+    margin-top: -110px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;  
+}
+.owl-carousel .item {
+    height: 800px;
+}
+.owl-carousel .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.owl-carousel h1 {
+    background-color: rgba(74, 25, 27, 0.9);
+    clear: both;
+    color: #fff;
+    display: inline-block;
+    font-size: 3rem;
+    line-height: 1;
+    padding: 20px;
+    margin-bottom: 15px;
+    min-width: 450px;
+    text-align: right;
+}
+.owl-carousel h2 {
+    background-color: rgba(74, 25, 27, 0.9);
+    clear: both;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 15px;
+    padding: 15px;
+    text-transform: uppercase;
+}
 
 /*---------------------------------
 3. Post/Page elements

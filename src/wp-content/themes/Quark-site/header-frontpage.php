@@ -90,30 +90,32 @@ global $post;
                  </div>
 			</div>
 
+			<?php do_action('quark_before_header'); ?>
+
+			<div class="owl-carousel">
+				<div class="item">
+					<img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+					<h1 data-sr="enter bottom and move 50px">Programas</h1>
+					<div class="clear"></div>
+					<h2 data-sr="enter bottom and move 50px and wait .2s">Timbira</h2>
+					<a class="btn" href="#" data-sr="enter bottom and move 50px and wait .3s">Saiba mais</a>
+				</div>
+				<div class="item">Your Content 1</div>
+				<div class="item">Your Content 2</div>
+				<div class="item">Your Content 3</div>
+				<div class="item">Your Content 4</div>
+				<div class="item">Your Content 5</div>
+				<div class="item">Your Content 6</div>
+			</div>
+
+			<?php do_action('quark_after_header'); ?>
+
+			<?php /*
 			<div id="gk-header-mod">
 
 				<div class="frontpage-block-wrap">
-					<?php do_action('quark_before_header'); ?>
 					<div class="gk-header-mod-wrap">
-					<div class="owl-carousel">
-					<div>
-						<div class="gk-page">
-							<img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-							<h1 data-sr="enter bottom and move 50px">Programas</h1>
-							<div class="clear"></div>
-							<h2 data-sr="enter bottom and move 50px and wait .2s">Timbira</h2>
-							<a class="btn" href="#" data-sr="enter bottom and move 50px and wait .3s">Saiba mais</a>
-					</div>
-					</div>
-					<div> Your Content 1</div>
-					<div> Your Content 2</div>
-					<div> Your Content 3</div>
-					<div> Your Content 4</div>
-					<div> Your Content 5</div>
-					<div> Your Content 6</div>
-
-				</div>
-				<!--	<?php if ( have_posts() ) : ?>
+					<?php if ( have_posts() ) : ?>
 					<div class="gk-header-mod-wrap">
 
 
@@ -131,8 +133,7 @@ global $post;
 					<?php do_action('quark_after_header'); ?>
 
 				</div>
-
-
-	</div>
+			</div>
+			*/ ?>
 
 		</header><!-- #masthead -->
