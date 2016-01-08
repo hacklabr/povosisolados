@@ -92,13 +92,15 @@ global $post;
 
 			<?php do_action('quark_before_header'); ?>
 
+			<h1 class="programas-title">Programas</h1>
+
 			<div class="owl-carousel">
 				<div class="item">
 					<img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-					<h1 data-sr="enter bottom and move 50px">Programas</h1>
-					<div class="clear"></div>
-					<h2 data-sr="enter bottom and move 50px and wait .2s">Timbira</h2>
-					<a class="btn" href="#" data-sr="enter bottom and move 50px and wait .3s">Saiba mais</a>
+					<div class="info">
+						<h2 data-sr="enter bottom and move 50px and wait .2s">Timbira</h2><br>
+						<a class="btn" href="#" data-sr="enter bottom and move 50px and wait .3s">Saiba mais</a>
+					</div>
 				</div>
 				<div class="item">Your Content 1</div>
 				<div class="item">Your Content 2</div>
