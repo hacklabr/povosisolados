@@ -76,7 +76,7 @@ if (!empty($posts)) {
     </head>
     <body style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; color: #fff; margin: 0 auto; padding: 0;">
 
-    <table bgcolor="#FFF4DE" cellspacing="0" cellpadding="0" width="810" style="margin: 0 auto;">
+    <table bgcolor="#ECDDBF" cellspacing="0" cellpadding="0" width="810" style="margin: 0 auto;">
       <!-- top header -->
       <tr bgcolor="#4a191b">
         <td align="left" bgcolor="#4a191b" colspan="2" style="color: #fff; font-size: 20px; font-weight: bold; padding: 15px 10px;">Boletim Povos Isolados na Amazônia</td>
