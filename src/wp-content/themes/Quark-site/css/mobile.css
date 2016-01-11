@@ -49,6 +49,15 @@ input[type="reset"] {
 #gk-header-mod {
   margin: 0;
 }
+.gk-logo.text {
+  margin: 30px;
+}
+#gk-mobile-menu {
+  margin-top: 30px !important;
+}
+#aside-menu.menu-open,#close-menu.menu-open {
+  display: none;
+}
 
 .programas-title {
   font-size: 2rem;
