@@ -4043,7 +4043,7 @@ article.one-page {
   word-wrap: break-word;
 }
 .entry-content .omsc-box {
-  background-color: #e5e5e5;
+  background-color: #edf0f2;
   float: left;
   margin: 0 20px 0 0;
   width: 50%;
@@ -4051,7 +4051,7 @@ article.one-page {
 }
 
 .entry-content .box-esquerda {
-  background-color: #e5e5e5;
+  background-color: #edf0f2 !important;
   float: left;
   margin: 0 20px 0 0;
   width: 50%;
@@ -4060,7 +4060,7 @@ article.one-page {
 }
 
 .entry-content .box-direita {
-  background-color: #e5e5e5;
+  background-color: #edf0f2;
   float: right;
   margin: 0 20px 0 0;
   width: 50%;
@@ -4088,6 +4088,9 @@ blockquote {
   margin-left: 0;
   margin: 3em 0;
   padding: 0 0 0 30px;
+}
+blockquote span {
+  background-color: #edf0f2 !important;
 }
 blockquote strong {
   font-size: 1.4rem;
