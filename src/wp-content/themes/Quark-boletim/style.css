@@ -1353,15 +1353,14 @@ label {
   height: 40px;
 }
 #gk-header-nav.inactive #gk-mobile-menu-text {
-  width: 0 !important;
-
+  width: 0 !important
 }
 #gk-header-nav.inactive .gk-logo {
   opacity: 0;
 }
 
-#gk-header-nav.inactive.gk-fixed-nav .gk-logo {
-  opacity: 1;
+#gk-header-nav.inactive #gk-mobile-menu {
+
 }
 
 .dark-bg #gk-mobile-menu,
@@ -4674,6 +4673,9 @@ p.numblocks span.highlight {
 
 
 .boletim #gk-mobile-menu i, .boletim #gk-mobile-menu i:before, .boletim #gk-mobile-menu i:after {
+  background: rgba(74, 25, 27, 0.9);
+}
+.boletim #gk-header-nav.inactive #gk-mobile-menu i, .boletim #gk-header-nav.inactive #gk-mobile-menu i:before, .boletim #gk-header-nav.inactive #gk-mobile-menu i:after {
   background: rgba(255,255,255,0.5);
 }
 .boletim #gk-mobile-menu-text {
