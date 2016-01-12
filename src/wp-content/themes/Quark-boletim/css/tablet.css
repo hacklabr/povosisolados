@@ -27,6 +27,10 @@
     padding: 100px 0 50px;
 }
 
+#clipping {
+  padding-left: 0; 
+}
+
 .content-wrapper,
 #sidebar {
   clear: both;
