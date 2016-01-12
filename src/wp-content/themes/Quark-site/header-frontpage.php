@@ -108,7 +108,7 @@ global $post;
 				<?php while ( $loop_news->have_posts()): $loop_news->the_post(); ?>
 
 					<div class="item">
-						<img src="<?php the_post_thumbnail( 'full' ); ?>" alt="<?php echo get_the_title(); ?>" />
+						<?php the_post_thumbnail( 'full', array("alt"=> get_the_title(),)); ?>
 						<h1 data-sr="enter bottom and move 50px">Programas</h1>
 						<div class="clear"></div>
 						<h2 data-sr="enter bottom and move 50px and wait .2s"><?php echo get_the_title(); ?></h2>
