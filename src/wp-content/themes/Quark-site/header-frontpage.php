@@ -109,7 +109,6 @@ global $post;
 
 					<div class="item">
 						<?php the_post_thumbnail( 'full', array("alt"=> get_the_title(),)); ?>
-						<h1 data-sr="enter bottom and move 50px">Programas</h1>
 						<div class="clear"></div>
 						<h2 data-sr="enter bottom and move 50px and wait .2s"><?php echo get_the_title(); ?></h2>
 						<a class="btn" href="<?php echo get_the_permalink(); ?>" data-sr="enter bottom and move 50px and wait .3s">Saiba mais</a>
