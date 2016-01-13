@@ -63,6 +63,10 @@ input[type="reset"] {
   margin: 0 0 0 10px;
 }
 
+#clipping {
+  padding-left: 0; 
+}
+
 #aside-menu-toggler {
   top: 0;
 }

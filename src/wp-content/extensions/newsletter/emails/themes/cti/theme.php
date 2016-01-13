@@ -76,7 +76,7 @@ if (!empty($posts)) {
     </head>
     <body style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; color: #fff; margin: 0 auto; padding: 0;">
 
-    <table bgcolor="#FFF4DE" cellspacing="0" cellpadding="0" width="810" style="margin: 0 auto;">
+    <table bgcolor="#ECDDBF" cellspacing="0" cellpadding="0" width="810" style="margin: 0 auto;">
       <!-- top header -->
       <tr bgcolor="#4a191b">
         <td align="left" bgcolor="#4a191b" colspan="2" style="color: #fff; font-size: 20px; font-weight: bold; padding: 15px 10px;">Boletim Povos Isolados na Amazônia</td>
@@ -91,11 +91,11 @@ if (!empty($posts)) {
         <!-- newsletter banner -->
         <td style="background:url('<?php echo newsletter_get_post_image($editorial_post->ID, "newsletter-header"); ?>');" colspan="3" height="400">
 
-          <table style="margin-left: 15px;">
+          <table style="margin-left: 15px;margin-top: 260px;">
             <tr>
               <!-- newsletter title and subtitle -->
               <td align="left" bgcolor="#230e0f">
-                <div style="color: #fff; font-size: 20px; font-weight: bold; padding: 10px 10px 10px 10px; text-transform: uppercase;"><?php echo $editorial_post->post_title; ?></div>
+                <div style="color: #fff; font-size: 16px; font-weight: bold; padding: 10px 10px 10px 10px; text-transform: uppercase;"><?php echo $editorial_post->post_title; ?></div>
               </td>
             </tr>
             <tr>
@@ -104,7 +104,7 @@ if (!empty($posts)) {
             </tr>
             <tr>
               <!-- read more button -->
-              <td height="45"><a href="<?php echo get_permalink($editorial_post->ID); ?>" style="background-color:#4a191b; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; text-transform: uppercase;">Leia mais</a></td>
+              <td><a href="<?php echo get_permalink($editorial_post->ID); ?>" style="background-color:#4a191b; color: #fff; font-size: 12px; font-weight: bold; padding: 10px 20px; text-transform: uppercase;">Leia mais</a></td>
             </tr>
           </table>
 

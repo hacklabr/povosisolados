@@ -25,7 +25,7 @@ if ( ! function_exists( 'quark_excerpt' ) ) :
  **/
 
 function quark_excerpt($text) {
-    return $text . '&hellip;';
+    return $text . '.';
 }
 add_filter( 'get_the_excerpt', 'quark_excerpt', 999 );
 endif;

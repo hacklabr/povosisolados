@@ -1402,3 +1402,13 @@ jQuery(window).on('beforeunload', function() {
         }, 25);
     }
 });
+
+jQuery(".owl-carousel").owlCarousel({
+    items : 1, 
+    itemsDesktop : false,
+    itemsDesktopSmall : false,
+    itemsTablet: false,
+    itemsMobile : false 
+});
+
+
