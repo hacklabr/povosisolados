@@ -276,7 +276,7 @@
         menu_text.css('width', menu_text_w);
         var win = jQuery(window);
 
-        jQuery(window).scroll(menu_scroll);
+        /* jQuery(window).scroll(menu_scroll);
 
         function menu_scroll() {
             var y = win.scrollTop();
@@ -291,7 +291,7 @@
                     main_nav.addClass('inactive');
                 }
             }
-        }
+        }*/
 
         if(jQuery('body').hasClass('dark-bg')) {
             var header = false;
@@ -606,7 +606,7 @@
             var new_scroll_value = $(window).scrollTop() >= 0 ? $(window).scrollTop() : 0;
             var local_diff = new_scroll_value - prev_scroll_value;
             var current = parseInt($(page_nav).css('top'));
-            var h = header.outerHeight() < 150 ? 150 : header.outerHeight();
+            var h = 10;
 
             if(new_scroll_value >= h) {
                 if(
