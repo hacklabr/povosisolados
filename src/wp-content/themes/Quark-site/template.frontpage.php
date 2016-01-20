@@ -59,7 +59,7 @@ get_header('frontpage'); ?>
                     <div class="news-box" data-sr="enter bottom and move 50px wait .2s">
                         <div class="news-thumb" style="background-image:url('http://lorempixel.com/1920/400/');" ></div>
                         <h3 class="news-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan dapibus blandit</a></h3>
-                        <div class="news-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan dapibus blandit. Vestibulum feugiat scelerisque diam. Vestibulum vitae pharetra dui. Curabitur ut dictum erat. Nam a finibus augue. Integer tempus malesuada pharetra. Integer aliquet diam quis ante iaculis, et imperdiet tellus iaculis.</div>
+                        <div class="news-excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan dapibus blandit. Vestibulum feugiat scelerisque diam. Vestibulum vitae pharetra dui. Curabitur ut dictum erat. Nam a finibus augue. Integer tempus malesuada pharetra. Integer aliquet diam quis ante iaculis, et imperdiet tellus iaculis.</p></div>
                         <a class="btn" href="#">Leia mais</a>
                     </div>
                 </div>
