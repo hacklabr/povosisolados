@@ -997,6 +997,9 @@ label {
     padding: 15px;
     text-transform: uppercase;
 }
+.owl-carousel h2 a {
+    color: #fff;
+}
 .owl-theme .owl-controls {
     background-color: #230e0f;
     height: 40px;
