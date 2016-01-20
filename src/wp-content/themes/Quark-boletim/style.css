@@ -541,7 +541,7 @@ input[type="reset"],
   cursor: pointer;
   display: inline-block;
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: normal;
   height: auto;
   line-height: 25px;
   margin: 0 5px 2px 2px;
@@ -1446,7 +1446,7 @@ label {
 #aside-menu .aside-title {
   color: rgba(159, 32, 50, 1);
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 300;
   margin: 0;
   padding-left: 25px;
   text-transform: uppercase;
@@ -1455,7 +1455,7 @@ label {
 #aside-menu .aside-title-boletim {
   color: rgba(255, 255, 255, 1);
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 300;
   margin: 0;
   padding-left: 25px;
   text-transform: uppercase;
@@ -4717,7 +4717,7 @@ p.numblocks span.highlight {
   background-color: rgba(51, 33, 33, 0.4);
   color: rgba(255,255,255,1);
   font-size: 1.7rem;
-  font-weight: bold;
+  font-weight: 300;
   margin: 0;
   padding: 10px 15px;
   position: absolute;
@@ -6033,7 +6033,7 @@ img.gk-responsive {
 }
 #pre-footer .site h4 {
   color: rgba(159, 32, 50, 1);
-  font-weight: bold;
+  font-weight: 300;
   margin-bottom: 10px;
   text-align: left;
   text-transform: uppercase;
@@ -6260,7 +6260,7 @@ h2 + .gk-subtitle {
 
 .frontpage-block-wrap .btn {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .frontpage-block-wrap:after {

@@ -541,8 +541,8 @@ input[type="reset"],
   color: #fff !important;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.3rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: normal;
   height: auto;
   line-height: 25px;
   margin: 0 5px 2px 2px;
@@ -990,11 +990,11 @@ label {
     clear: both;
     color: #fff;
     display: inline-block;
-    font-size: 2.8rem;
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: 300;
     line-height: 1;
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 15px 30px;
     text-transform: uppercase;
 }
 .owl-carousel h2 a {
@@ -3719,11 +3719,11 @@ article.one-page {
   color: #fff;
   display: inline-block;
   float: left;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 300;
   line-height: 1;
   min-width: 450px;
-  padding: 20px;
+  padding: 15px;
   text-align: right;
   text-transform: uppercase;
   position: absolute;
@@ -3788,7 +3788,7 @@ article.one-page {
 /** LINKS FRONTPAGE SECTION **/
 .frontpage-block.box .links {
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.1;
   text-transform: uppercase;
 }
@@ -4777,7 +4777,7 @@ p.numblocks span.highlight {
   background-color: rgba(51, 33, 33, 0.4);
   color: rgba(255,255,255,1);
   font-size: 1.7rem;
-  font-weight: bold;
+  font-weight: 300;
   margin: 0;
   padding: 10px 15px;
   position: absolute;
@@ -6093,7 +6093,7 @@ img.gk-responsive {
 }
 #pre-footer .site h4 {
   color: rgba(159, 32, 50, 1);
-  font-weight: bold;
+  font-weight: 300;
   margin-bottom: 10px;
   text-align: left;
   text-transform: uppercase;
@@ -6303,8 +6303,8 @@ h2 + .gk-subtitle {
 }
 
 .frontpage-block-wrap .btn {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: normal;
 }
 
 .frontpage-block-wrap:after {
