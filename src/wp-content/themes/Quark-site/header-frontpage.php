@@ -91,7 +91,7 @@ global $post;
 			</div>
 
 			<?php do_action('quark_before_header'); ?>
-
+            <?php if ( get_post_type() == 'page' ): ?>
 			<div class="owl-carousel">
 				<?php
 				$args_global = array(
@@ -114,7 +114,7 @@ global $post;
 					</div>
 				<?php endwhile; wp_reset_query();?>
 			</div>
-
+            <?php endif; ?>
 			<?php do_action('quark_after_header'); ?>
 
 			<?php /*
