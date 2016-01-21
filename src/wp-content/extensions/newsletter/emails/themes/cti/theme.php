@@ -87,28 +87,18 @@ if (!empty($posts)) {
         </td>
       </tr>
       <tr>
-
         <!-- newsletter banner -->
-        <td style="background:url('<?php echo newsletter_get_post_image($editorial_post->ID, "newsletter-header"); ?>');" colspan="3" height="400">
-
-          <table style="margin-left: 15px;margin-top: 260px;">
-            <tr>
-              <!-- newsletter title and subtitle -->
-              <td align="left" bgcolor="#230e0f">
-                <div style="color: #fff; font-size: 16px; font-weight: bold; padding: 10px 10px 10px 10px; text-transform: uppercase;"><?php echo $editorial_post->post_title; ?></div>
-              </td>
-            </tr>
-            <tr>
-              <!-- blank space -->
-              <td height="10"></td>
-            </tr>
-            <tr>
-              <!-- read more button -->
-              <td><a href="<?php echo get_permalink($editorial_post->ID); ?>" style="background-color:#4a191b; color: #fff; font-size: 12px; font-weight: bold; padding: 10px 20px; text-transform: uppercase;">Leia mais</a></td>
-            </tr>
-          </table>
-
+        <td colspan="3" height="400">
+          <img src="<?php echo newsletter_get_post_image($editorial_post->ID, "newsletter-header"); ?>')" height="400" width="810">
         </td>
+      </tr>
+      <tr bgcolor="#4a191b">
+        <td colspan="3" style="color: #fff; font-size: 15px; font-weight: bold; padding: 15px 10px;">
+          <?php echo $editorial_post->post_title; ?>
+        </td>
+      </tr>
+      <tr>
+        <div style="color: #fff; font-size: 16px; font-weight: bold; padding: 10px 10px 10px 10px; text-transform: uppercase;"><?php echo $editorial_post->post_title; ?></div>
       </tr>
       <?php if (!empty($posts)) { ?>
       <tr>
