@@ -2,7 +2,7 @@
 /*
 Template Name: Frontpage
 */
-
+$frontpage = get_the_ID();
 //create arguments for custom main loop
 $args_global = array(
 	'post_type' => 'page',
@@ -87,7 +87,7 @@ get_header('frontpage'); ?>
                 <?php while ( $loop_global->have_posts() ) : $loop_global->the_post(); ?>
                     <?php
                     $args = array(
-                      'post_parent' => $post->ID,
+                      'post_parent' => $frontpage->ID,
                       'post_type'   => 'page',
                       'posts_per_page' => 1,
                       'post_status' => 'publish'
@@ -95,55 +95,12 @@ get_header('frontpage'); ?>
 
                     $background_image = '';
                     // check if there is a featured image - it willbe used as a parallax background
-                    if(has_post_thumbnail()) {
-                        $background_image = ' style="background-image: url(\''.wp_get_attachment_url(get_post_thumbnail_id()).'\');"';
-                    }
-
-                    $additional_classes = '';
-
-                    if(stripos(get_the_content(), 'very-big-spaces') !== FALSE) {
-                        $additional_classes .= ' very-big-spaces';
-                    }
-
-                    if(stripos(get_the_content(), 'bigger-spaces') !== FALSE) {
-                        $additional_classes .= ' bigger-spaces';
-                    }
-
-                    if(stripos(get_the_content(), 'small-spaces') !== FALSE) {
-                        $additional_classes .= ' small-spaces';
-                    }
-
-                    if(stripos(get_the_content(), 'gk-description-wrap') !== FALSE) {
-                        $additional_classes .= ' gk-description';
-                    }
-
-                    if(stripos(get_the_content(), 'gk-testimonials') !== FALSE) {
-                        $additional_classes .= ' testimonials';
-                    }
-
-                    if(stripos(get_the_content(), 'gray-bg') !== FALSE) {
-                        $additional_classes .= ' gray-bg';
-                    }
-
-                    if(stripos(get_the_content(), 'dark-bg') !== FALSE) {
-                        $additional_classes .= ' dark-bg';
-                    }
-
-                    if(stripos(get_the_content(), 'newsletter-gk') !== FALSE) {
-                        $additional_classes .= ' newsletter';
-                    }
-
-                    if(stripos(get_the_content(), 'small-text') !== FALSE) {
-                        $additional_classes .= ' small-text';
-                    }
-
-                    if(has_post_thumbnail()) {
-                        $additional_classes .= ' parallax-bg';
-                    }
 
                     $page_function = get_post_meta( $post->ID, 'page_function', true );
 
                     $children = get_children($args); ?>
+										<?php //var_dump($children); ?>
+
 
                     <?php if(!empty($children) && $page_function == 'slider') : ?>
 
@@ -206,7 +163,7 @@ get_header('frontpage'); ?>
                     <?php
 
                         $args_tabs = array(
-                          'post_parent' => $post->ID, // the ID from your loop
+                          'post_parent' => $frontpage->ID, // the ID from your loop
                           'post_type'   => 'page',
                           'posts_per_page' => -1,
                           'post_status' => 'publish',
@@ -289,7 +246,36 @@ get_header('frontpage'); ?>
                             </div>
                         </div>
 
-                    <?php else : ?>
+
+										<?php elseif(!empty($children) && $page_function == 'preview') : ?>
+                    <?php
+                        $args_tabs = array(
+                          'post_parent' => $frontpage->ID, // the ID from your loop
+                          'post_type'   => 'page',
+                          'posts_per_page' => -1,
+                          'post_status' => 'publish',
+                          'order' => 'ASC'
+                        );
+											?>
+												<div class="gk-page">
+													<div class="frontpage-block<?php echo $additional_classes; ?>">
+														<div class="site">
+
+															<h2 class="section-title" data-sr="enter bottom and move 50px wait .1s">Mapa Interativo</h2>
+															<div class="gk-cols" data-cols="2">
+																<div>
+																	<a class="omsc-button omsc-custom-hover omsc-size-large omsc-style-flat omsc-text-bright" href="#" target="_blank" style="background-color:#dd9933;border-color:#dd9933;color:#ffffff" data-hover-bg-color="#ddba82" data-hover-text-color="#ffffff" data-hover-border-color="#ddba82"><?php echo get_the_title(); ?></a>
+																</div>
+																<?php echo get_the_content(); ?>
+															</div>
+														</div>
+													</div>
+												</div><!-- frontpage-wrap -->
+
+
+                    ?>
+
+										<?php else : ?>
                     <?php if(has_post_thumbnail()) : ?>
                         <div class="gk-clearfix">
                     <?php endif; ?>

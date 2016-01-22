@@ -15,7 +15,7 @@ piklist('field', array(
  NULL => 'Nenhum'
  ,'tabs' => 'Tab'
  ,'slider' => 'Slider'
- ,'slider' => 'Preview de Mapa'
+ ,'preview' => 'Preview de Mapa'
  )
 ));
 ?>
