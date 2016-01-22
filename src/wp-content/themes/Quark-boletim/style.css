@@ -5975,6 +5975,7 @@ img.gk-responsive {
   display: inline-block;
   height: 15px;
   width: 76px;
+  margin: 0 5px;
   vertical-align: bottom;
 }
 @media screen and (max-width: 1680px) {
