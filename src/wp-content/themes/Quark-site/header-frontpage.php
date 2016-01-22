@@ -91,7 +91,7 @@ global $post;
 			</div>
 
 			<?php do_action('quark_before_header'); ?>
-            <?php if ( get_post_type() == 'page' ): ?>
+            <?php if ( get_post_type() == 'page' && basename(get_page_template()) === "template.frontpage.php"): ?>
 			<div class="owl-carousel">
 				<?php
 				$args_global = array(
