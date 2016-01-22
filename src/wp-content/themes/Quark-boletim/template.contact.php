@@ -167,9 +167,9 @@ get_header(); ?>
                     <div class="entry-title-wrap">
                         <h1 data-sr="enter bottom and move 50px"><?php the_title(); ?></h1>
 
-                        <?php if(get_theme_mod('quark_contact_email_header','blank@gavick.com') != '') : ?>
+                        <?php if(get_theme_mod('quark_contact_email_header','contato@trabalhoindigenista.org.br') != '') : ?>
                         <h2 data-sr="enter bottom and move 50px and wait .15s">
-                            <?php echo get_theme_mod('quark_contact_email_header','blank@gavick.com'); ?>
+                            <?php echo get_theme_mod('quark_contact_email_header','contato@trabalhoindigenista.org.br'); ?>
                         </h2>
                         <?php endif; ?>
 
