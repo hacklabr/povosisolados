@@ -80,6 +80,13 @@ input[type="reset"] {
 .owl-carousel h2 {
   padding: 10px 15px;
 }
+
+.frontpage-block.box.map .btn-map-frontpage {
+  display: block;
+  margin: 40px 0 0;
+  max-width: 500px;
+}
+
 .frontpage-block.box.news .more-news {
   margin: 100px auto 20px;
 }
@@ -266,7 +273,7 @@ input[type="reset"] {
 }
 
 /** NEWS **/
-.frontpage-block.box.news .section-title {
+.frontpage-block.box .section-title {
   font-size: 2rem;
   line-height: 1.2;
   min-width: 300px;

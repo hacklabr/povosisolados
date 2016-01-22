@@ -255,23 +255,22 @@ get_header('frontpage'); ?>
                           'post_status' => 'publish',
                           'order' => 'ASC'
                         );
-											?>
-												<div class="gk-page">
-													<div class="frontpage-block<?php echo $additional_classes; ?>">
-														<div class="site">
+					?>
+					   <div class="frontpage-block box map <?php echo $additional_classes; ?>">
 
-															<h2 class="section-title" data-sr="enter bottom and move 50px wait .1s">Mapa Interativo</h2>
-															<div class="gk-cols" data-cols="2">
-																<div>
-																	<a class="omsc-button omsc-custom-hover omsc-size-large omsc-style-flat omsc-text-bright" href="#" target="_blank" style="background-color:#dd9933;border-color:#dd9933;color:#ffffff" data-hover-bg-color="#ddba82" data-hover-text-color="#ffffff" data-hover-border-color="#ddba82"><?php echo get_the_title(); ?></a>
-																</div>
-																<?php echo get_the_content(); ?>
-															</div>
-														</div>
-													</div>
-												</div><!-- frontpage-wrap -->
+							<h2 class="section-title" data-sr="enter bottom and move 50px wait .1s">Mapa Interativo</h2>
+							<div class="gk-cols site" data-cols="2">
+								<div>
+									<a class="btn-map-frontpage" href="#" target="_blank"><?php echo get_the_title(); ?></a>
+								</div>
+                                <div>
+								    <?php echo get_the_content(); ?>
+                                </div>
+							</div>
 
-										<?php else : ?>
+						</div><!-- frontpage-wrap -->
+
+				<?php else : ?>
                     <?php if(has_post_thumbnail()) : ?>
                         <div class="gk-clearfix">
                     <?php endif; ?>

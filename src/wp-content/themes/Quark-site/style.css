@@ -3726,9 +3726,9 @@ article.one-page {
   padding: 15px;
   text-align: right;
   text-transform: uppercase;
-  position: absolute;
+  position: static;
   left: 0;
-  top: -40px;
+  top: 0;
 }
 .frontpage-block.box.news {
   margin-top: 70px;
@@ -3783,6 +3783,22 @@ article.one-page {
 .frontpage-block.box.news .more-news a b {
   display: block;
   font-size: 1.6rem;
+}
+
+.frontpage-block.box.map .gk-cols {
+  clear: both;
+  margin-top: 80px;
+}
+
+.frontpage-block.box.map .btn-map-frontpage {
+  border-color: rgb(221, 153, 51);
+  color: rgb(255, 255, 255);
+  background-color: rgb(221, 153, 51);
+  display: inline-block;
+  padding: 0.5em 1.7em 0.65em;
+  font-size: 120%;
+  margin-top: 155px;
+  text-align: center;
 }
 
 /** LINKS FRONTPAGE SECTION **/
