@@ -5920,29 +5920,25 @@ img.gk-responsive {
 #gk-footer .site .social h4 {
   text-align: center;
 }
-#gk-footer .site .social ul {
-  text-align: center;
+#gk-footer .site .social {
+  padding: 0;
 }
-#gk-footer .site .social ul li {
-  display: inline;
+#gk-footer .site .social li {
+  display: inline-block;
   margin: 0 5px;
 }
-#gk-footer .site .social ul li a:before {
-  color: #000;
+#gk-footer .site .social li a:before {
   font-family: 'FontAwesome';
   font-size: 3.5rem;
 }
 #gk-footer .site .social .facebook a:before {
   content: '\f09a';
-  font-family: 'FontAwesome';
 }
 #gk-footer .site .social .twitter a:before {
   content: '\f099';
-  font-family: 'FontAwesome';
 }
 #gk-footer .site .social .youtube a:before {
   content: '\f16a';
-  font-family: 'FontAwesome';
 }
 #gk-copyrights {
   color: rgba(159, 32, 50, 1);
