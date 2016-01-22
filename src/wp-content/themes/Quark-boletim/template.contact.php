@@ -182,8 +182,8 @@ get_header(); ?>
                         <?php endif; ?>
                     </div>
 
-                    <?php if(get_theme_mod('quark_contact_map_url','#') != '') : ?>
-                        <p><a href="<?php echo get_theme_mod('quark_contact_map_url','#');?>" class="gk-map-icon"><i class="gkicon-marker"></i><?php _e('Ver no Google Maps','quark'); ?></a></p>
+                    <?php if(get_theme_mod('quark_contact_map_url','https://www.google.com.br/maps/@-23.5441027,-46.6914086,17z?hl=pt-BR') != '') : ?>
+                        <p><a href="<?php echo get_theme_mod('quark_contact_map_url','https://www.google.com.br/maps/@-23.5441027,-46.6914086,17z?hl=pt-BR');?>" class="gk-map-icon"><i class="gkicon-marker"></i><?php _e('Ver no Google Maps','quark'); ?></a></p>
                     <?php endif; ?>
 
                 </header>
