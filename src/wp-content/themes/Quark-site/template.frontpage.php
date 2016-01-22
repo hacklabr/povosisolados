@@ -38,7 +38,6 @@ $args_global = array(
 	'post_type' => 'post',
 	'order' => 'DESC',
 	'post__in' => get_option( 'sticky_posts' ),
-	'category_name' => 'noticias',
 	'orderby' => 'menu_order',
 	'posts_per_page' => 2
 );
@@ -271,9 +270,6 @@ get_header('frontpage'); ?>
 														</div>
 													</div>
 												</div><!-- frontpage-wrap -->
-
-
-                    ?>
 
 										<?php else : ?>
                     <?php if(has_post_thumbnail()) : ?>
