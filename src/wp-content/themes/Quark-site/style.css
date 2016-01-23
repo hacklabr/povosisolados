@@ -970,15 +970,10 @@ label {
     text-align: center;
 }
 .owl-carousel .item {
-    height: auto;
-}
-.owl-carousel .item img {
-    display: block;
-    width: 100%;
-    height: auto;
-    min-height: 300px;
-    max-height: 800px;
-    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
 }
 .owl-carousel .info {
   position: absolute;

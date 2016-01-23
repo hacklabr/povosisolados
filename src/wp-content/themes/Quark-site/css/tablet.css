@@ -25,6 +25,9 @@
 .owl-carousel .info {
   top: 55%;
 }
+.owl-carousel .item {
+    height: 320px;
+}
 #page {
     padding: 100px 0 50px;
 }

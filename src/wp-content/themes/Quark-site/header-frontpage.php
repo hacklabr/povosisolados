@@ -104,10 +104,12 @@ global $post;
 
 				?>
 				<?php while ( $loop_news->have_posts()): $loop_news->the_post(); ?>
+	
+					<?php 
+					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID), "header-boletim" );
+					$url = $thumb[0]; ?>
 
-					<div class="item">
-						<?php the_post_thumbnail( 'full', array("alt"=> get_the_title(),)); ?>
-
+					<div class="item" style="background-image:url('<?php echo $url; ?>');">
 						<div class="info">
 							<h2 data-sr="enter bottom and move 50px and wait .2s"><a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></h2>
 						</div>
