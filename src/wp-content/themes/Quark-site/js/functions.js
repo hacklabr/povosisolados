@@ -1084,18 +1084,21 @@ function gk_quark_classic_menu_init() {
                         var fxStart = {
                             //'height': 0,
                             'width': prevw,
-                            'opacity': 0
+                            'opacity': 0,
+                            'display': 'none'
                         };
                         var fxEnd = {
                             //'height': prevh,
                             'width': prevw,
-                            'opacity': 1
+                            'opacity': 1,
+                            'display': 'block'
                         };
 
                         content.css(fxStart);
                         content.css({
                             'left': 'auto',
-                            'overflow': 'hidden'
+                            'overflow': 'hidden',
+                            'display': 'none'
                         });
 
                         el.mouseenter(function () {
@@ -1148,7 +1151,8 @@ function gk_quark_classic_menu_init() {
                         });
                         el.mouseleave(function () {
                             content.css({
-                                'overflow': 'hidden'
+                                'overflow': 'hidden',
+                                'display': 'none'
                             });
                             //
                             content.stop().animate(
