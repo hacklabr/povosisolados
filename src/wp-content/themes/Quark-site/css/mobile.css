@@ -32,6 +32,10 @@ input[type="reset"] {
 }
 
 /* Top */
+.gk-logo {
+  margin: 22px;
+}
+
 #gk-header .gk-logo img {
   height: 40px;
   top: 0!important;
