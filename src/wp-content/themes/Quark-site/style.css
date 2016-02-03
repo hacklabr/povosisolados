@@ -912,18 +912,23 @@ label {
   padding: 0;
   position: absolute;
   text-indent: -9999px;
+  width: auto;
   -webkit-transition: all .3s ease-out;
   -moz-transition: all .3s ease-out;
   -ms-transition: all .3s ease-out;
   -o-transition: all .3s ease-out;
   transition: all .3s ease-out;
-  width: auto;
 }
 .gk-logo img {
   display: block;
-  height: auto;
+  max-height: 67px;
   margin: 0;
   max-width: 300px;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 .gk-logo.text {
   color: #26292b;
@@ -1399,22 +1404,21 @@ label {
   -webkit-box-shadow: 0 0 3px rgba(0,0,0, .3);
   -moz-box-shadow: 0 0 3px rgba(0,0,0, .3);
   box-shadow: 0 0 3px rgba(0,0,0, .3);
-  height: 70px;
+  height: 65px;
   position: fixed;
   top: 0;
 }
 #gk-header-nav.gk-fixed-nav .main-navigation {
-  margin: 5px 0 0 0 !important;
+  margin: 2px 0 0 0 !important;
 }
 #gk-header-nav.gk-fixed-nav .gk-logo {
-  margin: 22px;
+  margin: 11px;
 }
 #gk-header-nav.gk-fixed-nav .gk-logo img {
-  height: 40px;
+  max-height: 40px;
 }
 #gk-header-nav.inactive #gk-mobile-menu-text {
   width: 0 !important;
-
 }
 #gk-header-nav.inactive .gk-logo {
   opacity: 0;
