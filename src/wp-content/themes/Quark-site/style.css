@@ -63,7 +63,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: rgba(253, 244, 220, 0.4);
   color: #000;
   font-size: 1.8rem;
   font-weight: 300;
@@ -3757,7 +3757,7 @@ article.one-page {
   position: relative;
 }
 .frontpage-block.box.news .more-news a {
-  background-color: #fff;
+  background-color: rgba(253, 244, 220, 0.4);
   color: rgba(159, 32, 50, 1);
   display: block;
   font-size: 1.3rem;
