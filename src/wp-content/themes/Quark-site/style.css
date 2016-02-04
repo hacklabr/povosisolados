@@ -5924,7 +5924,7 @@ img.gk-responsive {
  * ----------------------------------------------------------------------------
  */
 #gk-footer {
-  background-color: #cbad6c;
+  background-color: #e2cd97;
   color: #000;
   font-size: 1.4rem;
   font-weight: 300;
@@ -6021,18 +6021,11 @@ img.gk-responsive {
   padding: 12px 10px;
   max-width: 75% !important;
 }
-#gk-footer .site .social h4 {
-  text-align: center;
+#gk-footer .site .social li a {
+  color: #9e8951;
 }
-#gk-footer .site .social ul {
-  text-align: center;
-}
-#gk-footer .site .social ul li {
-  display: inline;
-  margin: 0 5px;
-}
-#gk-footer .site .social ul li a:before {
-  color: #000;
+#gk-footer .site .social li a:before {
+  color: #9e8951;
   font-family: 'FontAwesome';
   font-size: 3.5rem;
 }
