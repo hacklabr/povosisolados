@@ -134,12 +134,6 @@
     ?>
     </span></li>
 
-    <?php if (!post_password_required() && (comments_open() || get_comments_number())) : ?>
-    <li class="comments-link">
-        <?php comments_popup_link( __( 'Deixe um comentário', 'quark' ), __( '1 Comentário', 'quark' ), __( '% Comentários', 'quark' ) ); ?>
-    </li>
-    <?php endif; ?>
-
     <?php if(current_user_can('edit_posts') || current_user_can('edit_pages')) : ?>
     <li>
         <?php edit_post_link(__( 'Edit', 'perfetta'), '<span class="edit-link">', '</span>'); ?>
