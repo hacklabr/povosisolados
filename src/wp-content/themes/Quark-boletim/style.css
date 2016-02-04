@@ -1757,7 +1757,7 @@ article.one-page {
   text-transform: uppercase;
 }
 .post-info {
-  margin-top: 60px;
+  margin-top: 60px !important;
   overflow: hidden;
 }
 .item-info {
