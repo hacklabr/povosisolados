@@ -1011,6 +1011,41 @@ label {
   display: none;
 }
 
+/*  320 x 480 */
+@media screen and (min-width: 320px) {
+  .owl-carousel .item {
+    height: 360px;
+  }
+}
+
+/* 360 x 640 */
+@media screen and (min-width: 360px) {
+  .owl-carousel .item {
+    height: 520px;
+  }
+}
+
+/* 1366 x 768; 1360 x 768; 1366 x 768; 1024 x 768 */
+@media screen and (min-width: 1024px) {
+  .owl-carousel .item {
+    height: 635px;
+  }
+}
+
+/* 1600 x 900; 1440 x 900 */
+@media screen and (min-width: 1440px) {
+  .owl-carousel .item {
+    height: 770px;
+  }
+}
+
+/* 1920 x 1080 */
+@media screen and (min-width: 1440px) {
+  .owl-carousel .item {
+    height: 840px;
+  }
+}
+
 /*---------------------------------
 3. Post/Page elements
 ----------------------------------*/
