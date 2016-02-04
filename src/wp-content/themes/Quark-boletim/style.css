@@ -1756,13 +1756,15 @@ article.one-page {
   width: 60%;
   text-transform: uppercase;
 }
-
+.post-info {
+  margin-top: 60px;
+  overflow: hidden;
+}
 .item-info {
   color: #111;
   display: block;
+  float: left;
   font-size: 1.2rem;
-  margin: 60px auto 0;
-  max-width: 1040px;
   padding: 0;
 }
 .archive-page .item-info {
@@ -1911,9 +1913,7 @@ article.one-page {
 }
 
 .entry-social-sharing {
-  clear: both;
-  padding: 24px 0 32px;
-  text-align: center;
+  float: right;
 }
 
 .entry-social-sharing > div {

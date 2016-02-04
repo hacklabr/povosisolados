@@ -106,148 +106,149 @@
     </header>
 <?php endif; ?>
 
+<div class="site post-info">
+    <?php if(is_single()) : ?>
+        <ul class="item-info">
 
-<?php if(is_single()) : ?>
-<ul class="item-info">
-
-    <?php
-        // Translators: used between list items, there is a space after the comma.
-        $categories_list = get_the_category_list( __( ', ', 'quark' ) );
-        if ( $categories_list ) :
-    ?>
-    <li>
-        <?php
-            echo '<span class="categories-links">' . $categories_list . '</span>';
-        ?>
-    </li>
-    <?php endif; ?>
-
-    <li> <span>
-    <?php
-
-        echo '<span>' . __( 'Posted by: ', 'quark' ) . '</span>';
-        printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
-            esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-            esc_attr( sprintf( __( 'Ver todos os posts por %s', 'quark' ), get_the_author() ) ),
-            get_the_author()
-        );
-    ?>
-    </span></li>
-
-    <?php if(current_user_can('edit_posts') || current_user_can('edit_pages')) : ?>
-    <li>
-        <?php edit_post_link(__( 'Edit', 'perfetta'), '<span class="edit-link">', '</span>'); ?>
-    </li>
-    <?php endif; ?>
-</ul>
-<?php endif; ?>
-
-<?php if(is_singular() && get_theme_mod('quark_'.(is_page() ? 'page' : 'post').'_social_icons', '1') == '1') : ?>
-    <?php do_action('quark_before_social_icons'); ?>
-    <?php if(get_theme_mod('quark_popup_social_icons',1) == 1) : ?>
-         <span class="gk-social-icons">
-            <i class="fa fa-share-alt"></i>
-
-            <span>
-                <?php if(get_theme_mod('quark_popup_social_fb', 1) == 1) : ?>
-                    <a href="https://www.facebook.com/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
-                <?php endif; ?>
-
-                <?php if(get_theme_mod('quark_popup_social_twitter', 1) == 1) : ?>
-                    <a href="http://twitter.com/intent/tweet?source=sharethiscom&amp;url=<?php echo get_permalink(); ?>" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
-                <?php endif; ?>
-
-                <?php if(get_theme_mod('quark_popup_social_gplus', 1) == 1) : ?>
-                    <a href="https://plus.google.com/share?url=<?php echo get_permalink(); ?>" target="_blank"><i class="fa fa-google-plus"></i> Google+</a>
-                <?php endif; ?>
-
-                <?php if(get_theme_mod('quark_popup_social_pinterest', 1) == 1) : ?>
-                    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest-p"></i> Pinterest</a>
-                <?php endif; ?>
-
-                <?php if(get_theme_mod('quark_popup_social_linked', 0) == 1) : ?>
-                    <a href="https://www.linkedin.com/cws/share?url=<?php echo get_permalink(); ?>"><i class="fa fa-linkedin"></i> LinkedIn</a>
-                <?php endif; ?>
-
-                <?php if(get_theme_mod('quark_popup_social_vk', 0) == 1) : ?>
-                    <a href="http://vkontakte.ru/share.php?url=<?php echo get_permalink(); ?>"><i class="fa fa-vk"></i> VK</a>
-                <?php endif; ?>
-            </span>
-          </span>
-
-    <?php else : ?>
-
-        <div class="entry-social-sharing">
-
-            <?php if(get_theme_mod('quark_social_twitter', 1) == 1) : ?>
-                <?php do_action('quark_before_twitter_icon'); ?>
-                <div class="entry-twitter-button">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a>
-                    <?php if(get_theme_mod('quark_cookie_enable', 1) == 1) : ?>
-                        <script type="text/plain" class="cc-onconsent-social" src="//platform.twitter.com/widgets.js"></script>
-                    <?php else : ?>
-                        <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                    <?php endif; ?>
-                </div>
-                <?php do_action('quark_after_twitter_icon'); ?>
+            <?php
+                // Translators: used between list items, there is a space after the comma.
+                $categories_list = get_the_category_list( __( ', ', 'quark' ) );
+                if ( $categories_list ) :
+            ?>
+            <li>
+                <?php
+                    echo '<span class="categories-links">' . $categories_list . '</span>';
+                ?>
+            </li>
             <?php endif; ?>
 
-            <?php if(get_theme_mod('quark_social_fb', 1) == 1) : ?>
-                <?php do_action('quark_before_fb_icon'); ?>
-                <div class="entry-facebook-button">
-                    <?php if(get_theme_mod('quark_cookie_enable', 1) == 1) : ?>
-                        <script type="text/plain" class="cc-onconsent-social">
-                    <?php else : ?>
-                        <script type="text/javascript">
-                    <?php endif; ?>
-                        var root = document.createElement('div');
-                        root.id = 'fb-root';
-                        jQuery('.entry-facebook-button')[0].appendChild(root);
-                        (function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) {return;}
-                            js = d.createElement(s); js.id = id;
-                            js.src = document.location.protocol + "//connect.facebook.net/en_US/all.js#xfbml=1";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }(document, 'script', 'facebook-jssdk'));
-                    </script>
-                    <div class="fb-like" data-width="150" data-layout="box_count" data-action="like" data-show-faces="false"></div>
-                </div>
-                <?php do_action('quark_after_fb_icon'); ?>
+            <li> <span>
+            <?php
+
+                echo '<span>' . __( 'Posted by: ', 'quark' ) . '</span>';
+                printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+                    esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+                    esc_attr( sprintf( __( 'Ver todos os posts por %s', 'quark' ), get_the_author() ) ),
+                    get_the_author()
+                );
+            ?>
+            </span></li>
+
+            <?php if(current_user_can('edit_posts') || current_user_can('edit_pages')) : ?>
+            <li>
+                <?php edit_post_link(__( 'Edit', 'perfetta'), '<span class="edit-link">', '</span>'); ?>
+            </li>
             <?php endif; ?>
-
-            <?php if(get_theme_mod('quark_social_gplus', 1) == 1) : ?>
-                <?php do_action('quark_before_gplus_icon'); ?>
-                <div class="entry-gplus-button">
-                    <div class="g-plusone" data-size="tall"></div>
-                    <?php
-                        $lang = explode('-', get_bloginfo('language'));
-                        $lang = $lang[0];
-                    ?>
-                    <?php if(get_theme_mod('quark_cookie_enable', 1) == 1) : ?>
-                        <script type="text/plain" class="cc-onconsent-social">
-                    <?php else : ?>
-                        <script type="text/javascript">
-                    <?php endif; ?>
-                    window.___gcfg = {lang: '<?php echo $lang; ?>'};
-
-                    (function() {
-                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                        po.src = 'https://apis.google.com/js/platform.js';
-                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                    })();
-                    </script>
-                </div>
-                <?php do_action('quark_after_gplus_icon'); ?>
-            <?php endif; ?>
-
-
-                <!--<div class="entry-gplus-button">
-                                        <img src="/wp-content/themes/Quark-boletim/images/email.png">
-                                    </div> -->
-
-        </div>
-        <?php do_action('quark_after_social_icons'); ?>
-
+        </ul>
     <?php endif; ?>
-<?php endif; ?>
+
+    <?php if(is_singular() && get_theme_mod('quark_'.(is_page() ? 'page' : 'post').'_social_icons', '1') == '1') : ?>
+        <?php do_action('quark_before_social_icons'); ?>
+        <?php if(get_theme_mod('quark_popup_social_icons',1) == 1) : ?>
+             <span class="gk-social-icons">
+                <i class="fa fa-share-alt"></i>
+
+                <span>
+                    <?php if(get_theme_mod('quark_popup_social_fb', 1) == 1) : ?>
+                        <a href="https://www.facebook.com/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+                    <?php endif; ?>
+
+                    <?php if(get_theme_mod('quark_popup_social_twitter', 1) == 1) : ?>
+                        <a href="http://twitter.com/intent/tweet?source=sharethiscom&amp;url=<?php echo get_permalink(); ?>" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+                    <?php endif; ?>
+
+                    <?php if(get_theme_mod('quark_popup_social_gplus', 1) == 1) : ?>
+                        <a href="https://plus.google.com/share?url=<?php echo get_permalink(); ?>" target="_blank"><i class="fa fa-google-plus"></i> Google+</a>
+                    <?php endif; ?>
+
+                    <?php if(get_theme_mod('quark_popup_social_pinterest', 1) == 1) : ?>
+                        <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest-p"></i> Pinterest</a>
+                    <?php endif; ?>
+
+                    <?php if(get_theme_mod('quark_popup_social_linked', 0) == 1) : ?>
+                        <a href="https://www.linkedin.com/cws/share?url=<?php echo get_permalink(); ?>"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                    <?php endif; ?>
+
+                    <?php if(get_theme_mod('quark_popup_social_vk', 0) == 1) : ?>
+                        <a href="http://vkontakte.ru/share.php?url=<?php echo get_permalink(); ?>"><i class="fa fa-vk"></i> VK</a>
+                    <?php endif; ?>
+                </span>
+              </span>
+
+        <?php else : ?>
+
+            <div class="entry-social-sharing">
+
+                <?php if(get_theme_mod('quark_social_twitter', 1) == 1) : ?>
+                    <?php do_action('quark_before_twitter_icon'); ?>
+                    <div class="entry-twitter-button">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a>
+                        <?php if(get_theme_mod('quark_cookie_enable', 1) == 1) : ?>
+                            <script type="text/plain" class="cc-onconsent-social" src="//platform.twitter.com/widgets.js"></script>
+                        <?php else : ?>
+                            <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+                        <?php endif; ?>
+                    </div>
+                    <?php do_action('quark_after_twitter_icon'); ?>
+                <?php endif; ?>
+
+                <?php if(get_theme_mod('quark_social_fb', 1) == 1) : ?>
+                    <?php do_action('quark_before_fb_icon'); ?>
+                    <div class="entry-facebook-button">
+                        <?php if(get_theme_mod('quark_cookie_enable', 1) == 1) : ?>
+                            <script type="text/plain" class="cc-onconsent-social">
+                        <?php else : ?>
+                            <script type="text/javascript">
+                        <?php endif; ?>
+                            var root = document.createElement('div');
+                            root.id = 'fb-root';
+                            jQuery('.entry-facebook-button')[0].appendChild(root);
+                            (function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) {return;}
+                                js = d.createElement(s); js.id = id;
+                                js.src = document.location.protocol + "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-like" data-width="150" data-layout="box_count" data-action="like" data-show-faces="false"></div>
+                    </div>
+                    <?php do_action('quark_after_fb_icon'); ?>
+                <?php endif; ?>
+
+                <?php if(get_theme_mod('quark_social_gplus', 1) == 1) : ?>
+                    <?php do_action('quark_before_gplus_icon'); ?>
+                    <div class="entry-gplus-button">
+                        <div class="g-plusone" data-size="tall"></div>
+                        <?php
+                            $lang = explode('-', get_bloginfo('language'));
+                            $lang = $lang[0];
+                        ?>
+                        <?php if(get_theme_mod('quark_cookie_enable', 1) == 1) : ?>
+                            <script type="text/plain" class="cc-onconsent-social">
+                        <?php else : ?>
+                            <script type="text/javascript">
+                        <?php endif; ?>
+                        window.___gcfg = {lang: '<?php echo $lang; ?>'};
+
+                        (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/platform.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                        })();
+                        </script>
+                    </div>
+                    <?php do_action('quark_after_gplus_icon'); ?>
+                <?php endif; ?>
+
+
+                    <!--<div class="entry-gplus-button">
+                                            <img src="/wp-content/themes/Quark-boletim/images/email.png">
+                                        </div> -->
+
+            </div>
+            <?php do_action('quark_after_social_icons'); ?>
+
+        <?php endif; ?>
+    <?php endif; ?>
+</div>
