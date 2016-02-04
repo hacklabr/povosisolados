@@ -969,7 +969,6 @@ label {
     top: 35%;
 }
 .owl-carousel {
-    margin-top: -110px;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -978,7 +977,7 @@ label {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 800px;
 }
 .owl-carousel .info {
   position: absolute;
@@ -1400,7 +1399,7 @@ label {
   width: 100%;
 }
 #gk-header-nav.gk-fixed-nav {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.8);
   -webkit-box-shadow: 0 0 3px rgba(0,0,0, .3);
   -moz-box-shadow: 0 0 3px rgba(0,0,0, .3);
   box-shadow: 0 0 3px rgba(0,0,0, .3);
