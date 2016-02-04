@@ -3712,27 +3712,22 @@ article.one-page {
 
 /** NEWS FRONTPAGE SECTION **/
 .frontpage-block.box .section-title {
-  background-color: rgba(74, 25, 27, 0.9);
   clear: both;
-  color: #fff;
-  display: inline-block;
-  float: left;
-  font-size: 2.5rem;
-  font-weight: 300;
+  color: #000;
+  font-size: 3rem;
+  font-weight: 500;
   line-height: 1;
-  min-width: 450px;
-  padding: 15px;
-  text-align: right;
+  margin: 0 auto;
+  max-width: 1040px;
+  padding: 0 20px;
+  text-align: left;
   text-transform: uppercase;
-  position: static;
-  left: 0;
-  top: 0;
 }
 .frontpage-block.box.news {
   margin-top: 70px;
 }
 .frontpage-block.box.news .news-container {
-  padding-top: 80px;
+  padding-top: 50px;
   clear: both;
 }
 .frontpage-block.box.news .news-title {
