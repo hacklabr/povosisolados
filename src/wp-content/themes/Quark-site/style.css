@@ -6042,7 +6042,7 @@ img.gk-responsive {
   color: rgba(159, 32, 50, 1);
   font-size: 1.3rem;
   line-height: 1;
-  padding: 0 0 10px;
+  padding: 0 40px 10px;
   position: relative;
 }
 #gk-copyrights:before {
