@@ -146,7 +146,7 @@
         <?php do_action('quark_before_social_icons'); ?>
         <?php if(get_theme_mod('quark_popup_social_icons',1) == 1) : ?>
              <span class="gk-social-icons">
-                <i class="fa fa-share-alt"></i>
+                <?php echo __('Compartilhar', 'quark'); ?> <i class="fa fa-share-alt"></i>
 
                 <span>
                     <?php if(get_theme_mod('quark_popup_social_fb', 1) == 1) : ?>
@@ -195,23 +195,7 @@
                 <?php if(get_theme_mod('quark_social_fb', 1) == 1) : ?>
                     <?php do_action('quark_before_fb_icon'); ?>
                     <div class="entry-facebook-button">
-                        <?php if(get_theme_mod('quark_cookie_enable', 1) == 1) : ?>
-                            <script type="text/plain" class="cc-onconsent-social">
-                        <?php else : ?>
-                            <script type="text/javascript">
-                        <?php endif; ?>
-                            var root = document.createElement('div');
-                            root.id = 'fb-root';
-                            jQuery('.entry-facebook-button')[0].appendChild(root);
-                            (function(d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0];
-                                if (d.getElementById(id)) {return;}
-                                js = d.createElement(s); js.id = id;
-                                js.src = document.location.protocol + "//connect.facebook.net/en_US/all.js#xfbml=1";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }(document, 'script', 'facebook-jssdk'));
-                        </script>
-                        <div class="fb-like" data-width="150" data-layout="box_count" data-action="like" data-show-faces="false"></div>
+                        <a href="http://www.facebook.com/share.php?u=<?php echo get_permalink(); ?>&title=<?php echo get_the_title(); ?>">Facebook</a>
                     </div>
                     <?php do_action('quark_after_fb_icon'); ?>
                 <?php endif; ?>

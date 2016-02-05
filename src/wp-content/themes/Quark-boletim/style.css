@@ -1926,15 +1926,17 @@ article.one-page {
 }
 
 .gk-social-icons {
+  color: rgb(159, 127, 45);
   cursor: pointer;
-  color: #777;
-  font-size: 2.1rem;
+  font-size: 0.7em;
+  font-weight: 500;
   float: right;
   position: relative;
 }
 
 .gk-social-icons i.fa.fa-share-alt {
   color: rgb(159, 127, 45);
+  margin-left: 5px;
 }
 
 .gk-social-icons > i {
@@ -1948,7 +1950,7 @@ article.one-page {
   border-radius: 3px;
   bottom: 48px;
   display: none;
-  margin: 0 0 0 -100px;
+  margin: 0 0 0 -23px;
   opacity: 0;
   padding: 5px 15px;
   position: absolute;
