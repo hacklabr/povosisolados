@@ -1857,6 +1857,7 @@ article.one-page {
 }
 
 .post-info {
+  height: 30px;
   margin-top: 60px !important;
 }
 .item-info {
