@@ -1758,7 +1758,6 @@ article.one-page {
 }
 .post-info {
   margin-top: 60px !important;
-  overflow: hidden;
 }
 .item-info {
   color: #111;
@@ -1933,18 +1932,23 @@ article.one-page {
   float: right;
   position: relative;
 }
+
+.gk-social-icons i.fa.fa-share-alt {
+  color: rgb(159, 127, 45);
+}
+
 .gk-social-icons > i {
-  color: #777;
+  color: #000;
 }
 .gk-social-icons:hover > i {
-  color: #f079a3;
+  color: rgb(159, 127, 45) !important;
 }
 .gk-social-icons > span {
-  background: rgba(38,41,43,0.8);
+  background: rgba(230,214,165,0.7);
   border-radius: 3px;
   bottom: 48px;
   display: none;
-  margin: 0 0 0 -55px;
+  margin: 0 0 0 -100px;
   opacity: 0;
   padding: 5px 15px;
   position: absolute;
@@ -1954,11 +1958,13 @@ article.one-page {
   -o-transition: all .3s ease-out;
   transition: all .3s ease-out;
   width: 120px;
+  z-index: 110;
 }
 .gk-social-icons > span > a,
 .gk-social-icons > span > a > i {
-  color: #fff;
+  color: #000;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 .gk-social-icons > span > a {
   display: block;
@@ -1967,7 +1973,7 @@ article.one-page {
 .gk-social-icons > span > a:active,
 .gk-social-icons > span > a:focus,
 .gk-social-icons > span > a:hover {
-  color: #f079a3;
+  color: rgb(159, 127, 45) !important;
 }
 .gk-social-icons > span > a > i {
   color: inherit;
