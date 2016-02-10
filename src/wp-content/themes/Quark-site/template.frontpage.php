@@ -51,7 +51,7 @@ get_header('frontpage'); ?>
 
             <div class="frontpage-block box news">
                 <h2 class="section-title" data-sr="enter bottom and move 50px wait .1s">
-                <?php _e("Notícias","SLUG");?></h2>
+                <?php _e('Notícias','cti');?></h2>
 
                 <!-- notícia em destaque -->
                 <div class="news-container site gk-cols" data-cols="1">
@@ -59,7 +59,7 @@ get_header('frontpage'); ?>
                         <div class="news-thumb" style="background-image:url('http://lorempixel.com/1920/400/');" ></div>
                         <h3 class="news-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan dapibus blandit</a></h3>
                         <div class="news-excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan dapibus blandit. Vestibulum feugiat scelerisque diam. Vestibulum vitae pharetra dui. Curabitur ut dictum erat. Nam a finibus augue. Integer tempus malesuada pharetra. Integer aliquet diam quis ante iaculis, et imperdiet tellus iaculis.</p></div>
-                        <a class="btn" href="#">Leia mais</a>
+                        <a class="btn" href="#"><?php _e('Leia mais', 'cti') ?></a>
                     </div>
                 </div>
 
@@ -74,12 +74,12 @@ get_header('frontpage'); ?>
                         <h3 class="news-title"><a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?></a></h3>
                         <div class="news-excerpt"><?php the_excerpt(); ?></div>
-                        <a class="btn" href="<?php the_permalink(); ?>">Leia mais</a>
+                        <a class="btn" href="<?php the_permalink(); ?>"><?php _e('Leia mais', 'cti') ?></a>
                     </div>
 				    <?php endwhile; wp_reset_query();?>
                 </div>
                 <div class="more-news site" data-sr="enter bottom and move 50px wait .4s">
-                <a href="<?php echo site_url(); ?>/category/noticias/"><b>Mais notícias</b>clique aqui</a></div>
+                <a href="<?php echo site_url(); ?>/category/noticias/"><b><?php _e('Mais notícias','cti') ?></b><?php _e('clique aqui', 'cti') ?></a></div>
             </div>
 
             <?php if ( $loop_global->have_posts() ) : ?>
@@ -246,7 +246,7 @@ get_header('frontpage'); ?>
                         </div>
 
 
-										<?php elseif(!empty($children) && $page_function == 'preview') : ?>
+                <?php elseif(!empty($children) && $page_function == 'preview') : ?>
                     <?php
                         $args_tabs = array(
                           'post_parent' => $frontpage->ID, // the ID from your loop
@@ -258,7 +258,7 @@ get_header('frontpage'); ?>
 					?>
 					   <div class="frontpage-block box map <?php echo $additional_classes; ?>">
 
-							<h2 class="section-title" data-sr="enter bottom and move 50px wait .1s">Mapa Interativo</h2>
+							<h2 class="section-title" data-sr="enter bottom and move 50px wait .1s"><?php _e('Mapa Interativo', 'cti') ?></h2>
 							<div class="gk-cols site" data-cols="2">
 								<div>
 									<a class="btn-map-frontpage" href="#" target="_blank"><?php echo get_the_title(); ?></a>
