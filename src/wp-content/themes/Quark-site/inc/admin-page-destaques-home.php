@@ -10,7 +10,7 @@ class DestaquesHome{
     static function register(){
 
 
-        add_submenu_page( 'themes.php', 'Destaques', 'Destaques', 'manage_options', 'noticias-destaques', [__CLASS__, 'renderPage'] );
+        add_submenu_page( 'themes.php', 'Configurações da Home', 'Configurações da Home', 'manage_options', 'noticias-destaques', [__CLASS__, 'renderPage'] );
     }
 
     static function getOption($lang){

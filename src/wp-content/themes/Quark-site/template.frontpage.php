@@ -292,7 +292,7 @@ get_header('frontpage'); ?>
                         </div>
 
 
-                <?php elseif(!empty($children) && $page_function == 'preview') : ?>
+                <?php elseif(!empty($children) && $page_function == 'preview') :  /*?>
                     <?php
                         $args_tabs = array(
                           'post_parent' => $frontpage->ID, // the ID from your loop
@@ -316,7 +316,7 @@ get_header('frontpage'); ?>
 
 						</div><!-- frontpage-wrap -->
 
-				<?php else : ?>
+				<?php */ else : ?>
                     <?php if(has_post_thumbnail()) : ?>
                         <div class="gk-clearfix">
                     <?php endif; ?>
