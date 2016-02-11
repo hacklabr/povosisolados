@@ -468,9 +468,6 @@ input[type="reset"] {
     font-size: 2.2rem;
     line-height: 1.3;
   }
-  .entry-title-wrap {
-    top: 190px !important;
-  }
   .entry-content .omsc-box {
     float: none;
     margin: 0;
