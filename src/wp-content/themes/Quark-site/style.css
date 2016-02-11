@@ -1108,7 +1108,7 @@ label {
 }
 .nav-menu > li > a,
 .nav-menu > ul > li > a {
-  color: #000;
+  color: #9F2032 !important;
   font-size: 1.7rem;
   font-weight: bold;
   display: block;
