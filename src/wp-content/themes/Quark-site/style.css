@@ -1857,7 +1857,8 @@ article.one-page {
 }
 
 .post-info {
-  height: 30px;
+  height: 60px;
+  margin-bottom: 20px !important;
   margin-top: 60px !important;
 }
 .item-info {
@@ -3781,6 +3782,9 @@ article.one-page {
   font-weight: bold;
   margin: 15px 0;
 }
+.frontpage-block.box.news .news-container[data-cols="2"] .news-title {
+  min-height: 63px;
+}
 .frontpage-block.box.news .news-thumb {
   background-position: center;
   background-size: cover;
@@ -3792,6 +3796,10 @@ article.one-page {
 }
 .frontpage-block.box.news .news-excerpt p {
   font-size: 1.4rem;
+  margin: 0;
+}
+.frontpage-block.box.news .btn {
+  margin: 24px 0 0 0;
 }
 .frontpage-block.box.news .more-news {
   border-top: 1px solid rgba(159, 32, 50, 0.8);
