@@ -3682,23 +3682,31 @@ article.one-page {
   padding-top: 50px;
   clear: both;
 }
-.frontpage-block.box.news .news-title {
+.frontpage-block.box.news .news-container[data-cols="2"] .news-title {
+  min-height: 63px;
+}
+.news-box .news-title {
   color: rgba(159, 32, 50, 1);
   font-size: 1.8rem;
   font-weight: bold;
   margin: 15px 0;
 }
-.frontpage-block.box.news .news-thumb {
+.news-box .news-thumb {
   background-position: center;
   background-size: cover;
   height: 250px;
   width: 100%;
 }
-.frontpage-block.box.news .news-excerpt {
+.news-box .news-excerpt {
   color: rgba(51, 33, 33, 1);
 }
-.frontpage-block.box.news .news-excerpt p {
+.news-box .news-excerpt p {
   font-size: 1.4rem;
+  line-height: 150%;
+  margin: 0;
+}
+.news-box .btn {
+  margin: 24px 0 0 0;
 }
 .frontpage-block.box.news .more-news {
   border-top: 1px solid rgba(159, 32, 50, 0.8);

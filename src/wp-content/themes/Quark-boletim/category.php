@@ -55,7 +55,7 @@ get_header(); ?>
 
                         <div class="site gk-cols" data-cols="2">
                         <?php while ( have_posts() ) : the_post(); ?>
-                            <div><?php get_template_part( 'content', get_post_format() ); ?></div>
+                            <div><?php get_template_part( 'content-category', get_post_format() ); ?></div>
                         <?php endwhile; ?>
                         </div>
                         
