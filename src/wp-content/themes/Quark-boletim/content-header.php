@@ -145,30 +145,29 @@
     <?php if(is_singular() && get_theme_mod('quark_'.(is_page() ? 'page' : 'post').'_social_icons', '1') == '1') : ?>
         <?php do_action('quark_before_social_icons'); ?>
         <?php if(get_theme_mod('quark_popup_social_icons',1) == 1) : ?>
+            
             <span class="gk-social-facebook">
-                <?php if(get_theme_mod('quark_social_fb', 1) == 1) : ?>
-                    <?php do_action('quark_before_fb_icon'); ?>
-                    <div class="entry-facebook-button">
-                        <?php if(get_theme_mod('quark_cookie_enable', 1) == 1) : ?>
-                            <script type="text/plain" class="cc-onconsent-social">
-                        <?php else : ?>
-                            <script type="text/javascript">
-                        <?php endif; ?>
-                            var root = document.createElement('div');
-                            root.id = 'fb-root';
-                            jQuery('.entry-facebook-button')[0].appendChild(root);
-                            (function(d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0];
-                                if (d.getElementById(id)) {return;}
-                                js = d.createElement(s); js.id = id;
-                                js.src = document.location.protocol + "//connect.facebook.net/en_US/all.js#xfbml=1";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }(document, 'script', 'facebook-jssdk'));
-                        </script>
-                        <div class="fb-like" data-width="150" data-layout="box_count" data-action="like" data-show-faces="false"></div>
-                    </div>
-                    <?php do_action('quark_after_fb_icon'); ?>
-                <?php endif; ?>
+                <?php do_action('quark_before_fb_icon'); ?>
+                <div class="entry-facebook-button">
+                    <?php if(get_theme_mod('quark_cookie_enable', 1) == 1) : ?>
+                        <script type="text/plain" class="cc-onconsent-social">
+                    <?php else : ?>
+                        <script type="text/javascript">
+                    <?php endif; ?>
+                        var root = document.createElement('div');
+                        root.id = 'fb-root';
+                        jQuery('.entry-facebook-button')[0].appendChild(root);
+                        (function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) {return;}
+                            js = d.createElement(s); js.id = id;
+                            js.src = document.location.protocol + "//connect.facebook.net/en_US/all.js#xfbml=1";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
+                    <div class="fb-like" data-width="150" data-layout="box_count" data-action="like" data-show-faces="false"></div>
+                </div>
+                <?php do_action('quark_after_fb_icon'); ?>
             </span>
 
              <span class="gk-social-icons">
