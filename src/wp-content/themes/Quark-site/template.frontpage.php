@@ -44,6 +44,9 @@ $args_global = array(
 $loop_news = new WP_Query( $args_global );
 //var_dump($loop_news);
 
+$cfg = DestaquesHome::getOption(pll_current_language());
+
+
 get_header('frontpage'); ?>
 
 	<?php do_action('quark_before_content'); ?>
@@ -55,12 +58,23 @@ get_header('frontpage'); ?>
 
                 <!-- notícia em destaque -->
                 <div class="news-container site gk-cols" data-cols="1">
+                    <?php
+                    global $post;
+                    $destaque = DestaquesHome::getPost('destaque');
+                    $original_post = $post;
+                    $post = $destaque;
+
+                    $thumb_id = get_post_thumbnail_id();
+                    $thumb_url = wp_get_attachment_image_src($thumb_id,'large', true);
+
+                    ?>
                     <div class="news-box" data-sr="enter bottom and move 50px wait .2s">
-                        <div class="news-thumb" style="background-image:url('http://lorempixel.com/1920/400/');" ></div>
-                        <h3 class="news-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan dapibus blandit</a></h3>
-                        <div class="news-excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan dapibus blandit. Vestibulum feugiat scelerisque diam. Vestibulum vitae pharetra dui. Curabitur ut dictum erat. Nam a finibus augue. Integer tempus malesuada pharetra. Integer aliquet diam quis ante iaculis, et imperdiet tellus iaculis.</p></div>
+                        <div class="news-thumb" style="background-image:url('<?php echo $thumb_url[0] ?>');" ></div>
+                        <h3 class="news-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
+                        <div class="news-excerpt"><?php the_excerpt(); ?></div>
                         <a class="btn" href="#"><?php _e('Leia mais', 'cti') ?></a>
                     </div>
+                    <?php $post = $original_post; ?>
                 </div>
 
 				<div class="news-container site gk-cols" data-cols="2">
@@ -70,7 +84,9 @@ get_header('frontpage'); ?>
                         $thumb_id = get_post_thumbnail_id();
                         $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
                         ?>
+                        <?php if($thumb_id): ?>
                         <div class="news-thumb" style="background-image:url('<?php echo $thumb_url[0]; ?>');" ></div>
+                        <?php endif; ?>
                         <h3 class="news-title"><a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?></a></h3>
                         <div class="news-excerpt"><?php the_excerpt(); ?></div>
@@ -81,6 +97,36 @@ get_header('frontpage'); ?>
                 <div class="more-news site" data-sr="enter bottom and move 50px wait .4s">
                 <a href="<?php echo site_url(); ?>/category/noticias/"><b><?php _e('Mais notícias','cti') ?></b><?php _e('clique aqui', 'cti') ?></a></div>
             </div>
+            <div class="frontpage-block box">
+                <div class='site'>
+                    <div class="gk-cols links" data-cols="3">
+                        <?php foreach([0,1,2] as $i): $link = $cfg['links'][$i]; ?>
+                            <div class="box-links" data-sr="enter bottom and move 50px wait .<?php echo $i + 1; ?>s"><a href="<?php echo $link['url'] ?>"><span class="txt"><?php echo $link['titulo'] ?></span><span class="img"><img class=" size-full wp-image-450" src="<?php echo $link['img'] ?>" alt="<?php echo $link['titulo'] ?>" /></span></a></div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="gk-cols links" data-cols="2">
+                        <?php
+                        global $post;
+                        $destaque = DestaquesHome::getPost('campanha');
+                        $original_post = $post;
+                        $post = $destaque;
+
+                        $thumb_id = get_post_thumbnail_id();
+                        $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
+                        ?>
+                        <div class="box-img" data-sr="enter bottom and move 50px wait .4s">
+                            <?php if($thumb_id): ?>
+                            <a href="<?php the_permalink() ?>"><span class="img"><img class="alignnone size-full wp-image-363" src="<?php echo $thumb_url[0] ?>" alt="<?php the_title() ?>" width="509" height="240" /></span></a>
+                            <?php endif; ?>
+
+                            <div class="img-legend"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></div>
+                        </div>
+                        <?php $post = $original_post; ?>
+                        <div class="box-video" data-sr="enter bottom and move 50px wait .5s"><?php echo stripslashes($cfg['video']) ?></div>
+                    </div>
+                </div>
+            </div>
+
 
             <?php if ( $loop_global->have_posts() ) : ?>
                 <?php while ( $loop_global->have_posts() ) : $loop_global->the_post(); ?>
