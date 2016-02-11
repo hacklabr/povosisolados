@@ -3781,6 +3781,8 @@ article.one-page {
   font-size: 1.8rem;
   font-weight: bold;
   margin: 15px 0;
+}
+.frontpage-block.box.news .news-container[data-cols="2"] .news-title {
   min-height: 63px;
 }
 .frontpage-block.box.news .news-thumb {
