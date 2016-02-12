@@ -117,9 +117,20 @@
             });
         }
 
-        jQuery(document).on('click', function (e) {
+        jQuery(document).on('click', function(e) {
             var item = jQuery(".gk-social-icons");
             if (jQuery(e.target).closest(".gk-social-icons").length === 0) {
+                item.removeClass('show');
+                setTimeout(function() {
+                    item.removeClass('clicked');
+                    item.attr('data-click-block', '');
+                }, 350);
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var item = jQuery(".gk-social-icons");
+            if (jQuery(this).scrollTop()>0) {
                 item.removeClass('show');
                 setTimeout(function() {
                     item.removeClass('clicked');
