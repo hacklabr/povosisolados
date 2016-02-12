@@ -117,6 +117,17 @@
             });
         }
 
+        jQuery(document).on('click', function (e) {
+            var item = jQuery(".gk-social-icons");
+            if (jQuery(e.target).closest(".gk-social-icons").length === 0) {
+                item.removeClass('show');
+                setTimeout(function() {
+                    item.removeClass('clicked');
+                    item.attr('data-click-block', '');
+                }, 350);
+            }
+        });
+
         // login popup
         if(jQuery('.gk-login-popup').length && jQuery('#gk-login-popup').length) {
            var popup = jQuery('#gk-login-popup');
@@ -1414,3 +1425,4 @@ jQuery(window).on('beforeunload', function() {
         }, 25);
     }
 });
+
