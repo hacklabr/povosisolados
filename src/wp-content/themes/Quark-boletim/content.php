@@ -54,12 +54,23 @@
 			</aside>
 			<?php do_action('quark_after_sidebar'); ?>
 		<?php endif; ?>
-			<div class="navigation-post-links">
-			<?php
-				next_post_link('<span class="navigation-post left">%link</span>', '&#8592;' , TRUE);
-				previous_post_link('<span class="navigation-post right">%link</span>', '&#8594;' , TRUE);
-			?>
-			</div>
+			
 		</div><!-- .site -->
+		<div class="navigation-post-links">
+			<div class="entry-content">
+			<div class="content-navigator left">
+				<span class="subtitle">Artigo Anterior</span>
+				<?php
+					next_post_link('<span class="navigation-post left">%link</span>', '<i class="fa fa-caret-left"></i> <span class="title">%title</span>' );
+				?>
+			</div>
+			<div class="content-navigator">
+				<span class="subtitle rights">Artigo Seguinte</span>
+				<?php 
+					previous_post_link('<span class="navigation-post right">%link</span>', ' <span class="title">%title</span> <i class="fa fa-caret-right"></i>' );
+				?>
+			</div>
+			</div>
+		</div>
 	<?php endif; ?>
 </article><!-- #post -->
