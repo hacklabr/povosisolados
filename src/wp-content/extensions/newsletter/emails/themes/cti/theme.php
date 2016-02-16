@@ -107,15 +107,22 @@ if (!empty($posts)) {
           <table>
 
             <tr>
-            <?php foreach ($posts as $key=>$post) : ?>
+            <?php 
+
+            foreach ($posts as $key=>$post) : 
+            $qtd_post =   !( sizeof($posts) % 2) ? "par" : "impar";
+            ?>
             <?php setup_postdata($post); ?>
-              <td width="360" valign="top" style="padding: 22px 0px 0px 15px;">
+            <?php 
+              if( !(($key + 1) === sizeof($posts)) || $qtd_post === "par"  ){ 
+            ?>
+              <td width="360"  valign="top" style="padding: 22px 0px 0px 15px;">
                 <a target="_blank" href="#" href="<?php echo get_permalink($post); ?>">
-                  <img height="250" width="380" src="<?php echo newsletter_get_post_image($post->ID, "newsletter-boletim"); ?>">
+                  <img height="250" width="360" src="<?php echo newsletter_get_post_image($post->ID, "newsletter-boletim"); ?>">
                 </a>
                 <div style="color: #000; font-size: 14px; font-weight: bold; margin-top: -3px; padding: 10px 0px;">
                   <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #000;">
-                  <?php the_title(); ?>
+                  <?php the_title(); echo  "   ". $qtd_post?>
                   </a>
 
                 </div>
@@ -125,8 +132,29 @@ if (!empty($posts)) {
                   </a>
                 </div>
               </td>
+              <?php 
+                  }else{
+              ?>
+              <td colspan="2"   valign="top" style="padding: 22px 0px 0px 15px;text-align:center;">
+                <div style="width:360px;margin-left: 200px;" >
+                  <a target="_blank" href="#" href="<?php echo get_permalink($post); ?>">
+                    <img height="250" width="360" src="<?php echo newsletter_get_post_image($post->ID, "newsletter-boletim"); ?>">
+                  </a>
+                  <div style="color: #000; font-size: 14px; font-weight: bold; margin-top: -3px; padding: 10px 0px;">
+                    <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #000;">
+                    <?php the_title(); ?>
+                    </a>
+                  </div>
+                  <div style="color: #000; font-size: 12px; margin-top: -3px;">
+                    <a target="_blank" href="<?php echo get_permalink(); ?>" style="color: #000;">
+                    <?php the_excerpt(); ?>
+                    </a>
+                  </div>
+                </div>
+              </td>
 
             <?php
+                }//EndIF
                 /*
                  * Fecha TR dinâmicamente
                  */
