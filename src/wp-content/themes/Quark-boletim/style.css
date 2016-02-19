@@ -4721,8 +4721,9 @@ p.numblocks span.highlight {
   padding-right: 0px;
 }
 .boletim .site {
-  max-width: 1680px;
+   max-width: 1040px;
 }
+
 .frontpage-block.box.boletim {
   padding-top: 30px !important;
 }
