@@ -443,8 +443,23 @@ input[type="reset"] {
 }
 
 .navigation-post-links {
-  width: 90%;
+  width: 100%;
+  margin:0px;
 }
+.navigation-post-links .title{
+  width: 70%;
+}
+
+.navigation-post-links .left a{
+  margin-right: 5px;
+  padding-left:10px;
+}
+.navigation-post.right{
+  margin-left: 0px;
+}
+
+
+
 @media screen and (max-width: 640px) {
   /* Subpage fixes */
   #gk-header-mod h1,

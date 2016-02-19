@@ -45,7 +45,7 @@
 
 .navigation-post-links .title{
 	display: inline-block;
-	width: 90%;
+	width: 80%;
 	vertical-align: top;
 }
 
@@ -71,6 +71,8 @@
 	padding: 0px;
 	vertical-align: top;
 }
-
+.navigation-post.right{
+	margin-left: 17%;
+}
 
 
