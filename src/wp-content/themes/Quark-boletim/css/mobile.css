@@ -458,6 +458,11 @@ input[type="reset"] {
   margin-left: 0px;
 }
 
+.inactive #gk-mobile-menu-text, .inactive  #gk-mobile-menu{
+  display: none;
+}
+
+
 
 
 @media screen and (max-width: 640px) {
