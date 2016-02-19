@@ -175,7 +175,7 @@ get_header('boletim'); ?>
                     <?php endif; ?>
                     <div class="frontpage-block box<?php echo $additional_classes; ?>" <?php echo $background_image; ?>>
 
-                        <div class="site">
+                        <div class="no-padding site">
                             <?php echo do_shortcode(str_replace(array('<p></p>'), '', get_the_content())); ?>
                         </div>
                     </div>
