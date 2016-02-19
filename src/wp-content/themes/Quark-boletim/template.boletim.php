@@ -39,7 +39,9 @@ $loop_news = get_posts($args_global);
 wp_reset_query();
 //var_dump($loop_news);
 
-get_header('boletim'); ?>
+get_header('boletim'); 
+
+?>
 
 	<?php do_action('quark_before_content'); ?>
 		<div id="frontpage-wrap" role="main">

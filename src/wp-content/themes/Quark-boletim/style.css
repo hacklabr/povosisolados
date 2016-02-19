@@ -817,6 +817,16 @@ label {
   width: 100%;
 }
 
+.category-banner{
+  margin-top: 90px!important;
+}
+
+.archive .entry-header .mouse-icon,
+.category .entry-header .mouse-icon
+{
+  display: none;
+}
+
 #gk-header-mod > .parallax-img.gk-vertical {
   height: 100%;
   width: auto;
@@ -3685,6 +3695,10 @@ article.one-page {
 .frontpage-block.box.news .news-container[data-cols="2"] .news-title {
   min-height: 63px;
 }
+.news-box{
+  margin-bottom: 30px;
+}
+
 .news-box .news-title {
   color: rgba(159, 32, 50, 1);
   font-size: 1.8rem;

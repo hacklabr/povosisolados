@@ -4,7 +4,7 @@
  *
  */
 
-get_header(); ?>
+get_header('boletim'); ?>
 
     <div id="primary" class="content-area">
         <div id="content" class="site-content" role="main">
@@ -14,7 +14,7 @@ get_header(); ?>
                 $category_images = unserialize(get_option('gk_taxonomy_images'));
                 $category = get_the_category();
             ?>
-                <header class="entry-header<?php if($category_images[$category[0]->term_id] == '') : ?> no-image<?php endif; ?>">
+                <header class="category-banner entry-header<?php if($category_images[$category[0]->term_id] == '') : ?> no-image<?php endif; ?>">
                     <?php if($category_images[$category[0]->term_id] !== '') : ?>
                         <?php 
                             $img = gk_taxonomy_image($category[0]->term_id, 'category-image', '', false);
