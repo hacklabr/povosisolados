@@ -4,7 +4,7 @@
  *
  */
 
-get_header('boletim'); ?>
+get_header("boletim"); ?>
 
     <div id="primary" class="content-area">
         <div id="content" class="site-content" role="main">
@@ -87,4 +87,4 @@ get_header('boletim'); ?>
         </div><!-- #content -->
     </div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_footer("boletim"); ?>
