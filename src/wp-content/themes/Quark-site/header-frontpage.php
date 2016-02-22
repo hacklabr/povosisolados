@@ -106,7 +106,7 @@ global $post;
 				<?php while ( $loop_news->have_posts()): $loop_news->the_post(); ?>
 	
 					<?php 
-					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID), "header-boletim" );
+					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID), "header-frontpage" );
 					$url = $thumb[0]; ?>
 
 					<div class="item" style="background-image:url('<?php echo $url; ?>');">

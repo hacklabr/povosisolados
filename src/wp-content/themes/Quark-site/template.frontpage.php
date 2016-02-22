@@ -65,7 +65,7 @@ get_header('frontpage'); ?>
                     $post = $destaque;
 
                     $thumb_id = get_post_thumbnail_id();
-                    $thumb_url = wp_get_attachment_image_src($thumb_id,'large', true);
+                    $thumb_url = wp_get_attachment_image_src($thumb_id,'thumb-destaque-noticias', true);
 
                     ?>
                     <div class="news-box" data-sr="enter bottom and move 50px wait .2s">
@@ -82,7 +82,7 @@ get_header('frontpage'); ?>
                     <div class="news-box" data-sr="enter bottom and move 50px wait .2s">
                         <?php
                         $thumb_id = get_post_thumbnail_id();
-                        $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
+                        $thumb_url = wp_get_attachment_image_src($thumb_id,'thumb-noticias', true);
                         ?>
                         <?php if($thumb_id): ?>
                         <div class="news-thumb" style="background-image:url('<?php echo $thumb_url[0]; ?>');" ></div>
@@ -112,7 +112,7 @@ get_header('frontpage'); ?>
                         $post = $destaque;
 
                         $thumb_id = get_post_thumbnail_id();
-                        $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
+                        $thumb_url = wp_get_attachment_image_src($thumb_id,'thumb-noticias', true);
                         ?>
                         <div class="box-img" data-sr="enter bottom and move 50px wait .4s">
                             <?php if($thumb_id): ?>

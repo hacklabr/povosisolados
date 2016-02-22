@@ -74,5 +74,9 @@ function programas_post_type() {
 }
 add_action( 'init', 'programas_post_type', 0 );
 
+add_image_size( 'thumb-destaque-noticias', '999', '250', array( "center", "center") ); 
+add_image_size( 'thumb-noticias', '480', '250', array( "center", "center") ); 
+add_image_size( 'header-frontpage', '1920', '960', array( "center", "center") ); 
+
 }
 
