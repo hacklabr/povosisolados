@@ -2916,6 +2916,9 @@ article.one-page {
 .gk-cols.gk-gallery > div > a:hover > img {
   opacity: 0.7;
 }
+.gk-cols > div.box-links{
+  float: left;
+}
 
 .gk-cols > div {
   display: inline-block;
