@@ -95,7 +95,8 @@ get_header('frontpage'); ?>
 				    <?php endwhile; wp_reset_query();?>
                 </div>
                 <div class="more-news site" data-sr="enter bottom and move 50px wait .4s">
-                <a href="<?php echo site_url(); ?>/category/noticias/"><b><?php _e('Mais notícias','cti') ?></b><?php _e('clique aqui', 'cti') ?></a></div>
+                <a href="<?php echo site_url(); ?>/category/<?php echo get_term_by('id', pll_get_term(get_term_by('slug','noticias','category')->term_id), 'category' )->name; ?>"><b><?php _e('Mais notícias','cti'); ?></b><?php _e('clique aqui', 'cti'); ?></a></div>
+                
             </div>
             <div class="frontpage-block box">
                 <div class='site'>
