@@ -69,7 +69,7 @@ get_header('frontpage'); ?>
 
                     ?>
                     <div class="news-box" data-sr="enter bottom and move 50px wait .2s">
-                        <div class="news-thumb" style="background-image:url('<?php echo $thumb_url[0] ?>');" ></div>
+                        <div class="news-thumb-destaque" style="background-image:url('<?php echo $thumb_url[0] ?>');" ></div>
                         <h3 class="news-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
                         <div class="news-excerpt"><?php the_excerpt(); ?></div>
                         <a class="btn" href="#"><?php _e('Leia mais', 'cti') ?></a>
