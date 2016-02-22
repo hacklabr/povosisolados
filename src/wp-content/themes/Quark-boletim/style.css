@@ -2834,7 +2834,7 @@ article.one-page {
 }
 
 .gk-cols > div {
-  float: left;
+  display: inline-block;
   padding: 0 20px;
 }
 
@@ -2878,7 +2878,7 @@ article.one-page {
 }
 
 .gk-cols[data-cols="2"] > div {
-  width: 50%;
+  width: 49%;
 }
 
 .gk-cols[data-cols="3"] > div {
@@ -4610,6 +4610,7 @@ p.numblocks span.highlight {
 
 .boletim .gk-cols > div {
   padding: 0 10px;
+  vertical-align: top;
 }
 
 .boletim #gk-header-mod {
