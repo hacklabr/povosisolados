@@ -53,21 +53,26 @@
 				<?php dynamic_sidebar('sidebar'); ?>
 			</aside>
 			<?php do_action('quark_after_sidebar'); ?>
-		<?php endif; ?>
+		<?php endif; ?>fa
 			
 		</div><!-- .site -->
 		<div class="navigation-post-links">
 			<div class="entry-content">
 			<div class="content-navigator left">
-				<span class="subtitle">Artigo Anterior</span>
 				<?php
-					next_post_link('<span class="navigation-post left">%link</span>', '<i class="fa fa-caret-left"></i> <span class="title">%title</span>' );
+					if( get_previous_post() ){
+					 	echo '<span class="subtitle">Artigo Anterior</span>';
+					}
+					previous_post_link('<span class="navigation-post left">%link</span>', ' <i class="fa fa-caret-left"></i> <span class="title">%title</span>' );
 				?>
 			</div>
 			<div class="content-navigator">
-				<span class="subtitle rights">Artigo Seguinte</span>
 				<?php 
-					previous_post_link('<span class="navigation-post right">%link</span>', ' <span class="title">%title</span> <i class="fa fa-caret-right"></i>' );
+					if( get_next_post() ){
+					 	echo '<span class="subtitle rights">Artigo Seguinte</span>';
+					}
+					next_post_link('<span class="navigation-post right">%link</span>', ' <span class="title">%title</span> <i class="fa fa-caret-right"></i>' );
+
 				?>
 			</div>
 			</div>

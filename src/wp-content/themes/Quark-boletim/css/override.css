@@ -52,7 +52,8 @@
 
 .navigation-post-links .subtitle.rights {
 	float: right;
-	margin-bottom: 5px;
+	margin:0px 0px 5px 0px;
+	display: block;
 }
 
 .subtitle{
@@ -72,7 +73,10 @@
 	vertical-align: top;
 }
 .navigation-post.right{
-	margin-left: 17%;
+	margin-left: 18%;
+    width: 98%;
+    display: inline-block;
+    text-align: right;
 }
 
 
