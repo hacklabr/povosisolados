@@ -64,6 +64,7 @@
 .main-navigation + #gk-mobile-menu {
   display: block;
   position: absolute;
+  top: -30px;
 }
 
 #aside-menu-toggler {
