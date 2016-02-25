@@ -159,7 +159,7 @@ h1,
 }
 
 #gk-menu-overlay-wrap {
-  margin: 0 auto 0 -150px;
+  left: 100%;
   max-width: 300px;
 }
 
