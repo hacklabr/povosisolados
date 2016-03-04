@@ -53,7 +53,7 @@
 				<?php dynamic_sidebar('sidebar'); ?>
 			</aside>
 			<?php do_action('quark_after_sidebar'); ?>
-		<?php endif; ?>fa
+		<?php endif; ?>
 			
 		</div><!-- .site -->
 		<div class="navigation-post-links">
