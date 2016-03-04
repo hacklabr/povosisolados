@@ -5,7 +5,7 @@
  */
 
 global $wp_query;
-get_header(); ?>
+get_header('boletim'); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content search-page" role="main">
@@ -82,4 +82,4 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_footer('boletim'); ?>
