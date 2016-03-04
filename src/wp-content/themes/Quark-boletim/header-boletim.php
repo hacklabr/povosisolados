@@ -60,6 +60,8 @@ $post_original = $post;
 					else:
 						$boletim_url = get_home_url();
 					endif;
+
+					$boletim_url = get_home_url();
 				?>
 				<a href="<?php echo $boletim_url ?>"><h1> <span class="screen-reader-text"><?php _e('Boletim Povos Isolados da Amazônia', 'quark'); ?></span></h1></a>
 
