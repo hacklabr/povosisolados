@@ -779,7 +779,7 @@ label {
 .entry-title-wrap > .gk-page {
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 75%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -1717,6 +1717,7 @@ article.one-page {
   line-height: 2.4;
   margin: 0 0 0 20px;
   padding: 5px 10px;
+  font-family: 'Droid Sans';
 }
 
 .entry-header .caption, #gk-header-mod .caption {
@@ -1742,6 +1743,7 @@ article.one-page {
   padding: 5px 10px;
   text-align: left;
   text-transform: initial;
+  font-family: 'Droid Sans';
 }
 .entry-title a {
   color: #fff;
@@ -1820,9 +1822,7 @@ article.one-page {
 
 .entry-title-wrap {
   position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  top: 50%;
+  top: 500px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
