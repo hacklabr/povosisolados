@@ -780,12 +780,14 @@ label {
 .entry-title-wrap > .gk-page {
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 75%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  font-family: 'Droid Sans';
+
 }
 @media (max-width: 1280px) {
   #gk-header-mod img,
@@ -1819,6 +1821,8 @@ article.one-page {
   line-height: 130%;
   text-align: right;
   z-index: 100;
+  font-family: 'Droid Sans';
+
 }
 
 .entry-title {
@@ -1910,8 +1914,7 @@ article.one-page {
 
 .entry-title-wrap {
   position: absolute;
-  text-align: center;
-  top: 50%;
+  top: 500px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
