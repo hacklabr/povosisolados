@@ -65,12 +65,12 @@ get_header('frontpage'); ?>
                         <h3 class="news-title"><a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?></a></h3>
                         <div class="news-excerpt"><?php the_excerpt(); ?></div>
-                        <a class="btn" href="<?php the_permalink(); ?>">Leia mais</a>
+                        <a class="btn" href="<?php the_permalink(); ?>"><?php _e("Leia mais", "cti"); ?></a>
                     </div>
 				    <?php endwhile; wp_reset_query();?>
                 </div>
                 <div class="more-news site" data-sr="enter bottom and move 50px wait .4s">
-                <a href="<?php echo site_url(); ?>/category/noticias/"><b>Mais notícias</b>clique aqui</a></div>
+                <a href="<?php echo site_url(); ?>/category/noticias/"><b><?php _e("Mais notícias", "cti"); ?></b><?php _e("clique aqui", "cti"); ?></a></div>
             </div>
 
             <?php if ( $loop_global->have_posts() ) : ?>

@@ -927,6 +927,9 @@ msgstr "Noticias"
 msgid "Mais notícias"
 msgstr "Mais notícias"
 
+msgid "Leia mais"
+msgstr ""
+
 msgid "clique aqui"
 msgstr "clique aqui"
 
