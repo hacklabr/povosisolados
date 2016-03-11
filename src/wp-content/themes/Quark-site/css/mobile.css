@@ -476,8 +476,42 @@ input[type="reset"] {
 }
 
 .navigation-post-links {
-  width: 90%;
+  width: 100%;
 }
+
+.navigation-post-links .left a {
+    margin-right: 5px;
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+.navigation-post-links .right a {
+    text-align: right;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.navigation-post-links .title {
+    width: 70%;
+}
+
+.navigation-post.right {
+    margin-left: 5%;
+    width: 98%;
+    display: inline-block;
+    text-align: right;
+}
+
+@media screen and (max-width: 640px) {
+  .navigation-post.right {
+    margin-left: 5%;
+    width: 98%;
+    display: inline-block;
+    text-align: right;
+  }
+}
+
+
 @media screen and (max-width: 640px) {
   /* Subpage fixes */
   #gk-header-mod h1,
