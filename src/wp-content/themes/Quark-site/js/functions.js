@@ -45,6 +45,13 @@
             }
         });
 
+        //Menu Legenda Foto Banner Mobile
+        $('.btn_caption  a').on('click', function (e){
+            e.preventDefault();
+            $('.caption').slideToggle();
+            $('.caption').css('display', 'inline-table');
+        });
+
         // Logo switching
         if($('.gk-logo').find('img').length) {
            var logo_img = $('.gk-logo').find('img').first();

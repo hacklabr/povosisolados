@@ -553,3 +553,47 @@ input[type="reset"] {
     padding: 6px 16px;
   }
 }
+
+
+.btn_caption{
+  display: none;
+}
+@media (min-width: 300px) and ( max-width: 4880px) {
+  .btn_caption{
+    display: block;
+    position: absolute;
+    top: 330px;
+    z-index: 999;
+  }
+
+  .btn_caption a{
+    margin-left: 30px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .btn_caption a i{
+    font-size: 1.5em;
+    color:#fff;
+  }
+
+  header .caption{
+    display: none;
+    text-align: left!important;
+    background-color: rgba(169, 55, 71, 0.4);
+    height: auto;
+    width: 268px;
+    color: #FFF!important;
+    top: 360px;
+    padding: 10px;
+  }
+
+  .entry-title-wrap{
+    top: 210px;
+  }
+
+  .entry-header{
+    overflow: inherit;
+  }
+}
