@@ -44,6 +44,10 @@
             ?>
         </div>
 
+        <div class="btn_caption">
+            <a href="#" title="Legenda Foto" alt="Legenda Foto"><i class="fa fa-info-circle"></i>Legenda</a>
+        </div>
+
         <?php if(get_theme_mod('quark_header_mouse_icon',1) == 1) : ?>
             <span class="mouse-icon"><span><span></span></span></span>
         <?php endif; ?>

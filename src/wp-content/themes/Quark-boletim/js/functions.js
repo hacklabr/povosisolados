@@ -43,6 +43,17 @@
                     el.find('.gk-tabs-nav').first().addClass(css_class);
                 }
             }
+
+        });
+
+
+
+
+        //Menu Legenda Foto Banner Mobile
+        $('.btn_caption  a').on('click', function (e){
+            e.preventDefault();
+            $('.caption').slideToggle();
+            $('.caption').css('display', 'inline-table');
         });
 
         // Logo switching
