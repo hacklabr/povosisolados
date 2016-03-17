@@ -513,10 +513,19 @@ input[type="reset"] {
   }
 }
 
+
 .btn_caption{
   display: none;
 }
-@media (min-width: 300px) and ( max-width: 4880px) {
+@media (min-width: 300px) and ( max-width: 670px) {
+  .subtitle{
+    margin: 0px 37px!important;
+  }
+
+  .navigation-post-links .subtitle.rights{
+    margin: 0px 25px 5px 0px!important;
+  }
+
   .btn_caption{
     display: block;
     position: absolute;
@@ -539,7 +548,7 @@ input[type="reset"] {
   header .caption{
     display: none;
     text-align: left!important;
-    background-color: rgba(169, 55, 71, 0.7);
+    background-color: rgba(169, 55, 71, 0.9);
     height: auto;
     width: 300px;
     color: #FFF!important;

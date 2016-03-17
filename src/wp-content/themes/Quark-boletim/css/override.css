@@ -12,6 +12,20 @@
 	background: #ABA99D;
 }
 
+@media (min-width:665px) and ( max-width: 1030px) {
+  .navigation-post.right{
+    margin-left: 4%!important;
+  }
+  .navigation-post-links .content-navigator{
+  	    padding-right: 30px!important;
+  }
+
+  .entry-title-wrap{
+  	top: 230px;
+  }
+}
+
+
 .single-post .navigation-post a {
     background: none;
     margin: 0px;
