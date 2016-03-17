@@ -581,9 +581,9 @@ input[type="reset"] {
   header .caption{
     display: none;
     text-align: left!important;
-    background-color: rgba(169, 55, 71, 0.4);
+    background-color: rgba(169, 55, 71, 0.7);
     height: auto;
-    width: 268px;
+    width: 300px;
     color: #FFF!important;
     top: 360px;
     padding: 10px;
