@@ -6064,6 +6064,7 @@ img.gk-responsive {
 }
 #gk-footer .site .widget-wrap {
   min-height: 40px;
+  vertical-align: top;
 }
 @media screen and (max-width: 1040px) {
   #gk-footer .site .widget-wrap {
@@ -7138,4 +7139,8 @@ a.pswp__share--download:before {
 
 .btn_caption{
   display: none;
+}
+
+.box-video iframe{
+  height: 274px;
 }
