@@ -3764,7 +3764,7 @@ article.one-page {
 }
 
 /** NEWS FRONTPAGE SECTION **/
-.frontpage-block.box .section-title {
+.frontpage-block.box .section-title a{
   clear: both;
   color: #000;
   font-size: 3rem;
@@ -3772,10 +3772,17 @@ article.one-page {
   line-height: 1;
   margin: 0 auto;
   max-width: 1040px;
-  padding: 0 20px;
+  padding: 0px;
   text-align: left;
   text-transform: uppercase;
 }
+
+
+.frontpage-block.box .section-title a:hover{
+  background: rgba(159, 32, 50, 1);
+  color: #fff;
+}
+
 .frontpage-block.box.news {
   margin-top: 70px;
 }

@@ -54,7 +54,10 @@ get_header('frontpage'); ?>
 
             <div class="frontpage-block box news">
                 <h2 class="section-title" data-sr="enter bottom and move 50px wait .1s">
-                <?php _e('Notícias','cti');?></h2>
+                <a href="<?php echo site_url(); ?>/category/<?php echo get_term_by('id', pll_get_term(get_term_by('slug','noticias','category')->term_id), 'category' )->slug; ?>">
+                    <?php _e('Notícias','cti');?>
+                </a>
+                </h2>
 
                 <!-- notícia em destaque -->
                 <div class="news-container site gk-cols" data-cols="1">
