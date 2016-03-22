@@ -1793,8 +1793,12 @@ article.one-page {
   width: 100%;
 }
 .entry-header.no-image {
-  background: #f079a3;
+  background: url("images/cti-fundo-03.svg")!important;
+  background-color: #e2b361!important;
+   background-position: 100%!important;
+  opacity: 0.8;
 }
+
 .entry-header.no-image:after,
 .one-page .entry-header:after {
   display: none;
