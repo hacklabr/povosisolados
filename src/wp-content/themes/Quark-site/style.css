@@ -7127,3 +7127,7 @@ a.pswp__share--download:before {
  * mobile.css
  *
  */
+
+.lang-item a {
+    padding: 0px 6px!important;
+}
