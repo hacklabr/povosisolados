@@ -514,9 +514,7 @@ input[type="reset"] {
 }
 
 
-.btn_caption{
-  display: none;
-}
+
 @media (min-width: 300px) and ( max-width: 670px) {
   .subtitle{
     margin: 0px 37px!important;
@@ -527,7 +525,7 @@ input[type="reset"] {
   }
 
   .btn_caption{
-    display: block;
+    display: block!important;
     position: absolute;
     top: 330px;
     z-index: 999;

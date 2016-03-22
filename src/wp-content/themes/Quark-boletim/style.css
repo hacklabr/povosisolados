@@ -7013,3 +7013,7 @@ a.pswp__share--download:before {
  * mobile.css
  *
  */
+
+.btn_caption{
+  display: none;
+}

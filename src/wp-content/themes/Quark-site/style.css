@@ -7135,3 +7135,7 @@ a.pswp__share--download:before {
 .lang-item a {
     padding: 0px 6px!important;
 }
+
+.btn_caption{
+  display: none;
+}

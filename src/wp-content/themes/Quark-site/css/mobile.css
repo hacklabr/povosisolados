@@ -565,7 +565,7 @@ input[type="reset"] {
   }
 
   .btn_caption{
-    display: block;
+    display: block!important;
     position: absolute;
     top: 330px;
     z-index: 999;
