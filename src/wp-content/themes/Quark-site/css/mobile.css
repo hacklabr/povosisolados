@@ -601,4 +601,11 @@ input[type="reset"] {
   .entry-header{
     overflow: inherit;
   }
+
+  .copyright-footer {
+      width: 300px;
+      margin-left: -60px;
+      margin-top: -30px;
+      position: absolute;
+  }
 }
