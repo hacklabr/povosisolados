@@ -7151,3 +7151,9 @@ a.pswp__share--download:before {
     margin-top: 30px;
     position: absolute;
 }
+
+.fb_iframe_widget span{
+  width: 461px!important;
+  position: absolute!important;
+  margin-top: -20px!important;
+}
