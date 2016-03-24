@@ -89,7 +89,7 @@ if (!empty($posts)) {
       <tr>
         <!-- newsletter banner -->
         <td colspan="3" height="400">
-          <img src="<?php echo newsletter_get_post_image($editorial_post->ID, "newsletter-header"); ?>')" height="400" width="810">
+          <img src="<?php echo newsletter_get_post_image($editorial_post->ID, "newsletter-header"); ?>" height="400" width="810">
         </td>
       </tr>
       <tr bgcolor="#4a191b">
