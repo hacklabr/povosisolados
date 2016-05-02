@@ -1795,8 +1795,9 @@ article.one-page {
 .entry-header.no-image {
   background: url("images/cti-fundo-03.svg")!important;
   background-color: #e2b361!important;
-   background-position: 100%!important;
+  background-position: 100%!important;
   opacity: 0.8;
+  max-height: 484px;
 }
 
 .entry-header.no-image:after,
@@ -1918,7 +1919,7 @@ article.one-page {
 
 .entry-title-wrap {
   position: absolute;
-  top: 500px;
+  top: 360px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);

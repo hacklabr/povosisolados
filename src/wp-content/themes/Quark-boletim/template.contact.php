@@ -165,26 +165,26 @@ get_header("frontpage"); ?>
                     <?php endif; ?>
 
                     <div class="entry-title-wrap">
-                        <h1 data-sr="enter bottom and move 50px"><?php the_title(); ?></h1>
+                        <h1 data-sr="enter bottom and move 50px" class="entry-title"><?php the_title(); ?></h1>
 
                         <?php if(get_theme_mod('quark_contact_email_header','contato@trabalhoindigenista.org.br') != '') : ?>
-                        <h2 data-sr="enter bottom and move 50px and wait .15s">
+                        <h2 data-sr="enter bottom and move 50px and wait .15s" class="entry-title">
                             <?php echo get_theme_mod('quark_contact_email_header','contato@trabalhoindigenista.org.br'); ?>
                         </h2>
                         <?php endif; ?>
 
-                        <?php if(get_theme_mod('quark_contact_fb','#') != '' || get_theme_mod('quark_contact_twitter','#') != '' || get_theme_mod('quark_contact_gplus','#') != '') : ?>
+                        <!-- ?php if(get_theme_mod('quark_contact_fb','#') != '' || get_theme_mod('quark_contact_twitter','#') != '' || get_theme_mod('quark_contact_gplus','#') != '') : ?>
                         <div class="gk-social-icons-block" data-sr="enter bottom and move 50px and wait .3s">
-                            <?php if(get_theme_mod('quark_contact_fb','#') != '') : ?><a href="<?php echo get_theme_mod('quark_contact_fb','#');?>"><i class="gkicon-fb"></i></a><?php endif ;?>
-                            <?php if(get_theme_mod('quark_contact_twitter','#') != '') : ?><a href="<?php echo get_theme_mod('quark_contact_twitter','#');?>"><i class="gkicon-twitter"></i></a><?php endif ;?>
-                            <?php if(get_theme_mod('quark_contact_gplus','#') != '') : ?><a href="<?php echo get_theme_mod('quark_contact_gplus','#');?>"><i class="gkicon-gplus"></i></a><?php endif ;?>
+                            < ?php if(get_theme_mod('quark_contact_fb','#') != '') : ?><a href="< ?php echo get_theme_mod('quark_contact_fb','#');?>"><i class="gkicon-fb"></i></a>< ?php endif ;?>
+                            < ?php if(get_theme_mod('quark_contact_twitter','#') != '') : ?><a href="< ?php echo get_theme_mod('quark_contact_twitter','#');?>"><i class="gkicon-twitter"></i></a>< ?php endif ;?>
+                            < ?php if(get_theme_mod('quark_contact_gplus','#') != '') : ?><a href="< ?php echo get_theme_mod('quark_contact_gplus','#');?>"><i class="gkicon-gplus"></i></a>< ?php endif ;?>
                         </div>
-                        <?php endif; ?>
+                        < ?php endif; ? -->
                     </div>
 
-                    <?php if(get_theme_mod('quark_contact_map_url','https://www.google.com.br/maps/@-23.5441027,-46.6914086,17z?hl=pt-BR') != '') : ?>
-                        <p><a href="<?php echo get_theme_mod('quark_contact_map_url','https://www.google.com.br/maps/@-23.5441027,-46.6914086,17z?hl=pt-BR');?>" class="gk-map-icon"><i class="gkicon-marker"></i><?php _e('Ver no Google Maps','quark'); ?></a></p>
-                    <?php endif; ?>
+                    <!-- ?php if(get_theme_mod('quark_contact_map_url','https://www.google.com.br/maps/@-23.5441027,-46.6914086,17z?hl=pt-BR') != '') : ?>
+                        <p><a href="< ?php echo get_theme_mod('quark_contact_map_url','https://www.google.com.br/maps/@-23.5441027,-46.6914086,17z?hl=pt-BR');?>" class="gk-map-icon"><i class="gkicon-marker"></i>< ?php _e('Ver no Google Maps','quark'); ?></a></p>
+                    < ?php endif; ? -->
 
                 </header>
 
