@@ -7022,3 +7022,14 @@ a.pswp__share--download:before {
 .box-video iframe{
   height: 274px;
 }
+
+.fb_iframe_widget{
+  float: right!important;
+  position: inherit!important;
+}
+
+
+.fb_iframe_widget span{
+  position: absolute;
+  width: 100%!important;
+}
