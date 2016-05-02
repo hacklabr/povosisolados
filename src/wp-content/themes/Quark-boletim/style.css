@@ -7030,6 +7030,7 @@ a.pswp__share--download:before {
 
 
 .fb_iframe_widget span{
-  position: absolute;
+  position: absolute!important;
+  min-width: 80px;
   width: 100%!important;
 }
