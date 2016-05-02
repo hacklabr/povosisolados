@@ -203,7 +203,7 @@ get_header("frontpage"); ?>
                             <dl>
                                 <?php if($params_name) : ?>
                                 <dt>
-                                    <label for="contact-name"><?php _e('Name:', 'quark'); ?></label>
+                                    <label for="contact-name"><?php _e('Nome:', 'quark'); ?></label>
                                     <?php if($errors['name'] != '') : ?>
                                     <span class="error"><?php echo $errors['name'];?></span>
                                     <?php endif; ?>
@@ -226,7 +226,7 @@ get_header("frontpage"); ?>
                                 <?php endif; ?>
 
                                 <dt class="gk-message">
-                                    <label for="comment-text"><?php _e('Message:', 'quark'); ?></label>
+                                    <label for="comment-text"><?php _e('Mensagem:', 'quark'); ?></label>
                                     <?php if($errors['message'] != '') : ?>
                                     <span class="error"><?php echo $errors['message'];?></span>
                                     <?php endif; ?>

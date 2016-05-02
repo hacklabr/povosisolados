@@ -3220,6 +3220,7 @@ article.one-page {
 .contact-form input[type="email"] {
   margin: 6px 0 0 0;
   width: 100%;
+  padding: 10px;
 }
 .contact-form input[type="checkbox"] {
   float: left;
