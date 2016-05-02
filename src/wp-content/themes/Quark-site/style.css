@@ -1917,6 +1917,11 @@ article.one-page {
   letter-spacing: -.003em;
 }
 
+.category .entry-title-wrap{
+  text-align: center;
+  top: 140px;
+}
+
 .entry-title-wrap {
   position: absolute;
   top: 360px;
