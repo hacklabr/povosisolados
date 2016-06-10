@@ -17,4 +17,4 @@ db:
    - MYSQL_ROOT_PASSWORD=thesuperpass
    - TERM=dumb
   volumes:
-   - ./db/base.sql:/docker-entrypoint-initdb.d/base.sql
+   - ./db/boletim.sql:/docker-entrypoint-initdb.d/boletim.sql
