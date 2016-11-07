@@ -118,18 +118,19 @@ Temporary Items
 .vagrant/
 
 ### WordPress ###
-*.log
-.htaccess
-sitemap.xml
-sitemap.xml.gz
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
+src/*.log
+src/.htaccess
+src/sitemap.xml
+src/sitemap.xml.gz
+src/wp-config.php
+src/wp-content/advanced-cache.php
+src/wp-content/backup-db/
+src/wp-content/backups/
+src/wp-content/cache/
+src/wp-content/upgrade/
+src/wp-content/uploads/
+src/wp-content/wp-cache-config.php
+src/wp-content/plugins/hello.php
 dev_uploads
 
 /readme.html
