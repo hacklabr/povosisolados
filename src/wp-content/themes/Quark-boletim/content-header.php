@@ -14,7 +14,7 @@
         $caption = get_post($thumb_id)->post_excerpt;
         ?>
     <?php endif; ?>
-    <header class="entry-header" style="background-image:url('<?php echo $url; ?>');">
+    <header class="entry-header <?= $url == '' ? 'no-image':'' ?>" style="background-image:url('<?php echo $url; ?>');">
         <span class="caption"><?php echo $caption; ?></span>
 
         <div class="entry-title-wrap">
@@ -121,7 +121,7 @@
             ?>
             <li>
                 <?php
-                    echo '<span class="categories-links">' . $categories_list . '</span>';
+                    echo '<span class="categories-links">Categorias: ' . $categories_list . '</span>';
                 ?>
             </li>
             <?php endif; ?>
@@ -129,7 +129,7 @@
             <li> <span>
             <?php
 
-                echo '<span>' . __( 'Posted by: ', 'quark' ) . '</span>';
+                echo '<span>' . __( 'Por ', 'quark' ) . '</span>';
                 printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
                     esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
                     esc_attr( sprintf( __( 'Ver todos os posts por %s', 'quark' ), get_the_author() ) ),

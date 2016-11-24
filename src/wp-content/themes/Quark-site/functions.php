@@ -9,6 +9,15 @@ function theme_enqueue_styles() {
 
 }
 
+add_filter('upload_mimes', 'custom_upload_mimes');
+function custom_upload_mimes ( $existing_mimes=array() ) {
+    $existing_mimes['zip'] = 'application/zip';
+    $existing_mimes['gz'] = 'application/x-gzip';
+    $existing_mimes['rar'] = 'application/x-rar-compressed';
+
+    return $existing_mimes;
+}
+
 function theme_name_scripts() {
 	wp_enqueue_style( 'style-name', get_template_directory_uri() . '/owl/owl-carousel/owl.carousel.css' );
     wp_enqueue_style( 'style-name2', get_template_directory_uri() . '/owl/owl-carousel/owl.theme.css');

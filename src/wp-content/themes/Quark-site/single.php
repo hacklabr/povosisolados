@@ -7,7 +7,6 @@ get_header("frontpage"); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-
 			<?php do_action('quark_before_content'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
