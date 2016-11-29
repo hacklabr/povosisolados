@@ -85,7 +85,7 @@ if(isset($_POST['message-send'])) {
     // if the all fields was correct
     if($validated) {
         // send an e-mail
-        $email = get_theme_mod('quark_contact_email','');
+        $email = get_theme_mod('quark_contact_email','contato@trabalhoindigenista.org.br');
         // if the user specified blank e-mail or not specified it
         if(trim($email) == '') {
             $email = get_option('admin_email');

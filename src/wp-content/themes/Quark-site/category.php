@@ -15,15 +15,12 @@ get_header("frontpage");  ?>
                 $category = get_the_category();
             ?>
                 <header class="category-banner entry-header<?php if($category_images[$category[0]->term_id] == '') : ?> no-image<?php endif; ?>">
-                    <?php if($category_images[$category[0]->term_id] !== '') : ?>
-                        <?php 
+                    <?php 
+                    if($category_images[$category[0]->term_id] !== '') { 
                             $img = gk_taxonomy_image($category[0]->term_id, 'category-image', '', false);
-                        ?>
-
-                        <?php if($img) : ?>
-                            <?php echo $img; ?>
-                        <?php endif; ?>
-                    <?php endif; ?>
+                    	    if($img) 
+                        		echo $img;  
+                    } ?>
                     
                     <div class="entry-title-wrap">
                         <h1 data-sr="enter bottom and move 50px" class="header">
