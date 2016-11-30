@@ -51,7 +51,7 @@ if(isset($_POST['message-send'])) {
     }
     // check the e-mail
     if($params_email) {
-        if(trim($_POST['email']) === '' || !eregi("^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$", trim($_POST['email']))) {
+        if(trim($_POST['email']) === '' || !preg_match("/^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$/i", trim($_POST['email']))) {
             $validated = false;
             $errors['email'] = __('Por favor entre com seu email.', 'quark');
         } else {
