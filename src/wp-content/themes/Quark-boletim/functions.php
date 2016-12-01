@@ -15,6 +15,12 @@ get_template_part('theme', 'customizer');
 get_template_part('addons/class.gkutils');
 get_template_part('addons/class.tgm');
 
+remove_filter('get_previous_post_where', 'cpto_get_previous_post_where', 99);
+remove_filter('get_previous_post_sort', 'cpto_get_previous_post_sort');
+remove_filter('get_next_post_where', 'cpto_get_next_post_where', 99);
+remove_filter('get_next_post_sort', 'cpto_get_next_post_sort');
+
+
 if ( ! function_exists( 'quark_excerpt' ) ) :
 /**
  *
@@ -25,20 +31,20 @@ if ( ! function_exists( 'quark_excerpt' ) ) :
  **/
 
 function quark_excerpt($text) {
-    return $text . '.';
+	return $text . '.';
 }
 add_filter( 'get_the_excerpt', 'quark_excerpt', 999 );
 endif;
 
 if ( ! function_exists( 'quark_excerpt_more' ) ) :
-function quark_excerpt_more($text) {
-    return '';
-}
+	function quark_excerpt_more($text) {
+		return '';
+	}
 
-add_filter( 'excerpt_more', 'quark_excerpt_more', 999 );
-endif;
+	add_filter( 'excerpt_more', 'quark_excerpt_more', 999 );
+	endif;
 
-if ( ! function_exists( 'quark_setup' ) ) :
+	if ( ! function_exists( 'quark_setup' ) ) :
 /**
  * Quark setup.
  *
@@ -78,12 +84,12 @@ function quark_setup() {
 	 */
 	add_theme_support( 'post-formats', array(
 		'gallery', 'image', 'link', 'quote', 'video'
-	) );
+		) );
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menu( 'mainmenu', __( 'Main Menu', 'quark' ) );
 	register_nav_menu( 'footer', __( 'Footer Menu', 'quark' ) );
-  register_nav_menu( 'boletimmenu', __( 'Boletim Menu', 'boletim') );
+	register_nav_menu( 'boletimmenu', __( 'Boletim Menu', 'boletim') );
 
 	/*
 	 * This theme uses a custom image size for featured images, displayed on
@@ -92,7 +98,7 @@ function quark_setup() {
 	add_theme_support( 'post-thumbnails' );
 
     // Enabling parsing the shortcodes in the widgets
-    add_filter('widget_text', 'do_shortcode');
+	add_filter('widget_text', 'do_shortcode');
 
 	// This theme uses its own gallery styles.
 	add_filter( 'use_default_gallery_style', '__return_false' );
@@ -110,7 +116,7 @@ function quark_setup() {
 		'admin-preview-callback' => '',
 		'width'					 => 1400,
 		'height' 				 => 814,
-	);
+		);
 
 	add_theme_support( 'custom-header', $defaults );
 
@@ -126,7 +132,7 @@ if ( ! function_exists( 'quark_add_editor_styles' ) ) :
  * @return void
  */
 function quark_add_editor_styles() {
-    add_editor_style('editor.css');
+	add_editor_style('editor.css');
 }
 add_action('init', 'quark_add_editor_styles');
 endif;
@@ -154,8 +160,8 @@ function quark_scripts() {
 
 	// Loads JavaScript files for PhotoSwipe gallery.
 	if(get_theme_mod('quark_photo_swipe', '1') == '1') {
-	wp_enqueue_script( 'quark-swipe', get_template_directory_uri() . '/js/photoswipe.min.js', array( 'jquery' ), '', false );
-	wp_enqueue_script( 'quark-swipe-ui', get_template_directory_uri() . '/js/photoswipe-ui.min.js', array( 'jquery' ), '', false);
+		wp_enqueue_script( 'quark-swipe', get_template_directory_uri() . '/js/photoswipe.min.js', array( 'jquery' ), '', false );
+		wp_enqueue_script( 'quark-swipe-ui', get_template_directory_uri() . '/js/photoswipe-ui.min.js', array( 'jquery' ), '', false);
 	}
 
 	// Loads JavaScript file for responsive video.
@@ -291,7 +297,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Menu Top', 'quark' ),
@@ -301,7 +307,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Menu Bottom', 'quark' ),
@@ -311,7 +317,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Header widget area', 'quark' ),
@@ -321,7 +327,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Top I widget area', 'quark' ),
@@ -331,7 +337,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div></div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Top II widget area', 'quark' ),
@@ -341,7 +347,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div></div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Content Top', 'quark' ),
@@ -351,7 +357,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Content Bottom', 'quark' ),
@@ -361,7 +367,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Bottom I widget area', 'quark' ),
@@ -371,7 +377,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div></div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Bottom II widget area', 'quark' ),
@@ -381,7 +387,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div></div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Bottom III widget area', 'quark' ),
@@ -391,7 +397,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div></div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Bottom IV widget area', 'quark' ),
@@ -401,7 +407,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div></div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 	register_sidebar( array(
 		'name'          => __( 'Bottom V widget area', 'quark' ),
@@ -411,10 +417,10 @@ function quark_widgets_init() {
 		'after_widget'  => '</div></div>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
-	));
+		));
 
 
-  register_sidebar( array(
+	register_sidebar( array(
 		'name'          => __( 'Pre-footer Esquerda', 'quark' ),
 		'id'            => 'prefooter_esquerda',
 		'description'   => __( 'Aparece na esquerda do pre-footer', 'quark' ),
@@ -422,29 +428,29 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
-	));
+		));
 
-  register_sidebar( array(
+	register_sidebar( array(
 		'name'          => __( 'Pre-footer Centro' , 'quark' ),
 		'id'            => 'prefooter_centro',
 		'description'   => __( 'Aparece na esquerda do pre-footer', 'quark' ),
-    'before_widget' => '<div class="expediente">',
+		'before_widget' => '<div class="expediente">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
-	));
+		));
 
-  register_sidebar( array(
+	register_sidebar( array(
 		'name'          => __( 'Pre-footer Direita', 'quark' ),
 		'id'            => 'prefooter_direita',
 		'description'   => __( 'Aparece na esquerda do pre-footer', 'quark' ),
-    'before_widget' => '<div class="expediente">',
+		'before_widget' => '<div class="expediente">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
-	));
+		));
 
-  register_sidebar( array(
+	register_sidebar( array(
 		'name'          => __( 'Footer 1', 'quark' ),
 		'id'            => 'footer_1',
 		'description'   => __( 'Primeira área do footer', 'quark' ),
@@ -452,9 +458,9 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
-	));
+		));
 
-  register_sidebar( array(
+	register_sidebar( array(
 		'name'          => __( 'Footer 2', 'quark' ),
 		'id'            => 'footer_2',
 		'description'   => __( 'Segunda área do footer', 'quark' ),
@@ -462,9 +468,9 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
-	));
+		));
 
-  register_sidebar( array(
+	register_sidebar( array(
 		'name'          => __( 'Footer 3', 'quark' ),
 		'id'            => 'footer_3',
 		'description'   => __( 'Terceira área do footer', 'quark' ),
@@ -472,9 +478,9 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
-	));
+		));
 
-  register_sidebar( array(
+	register_sidebar( array(
 		'name'          => __( 'Footer 4', 'quark' ),
 		'id'            => 'footer_4',
 		'description'   => __( 'Quarta área do footer', 'quark' ),
@@ -482,9 +488,9 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
-	));
+		));
 
-  register_sidebar( array(
+	register_sidebar( array(
 		'name'          => __( 'Footer 5', 'quark' ),
 		'id'            => 'footer_5',
 		'description'   => __( 'Quinta área do footer', 'quark' ),
@@ -492,7 +498,7 @@ function quark_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
-	));
+		));
 
 }
 add_action( 'widgets_init', 'quark_widgets_init' );
@@ -517,11 +523,11 @@ function quark_paging_nav() {
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Posts antigos', 'quark' ) ); ?></div>
+				<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Posts antigos', 'quark' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Posts novos <span class="meta-nav">&rarr;</span>', 'quark' ) ); ?></div>
+				<div class="nav-next"><?php previous_posts_link( __( 'Posts novos <span class="meta-nav">&rarr;</span>', 'quark' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -533,32 +539,32 @@ endif;
 
 if( ! function_exists( 'quark_video_code' ) ) :
 
-function quark_video_code() {
-	$video_condition = stripos(get_the_content(), '</iframe>') !== FALSE || stripos(get_the_content(), '</video>') !== FALSE;
+	function quark_video_code() {
+		$video_condition = stripos(get_the_content(), '</iframe>') !== FALSE || stripos(get_the_content(), '</video>') !== FALSE;
 
-	if($video_condition) {
-		$video_code = '';
+		if($video_condition) {
+			$video_code = '';
 
-		if(stripos(get_the_content(), '</iframe>') !== FALSE) {
-			$start = stripos(get_the_content(), '<iframe');
-			$len = strlen(substr(get_the_content(), $start, stripos(get_the_content(), '</iframe>', $start)));
-			$video_code = substr(get_the_content(), $start, $len + 9);
-		} elseif(stripos(get_the_content(), '</video>') !== FALSE) {
-			$start = stripos(get_the_content(), '<video');
-			$len = strlen(substr(get_the_content(), $start, stripos(get_the_content(), '</video>', $start)));
-			$video_code = substr(get_the_content(), $start, $len + 8);
+			if(stripos(get_the_content(), '</iframe>') !== FALSE) {
+				$start = stripos(get_the_content(), '<iframe');
+				$len = strlen(substr(get_the_content(), $start, stripos(get_the_content(), '</iframe>', $start)));
+				$video_code = substr(get_the_content(), $start, $len + 9);
+			} elseif(stripos(get_the_content(), '</video>') !== FALSE) {
+				$start = stripos(get_the_content(), '<video');
+				$len = strlen(substr(get_the_content(), $start, stripos(get_the_content(), '</video>', $start)));
+				$video_code = substr(get_the_content(), $start, $len + 8);
+			}
+
+			return $video_code;
+		} else {
+			return FALSE;
 		}
-
-		return $video_code;
-	} else {
-		return FALSE;
 	}
-}
 
-endif;
+	endif;
 
 
-if (!function_exists( 'quark_the_attached_image' )) :
+	if (!function_exists( 'quark_the_attached_image' )) :
 /**
  * Print the attached image with a link to the next attached image.
  *
@@ -596,7 +602,7 @@ function quark_the_attached_image() {
 		'post_mime_type' => 'image',
 		'order'          => 'ASC',
 		'orderby'        => 'menu_order ID'
-	) );
+		) );
 
 	// If there is more than 1 attachment in a gallery...
 	if ( count( $attachment_ids ) > 1 ) {
@@ -620,7 +626,7 @@ function quark_the_attached_image() {
 		esc_url( $next_attachment_url ),
 		the_title_attribute( array( 'echo' => false ) ),
 		wp_get_attachment_image( $post->ID, $attachment_size )
-	);
+		);
 }
 endif;
 
@@ -672,83 +678,83 @@ function quark_register_required_plugins() {
      * Array of plugin arrays. Required keys are name and slug.
      *
      */
-     $plugins = array(
+    $plugins = array(
           // Plugins pre-packaged with a theme.
-          array(
-              'name'               => 'GK Widget Rules',
-              'slug'               => 'gk-widget-rules',
-              'source'             => 'http://www.gavick.com/upd/gk-widget-rules.zip',
-              'required'           => true,
-              'version'            => ''
-          ),
+    	array(
+    		'name'               => 'GK Widget Rules',
+    		'slug'               => 'gk-widget-rules',
+    		'source'             => 'http://www.gavick.com/upd/gk-widget-rules.zip',
+    		'required'           => true,
+    		'version'            => ''
+    		),
 
-          array(
-              'name'               => 'GK News Show Pro',
-              'slug'               => 'gk-nsp',
-              'source'             => 'http://www.gavick.com/upd/gk-nsp.zip',
-              'required'           => true,
-              'version'            => ''
-          ),
+    	array(
+    		'name'               => 'GK News Show Pro',
+    		'slug'               => 'gk-nsp',
+    		'source'             => 'http://www.gavick.com/upd/gk-nsp.zip',
+    		'required'           => true,
+    		'version'            => ''
+    		),
 
-          array(
-              'name'               => 'GK Taxonomy Images',
-              'slug'               => 'gk-taxonomy-images',
-              'source'             => 'http://www.gavick.com/upd/gk-taxonomy-images.zip',
-              'required'           => true,
-              'version'            => ''
-          ),
+    	array(
+    		'name'               => 'GK Taxonomy Images',
+    		'slug'               => 'gk-taxonomy-images',
+    		'source'             => 'http://www.gavick.com/upd/gk-taxonomy-images.zip',
+    		'required'           => true,
+    		'version'            => ''
+    		),
 
-          array(
-              'name'               => 'GK Tabs',
-              'slug'               => 'gk-tabs',
-              'source'             => 'http://www.gavick.com/upd/gk-tabs.zip',
-              'required'           => false,
-              'version'            => ''
-          )
-      );
+    	array(
+    		'name'               => 'GK Tabs',
+    		'slug'               => 'gk-tabs',
+    		'source'             => 'http://www.gavick.com/upd/gk-tabs.zip',
+    		'required'           => false,
+    		'version'            => ''
+    		)
+    	);
 
      /**
       * Array of configuration settings.
       */
      $config = array(
-         'id'           => 'tgmpa',
-         'menu'         => 'tgmpa-install-plugins',
-         'has_notices'  => true,
-         'dismissable'  => true,
-         'is_automatic' => false,
-         'strings'      => array(
-            'menu_title'                      => __( 'Install Plugins', 'quark' ),
-            'page_title'                      => __( 'Install Required Plugins', 'quark' ),
-            'installing'                      => __( 'Installing Plugin: %s', 'quark' ),
-            'oops'                            => __( 'Something went wrong with the plugin API.', 'quark' ),
-            'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'quark' ),
-            'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'quark' ),
-            'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'quark' ),
-            'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'quark' ),
-            'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'quark' ),
-            'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'quark' ),
-            'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'quark' ),
-            'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'quark' ),
-            'install_link'                    => _n_noop( 'Begin installing plugin', 'Begin installing plugins', 'quark' ),
-            'activate_link'                   => _n_noop( 'Begin activating plugin', 'Begin activating plugins', 'quark' ),
-            'return'                          => __( 'Return to Required Plugins Installer', 'quark' ),
-            'plugin_activated'                => __( 'Plugin activated successfully.', 'quark' ),
-            'complete'                        => __( 'All plugins installed and activated successfully. %s', 'quark' ),
-            'nag_type'                        => 'updated'
-         )
-     );
+     	'id'           => 'tgmpa',
+     	'menu'         => 'tgmpa-install-plugins',
+     	'has_notices'  => true,
+     	'dismissable'  => true,
+     	'is_automatic' => false,
+     	'strings'      => array(
+     		'menu_title'                      => __( 'Install Plugins', 'quark' ),
+     		'page_title'                      => __( 'Install Required Plugins', 'quark' ),
+     		'installing'                      => __( 'Installing Plugin: %s', 'quark' ),
+     		'oops'                            => __( 'Something went wrong with the plugin API.', 'quark' ),
+     		'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'quark' ),
+     		'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'quark' ),
+     		'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'quark' ),
+     		'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'quark' ),
+     		'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'quark' ),
+     		'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'quark' ),
+     		'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'quark' ),
+     		'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'quark' ),
+     		'install_link'                    => _n_noop( 'Begin installing plugin', 'Begin installing plugins', 'quark' ),
+     		'activate_link'                   => _n_noop( 'Begin activating plugin', 'Begin activating plugins', 'quark' ),
+     		'return'                          => __( 'Return to Required Plugins Installer', 'quark' ),
+     		'plugin_activated'                => __( 'Plugin activated successfully.', 'quark' ),
+     		'complete'                        => __( 'All plugins installed and activated successfully. %s', 'quark' ),
+     		'nag_type'                        => 'updated'
+     		)
+     	);
 
      tgmpa($plugins, $config);
-}
+ }
 
-add_action('tgmpa_register', 'quark_register_required_plugins');
-endif;
+ add_action('tgmpa_register', 'quark_register_required_plugins');
+ endif;
 
 //Remove navbar
-remove_action('wp_footer','wp_admin_bar_render',1000);
-add_filter( 'show_admin_bar' , function() {
-    return false;
-});
+ remove_action('wp_footer','wp_admin_bar_render',1000);
+ add_filter( 'show_admin_bar' , function() {
+ 	return false;
+ });
 
 /*
   Essa função adiciona a categoria correspondente do boletim ao post, para
@@ -756,86 +762,86 @@ add_filter( 'show_admin_bar' , function() {
   do boletim, se for o caso.
 
 */
-function create_boletim_categories($post_id) {
+  function create_boletim_categories($post_id) {
 
-  $post_ = get_post($post_id);
-  $is_boletim = get_post_meta($post_->ID, 'is_boletim', true);
-  $parent_boletim = get_post_meta($post_->ID, 'boletim', true);
-  $template_slug = get_page_template_slug();
+  	$post_ = get_post($post_id);
+  	$is_boletim = get_post_meta($post_->ID, 'is_boletim', true);
+  	$parent_boletim = get_post_meta($post_->ID, 'boletim', true);
+  	$template_slug = get_page_template_slug();
 
   // Se o usuário marcar a checkbox de boletim, ele ativa a template correta
-  if ($is_boletim === 'boletim'){
-    update_post_meta($post_->ID, '_wp_page_template', 'template.boletim.php');
-  }
+  	if ($is_boletim === 'boletim'){
+  		update_post_meta($post_->ID, '_wp_page_template', 'template.boletim.php');
+  	}
   /*
     Se for do tipo página e o template for o template de boletim, cria/adiciona
     a página na categoria correspondente ao boletim.
   */
-  if ( $post_->post_type == 'page' && $template_slug === 'template.boletim.php' ){
-    wp_create_category($post_->post_name);
-  }
+    if ( $post_->post_type == 'page' && $template_slug === 'template.boletim.php' ){
+    	wp_create_category($post_->post_name);
+    }
   /*
    Adicona o post na categoria correspondente do boletim.
   */
-  if ( $post_->post_type == 'post' && $parent_boletim) {
-    $term = get_category_by_slug($parent_boletim);
-    wp_set_post_categories($post_->ID, array($term->term_id), true);
-  }
+   if ( $post_->post_type == 'post' && $parent_boletim) {
+   	$term = get_category_by_slug($parent_boletim);
+   	wp_set_post_categories($post_->ID, array($term->term_id), true);
+   }
 }
 /*
   Essa função só deve ser ativada no tema do Boletim.
 */
-if ( get_current_theme() === "Quark-Boletim"){
-  add_action( 'save_post', 'create_boletim_categories' );
-}
+  if ( get_current_theme() === "Quark-Boletim"){
+  	add_action( 'save_post', 'create_boletim_categories' );
+  }
 
-add_image_size( 'medium_large', '768', '0', false );
-add_image_size( 'medium_large', '768', '0', false );
-add_image_size( 'destaque-boletim', '540', '250', array( "center", "center") );
-add_image_size( 'header-boletim', '1920', '960', array( "center", "center") );
-add_image_size( 'newsletter-boletim', '380', '250', array( "center", "center") );
-add_image_size( 'newsletter-header', '810', '400', array( "center", "center") );
+  add_image_size( 'medium_large', '768', '0', false );
+  add_image_size( 'medium_large', '768', '0', false );
+  add_image_size( 'destaque-boletim', '540', '250', array( "center", "center") );
+  add_image_size( 'header-boletim', '1920', '960', array( "center", "center") );
+  add_image_size( 'newsletter-boletim', '380', '250', array( "center", "center") );
+  add_image_size( 'newsletter-header', '810', '400', array( "center", "center") );
 
-function box_esquerda( $atts , $content = null ) {
-
-	// Attributes
-	extract( shortcode_atts(
-		array(
-			'largura' => '50%',
-		), $atts )
-	);
-
-	// Code
-  return '<div class="box-esquerda">' . $content . '</div>';
-}
-add_shortcode( 'box-esquerda', 'box_esquerda' );
-
-function box_direita( $atts , $content = null ) {
+  function box_esquerda( $atts , $content = null ) {
 
 	// Attributes
-	extract( shortcode_atts(
-		array(
-			'largura' => '50%',
-		), $atts )
-	);
+  	extract( shortcode_atts(
+  		array(
+  			'largura' => '50%',
+  			), $atts )
+  	);
 
 	// Code
-  return '<div class="box-direita">' . $content . '</div>';
-}
-add_shortcode( 'box-direita', 'box_direita' );
+  	return '<div class="box-esquerda">' . $content . '</div>';
+  }
+  add_shortcode( 'box-esquerda', 'box_esquerda' );
 
-function box_centro( $atts , $content = null ) {
+  function box_direita( $atts , $content = null ) {
 
 	// Attributes
-	extract( shortcode_atts(
-		array(
-			'largura' => '50%',
-		), $atts )
-	);
+  	extract( shortcode_atts(
+  		array(
+  			'largura' => '50%',
+  			), $atts )
+  	);
 
 	// Code
-  return '<div class="box-centro">' . $content . '</div>';
-}
-add_shortcode( 'box-centro', 'box_centro' );
+  	return '<div class="box-direita">' . $content . '</div>';
+  }
+  add_shortcode( 'box-direita', 'box_direita' );
+
+  function box_centro( $atts , $content = null ) {
+
+	// Attributes
+  	extract( shortcode_atts(
+  		array(
+  			'largura' => '50%',
+  			), $atts )
+  	);
+
+	// Code
+  	return '<div class="box-centro">' . $content . '</div>';
+  }
+  add_shortcode( 'box-centro', 'box_centro' );
 
 // EOF
