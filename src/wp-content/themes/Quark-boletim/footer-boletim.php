@@ -39,7 +39,7 @@
             </div>
             <div class="site">
                 <div id="gk-copyrights">
-                    <p class="copyright"><?php _e('Desenvolvido por', 'quark'); ?><a href="http://hacklab.com.br/" class="hacklab"><span class="screen-reader-text">hacklab</a></a><?php _e('with','quark'); ?><a href="https://wordpress.org/">Wordpress</a></p>
+                    <p class="copyright"><?php _e('Desenvolvido por', 'quark'); ?><a href="http://hacklab.com.br/" class="hacklab"><span class="screen-reader-text">hacklab</a></a><?php _e('com','quark'); ?><a href="https://wordpress.org/"> Wordpress</a></p>
                 </div>
             </div>
 

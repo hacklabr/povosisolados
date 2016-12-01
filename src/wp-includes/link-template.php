@@ -1727,6 +1727,9 @@ function get_adjacent_post( $in_same_term = false, $excluded_terms = '', $previo
 	$sort  = apply_filters( "get_{$adjacent}_post_sort", "ORDER BY p.post_date $order LIMIT 1", $post );
 
 	$query = "SELECT p.ID FROM $wpdb->posts AS p $join $where $sort";
+	echo '<!-- ';
+	var_dump($query);
+	echo ' -->';
 	$query_key = 'adjacent_post_' . md5( $query );
 	$result = wp_cache_get( $query_key, 'counts' );
 	if ( false !== $result ) {
