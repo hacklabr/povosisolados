@@ -29,7 +29,7 @@ $post_original = $post;
 </head>
 
 <?php
-	$front_class = 'boletim';
+$front_class = 'boletim';
 ?>
 
 <body <?php body_class($front_class); ?> data-mobile-width="<?php echo get_theme_mod('quark_mobile_width', 640); ?>" data-tablet-width="<?php echo get_theme_mod('quark_tablet_width', 1040); ?>">
@@ -44,91 +44,91 @@ $post_original = $post;
 	<div id="gk-bg">
 		<?php do_action('quark_plugin_messages'); ?>
 
-        <header id="gk-header" role="banner">
+		<header id="gk-header" role="banner">
 			<div id="gk-header-nav">
 				<?php
-					$the_slug = get_post_meta($post_original->ID, 'boletim', true);
-					$args = array(
-					  'name'        => $the_slug,
-					  'post_type'   => 'page',
-					  'post_status' => 'publish',
-					  'numberposts' => 1
+				$the_slug = get_post_meta($post_original->ID, 'boletim', true);
+				$args = array(
+					'name'        => $the_slug,
+					'post_type'   => 'page',
+					'post_status' => 'publish',
+					'numberposts' => 1
 					);
-					$linkposts = get_posts($args);
-					if( $linkposts ) :
-					  $boletim_url = get_permalink($linkposts[0]->ID);
-					else:
-						$boletim_url = get_home_url();
-					endif;
-
+				$linkposts = get_posts($args);
+				if( $linkposts ) :
+					$boletim_url = get_permalink($linkposts[0]->ID);
+				else:
 					$boletim_url = get_home_url();
+				endif;
+
+				$boletim_url = get_home_url();
 				?>
 				<a href="<?php echo $boletim_url ?>"><h1> <span class="screen-reader-text"><?php _e('Boletim Povos Isolados da Amazônia', 'quark'); ?></span></h1></a>
 
 				<div>
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php _e( 'Skip to content', 'quark' ); ?></a>
 
-	                <div id="gk-mobile-menu">
-                     	<span id="gk-mobile-menu-text"><?php _e('Boletins','quark'); ?></span>
-                    	<i id="static-aside-menu-toggler"></i>
-	                </div>
+					<div id="gk-mobile-menu">
+						<span id="gk-mobile-menu-text"><?php _e('Boletins','quark'); ?></span>
+						<i id="static-aside-menu-toggler"></i>
+					</div>
 
-                 </div>
+				</div>
 			</div>
 			<?php
-						if ( get_post_type() == "page" ) {
+			if ( get_post_type() == "page" ) {
 
-						$category = $post->post_name;
-						$args_editorial = array(
-							'post_type' => 'post',
-							'order' => 'DESC',
-							'category_name' => $category ,
-							'meta_key' => 'is_editorial',
-							'meta_value' => 'editorial',
-							'posts_per_page' => 1
-						);
+				$category = $post->post_name;
+				$args_editorial = array(
+					'post_type' => 'post',
+					'order' => 'DESC',
+					'category_name' => $category ,
+					'meta_key' => 'is_editorial',
+					'meta_value' => 'editorial',
+					'posts_per_page' => 1
+					);
 
-						$loop_editorial = get_posts($args_editorial);
-						foreach ( $loop_editorial as $_post ){
-						$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID), "header-boletim" );
-						$url = $thumb[0];
-					  }; wp_reset_query(); ?>
+				$loop_editorial = get_posts($args_editorial);
+				foreach ( $loop_editorial as $_post ){
+					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID), "header-boletim" );
+					$url = $thumb[0];
+				}; wp_reset_query(); ?>
 
-					<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');">
-		<?php } ?>
-				<div class="frontpage-block-wrap">
-					<?php do_action('quark_before_header'); ?>
+				<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');">
+					<?php } ?>
+					<div class="frontpage-block-wrap">
+						<?php do_action('quark_before_header'); ?>
 
-					<?php if ( have_posts() ) : ?>
-					<div class="gk-header-mod-wrap">
-						<?php
-						$category = $post->post_name;
-						$args_editorial = array(
-							'post_type' => 'post',
-							'order' => 'ASC',
-							'category_name' => $category ,
-							'meta_key' => 'is_editorial',
-							'meta_value' => 'editorial',
-							'posts_per_page' => 1
-						);
+						<?php if ( have_posts() ) : ?>
+							<div class="gk-header-mod-wrap">
+								<?php
+								$category = $post->post_name;
+								$args_editorial = array(
+									'post_type' => 'post',
+									'order' => 'DESC',
+									'category_name' => $category ,
+									'meta_key' => 'is_editorial',
+									'meta_value' => 'editorial',
+									'posts_per_page' => 1
+									);
 
-						$loop_editorial = get_posts($args_editorial);
-						foreach ( $loop_editorial as $_post ){
-					  ?>
-						<h2><?php _e('Editorial','quark'); ?></h2>
+								$loop_editorial = get_posts($args_editorial);
+								foreach ( $loop_editorial as $_post ){
+									?>
+									<h2><?php _e('Editorial','quark'); ?></h2>
 
-						<div class="box-title">
-							<a href="<?php echo get_permalink($_post->ID); ?>">
-							<h3><?php echo $_post->post_title; ?></h3>
-							</a>
+									<div class="box-title">
+										<a href="<?php echo get_permalink($_post->ID); ?>">
+											<h3><?php echo $_post->post_title; ?></h3>
+										</a>
+									</div>
+
+									<?php }; wp_reset_query(); ?>
+								</div>
+
+							<?php endif; ?>
+							<?php do_action('quark_after_header'); ?>
 						</div>
 
-						<?php }; wp_reset_query(); ?>
-                    </div>
-
-					<?php endif; ?>
-					<?php do_action('quark_after_header'); ?>
-				</div>
-
-			</div>
-		</header><!-- #masthead -->
+					</div>
+				</header><!-- #masthead -->
