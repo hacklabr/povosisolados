@@ -92,6 +92,8 @@ $front_class = 'boletim';
 				foreach ( $loop_editorial as $_post ){
 					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID), "header-boletim" );
 					$url = $thumb[0];
+
+					break;
 				}; wp_reset_query(); ?>
 
 				<div id="gk-header-mod" style="background-image:url('<?php echo $url; ?>');">
@@ -103,6 +105,7 @@ $front_class = 'boletim';
 							<div class="gk-header-mod-wrap">
 								<?php
 								$category = $post->post_name;
+								echo '<!-- CATEGORY: '.$category.'  -->';
 								$args_editorial = array(
 									'post_type' => 'post',
 									'order' => 'DESC',
