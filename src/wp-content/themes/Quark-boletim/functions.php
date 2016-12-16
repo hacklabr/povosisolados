@@ -845,3 +845,8 @@ function quark_register_required_plugins() {
   add_shortcode( 'box-centro', 'box_centro' );
 
 // EOF
+
+function quark_sanitize_title($title, $raw_title, $context) {
+	return preg_replace('/\s*#\s*/', '-', $title);
+}
+add_filter('sanitize_title', 'quark_sanitize_title', 9, 3);

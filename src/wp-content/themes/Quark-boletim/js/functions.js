@@ -365,7 +365,7 @@
 
             win.scroll(header_scroll);
         }
-      
+
 
         function header_scroll() {
             var h = header.outerHeight();
@@ -1414,12 +1414,12 @@ jQuery(window).on('beforeunload', function() {
     }
 });
 
-jQuery(".owl-carousel").owlCarousel({
-    items : 1, 
-    itemsDesktop : false,
-    itemsDesktopSmall : false,
-    itemsTablet: false,
-    itemsMobile : false 
-});
-
-
+if ( jQuery(".owl-carousel").owlCarousel ) {
+    jQuery(".owl-carousel").owlCarousel({
+        items : 1,
+        itemsDesktop : false,
+        itemsDesktopSmall : false,
+        itemsTablet: false,
+        itemsMobile : false
+    });
+}
