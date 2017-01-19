@@ -209,7 +209,18 @@ article.one-page {
   width: 400px;
 }
 
-#gk-mobile-menu {
-  margin-top: 32px;
-  padding: 0;
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    #gk-mobile-menu {
+      margin-top: 40px !important;
+      padding: 0;
+    }
+
+    #gk-footer .site .gk-cols .widget-1:last-child{
+        width: 32% !important;
+    }
+
+    #gk-footer .site .gk-cols .widget-1:last-child .copyright-footer{
+        position: initial;
+        width: auto;
+    }
 }

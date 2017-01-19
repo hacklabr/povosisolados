@@ -55,7 +55,7 @@ get_header(); ?>
 
 				</article><!-- #post -->
 
-				<?php comments_template(); ?>
+				<?php  //comments_template(); ?>
 			<?php endwhile; ?>
 			<?php do_action('quark_after_content'); ?>
 
