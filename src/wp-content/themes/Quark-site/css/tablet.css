@@ -224,3 +224,14 @@ article.one-page {
         width: auto;
     }
 }
+@media only screen and (max-width: 64em) { 
+    span.gk-social-facebook * {
+        max-width: 300px;
+    }
+    .gk-social-facebook {
+        float: left;
+        margin-left: 10px;
+        margin: 50px 13px 30px 15px !important;
+        overflow: hidden;
+    }
+}
