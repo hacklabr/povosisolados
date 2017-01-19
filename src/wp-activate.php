@@ -6,12 +6,15 @@
  * @package WordPress
  */
 
-define( 'WP_INSTALLING', false );
+define( 'WP_INSTALLING', true );
 
 /** Sets up the WordPress Environment. */
 require( dirname(__FILE__) . '/wp-load.php' );
 
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+
+die; 
+ 
 
 if ( !is_multisite() ) {
 	wp_redirect( wp_registration_url() );
@@ -67,8 +70,6 @@ function wpmu_activate_stylesheet() {
 	<?php
 }
 add_action( 'wp_head', 'wpmu_activate_stylesheet' );
-
-die; 
 
 get_header( 'wp-activate' );
 
