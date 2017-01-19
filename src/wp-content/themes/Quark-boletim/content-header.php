@@ -82,8 +82,7 @@
             <?php if(!is_author()) : ?>
                 <li> <span>
                 <?php
-
-                    echo '<span>' . __( 'Postado por: ', 'quark' ) . '</span>';
+                    // echo '<span>' . __( 'Postado por: ', 'quark' ) . '</span>';
                     printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
                         esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
                         esc_attr( sprintf( __( 'Ver todos os posts por %s', 'quark' ), get_the_author() ) ),
