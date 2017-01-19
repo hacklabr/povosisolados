@@ -6,7 +6,7 @@
  * @package WordPress
  */
 
-define( 'WP_INSTALLING', true );
+define( 'WP_INSTALLING', false );
 
 /** Sets up the WordPress Environment. */
 require( dirname(__FILE__) . '/wp-load.php' );
@@ -68,7 +68,10 @@ function wpmu_activate_stylesheet() {
 }
 add_action( 'wp_head', 'wpmu_activate_stylesheet' );
 
+die; 
+
 get_header( 'wp-activate' );
+
 ?>
 
 <div id="signup-content" class="widecolumn">
