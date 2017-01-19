@@ -5,6 +5,7 @@
  *
  * @package WordPress
  */
+die; 
 
 define( 'WP_INSTALLING', true );
 
@@ -13,7 +14,6 @@ require( dirname(__FILE__) . '/wp-load.php' );
 
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );
 
-die; 
  
 
 if ( !is_multisite() ) {
