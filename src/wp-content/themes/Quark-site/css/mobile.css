@@ -608,4 +608,14 @@ input[type="reset"] {
       margin-top: -30px;
       position: absolute;
   }
+
+  #gk-menu-overlay-wrap{
+        top: 0 !important;
+        left: 95% !important;
+        position: fixed !important;
+        height: 100%;
+        overflow-y: auto;
+  }
+
+  html { overflow-x: hidden; }
 }
