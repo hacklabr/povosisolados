@@ -234,4 +234,6 @@ article.one-page {
         margin: 50px 13px 30px 15px !important;
         overflow: hidden;
     }
+    html { overflow-x: hidden; }
+
 }

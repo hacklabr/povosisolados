@@ -24,7 +24,7 @@
 }
 
 #page {
-    padding: 100px 0 50px;
+  padding: 100px 0 50px;
 }
 
 #clipping {
@@ -213,8 +213,19 @@ article.one-page {
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-    #gk-mobile-menu {
-      margin-top: 40px !important;
-      padding: 0;
-    }
+  #gk-mobile-menu {
+    margin-top: 40px !important;
+    padding: 0;
+  }
+
+  .fb_iframe_widget span {
+    width: auto !important;
+  }
+
+  .gk-social-facebook {
+    margin-left: 110px;
+  }
+
+  html { overflow-x: hidden; }
+  
 }

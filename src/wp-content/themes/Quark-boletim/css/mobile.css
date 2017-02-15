@@ -561,4 +561,21 @@ input[type="reset"] {
   .entry-header{
     overflow: inherit;
   }
+
+  .single-page .item-info {
+      margin: 0px;
+      margin-right: 25px;
+  }
+  
+  .post-info .gk-social-icons{
+    float: left;
+  }
+
+  .gk-social-facebook {
+      float: left;
+      margin-left: 90px;
+  }
+
+  html { overflow-x: hidden; }
+  
 }
