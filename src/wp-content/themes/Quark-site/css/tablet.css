@@ -1,29 +1,29 @@
 /* CSS for the tablet devices */
 .only-desktop {
-  display: none;
+    display: none;
 }
 
 .only-tablets {
-  display: block;
+    display: block;
 }
 
 .only-smartphones {
-  display: none;
+    display: none;
 }
 
 .only-tablets-and-smartphones {
-  display: block;
+    display: block;
 }
 
 .only-desktop-and-tablets {
-  display: block;
+    display: block;
 }
 
 #gk-bg {
-  overflow: hidden;
+    overflow: hidden;
 }
 .owl-carousel .info {
-  top: 55%;
+    top: 55%;
 }
 #page {
     padding: 100px 0 50px;
@@ -31,188 +31,188 @@
 
 .content-wrapper,
 #sidebar {
-  clear: both;
-  width: 100% !important;
+    clear: both;
+    width: 100% !important;
 }
 
 #sidebar {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-bottom: 30px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 30px !important;
 }
 
 .single-page #sidebar {
-  padding-top: 0;
+    padding-top: 0;
 }
 
 #sidebar .widget {
-  float: left;
-  margin: 1% 1% !important;
-  width: 48% !important;
+    float: left;
+    margin: 1% 1% !important;
+    width: 48% !important;
 }
 
 #sidebar .widget:nth-child(2n+1) {
-  clear: both;
+    clear: both;
 }
 
 #gk-header-nav .main-navigation {
-  display: none;
+    display: none;
 }
 
 .main-navigation + #gk-mobile-menu {
-  display: block;
-  position: absolute;
+    display: block;
+    position: absolute;
 }
 
 #aside-menu-toggler {
-  display: block;
+    display: block;
 }
 
 .gk-cols[data-cols="4"] > div,
 .gk-cols[data-cols="5"] > div {
-  margin-bottom: 30px;
-  width: 50%;
+    margin-bottom: 30px;
+    width: 50%;
 }
 
 .gk-cols[data-cols="4"] > div:nth-child(2n+1),
 .gk-cols[data-cols="5"] > div:nth-child(2n+1) {
-  clear: both;
+    clear: both;
 }
 
 /* Frontpage */
 #gk-header-mod .btn-border,
 .one-page .gk-page .btn-border {
-  margin: 40px 0 0 0;
+    margin: 40px 0 0 0;
 }
 
 .box.parallax-bg {
-  background-attachment: scroll;
+    background-attachment: scroll;
 }
 
 .gk-big-text {
-  padding: 100px 0;
+    padding: 100px 0;
 }
 .gk-counters > .gk-counter {
-  margin: 0 0 40px 0;
+    margin: 0 0 40px 0;
 }
 .gk-counters > .gk-counter:after {
-  display: none;
+    display: none;
 }
 .box.bigger-spaces {
-  padding: 80px 0 !important;
+    padding: 80px 0 !important;
 }
 .gk-is-wrapper-gk_quark .gk-slider {
-  display: none;
+    display: none;
 }
 .one-page + #frontpage-wrap {
-  padding-top: 0;
+    padding-top: 0;
 }
 .item-info {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 .frontpage-block.box .links .box-links {
-  text-align: center;
+    text-align: center;
 }
 .frontpage-block.box .links .box-links .img {
-  display: block;
-  float: none;
-  margin-bottom: 20px;
+    display: block;
+    float: none;
+    margin-bottom: 20px;
 }
 .single-page .content-wrapper {
-  margin-top: 0;
+    margin-top: 0;
 }
 #comments {
-  padding: 0 16px;
+    padding: 0 16px;
 }
 .author-info .entry-title {
-  font-size: 1.6rem;
-  margin: 0;
+    font-size: 1.6rem;
+    margin: 0;
 }
 .author-info .entry-title + p {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 .archive .entry-header + .site {
-  padding: 50px 0 0;
+    padding: 50px 0 0;
 }
 .gk-map-icon {
-  bottom: 20px;
+    bottom: 20px;
 }
 .contact .site {
-  padding: 100px 0 25px;
+    padding: 100px 0 25px;
 }
 .contact .site > div {
-  padding: 0 0 35px;
+    padding: 0 0 35px;
 }
 
 .site-content.contact {
-  padding-bottom: 0;
+    padding-bottom: 0;
 }
 
 .contact .site > div:first-child {
-  padding: 0 35px 0 0;
+    padding: 0 35px 0 0;
 }
 
 .gk-menu .gk-cols > div {
-  padding: 0 20px;
+    padding: 0 20px;
 }
 
 .gk-menu .gk-cols {
-  margin: 30px -20px 75px -20px;
+    margin: 30px -20px 75px -20px;
 }
 
 .gk-menu .gk-cols dd strong {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .big-icon a {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 blockquote {
-	margin: 20px auto;
-	width: 90%;
+    margin: 20px auto;
+    width: 90%;
 }
 
 /* Subpages */
 .error404 h1 {
-  font-size: 10rem;
+    font-size: 10rem;
 }
 .error404 h2 {
-  font-size: 1.6rem;
-  margin-bottom: 50px;
+    font-size: 1.6rem;
+    margin-bottom: 50px;
 }
 .error404 #content {
-  padding: 150px 0 0 0;
+    padding: 150px 0 0 0;
 }
 
 .error404 #primary {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 @media (max-width: 782px) {
-  .admin-bar #gk-header-nav.static {
-    top: 46px;
-  }
+    .admin-bar #gk-header-nav.static {
+        top: 46px;
+    }
 
-  html #wpadminbar {
-    z-index: 50000 !important;
-  }
+    html #wpadminbar {
+        z-index: 50000 !important;
+    }
 }
 
 .single-page,
 .archive #content > .entry-header,
 article.one-page {
-  margin: -100px auto 0 auto!important;
+    margin: -100px auto 0 auto!important;
 }
 
 .search-form .search-field {
-  width: 400px;
+    width: 400px;
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
     #gk-mobile-menu {
-      margin-top: 40px !important;
-      padding: 0;
+        margin-top: 40px !important;
+        padding: 0;
     }
 
     #gk-footer .site .gk-cols .widget-1:last-child{
@@ -222,6 +222,16 @@ article.one-page {
     #gk-footer .site .gk-cols .widget-1:last-child .copyright-footer{
         position: initial;
         width: auto;
+    }
+
+    body #gk-menu-overlay-wrap.gk-show{
+        margin: 0;
+        top: calc(50% - 100px) !important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 100px);
+        position: fixed;
+        max-width: 700px;
     }
 }
 @media only screen and (max-width: 64em) { 
@@ -235,5 +245,4 @@ article.one-page {
         overflow: hidden;
     }
     html { overflow-x: hidden; }
-
 }

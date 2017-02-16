@@ -7165,3 +7165,8 @@ a.pswp__share--download:before {
   position: absolute!important;
   margin-top: -20px!important;
 }
+
+
+body .category-banner{
+  margin-top: 0px!important;
+}

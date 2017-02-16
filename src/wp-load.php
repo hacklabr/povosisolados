@@ -17,6 +17,7 @@
  *
  * @package WordPress
  */
+include 'vendor/autoload.php';
 
 /** Define ABSPATH as this file's directory */
 if ( ! defined( 'ABSPATH' ) ) {
