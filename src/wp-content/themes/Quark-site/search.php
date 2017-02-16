@@ -59,8 +59,8 @@ get_header("frontpage");  ?>
 						<div class="nav-links">
 							<?php 
 							if ( get_next_posts_link() ) {
-								$page_prev = isset($_GET['paged']) ? '&paged=' . (((int)$_GET['paged']) - 1) : '&paged=2';
-								$page_next = isset($_GET['paged']) ? '&paged=' . (((int)$_GET['paged']) + 1) : '';
+								$page_prev = isset($_GET['paged']) ? '&paged=' . (((int)$_GET['paged']) + 1) : '&paged=2';
+								$page_next = isset($_GET['paged']) ? '&paged=' . (((int)$_GET['paged']) - 1) : '';
 								?>
 								<div class="nav-previous">
 									<a href="/?s=<?= $_GET['s'] . $page_prev ?>">
@@ -72,7 +72,7 @@ get_header("frontpage");  ?>
 							<?php if ( get_previous_posts_link() ) : ?>
 								<div class="nav-next">
 									<a href="/?s=<?= $_GET['s'] . $page_next ?>">
-										<?= __( '<span class="meta-nav">&larr;</span> Posts novos', 'quark' ) ?>
+										<?= __( 'Posts novos <span class="meta-nav">&rarr;</span>', 'quark' ) ?>
 									</a>
 								</div>
 							<?php endif; ?>
