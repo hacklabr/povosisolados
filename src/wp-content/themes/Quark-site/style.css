@@ -7190,3 +7190,5 @@ body .category-banner{
   right: 50px;
   width: calc(100% - 50px);
 }
+
+u.fa.fa-search{ display:none; }

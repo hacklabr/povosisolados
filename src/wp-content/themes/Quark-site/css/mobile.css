@@ -612,30 +612,22 @@ input[type="reset"] {
         margin: 0;
     }
 
-    .gk-social-icons{
-        float: left !important;
-        margin-left: -12px !important;
-        margin-top: 8px !important;
-    }
-
-    html { overflow-x: hidden; }
-
-    .site.post-info .gk-social-facebook{
-        margin-left: 1px !important;        
-    }
     .site.post-info .item-info{
-        margin: 50px 0 0 0 !important;
+        margin: 20px 0 0 0 !important;
+        width: 100%;
     }
+
     .site.post-info{
         height: 0px !important;
         margin-top: 0px !important;
     }
 
-    #gk-copyrights .copyright{
-        text-align: center !important;
+    .gk-social-icons{
+        float: left !important;
     }
 
-    ul, ol {
-        padding: 0 0 0 10px;
+    .gk-social-facebook{
+        margin: 50px 12px 20px 0px;
+        float: left;
     }
 }

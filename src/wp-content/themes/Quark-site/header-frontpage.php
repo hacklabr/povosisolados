@@ -85,6 +85,7 @@ global $post;
 	                <div id="gk-mobile-menu" class="site">
                      	<span id="gk-mobile-menu-text"><?php _e('Menu','quark'); ?></span>
                     	<i id="static-aside-menu-toggler"></i>
+                    	<u class="fa-fa-search"></u>
 	                </div>
 
                  </div>

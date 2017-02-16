@@ -1,82 +1,82 @@
 <?php
 /**
- * The template for displaying Search results
- *
- */
+* The template for displaying Search results
+*
+*/
 global $wp_query;
 get_header("frontpage");  ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content search-page" role="main">
-		
-			<?php do_action('quark_before_content'); ?>
-			<?php if ( have_posts() ) : ?>
+<div id="primary" class="content-area">
+	<div id="content" class="site-content search-page" role="main">
 
-				<header class="entry-header<?php if(get_theme_mod('quark_search_bg','') == '') : ?> no-image<?php endif; ?>">
-					<?php if(get_theme_mod('quark_search_bg','') !== '') : ?>
-						<img src="<?php echo get_theme_mod('quark_search_bg',''); ?>" class="author-image-bg" alt="<?php echo get_the_author(); ?>">
-					<?php endif; ?>
-					<div class="entry-title-wrap site">
+		<?php do_action('quark_before_content'); ?>
+		<?php if ( have_posts() ) : ?>
 
-	                    <h1 class="entry-title">
+			<header class="entry-header<?php if(get_theme_mod('quark_search_bg','') == '') : ?> no-image<?php endif; ?>">
+				<?php if(get_theme_mod('quark_search_bg','') !== '') : ?>
+					<img src="<?php echo get_theme_mod('quark_search_bg',''); ?>" class="author-image-bg" alt="<?php echo get_the_author(); ?>">
+				<?php endif; ?>
+				<div class="entry-title-wrap site">
+
+					<?php if($_GET['s'] != ''): ?>
+						<h1 class="entry-title">
 							<span>
-		                    	<?php printf( __( 'Resultado da busca para: %s', 'quark' ), get_search_query() ); ?>
-		                    </span>
-	                    </h1>
+								<?php printf( __( 'Resultado da busca para: %s', 'quark' ), get_search_query() ); ?>
+							</span>
+						</h1>
+					<?php endif; ?>
 
-	                    <div id="gk-search">
-							<div>
-								<?php get_search_form(); ?>
-							</div>
-						</div>
+					<div id="gk-search">
+						<?php get_search_form(); ?>
+					</div>
 
-						<div class="searchintro">
-							<p>
-								<strong><?php printf( __( '%s resultados encontrados.' ), $wp_query->found_posts ); ?></strong>
-							</p>
-						</div>
+					<div class="searchintro">
+						<p>
+							<strong><?php printf( __( '%s resultados encontrados.' ), $wp_query->found_posts ); ?></strong>
+						</p>
+					</div>
 
-	                </div>
-            	</header>
-				<div class="site">
-					<div class="content-wrapper">
-						<?php if (is_active_sidebar('content_top')) : ?>
+				</div>
+			</header>
+			<div class="site">
+				<div class="content-wrapper">
+					<?php if (is_active_sidebar('content_top')) : ?>
 						<?php do_action('quark_before_content_top'); ?>
 						<div id="content-top" role="complementary">
 							<?php dynamic_sidebar('content_top'); ?>
 						</div>
 						<?php do_action('quark_after_content_top'); ?>
-						<?php endif; ?>
+					<?php endif; ?>
 
-						<?php while ( have_posts() ) : the_post(); ?>
-                            <div><?php get_template_part( 'content-category', get_post_format() ); ?></div>
-						<?php endwhile; ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<div><?php get_template_part( 'content-category', get_post_format() ); ?></div>
+					<?php endwhile; ?>
 
-						<?php quark_paging_nav(); ?>
+					<?php quark_paging_nav(); ?>
 
-						<?php if (is_active_sidebar('content_bottom')) : ?>
+					<?php if (is_active_sidebar('content_bottom')) : ?>
 						<?php do_action('quark_before_content_bottom'); ?>
 						<div id="content-bottom" role="complementary">
 							<?php dynamic_sidebar('content_bottom'); ?>
 						</div>
 						<?php do_action('quark_after_content_bottom'); ?>
-						<?php endif; ?>
-					</div>
+					<?php endif; ?>
+				</div>
 
-					<?php if (is_active_sidebar('sidebar')) : ?>
+				<?php if (is_active_sidebar('sidebar')) : ?>
 					<?php do_action('quark_before_sidebar'); ?>
 					<aside id="sidebar" role="complementary">
 						<?php dynamic_sidebar('sidebar'); ?>
 					</aside>
 					<?php do_action('quark_after_sidebar'); ?>
-					<?php endif; ?>
-				</div>
-			<?php else : ?>
-				<?php get_template_part( 'content', 'none' ); ?>
-			<?php endif; ?>
-			<?php do_action('quark_after_content'); ?>
+				<?php endif; ?>
+			</div>
+		<?php else : ?>
+			<?php get_template_part( 'content', 'none' ); ?>
+		<?php endif; ?>
+		<?php do_action('quark_after_content'); ?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+	</div><!-- #content -->
+</div><!-- #primary -->
 
-<?php get_footer('boletim'); ?>
+<?php get_footer('frontpage'); ?>
