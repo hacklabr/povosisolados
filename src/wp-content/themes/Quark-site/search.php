@@ -32,7 +32,7 @@ get_header("frontpage");  ?>
 
 						<div class="searchintro">
 							<p>
-								<strong><?php printf( __( 'Total: %s results found.' ), $wp_query->found_posts ); ?></strong>
+								<strong><?php printf( __( '%s resultados encontrados.' ), $wp_query->found_posts ); ?></strong>
 							</p>
 						</div>
 
