@@ -39,7 +39,7 @@ get_header("frontpage");  ?>
 				</div>
 			</header>
 			<div class="site">
-				<div class="content-wrapper">
+				<div class="content-wrapper" style="padding-top:50px">
 					<?php if (is_active_sidebar('content_top')) : ?>
 						<?php do_action('quark_before_content_top'); ?>
 						<div id="content-top" role="complementary">
@@ -52,7 +52,34 @@ get_header("frontpage");  ?>
 						<div><?php get_template_part( 'content-category', get_post_format() ); ?></div>
 					<?php endwhile; ?>
 
-					<?php quark_paging_nav(); ?>
+					<nav class="navigation paging-navigation" role="navigation">
+						<h3 class="screen-reader-text"><?php _e( 'Posts navigation', 'quark' ); ?></h3>
+						<div class="nav-links">
+							<?php if ( get_next_posts_link() ) {
+								$page_prev = '';
+								$page_next = '';
+								
+								if(isset($_GET['paged']) && $_GET['paged'] != ''){
+									$page_prev = '&paged=' . (((int)$_GET['paged']) - 1);
+									$page_next = '&paged=' . (((int)$_GET['paged']) + 1);
+								}
+								?>
+								<div class="nav-previous">
+									<a href="/?s=<?= $_GET['s'] . $page_prev ?>">
+										<?= __( '<span class="meta-nav">&larr;</span> Posts antigos', 'quark' ) ?>
+									</a>
+								</div>
+								<?php 
+							} ?>
+							<?php if ( get_previous_posts_link() ) : ?>
+								<div class="nav-next">
+									<a href="/?s=<?= $_GET['s'] . $page_next ?>">
+										<?= __( '<span class="meta-nav">&larr;</span> Posts novos', 'quark' ) ?>
+									</a>
+								</div>
+							<?php endif; ?>
+						</div>
+					</nav>
 
 					<?php if (is_active_sidebar('content_bottom')) : ?>
 						<?php do_action('quark_before_content_bottom'); ?>
@@ -78,5 +105,5 @@ get_header("frontpage");  ?>
 
 	</div><!-- #content -->
 </div><!-- #primary -->
-
+<script>document.title = 'Resultados de Busca'</script>
 <?php get_footer('frontpage'); ?>

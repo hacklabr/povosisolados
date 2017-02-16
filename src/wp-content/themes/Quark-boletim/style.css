@@ -243,14 +243,14 @@ pre {
 }
 .gkicon-bottle-glass:before {
   content: "F";ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-ul li {
-  line-height: 1.7;
-}
+  ul li {
+    line-height: 1.7;
+  }
 
   content: "G";
 }
@@ -385,32 +385,32 @@ ul li {
  * 1.2 Basic stuff
  * ----------------------------------------------------------------------------
  */
-/* Clearing floats */
-.clear:after,
-.entry-header:after,
-#gk-footer .widget-area:after,
-.entry-content:after,
-.page-content:after,
-.navigation:after,
-.nav-links:after,
-.gallery:after,
-.comment-form-author:after,
-.comment-form-email:after,
-.comment-form-url:after,
-.comment-body:after,
-#gk-social-icons,
-.gk-nsp:after,
-.gk-nsp-arts:after,
-.gk-nsp-links:after,
-#content:after,
-#primary:after,
-#sidebar:after,
-#content-top:after,
-#content-bottom:after,
-.eventlist-item:after,
-#content > article:after,
-.widget-area:after,
-.archive-page .entry-summary:after {
+ /* Clearing floats */
+ .clear:after,
+ .entry-header:after,
+ #gk-footer .widget-area:after,
+ .entry-content:after,
+ .page-content:after,
+ .navigation:after,
+ .nav-links:after,
+ .gallery:after,
+ .comment-form-author:after,
+ .comment-form-email:after,
+ .comment-form-url:after,
+ .comment-body:after,
+ #gk-social-icons,
+ .gk-nsp:after,
+ .gk-nsp-arts:after,
+ .gk-nsp-links:after,
+ #content:after,
+ #primary:after,
+ #sidebar:after,
+ #content-top:after,
+ #content-bottom:after,
+ .eventlist-item:after,
+ #content > article:after,
+ .widget-area:after,
+ .archive-page .entry-summary:after {
   clear: both;
   content: "";
   display: table;
@@ -649,7 +649,7 @@ label {
  * 1.3 Containers
  * ----------------------------------------------------------------------------
  */
-#gk-bg, .boletim #primary {
+ #gk-bg, .boletim #primary {
   -webkit-transition: margin-left .3s ease-out;
   -moz-transition: margin-left .3s ease-out;
   -ms-transition: margin-left .3s ease-out;
@@ -1188,8 +1188,8 @@ label {
 #gk-menu-overlay-wrap .nav-menu ul > li .children {
   background: transparent;
   -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   display: block !important;
   height: auto !important;
   margin-left: 0 !important;
@@ -1597,11 +1597,11 @@ label {
  * 3.2 Content
  * ----------------------------------------------------------------------------
  */
-.single-page,
-.category #content,
-.author #content,
-.search #content,
-article.one-page {
+ .single-page,
+ .category #content,
+ .author #content,
+ .search #content,
+ article.one-page {
   margin: -164px auto 0 auto!important;
 }
 
@@ -1686,7 +1686,7 @@ article.one-page {
  * 3.3 Entry Header
  * ----------------------------------------------------------------------------
  */
-.entry-header {
+ .entry-header {
   background-position: center;
   background-size: cover;
   margin: -80px 0 0 0;
@@ -1808,8 +1808,8 @@ article.one-page {
  * 3.4 Entry Content
  * ----------------------------------------------------------------------------
  */
-.entry-content,
-.entry-summary {
+ .entry-content,
+ .entry-summary {
   margin: 30px auto 10px auto;
 }
 
@@ -1938,7 +1938,7 @@ article.one-page {
 }
 
 .entry-social-sharing iframe {
-    max-width: none!important;
+  max-width: none!important;
 }
 
 .gk-social-facebook {
@@ -2016,7 +2016,7 @@ article.one-page {
  * 3.5 Galleries
  * ----------------------------------------------------------------------------
  */
-.gallery {
+ .gallery {
   margin: 20px auto;
   width: 80%;
 }
@@ -2128,7 +2128,7 @@ article.one-page {
  * 3.6 Post Formats
  * ----------------------------------------------------------------------------
  */
-.format {
+ .format {
   color: #999;
   display: block;
   font-family: quark-pixellove;
@@ -2209,7 +2209,7 @@ article.one-page {
  * 3.7 Attachments
  * ----------------------------------------------------------------------------
  */
-.full-size-link:before {
+ .full-size-link:before {
   content: none;
 }
 
@@ -2241,7 +2241,7 @@ article.one-page {
  * 3.8 Post/Paging Navigation
  * ----------------------------------------------------------------------------
  */
-.navigation {
+ .navigation {
   margin: 0 0 20px 0;
   text-align: center;
 }
@@ -2258,20 +2258,20 @@ article.one-page {
  * 3.9 Author Bio
  * ----------------------------------------------------------------------------
  */
-.author-page .author-info {
+ .author-page .author-info {
    left: 50%;
-  position: absolute;
-  text-align: center;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  padding: 34px 0 0 0!important;
-  top: 50%;
-  z-index: 1;
-}
-.author-page .author-info img {
+   position: absolute;
+   text-align: center;
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   -moz-transform: translateX(-50%) translateY(-50%);
+   -ms-transform: translateX(-50%) translateY(-50%);
+   -o-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+   padding: 34px 0 0 0!important;
+   top: 50%;
+   z-index: 1;
+ }
+ .author-page .author-info img {
   border: 2px solid #fff;
   border-radius: 50%;
 }
@@ -2296,8 +2296,8 @@ article.one-page {
  * 3.10 Archives
  * ----------------------------------------------------------------------------
  */
-.search .bigtitle,
-.archive .bigtitle {
+ .search .bigtitle,
+ .archive .bigtitle {
   padding: 0 0 20px 0;
 }
 .search .category-image-wrap,
@@ -2363,7 +2363,7 @@ article.one-page {
  * 3.11 Search Results/No posts
  * ----------------------------------------------------------------------------
  */
-#gk-search > div {
+ #gk-search > div {
   padding: 25px 0 15px 0;
 }
 .page-content {
@@ -2426,7 +2426,7 @@ article.one-page {
  * 3.12 404 Page
  * ----------------------------------------------------------------------------
  */
-.error404 .entry-title span {
+ .error404 .entry-title span {
   display: block;
   padding: 65px 65px 20px 65px;
   position: relative;
@@ -2519,7 +2519,7 @@ article.one-page {
  * 3.13 Comments
  * ----------------------------------------------------------------------------
  */
-#comments {
+ #comments {
   clear: both;
   margin: 20px auto 0 auto;
   padding: 32px 0 0;
@@ -2793,8 +2793,8 @@ article.one-page {
  * 3.14. Page templates
  * ----------------------------------------------------------------------------
  */
-/* Columns in the content */
-.gk-cols {
+ /* Columns in the content */
+ .gk-cols {
   margin: 0 -20px;
   text-align: left;
   width: auto;
@@ -3993,7 +3993,7 @@ ec5fd830evsbm@10
  * ----------------------------------------------------------------------------
  */
 
-.demo-typo {
+ .demo-typo {
   color: #111;
   font-size: 1.6rem;
   margin: 60px 0 20px!important;
@@ -4272,8 +4272,8 @@ img.wp-smiley,
 /*
  * Other common typography elements
  */
-/* bigtitle suffix */
-.bigtitle {
+ /* bigtitle suffix */
+ .bigtitle {
   text-align: center;
 }
 .bigtitle .header,
@@ -4449,7 +4449,7 @@ p.gk-error:before {
   content: "\f057";
 }
 #warnings p {
-margin: 1em 0;
+  margin: 1em 0;
 }
 .gk-highlight {
   cursor: default;
@@ -4530,8 +4530,8 @@ p.numblocks span {
   width: 36px;
 }
 p.num-2 span {
-    color: #cc6060;
-    border-color: #cc6060;
+  color: #cc6060;
+  border-color: #cc6060;
 }
 p.num-2 em {
   color: #cc6060;
@@ -4547,13 +4547,13 @@ p.numblocks span.highlight {
 .gk-block-text-left,
 .gk-block-text-right,
 .gk-block-text-center {
-   color: #111;
-  display: block;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 170%;
-  padding: 25px;
-  width: 38%;
+ color: #111;
+ display: block;
+ font-style: italic;
+ font-weight: 400;
+ line-height: 170%;
+ padding: 25px;
+ width: 38%;
 }
 
 .gk-block-text-left {
@@ -4617,7 +4617,7 @@ p.numblocks span.highlight {
  * ----------------------------------------------------------------------------
  */
 
-.boletim .gk-cols > div {
+ .boletim .gk-cols > div {
   padding: 0 10px;
   vertical-align: top;
   float: left;
@@ -4658,7 +4658,11 @@ p.numblocks span.highlight {
 }
 
 .boletim #gk-header-nav {
-  background-color: linear-gradient(rgba(19, 19, 19, 0.5), rgba(255, 255, 255, 0));
+  background: transparent;
+  background: -webkit-linear-gradient(rgba(19, 19, 19, 0.5), rgba(255, 255, 255, 0));
+  background: -o-linear-gradient(rgba(19, 19, 19, 0.5), rgba(255, 255, 255, 0));
+  background: -moz-linear-gradient(rgba(19, 19, 19, 0.5), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(19, 19, 19, 0.5), rgba(255, 255, 255, 0));
   /*border-bottom: 1px solid #fff;*/
   height: 55px;
   width: 100%;
@@ -4732,7 +4736,7 @@ p.numblocks span.highlight {
   padding-right: 0px;
 }
 .boletim .site {
-   max-width: 1040px;
+ max-width: 1040px;
 }
 
 .boletim .boletim-container{
@@ -4784,7 +4788,7 @@ p.numblocks span.highlight {
  * 4. Widgets
  * ----------------------------------------------------------------------------
  */
-.widget {
+ .widget {
   font-size: 1.5rem;
   line-height: 1.6;
   margin: 0 0 30px 0;
@@ -4906,8 +4910,8 @@ select {
  * ----------------------------------------------------------------------------
  */
 
-/* suffix light */
-.widget.light {
+ /* suffix light */
+ .widget.light {
   background: #f0f2f3;
   border: none;
   padding: 32px !important;
@@ -5034,10 +5038,10 @@ select {
 .widget.border2 .header,
 .widget.border2 .widget-title {
  color: #f079a3;
-  float: left;
-  font-weight: 600;
-  margin: -15px 0 20px 0;
-  padding: 10px 0 0 0;
+ float: left;
+ font-weight: 600;
+ margin: -15px 0 20px 0;
+ padding: 10px 0 0 0;
 }
 
 .widget.border2 .widget-title {
@@ -5071,7 +5075,7 @@ select {
  * 4.2 GK News Show Pro
  * ----------------------------------------------------------------------------
  */
-.gk-nsp {
+ .gk-nsp {
   position: relative;
 }
 
@@ -5460,7 +5464,7 @@ img.gk-responsive {
  * 4.3 GK Tabs
  * ----------------------------------------------------------------------------
  */
-.none .gk-tabs {
+ .none .gk-tabs {
   position: relative;
 }
 .none .gk-tabs-wrap {
@@ -5721,7 +5725,7 @@ img.gk-responsive {
  * ----------------------------------------------------------------------------
  */
 
-.gk-is-wrapper-gk_quark {
+ .gk-is-wrapper-gk_quark {
   background: transparent;
   margin: 0;
   position: relative;
@@ -5870,7 +5874,7 @@ img.gk-responsive {
  * 5. Footer
  * ----------------------------------------------------------------------------
  */
-#gk-footer {
+ #gk-footer {
   background-color: #e2cd97;
   color: #000;
   font-size: 1.4rem;
@@ -6040,7 +6044,7 @@ img.gk-responsive {
  * 5.5 Pre-Footer
  * ----------------------------------------------------------------------------
  */
-#pre-footer {
+ #pre-footer {
   background-color: #FFF1D1;
   color: #000;
   font-size: 1.4rem;
@@ -6226,7 +6230,7 @@ img.gk-responsive {
  * 6. Multi-site improvements
  * ----------------------------------------------------------------------------
  */
-body .mu_register {
+ body .mu_register {
   overflow: hidden;
   width: 100%;
 }
@@ -6258,9 +6262,9 @@ body #key {
  * ----------------------------------------------------------------------------
  */
 
-/* page clipping */
+ /* page clipping */
 
-#clipping {
+ #clipping {
   padding-left: 150px; 
 }
 
@@ -6411,513 +6415,513 @@ h2 + .gk-subtitle {
   outline: none; }
   .pswp * {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-  .pswp img {
-    max-width: none; }
+    box-sizing: border-box; }
+    .pswp img {
+      max-width: none; }
 
-.pswp--animate_opacity {
-  opacity: 0.001;
-  will-change: opacity;
-  -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
-          transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1); }
+      .pswp--animate_opacity {
+        opacity: 0.001;
+        will-change: opacity;
+        -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+        transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1); }
 
-.pswp--open {
-  display: block; }
+        .pswp--open {
+          display: block; }
 
-.pswp--zoom-allowed .pswp__img {
-  /* autoprefixer: off */
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
-  cursor: zoom-in; }
+          .pswp--zoom-allowed .pswp__img {
+            /* autoprefixer: off */
+            cursor: -webkit-zoom-in;
+            cursor: -moz-zoom-in;
+            cursor: zoom-in; }
 
-.pswp--zoomed-in .pswp__img {
-  /* autoprefixer: off */
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: grab; }
+            .pswp--zoomed-in .pswp__img {
+              /* autoprefixer: off */
+              cursor: -webkit-grab;
+              cursor: -moz-grab;
+              cursor: grab; }
 
-.pswp--dragging .pswp__img {
-  /* autoprefixer: off */
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: grabbing; }
+              .pswp--dragging .pswp__img {
+                /* autoprefixer: off */
+                cursor: -webkit-grabbing;
+                cursor: -moz-grabbing;
+                cursor: grabbing; }
 
-.pswp__bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  will-change: opacity; }
+                .pswp__bg {
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: #fff;
+                  opacity: 0;
+                  -webkit-backface-visibility: hidden;
+                  will-change: opacity; }
 
-.pswp__scroll-wrap {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  will-change: transform; }
+                  .pswp__scroll-wrap {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden;
+                    will-change: transform; }
 
-.pswp__container, .pswp__zoom-wrap {
-  -ms-touch-action: none;
-  touch-action: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0; }
+                    .pswp__container, .pswp__zoom-wrap {
+                      -ms-touch-action: none;
+                      touch-action: none;
+                      position: absolute;
+                      left: 0;
+                      right: 0;
+                      top: 0;
+                      bottom: 0; }
 
-.pswp__container, .pswp__img {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-touch-callout: none; }
+                      .pswp__container, .pswp__img {
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                        -webkit-touch-callout: none; }
 
-.pswp__zoom-wrap {
-  position: absolute;
-  width: 100%;
-  -webkit-transform-origin: left top;
-  -ms-transform-origin: left top;
-  transform-origin: left top;
-  -webkit-transition: -webkit-transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
-          transition: transform 333ms cubic-bezier(0.4, 0, 0.22, 1); }
+                        .pswp__zoom-wrap {
+                          position: absolute;
+                          width: 100%;
+                          -webkit-transform-origin: left top;
+                          -ms-transform-origin: left top;
+                          transform-origin: left top;
+                          -webkit-transition: -webkit-transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
+                          transition: transform 333ms cubic-bezier(0.4, 0, 0.22, 1); }
 
-.pswp__bg {
-  will-change: opacity;
-  -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
-          transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1); }
+                          .pswp__bg {
+                            will-change: opacity;
+                            -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+                            transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1); }
 
-.pswp--animated-in .pswp__bg, .pswp--animated-in .pswp__zoom-wrap {
-  -webkit-transition: none;
-  transition: none; }
+                            .pswp--animated-in .pswp__bg, .pswp--animated-in .pswp__zoom-wrap {
+                              -webkit-transition: none;
+                              transition: none; }
 
-.pswp__container, .pswp__zoom-wrap {
-  -webkit-backface-visibility: hidden;
-  will-change: transform; }
+                              .pswp__container, .pswp__zoom-wrap {
+                                -webkit-backface-visibility: hidden;
+                                will-change: transform; }
 
-.pswp__item {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow: hidden; }
+                                .pswp__item {
+                                  position: absolute;
+                                  left: 0;
+                                  right: 0;
+                                  top: 0;
+                                  bottom: 0;
+                                  overflow: hidden; }
 
-.pswp__img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  -webkit-transition: opacity 0.15s;
-          transition: opacity 0.15s; }
+                                  .pswp__img {
+                                    position: absolute;
+                                    width: auto;
+                                    height: auto;
+                                    -webkit-transition: opacity 0.15s;
+                                    transition: opacity 0.15s; }
 
-.pswp__img--placeholder {
-  -webkit-backface-visibility: hidden; }
+                                    .pswp__img--placeholder {
+                                      -webkit-backface-visibility: hidden; }
 
-.pswp__img--placeholder--blank {
-  background: #ddd }
+                                      .pswp__img--placeholder--blank {
+                                        background: #ddd }
 
-.pswp--ie .pswp__img {
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0; }
+                                        .pswp--ie .pswp__img {
+                                          width: 100%;
+                                          height: 100%;
+                                          left: 0;
+                                          top: 0; }
 
-.pswp__error-msg {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 16px;
-  margin-top: -8px;
-  color: silver; }
+                                          .pswp__error-msg {
+                                            position: absolute;
+                                            left: 0;
+                                            top: 50%;
+                                            width: 100%;
+                                            text-align: center;
+                                            font-size: 1.5rem;
+                                            line-height: 16px;
+                                            margin-top: -8px;
+                                            color: silver; }
 
-.pswp__error-msg a {
-  color: silver;
-  text-decoration: underline; }
+                                            .pswp__error-msg a {
+                                              color: silver;
+                                              text-decoration: underline; }
 
-.pswp__button {
-  width: 44px;
-  height: 44px;
-  position: relative;
-  background: none;
-  cursor: pointer;
-  overflow: visible;
-  -webkit-appearance: none;
-  display: inline-block;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  opacity: 0.75;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.pswp__button:focus,
-.pswp__button:hover {
-  background: none;
-  opacity: 1;
-}
-.pswp__button:active {
-  background: none;
-  outline: none;
-  opacity: 0.9;
-}
-.pswp__button:focus:before,
-.pswp__button:hover:before,
-.pswp__button:active:before {
-  color: #f079a3;
-}
-.pswp__button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-.pswp__ui--over-close .pswp__button--close {
-  opacity: 1;
-}
-.pswp__button,
-.pswp__button--arrow--left:before,
-.pswp__button--arrow--right:before {
-  width: 44px;
-  height: 44px;
-}
-.pswp__button--close:before {
-  color: #26292b;
-  content: "p";
-  font-family: "quark-pixellove";
-  font-size: 1.4rem;
-  text-transform: none !important;
-}
-.pswp__button--share:before {
-  color: #26292b;
-  content: "o";
-  font-family: "quark-pixellove";
-  font-size: 1.6rem;
-  text-transform: none !important;
-}
-.pswp__button--fs {
-  display: none;
-}
-.pswp__button--fs:before {
-  color: #26292b;
-  content: "X";
-  font-family: "quark-pixellove";
-  font-size: 1.6rem;
-  text-transform: none !important;
-}
-.pswp--supports-fs .pswp__button--fs {
-  display: inline-block;
-}
-.pswp__button--zoom:before {
-  color: #26292b;
-  content: "r";
-  font-family: "quark-pixellove";
-  font-size: 1.6rem;
-  text-transform: none !important;
-}
-.pswp__button--zoom {
-  display: none;
-}
-.pswp--zoom-allowed .pswp__button--zoom {
-  display: inline-block;
-}
-.pswp--touch .pswp__button--arrow--left,
-.pswp--touch .pswp__button--arrow--right {
-  visibility: hidden;
-}
-.pswp__button--arrow--left,
-.pswp__button--arrow--right {
-  background: none;
-  top: 50%;
-  margin-top: -50px;
-  width: 70px;
-  height: 100px;
-  position: absolute;
-}
-.pswp__button--arrow--left {
-  left: 0;
-}
-.pswp__button--arrow--right {
-  right: 0;
-}
-.pswp__button--arrow--left:before,
-.pswp__button--arrow--right:before {
-  content: '';
-  top: 35px;
-  background-color: transparent;
-  height: 30px;
-  width: 32px;
-  position: absolute;
-}
-.pswp__button--arrow--left:before {
-  color: #26292b;
-  content: "t";
-  font-family: "quark-pixellove";
-  font-size: 1.4rem;
-  left: 30px;
-  text-transform: none !important;
-}
-.pswp__button--arrow--right:before {
-  color: #26292b;
-  content: "s";
-  font-family: "quark-pixellove";
-  font-size: 1.4rem;
-  right: 30px;
-  text-transform: none !important;
-}
-.pswp__counter,
-.pswp__share-modal {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.pswp__share-modal {
-  display: block;
-  background: rgba(0,0,0,0.5);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  position: absolute;
-  z-index: 1600;
-  opacity: 0;
-  -webkit-transition: opacity 0.25s ease-out;
-  transition: opacity 0.25s ease-out;
-  -webkit-backface-visibility: hidden;
-  will-change: opacity;
-}
-.pswp__share-modal--hidden {
-  display: none;
-}
-.pswp__share-tooltip {
-  z-index: 1620;
-  position: absolute;
-  background: rgba(38,41,43,0.8);
-  left: 50%;
-  top: 56px;
-  border-radius: 2px;
-  margin-left: -60px;
-  display: block;
-  padding: 5px 0;
-  width: 160px;
-  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-  -webkit-transform: translateY(6px);
-  -ms-transform: translateY(6px);
-  transform: translateY(6px);
-  -webkit-transition: -webkit-transform 0.25s;
-  transition: transform 0.25s;
-  -webkit-backface-visibility: hidden;
-  will-change: transform;
-}
-.pswp__share-tooltip a {
-  display: block;
-  padding: 5px 10px 5px 35px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  line-height: 1.9;
-  position: relative;
-}
-.pswp__share-tooltip a:active,
-.pswp__share-tooltip a:focus,
-.pswp__share-tooltip a:hover {
-  color: #f079a3;
-}
-.pswp__share-modal--fade-in {
-  opacity: 1;
-}
-.pswp__share-modal--fade-in .pswp__share-tooltip {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-}
-.pswp--touch .pswp__share-tooltip a {
-  padding: 16px 12px;
-}
-a.pswp__share--facebook:before,
-a.pswp__share--twitter:before,
-a.pswp__share--pinterest:before,
-a.pswp__share--download:before {
-  content: "\f09a";
-  display: block;
-  float: left;
-  font-family: FontAwesome;
-  left: 12px;
-  top: 5px;
-  position: absolute;
-}
-a.pswp__share--twitter:before {
-  content: "\f099";
-}
-a.pswp__share--pinterest:before {
-  content: "\f231";
-}
-a.pswp__share--download:before {
-  content: "\f019";
-}
-.pswp__counter {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 44px;
-  font-size: 1.3rem;
-  line-height: 44px;
-  color: #26292b;
-  opacity: 0.75;
-  padding: 0 10px;
-}
-.pswp__caption {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  min-height: 44px;
-}
-.pswp__caption small {
-  font-size: 1.1rem;
-  color: #777;
-}
-.pswp__caption__center {
-  text-align: left;
-  max-width: 1280px;
-  margin: 0 auto;
-  font-size: 1.3rem;
-  overflow: hidden;
-  padding: 70px 10px;
-  line-height: 20px;
-  color: #777;
-}
-.pswp__caption__center > h3 {
-  float: left;
-  font-size: 2.4rem;
-  font-weight: 400;
-  max-width: 50%;
-}
-.pswp__caption__center > span {
-  color: #777;
-  float: right;
-  font-size: 1.6rem;
-  max-width: 40%;
-}
-.pswp__caption,
-.pswp__top-bar {
-  background: rgba(255,255,255,0.85);
-}
-.pswp__top-bar {
-  text-align: center;
-}
-.pswp__caption--empty {
-  display: none;
-}
-.pswp__caption--fake {
-  visibility: hidden;
-}
-.pswp__preloader {
-  display: none;
-}
-.pswp__preloader--active {
-  opacity: 1;
-}
-.pswp__preloader--active .pswp__preloader__icn {
-  background: url(../images/photoswipe-preloader.gif) 0 0 no-repeat;
-}
-.pswp__ui {
-  -webkit-font-smoothing: auto;
-  visibility: visible;
-  opacity: 1;
-  z-index: 1550;
-}
-.pswp__top-bar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 44px;
-  width: 100%;
-}
-.admin-bar .pswp__top-bar {
-  top: 28px;
-}
-.pswp__caption,
-.pswp__top-bar,
-.pswp--has_mouse .pswp__button--arrow--left,
-.pswp--has_mouse .pswp__button--arrow--right {
-  -webkit-backface-visibility: hidden;
-  will-change: opacity;
-  -webkit-transition: opacity 333ms cubic-bezier(0.4,0,0.22,1);
-  transition: opacity 333ms cubic-bezier(0.4,0,0.22,1);
-}
-.pswp--has_mouse .pswp__button--arrow--left,
-.pswp--has_mouse .pswp__button--arrow--right {
-  visibility: visible;
-}
-.pswp__ui--idle .pswp__top-bar {
-  opacity: 0;
-}
-.pswp__ui--idle .pswp__button--arrow--left,
-.pswp__ui--idle .pswp__button--arrow--right {
-  opacity: 0;
-}
-.pswp__ui--hidden .pswp__top-bar,
-.pswp__ui--hidden .pswp__caption,
-.pswp__ui--hidden .pswp__button--arrow--left,
-.pswp__ui--hidden .pswp__button--arrow--right {
-  opacity: 0.001;
-}
-.pswp__ui--one-slide .pswp__button--arrow--left,
-.pswp__ui--one-slide .pswp__button--arrow--right,
-.pswp__ui--one-slide .pswp__counter {
-  display: none;
-}
-.pswp__element--disabled {
-  display: none !important;
-}
-.pswp--minimal--dark .pswp__top-bar {
-  background: none;
-}
-@media (max-width: 1400px) {
-  .pswp__caption__center {
-    padding: 30px 10px;
-  }
-  .pswp__caption__center > h3 {
-    font-size: 1.8rem;
-  }
-  .pswp__caption__center > span {
-    font-size: 1.4rem;
-  }
-}
-@media (max-width: 1100px) {
-  .pswp__caption__center {
-    padding: 10px;
-  }
-  .pswp__caption__center > h3 {
-    font-size: 1.6rem;
-    margin: 0 0 10px 0;
-    max-width: 100%;
-    width: 100%;
-  }
-  .pswp__caption__center > span {
-    font-size: 1.3rem;
-    max-width: 100%;
-    width: 100%;
-  }
-}
+                                              .pswp__button {
+                                                width: 44px;
+                                                height: 44px;
+                                                position: relative;
+                                                background: none;
+                                                cursor: pointer;
+                                                overflow: visible;
+                                                -webkit-appearance: none;
+                                                display: inline-block;
+                                                border: 0;
+                                                padding: 0;
+                                                margin: 0;
+                                                opacity: 0.75;
+                                                -webkit-transition: opacity 0.2s;
+                                                transition: opacity 0.2s;
+                                                -webkit-box-shadow: none;
+                                                box-shadow: none;
+                                              }
+                                              .pswp__button:focus,
+                                              .pswp__button:hover {
+                                                background: none;
+                                                opacity: 1;
+                                              }
+                                              .pswp__button:active {
+                                                background: none;
+                                                outline: none;
+                                                opacity: 0.9;
+                                              }
+                                              .pswp__button:focus:before,
+                                              .pswp__button:hover:before,
+                                              .pswp__button:active:before {
+                                                color: #f079a3;
+                                              }
+                                              .pswp__button::-moz-focus-inner {
+                                                padding: 0;
+                                                border: 0;
+                                              }
+                                              .pswp__ui--over-close .pswp__button--close {
+                                                opacity: 1;
+                                              }
+                                              .pswp__button,
+                                              .pswp__button--arrow--left:before,
+                                              .pswp__button--arrow--right:before {
+                                                width: 44px;
+                                                height: 44px;
+                                              }
+                                              .pswp__button--close:before {
+                                                color: #26292b;
+                                                content: "p";
+                                                font-family: "quark-pixellove";
+                                                font-size: 1.4rem;
+                                                text-transform: none !important;
+                                              }
+                                              .pswp__button--share:before {
+                                                color: #26292b;
+                                                content: "o";
+                                                font-family: "quark-pixellove";
+                                                font-size: 1.6rem;
+                                                text-transform: none !important;
+                                              }
+                                              .pswp__button--fs {
+                                                display: none;
+                                              }
+                                              .pswp__button--fs:before {
+                                                color: #26292b;
+                                                content: "X";
+                                                font-family: "quark-pixellove";
+                                                font-size: 1.6rem;
+                                                text-transform: none !important;
+                                              }
+                                              .pswp--supports-fs .pswp__button--fs {
+                                                display: inline-block;
+                                              }
+                                              .pswp__button--zoom:before {
+                                                color: #26292b;
+                                                content: "r";
+                                                font-family: "quark-pixellove";
+                                                font-size: 1.6rem;
+                                                text-transform: none !important;
+                                              }
+                                              .pswp__button--zoom {
+                                                display: none;
+                                              }
+                                              .pswp--zoom-allowed .pswp__button--zoom {
+                                                display: inline-block;
+                                              }
+                                              .pswp--touch .pswp__button--arrow--left,
+                                              .pswp--touch .pswp__button--arrow--right {
+                                                visibility: hidden;
+                                              }
+                                              .pswp__button--arrow--left,
+                                              .pswp__button--arrow--right {
+                                                background: none;
+                                                top: 50%;
+                                                margin-top: -50px;
+                                                width: 70px;
+                                                height: 100px;
+                                                position: absolute;
+                                              }
+                                              .pswp__button--arrow--left {
+                                                left: 0;
+                                              }
+                                              .pswp__button--arrow--right {
+                                                right: 0;
+                                              }
+                                              .pswp__button--arrow--left:before,
+                                              .pswp__button--arrow--right:before {
+                                                content: '';
+                                                top: 35px;
+                                                background-color: transparent;
+                                                height: 30px;
+                                                width: 32px;
+                                                position: absolute;
+                                              }
+                                              .pswp__button--arrow--left:before {
+                                                color: #26292b;
+                                                content: "t";
+                                                font-family: "quark-pixellove";
+                                                font-size: 1.4rem;
+                                                left: 30px;
+                                                text-transform: none !important;
+                                              }
+                                              .pswp__button--arrow--right:before {
+                                                color: #26292b;
+                                                content: "s";
+                                                font-family: "quark-pixellove";
+                                                font-size: 1.4rem;
+                                                right: 30px;
+                                                text-transform: none !important;
+                                              }
+                                              .pswp__counter,
+                                              .pswp__share-modal {
+                                                -webkit-user-select: none;
+                                                -moz-user-select: none;
+                                                -ms-user-select: none;
+                                                user-select: none;
+                                              }
+                                              .pswp__share-modal {
+                                                display: block;
+                                                background: rgba(0,0,0,0.5);
+                                                width: 100%;
+                                                height: 100%;
+                                                top: 0;
+                                                left: 0;
+                                                padding: 10px;
+                                                position: absolute;
+                                                z-index: 1600;
+                                                opacity: 0;
+                                                -webkit-transition: opacity 0.25s ease-out;
+                                                transition: opacity 0.25s ease-out;
+                                                -webkit-backface-visibility: hidden;
+                                                will-change: opacity;
+                                              }
+                                              .pswp__share-modal--hidden {
+                                                display: none;
+                                              }
+                                              .pswp__share-tooltip {
+                                                z-index: 1620;
+                                                position: absolute;
+                                                background: rgba(38,41,43,0.8);
+                                                left: 50%;
+                                                top: 56px;
+                                                border-radius: 2px;
+                                                margin-left: -60px;
+                                                display: block;
+                                                padding: 5px 0;
+                                                width: 160px;
+                                                -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+                                                box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+                                                -webkit-transform: translateY(6px);
+                                                -ms-transform: translateY(6px);
+                                                transform: translateY(6px);
+                                                -webkit-transition: -webkit-transform 0.25s;
+                                                transition: transform 0.25s;
+                                                -webkit-backface-visibility: hidden;
+                                                will-change: transform;
+                                              }
+                                              .pswp__share-tooltip a {
+                                                display: block;
+                                                padding: 5px 10px 5px 35px;
+                                                color: #fff;
+                                                text-decoration: none;
+                                                font-size: 1.2rem;
+                                                line-height: 1.9;
+                                                position: relative;
+                                              }
+                                              .pswp__share-tooltip a:active,
+                                              .pswp__share-tooltip a:focus,
+                                              .pswp__share-tooltip a:hover {
+                                                color: #f079a3;
+                                              }
+                                              .pswp__share-modal--fade-in {
+                                                opacity: 1;
+                                              }
+                                              .pswp__share-modal--fade-in .pswp__share-tooltip {
+                                                -webkit-transform: translateY(0);
+                                                -ms-transform: translateY(0);
+                                                transform: translateY(0);
+                                              }
+                                              .pswp--touch .pswp__share-tooltip a {
+                                                padding: 16px 12px;
+                                              }
+                                              a.pswp__share--facebook:before,
+                                              a.pswp__share--twitter:before,
+                                              a.pswp__share--pinterest:before,
+                                              a.pswp__share--download:before {
+                                                content: "\f09a";
+                                                display: block;
+                                                float: left;
+                                                font-family: FontAwesome;
+                                                left: 12px;
+                                                top: 5px;
+                                                position: absolute;
+                                              }
+                                              a.pswp__share--twitter:before {
+                                                content: "\f099";
+                                              }
+                                              a.pswp__share--pinterest:before {
+                                                content: "\f231";
+                                              }
+                                              a.pswp__share--download:before {
+                                                content: "\f019";
+                                              }
+                                              .pswp__counter {
+                                                position: absolute;
+                                                left: 0;
+                                                top: 0;
+                                                height: 44px;
+                                                font-size: 1.3rem;
+                                                line-height: 44px;
+                                                color: #26292b;
+                                                opacity: 0.75;
+                                                padding: 0 10px;
+                                              }
+                                              .pswp__caption {
+                                                position: absolute;
+                                                left: 0;
+                                                bottom: 0;
+                                                width: 100%;
+                                                min-height: 44px;
+                                              }
+                                              .pswp__caption small {
+                                                font-size: 1.1rem;
+                                                color: #777;
+                                              }
+                                              .pswp__caption__center {
+                                                text-align: left;
+                                                max-width: 1280px;
+                                                margin: 0 auto;
+                                                font-size: 1.3rem;
+                                                overflow: hidden;
+                                                padding: 70px 10px;
+                                                line-height: 20px;
+                                                color: #777;
+                                              }
+                                              .pswp__caption__center > h3 {
+                                                float: left;
+                                                font-size: 2.4rem;
+                                                font-weight: 400;
+                                                max-width: 50%;
+                                              }
+                                              .pswp__caption__center > span {
+                                                color: #777;
+                                                float: right;
+                                                font-size: 1.6rem;
+                                                max-width: 40%;
+                                              }
+                                              .pswp__caption,
+                                              .pswp__top-bar {
+                                                background: rgba(255,255,255,0.85);
+                                              }
+                                              .pswp__top-bar {
+                                                text-align: center;
+                                              }
+                                              .pswp__caption--empty {
+                                                display: none;
+                                              }
+                                              .pswp__caption--fake {
+                                                visibility: hidden;
+                                              }
+                                              .pswp__preloader {
+                                                display: none;
+                                              }
+                                              .pswp__preloader--active {
+                                                opacity: 1;
+                                              }
+                                              .pswp__preloader--active .pswp__preloader__icn {
+                                                background: url(../images/photoswipe-preloader.gif) 0 0 no-repeat;
+                                              }
+                                              .pswp__ui {
+                                                -webkit-font-smoothing: auto;
+                                                visibility: visible;
+                                                opacity: 1;
+                                                z-index: 1550;
+                                              }
+                                              .pswp__top-bar {
+                                                position: absolute;
+                                                left: 0;
+                                                top: 0;
+                                                height: 44px;
+                                                width: 100%;
+                                              }
+                                              .admin-bar .pswp__top-bar {
+                                                top: 28px;
+                                              }
+                                              .pswp__caption,
+                                              .pswp__top-bar,
+                                              .pswp--has_mouse .pswp__button--arrow--left,
+                                              .pswp--has_mouse .pswp__button--arrow--right {
+                                                -webkit-backface-visibility: hidden;
+                                                will-change: opacity;
+                                                -webkit-transition: opacity 333ms cubic-bezier(0.4,0,0.22,1);
+                                                transition: opacity 333ms cubic-bezier(0.4,0,0.22,1);
+                                              }
+                                              .pswp--has_mouse .pswp__button--arrow--left,
+                                              .pswp--has_mouse .pswp__button--arrow--right {
+                                                visibility: visible;
+                                              }
+                                              .pswp__ui--idle .pswp__top-bar {
+                                                opacity: 0;
+                                              }
+                                              .pswp__ui--idle .pswp__button--arrow--left,
+                                              .pswp__ui--idle .pswp__button--arrow--right {
+                                                opacity: 0;
+                                              }
+                                              .pswp__ui--hidden .pswp__top-bar,
+                                              .pswp__ui--hidden .pswp__caption,
+                                              .pswp__ui--hidden .pswp__button--arrow--left,
+                                              .pswp__ui--hidden .pswp__button--arrow--right {
+                                                opacity: 0.001;
+                                              }
+                                              .pswp__ui--one-slide .pswp__button--arrow--left,
+                                              .pswp__ui--one-slide .pswp__button--arrow--right,
+                                              .pswp__ui--one-slide .pswp__counter {
+                                                display: none;
+                                              }
+                                              .pswp__element--disabled {
+                                                display: none !important;
+                                              }
+                                              .pswp--minimal--dark .pswp__top-bar {
+                                                background: none;
+                                              }
+                                              @media (max-width: 1400px) {
+                                                .pswp__caption__center {
+                                                  padding: 30px 10px;
+                                                }
+                                                .pswp__caption__center > h3 {
+                                                  font-size: 1.8rem;
+                                                }
+                                                .pswp__caption__center > span {
+                                                  font-size: 1.4rem;
+                                                }
+                                              }
+                                              @media (max-width: 1100px) {
+                                                .pswp__caption__center {
+                                                  padding: 10px;
+                                                }
+                                                .pswp__caption__center > h3 {
+                                                  font-size: 1.6rem;
+                                                  margin: 0 0 10px 0;
+                                                  max-width: 100%;
+                                                  width: 100%;
+                                                }
+                                                .pswp__caption__center > span {
+                                                  font-size: 1.3rem;
+                                                  max-width: 100%;
+                                                  width: 100%;
+                                                }
+                                              }
 
 /**
  * 8. RWD
  * ----------------------------------------------------------------------------
  */
-.all-devices {
+ .all-devices {
   display: block;
 }
 
@@ -7015,7 +7019,7 @@ a.pswp__share--download:before {
  *
  */
 
-.btn_caption{
+ .btn_caption{
   display: none;
 }
 
@@ -7033,4 +7037,11 @@ a.pswp__share--download:before {
   position: absolute!important;
   min-width: 80px;
   width: 100%!important;
+}
+
+.error404 .entry-header.content-area{
+  height: auto !important;
+  overflow: hidden;
+  max-height: 1000px !important;
+  background-size: cover !important;
 }
