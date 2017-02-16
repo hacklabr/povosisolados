@@ -4658,8 +4658,8 @@ p.numblocks span.highlight {
 }
 
 .boletim #gk-header-nav {
-  background-color: transparent;
-  border-bottom: 1px solid #fff;
+  background-color: linear-gradient(rgba(19, 19, 19, 0.5), rgba(255, 255, 255, 0));
+  /*border-bottom: 1px solid #fff;*/
   height: 55px;
   width: 100%;
 }

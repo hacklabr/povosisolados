@@ -211,7 +211,7 @@ article.one-page {
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
     #gk-mobile-menu {
-        margin-top: 40px !important;
+        margin-top: 25px !important;
         padding: 0;
     }
 

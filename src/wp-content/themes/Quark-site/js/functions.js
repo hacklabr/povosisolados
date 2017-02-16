@@ -1446,6 +1446,15 @@ jQuery(window).on('beforeunload', function() {
 
 jQuery(document).ready(function(){
     jQuery('#menu-menu-cti').append('<li id="menu-item-search" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317 menu-item-search"> <a href="javascript:void(0);"> <i class="fa fa-search"></i> </a> <input type="text" id="search-input"> </li>');
+    
+    jQuery('#menu-item-search').mousemove(function(){
+        $('#menu-menu-cti').css('overflow','hidden');
+    });
+    
+    jQuery('#menu-item-search').mouseleave(function(){
+        $('#menu-menu-cti').css('overflow','');
+    });
+
     jQuery('#menu-item-search a').click(function(){
         $('#search-input').toggleClass('active');
         if(jQuery('#menu-item-search a i').is('.fa-search'))

@@ -57,7 +57,7 @@ input[type="reset"] {
     margin: 30px;
 }
 #gk-mobile-menu {
-    margin-top: 30px !important;
+    margin-top: 25px !important;
 }
 #aside-menu.menu-open,#close-menu.menu-open {
     display: none;
@@ -608,7 +608,7 @@ input[type="reset"] {
         height: 100%; 
         overflow-y: auto;
         width: calc(100% - 40px);
-        left: 20px !important;
+        left: 35px !important;
         margin: 0;
     }
 

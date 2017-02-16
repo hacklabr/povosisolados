@@ -1080,7 +1080,6 @@ label {
   padding: 0;
   position: relative;
   text-align: center;
-  overflow: hidden;
 }
 .nav-menu > li,
 .nav-menu > ul > li {

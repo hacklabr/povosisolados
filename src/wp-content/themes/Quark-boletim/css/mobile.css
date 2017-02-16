@@ -563,8 +563,8 @@ input[type="reset"] {
   }
 
   .single-page .item-info {
-      margin: 0px;
-      margin-right: 25px;
+    margin: 0px;
+    margin-right: 25px;
   }
   
   .post-info .gk-social-icons{
@@ -572,10 +572,12 @@ input[type="reset"] {
   }
 
   .gk-social-facebook {
-      float: left;
-      margin-left: 90px;
+    float: left;
+    margin-left: 90px;
   }
 
   html { overflow-x: hidden; }
-  
+  #gk-copyrights .copyright {
+    text-align: center;
+  } 
 }
