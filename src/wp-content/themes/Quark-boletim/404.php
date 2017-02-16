@@ -50,5 +50,6 @@ get_header(); ?>
 	</div><!-- #content -->
 </div><!-- #primary -->
 <p class="error-links"><a href="<?php echo site_url(); ?>"><?php _e('Volte para a homepage','quark'); ?></a></p>
+<script>document.title = <?= _e( 'A página que você procura não foi encontrada.', 'quark' ); ?></script>
 
-<?php get_footer('frontpage'); ?>
+<?php get_footer(); ?>

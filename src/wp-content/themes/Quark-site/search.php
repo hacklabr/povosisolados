@@ -48,21 +48,19 @@ get_header("frontpage");  ?>
 						<?php do_action('quark_after_content_top'); ?>
 					<?php endif; ?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
-						<div><?php get_template_part( 'content-category', get_post_format() ); ?></div>
-					<?php endwhile; ?>
+					<div class="site gk-cols" data-cols="2">
+						<?php while ( have_posts() ) : the_post(); ?>
+							<div><?php get_template_part( 'content-category', get_post_format() ); ?></div>
+						<?php endwhile; ?>
+					</div>
 
 					<nav class="navigation paging-navigation" role="navigation">
 						<h3 class="screen-reader-text"><?php _e( 'Posts navigation', 'quark' ); ?></h3>
 						<div class="nav-links">
-							<?php if ( get_next_posts_link() ) {
-								$page_prev = '';
-								$page_next = '';
-								
-								if(isset($_GET['paged']) && $_GET['paged'] != ''){
-									$page_prev = '&paged=' . (((int)$_GET['paged']) - 1);
-									$page_next = '&paged=' . (((int)$_GET['paged']) + 1);
-								}
+							<?php 
+							if ( get_next_posts_link() ) {
+								$page_prev = isset($_GET['paged']) ? '&paged=' . (((int)$_GET['paged']) - 1) : '&paged=2';
+								$page_next = isset($_GET['paged']) ? '&paged=' . (((int)$_GET['paged']) + 1) : '';
 								?>
 								<div class="nav-previous">
 									<a href="/?s=<?= $_GET['s'] . $page_prev ?>">
