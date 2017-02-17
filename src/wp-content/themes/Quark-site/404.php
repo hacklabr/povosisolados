@@ -50,6 +50,11 @@ get_header('frontpage'); ?>
 	</div><!-- #content -->
 </div><!-- #primary -->
 <p class="error-links"><a href="<?php echo site_url(); ?>"><?php _e('Volte para a homepage','quark'); ?></a></p>
-<script>document.title = <?= _e( 'A página que você procura não foi encontrada.', 'quark' ); ?></script>
+<script>
+document.title = <?= _e( 'A página que você procura não foi encontrada.', 'quark' ); ?>
+jQuery(document).ready(function(){
+	jQuery('.error-links').hide();
+});
+</script>
 
 <?php get_footer('frontpage'); ?>

@@ -7195,3 +7195,5 @@ u.fa.fa-search{ display:none; }
 .search-results [style="background-image:url('http://novo.trabalhoindigenista.org.br/wp-includes/images/media/default.png');"] {
     display: none;
 }
+
+html{ overflow-x: hidden; }
