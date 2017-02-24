@@ -16,6 +16,7 @@ piklist('field', array(
         '' => 'Escolha o boletim'
       ) + piklist( get_posts(array(
             'post_type' => 'page',
+            'posts_per_page' => -1,
             'meta_query' => array(
                               array(
                                 'key' => 'is_boletim',
