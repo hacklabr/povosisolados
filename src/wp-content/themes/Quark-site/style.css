@@ -7197,3 +7197,5 @@ u.fa.fa-search{ display:none; }
 }
 
 html{ overflow-x: hidden; }
+
+.page .entry-date { display: none; }
